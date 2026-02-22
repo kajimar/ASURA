@@ -1,0 +1,85 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://asura.local/schemas/runlog.schema.json",
+    "title": "ASURA RunLog Schema (v0.1)",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["schema_version", "run_id", "inputs", "attempts", "final_status"],
+    "properties": {
+      "schema_version": { "type": "string", "const": "0.1" },
+      "run_id": { "type": "string", "pattern": "^[a-zA-Z0-9_\\-]{1,64}$" },
+      "inputs": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source_path", "source_type", "theme_id", "llm_endpoint"],
+        "properties": {
+          "source_path": { "type": "string", "minLength": 1 },
+          "source_type": { "type": "string", "enum": ["pdf", "docx"] },
+          "theme_id": { "type": "string", "pattern": "^[a-zA-Z0-9_\\-]{1,64}$" },
+          "icon_group": { "type": ["string", "null"] },
+          "llm_endpoint": { "type": "string", "minLength": 1 },
+          "model": { "type": ["string", "null"] }
+        }
+      },
+      "attempts": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 3,
+        "items": { "$ref": "#/$defs/attempt" }
+      },
+      "final_status": { "type": "string", "enum": ["ok", "fallback", "failed"] }
+    },
+    "$defs": {
+      "artifact_paths": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "extraction_json": { "type": "string" },
+          "blueprint_json": { "type": "string" },
+          "validator_report_json": { "type": "string" },
+          "pptx": { "type": "string" },
+          "rendered_images_dir": { "type": "string" }
+        }
+      },
+      "attempt": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["attempt_no", "status", "steps", "error_user", "error_dev", "artifacts"],
+        "properties": {
+          "attempt_no": { "type": "integer", "minimum": 0 },
+          "status": { "type": "string", "enum": ["ok", "retry", "fallback", "fail"] },
+          "steps": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "$ref": "#/$defs/step" }
+          },
+          "error_user": { "type": "string" },
+          "error_dev": { "type": "string" },
+          "artifacts": { "$ref": "#/$defs/artifact_paths" }
+        }
+      },
+      "step": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "status"],
+        "properties": {
+          "name": { "type": "string", "enum": ["extract", "blueprint", "validate", "render", "postvalidate"] },
+          "status": { "type": "string", "enum": ["ok", "fail"] },
+          "errors": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/error" }
+          }
+        }
+      },
+      "error": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["code", "message"],
+        "properties": {
+          "code": { "type": "string", "minLength": 1 },
+          "message": { "type": "string", "minLength": 1 },
+          "details": { "type": "object", "additionalProperties": true }
+        }
+      }
+    }
+  }

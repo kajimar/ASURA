@@ -1,0 +1,165 @@
+{
+  "schema_version": "0.1",
+  "theme": {
+    "theme_id": "theme_default",
+    "page": {
+      "aspect_ratio": "16:9",
+      "width_pt": 960,
+      "height_pt": 540
+    },
+    "fonts": {
+      "heading": "Noto Sans JP",
+      "body": "Noto Sans JP"
+    },
+    "colors": {
+      "bg": "#FFFFFF",
+      "fg": "#111111",
+      "accent": "#2F80ED"
+    },
+    "footer": {
+      "page_number": {
+        "enabled": true,
+        "bbox_pt": [840, 510, 950, 535],
+        "font_pt": 10
+      }
+    },
+    "citation_style": {
+      "inline_mark_format": "※{n}",
+      "citations_slide_title": "引用"
+    }
+  },
+  "components": [
+    {
+      "component_id": "comp_title_bullets",
+      "role": "body",
+      "slots": [
+        {
+          "name": "TITLE",
+          "value_type": "string",
+          "element_ref": "title_box",
+          "constraints": {
+            "max_chars": 40,
+            "max_lines": 2,
+            "min_font_pt": 18,
+            "shrink_to_fit": true,
+            "overflow_policy": "truncate"
+          }
+        },
+        {
+          "name": "BULLETS",
+          "value_type": "string_list",
+          "element_ref": "bullets_box",
+          "constraints": {
+            "max_chars": 600,
+            "max_lines": 12,
+            "min_font_pt": 12,
+            "shrink_to_fit": true,
+            "overflow_policy": "truncate"
+          }
+        }
+      ],
+      "layout_elements": [
+        {
+          "element_id": "title_box",
+          "kind": "textbox",
+          "bbox_pt": [60, 60, 900, 140],
+          "style": { "font_role": "heading" }
+        },
+        {
+          "element_id": "bullets_box",
+          "kind": "textbox",
+          "bbox_pt": [60, 160, 900, 480],
+          "style": { "font_role": "body" }
+        }
+      ]
+    },
+    {
+      "component_id": "comp_toc",
+      "role": "toc",
+      "slots": [
+        {
+          "name": "TITLE",
+          "value_type": "string",
+          "element_ref": "toc_title_box",
+          "constraints": {
+            "max_chars": 40,
+            "max_lines": 1,
+            "min_font_pt": 20,
+            "shrink_to_fit": true,
+            "overflow_policy": "truncate"
+          }
+        },
+        {
+          "name": "ITEMS",
+          "value_type": "string_list",
+          "element_ref": "toc_items_box",
+          "constraints": {
+            "max_chars": 1200,
+            "max_lines": 18,
+            "min_font_pt": 12,
+            "shrink_to_fit": true,
+            "overflow_policy": "truncate"
+          }
+        }
+      ],
+      "layout_elements": [
+        {
+          "element_id": "toc_title_box",
+          "kind": "textbox",
+          "bbox_pt": [60, 60, 900, 120],
+          "style": { "font_role": "heading" }
+        },
+        {
+          "element_id": "toc_items_box",
+          "kind": "textbox",
+          "bbox_pt": [60, 140, 900, 480],
+          "style": { "font_role": "body" }
+        }
+      ]
+    },
+    {
+      "component_id": "comp_citations",
+      "role": "citations",
+      "slots": [
+        {
+          "name": "TITLE",
+          "value_type": "string",
+          "element_ref": "cit_title_box",
+          "constraints": {
+            "max_chars": 40,
+            "max_lines": 1,
+            "min_font_pt": 20,
+            "shrink_to_fit": true,
+            "overflow_policy": "truncate"
+          }
+        },
+        {
+          "name": "LINES",
+          "value_type": "string_list",
+          "element_ref": "cit_lines_box",
+          "constraints": {
+            "max_chars": 2000,
+            "max_lines": 20,
+            "min_font_pt": 10,
+            "shrink_to_fit": true,
+            "overflow_policy": "truncate"
+          }
+        }
+      ],
+      "layout_elements": [
+        {
+          "element_id": "cit_title_box",
+          "kind": "textbox",
+          "bbox_pt": [60, 60, 900, 120],
+          "style": { "font_role": "heading" }
+        },
+        {
+          "element_id": "cit_lines_box",
+          "kind": "textbox",
+          "bbox_pt": [60, 140, 900, 480],
+          "style": { "font_role": "body" }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+    "schema_version": "0.1",
+    "theme": {
+      "theme_id": "theme_default",
+      "page": { "aspect_ratio": "16:9", "width_pt": 960, "height_pt": 540 },
+      "fonts": { "heading": "Noto Sans JP", "body": "Noto Sans JP" },
+      "colors": { "bg": "#FFFFFF", "fg": "#111111", "accent": "#2F6FEB" },
+      "footer": {
+        "page_number": {
+          "enabled": true,
+          "bbox_pt": [840, 510, 100, 20],
+          "font_pt": 10
+        }
+      },
+      "citation_style": { "inline_mark_format": "※{n}", "citations_slide_title": "引用一覧" }
+    },
+    "components": [
+      {
+        "component_id": "comp_cover",
+        "role": "cover",
+        "layout_elements": [
+          { "element_id": "t_title", "kind": "textbox", "bbox_pt": [60, 180, 840, 90] },
+          { "element_id": "t_sub", "kind": "textbox", "bbox_pt": [60, 280, 840, 60] }
+        ],
+        "slots": [
+          { "name": "TITLE", "value_type": "string", "element_ref": "t_title",
+            "constraints": { "max_chars": 28, "max_lines": 2, "min_font_pt": 24, "shrink_to_fit": true, "overflow_policy": "split" } },
+          { "name": "SUBTITLE", "value_type": "string", "element_ref": "t_sub",
+            "constraints": { "max_chars": 60, "max_lines": 2, "min_font_pt": 14, "shrink_to_fit": true, "overflow_policy": "split" } }
+        ]
+      },
+      {
+        "component_id": "comp_toc",
+        "role": "toc",
+        "layout_elements": [
+          { "element_id": "t_title", "kind": "textbox", "bbox_pt": [60, 40, 840, 50] },
+          { "element_id": "t_items", "kind": "textbox", "bbox_pt": [80, 110, 820, 380] }
+        ],
+        "slots": [
+          { "name": "TITLE", "value_type": "string", "element_ref": "t_title",
+            "constraints": { "max_chars": 20, "max_lines": 1, "min_font_pt": 18, "shrink_to_fit": true, "overflow_policy": "split" } },
+          { "name": "ITEMS", "value_type": "string_list", "element_ref": "t_items",
+            "constraints": { "max_chars": 600, "max_lines": 14, "min_font_pt": 12, "shrink_to_fit": true, "overflow_policy": "split" } }
+        ]
+      },
+      {
+        "component_id": "comp_section_divider",
+        "role": "section_divider",
+        "layout_elements": [
+          { "element_id": "t_section", "kind": "textbox", "bbox_pt": [60, 140, 840, 70] },
+          { "element_id": "t_kts", "kind": "textbox", "bbox_pt": [80, 230, 820, 260] }
+        ],
+        "slots": [
+          { "name": "SECTION_TITLE", "value_type": "string", "element_ref": "t_section",
+            "constraints": { "max_chars": 24, "max_lines": 2, "min_font_pt": 20, "shrink_to_fit": true, "overflow_policy": "split" } },
+          { "name": "KEY_TAKEAWAYS", "value_type": "string_list", "element_ref": "t_kts",
+            "constraints": { "max_chars": 400, "max_lines": 10, "min_font_pt": 12, "shrink_to_fit": true, "overflow_policy": "split" } }
+        ]
+      },
+      {
+        "component_id": "comp_title_bullets",
+        "role": "body",
+        "layout_elements": [
+          { "element_id": "t_title", "kind": "textbox", "bbox_pt": [60, 40, 840, 60] },
+          { "element_id": "t_bullets", "kind": "textbox", "bbox_pt": [80, 120, 820, 380] }
+        ],
+        "slots": [
+          { "name": "TITLE", "value_type": "string", "element_ref": "t_title",
+            "constraints": { "max_chars": 28, "max_lines": 1, "min_font_pt": 18, "shrink_to_fit": true, "overflow_policy": "split" } },
+          { "name": "BULLETS", "value_type": "string_list", "element_ref": "t_bullets",
+            "constraints": { "max_chars": 600, "max_lines": 8, "min_font_pt": 12, "shrink_to_fit": true, "overflow_policy": "split" } }
+        ]
+      },
+      {
+        "component_id": "comp_citations",
+        "role": "citations",
+        "layout_elements": [
+          { "element_id": "t_title", "kind": "textbox", "bbox_pt": [60, 40, 840, 50] },
+          { "element_id": "t_entries", "kind": "textbox", "bbox_pt": [60, 110, 880, 400] }
+        ],
+        "slots": [
+          { "name": "TITLE", "value_type": "string", "element_ref": "t_title",
+            "constraints": { "max_chars": 20, "max_lines": 1, "min_font_pt": 18, "shrink_to_fit": true, "overflow_policy": "split" } },
+          { "name": "ENTRIES", "value_type": "string_list", "element_ref": "t_entries",
+            "constraints": { "max_chars": 1200, "max_lines": 18, "min_font_pt": 10, "shrink_to_fit": true, "overflow_policy": "split" } }
+        ]
+      }
+    ]
+  }

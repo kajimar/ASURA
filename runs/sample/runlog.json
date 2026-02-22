@@ -1,0 +1,35 @@
+{
+    "schema_version": "0.1",
+    "run_id": "run_20260222_0001",
+    "inputs": {
+      "source_path": "inputs/sample.pdf",
+      "source_type": "pdf",
+      "theme_id": "theme_default",
+      "icon_group": null,
+      "llm_endpoint": "http://localhost:1234/v1",
+      "model": "local-llm"
+    },
+    "attempts": [
+      {
+        "attempt_no": 0,
+        "status": "ok",
+        "steps": [
+          { "name": "extract", "status": "ok" },
+          { "name": "blueprint", "status": "ok" },
+          { "name": "validate", "status": "ok" },
+          { "name": "render", "status": "ok" },
+          { "name": "postvalidate", "status": "ok" }
+        ],
+        "error_user": "",
+        "error_dev": "",
+        "artifacts": {
+          "extraction_json": "runs/run_20260222_0001/extraction.json",
+          "blueprint_json": "runs/run_20260222_0001/blueprint.json",
+          "validator_report_json": "runs/run_20260222_0001/validator_report.json",
+          "pptx": "runs/run_20260222_0001/output.pptx",
+          "rendered_images_dir": "runs/run_20260222_0001/pages"
+        }
+      }
+    ],
+    "final_status": "ok"
+  }

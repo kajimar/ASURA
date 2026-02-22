@@ -1,0 +1,22 @@
+{
+    "schema_version": "0.1",
+    "document": {
+      "document_id": "doc_001",
+      "source_type": "pdf",
+      "source_path": "inputs/sample.pdf",
+      "page_count": 12
+    },
+    "chunks": [
+      {
+        "chunk_id": "c_0001",
+        "type": "text",
+        "page": 2,
+        "bbox_pt": [72, 120, 800, 60],
+        "heading_level": 1,
+        "text": "オンボーディングの目的は、早期戦力化です。",
+        "normalized_text": "オンボーディングの目的は、早期戦力化です。",
+        "hash": "b7c1c9c4",
+        "numbers": []
+      }
+    ]
+  }

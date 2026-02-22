@@ -1,0 +1,172 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://asura.local/schemas/template.schema.json",
+    "title": "ASURA Template Schema (v0.1)",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["schema_version", "theme", "components"],
+    "properties": {
+      "schema_version": {
+        "type": "string",
+        "const": "0.1"
+      },
+      "theme": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["theme_id", "page", "fonts", "colors", "footer", "citation_style"],
+        "properties": {
+          "theme_id": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_\\-]{1,64}$"
+          },
+          "page": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["aspect_ratio", "width_pt", "height_pt"],
+            "properties": {
+              "aspect_ratio": { "type": "string", "const": "16:9" },
+              "width_pt": { "type": "number", "minimum": 1 },
+              "height_pt": { "type": "number", "minimum": 1 }
+            }
+          },
+          "fonts": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["heading", "body"],
+            "properties": {
+              "heading": { "type": "string", "minLength": 1 },
+              "body": { "type": "string", "minLength": 1 }
+            }
+          },
+          "colors": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["bg", "fg", "accent"],
+            "properties": {
+              "bg": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+              "fg": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+              "accent": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" }
+            }
+          },
+          "footer": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["page_number"],
+            "properties": {
+              "page_number": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["enabled", "bbox_pt", "font_pt"],
+                "properties": {
+                  "enabled": { "type": "boolean" },
+                  "bbox_pt": {
+                    "type": "array",
+                    "minItems": 4,
+                    "maxItems": 4,
+                    "items": { "type": "number" }
+                  },
+                  "font_pt": { "type": "number", "minimum": 6 }
+                }
+              }
+            }
+          },
+          "citation_style": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["inline_mark_format", "citations_slide_title"],
+            "properties": {
+              "inline_mark_format": { "type": "string", "const": "※{n}" },
+              "citations_slide_title": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      },
+      "components": {
+        "type": "array",
+        "minItems": 1,
+        "items": { "$ref": "#/$defs/component" }
+      }
+    },
+    "$defs": {
+      "bbox_pt": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 4,
+        "items": { "type": "number" }
+      },
+      "layout_element": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["element_id", "kind", "bbox_pt"],
+        "properties": {
+          "element_id": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_\\-]{1,64}$"
+          },
+          "kind": { "type": "string", "enum": ["textbox"] },
+          "bbox_pt": { "$ref": "#/$defs/bbox_pt" },
+          "style": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      },
+      "slot_constraints": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["max_chars", "max_lines", "min_font_pt", "shrink_to_fit", "overflow_policy"],
+        "properties": {
+          "max_chars": { "type": "integer", "minimum": 0 },
+          "max_lines": { "type": "integer", "minimum": 0 },
+          "min_font_pt": { "type": "number", "minimum": 6 },
+          "shrink_to_fit": { "type": "boolean" },
+          "overflow_policy": {
+            "type": "string",
+            "enum": ["split", "truncate", "fail"]
+          }
+        }
+      },
+      "slot": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "value_type", "element_ref", "constraints"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "pattern": "^[A-Z0-9_]{1,32}$"
+          },
+          "value_type": { "type": "string", "enum": ["string", "string_list"] },
+          "element_ref": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_\\-]{1,64}$"
+          },
+          "constraints": { "$ref": "#/$defs/slot_constraints" }
+        }
+      },
+      "component": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["component_id", "role", "layout_elements", "slots"],
+        "properties": {
+          "component_id": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_\\-]{1,64}$"
+          },
+          "role": {
+            "type": "string",
+            "enum": ["cover", "toc", "body", "section_divider", "citations"]
+          },
+          "layout_elements": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "$ref": "#/$defs/layout_element" }
+          },
+          "slots": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "$ref": "#/$defs/slot" }
+          }
+        }
+      }
+    }
+  }

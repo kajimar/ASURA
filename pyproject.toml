@@ -1,0 +1,21 @@
+[project]
+name = "asura"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "小嶋貫治", email = "kanji151223@gmail.com" }
+]
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "jsonschema>=4.26.0",
+    "pymupdf>=1.27.1",
+    "python-pptx>=1.0.2",
+]
+
+[project.scripts]
+asura = "asura.apps.cli.main:main"
+
+[build-system]
+requires = ["uv_build>=0.10.4,<0.11.0"]
+build-backend = "uv_build"

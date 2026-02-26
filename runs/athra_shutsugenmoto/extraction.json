@@ -1,0 +1,2911 @@
+{
+  "schema_version": "0.1",
+  "document": {
+    "document_id": "document",
+    "source_type": "pdf",
+    "source_path": "/Users/kanji/ASURA/input/抽出元.pdf",
+    "page_count": 23
+  },
+  "chunks": [
+    {
+      "chunk_id": "document_p001_c00001",
+      "block_type": "text",
+      "page_no": 1,
+      "order": 1,
+      "bbox": [
+        78.0,
+        114.12,
+        517.32,
+        812.02
+      ],
+      "text": "ローカルAI(オンデバイス/ローカル推論)技術調査 レポート\nエグゼクティブサマリ(実務要点) 本レポートは、ローカルAI(端末内・ローカルPC・ローカルLAN内推論)を対象に、カテゴリ網羅・特徴軸 評価・Apple Silicon(M1/M2/M3/M4)とWindows(CPU/GPU)前提の実用ライン・ユースケース別推奨ス タック(低コスト/高品質/ハード制約)を、一次ソース中心の根拠付きで整理するものです。\nローカルAIの定義は「推論がユーザー端末またはユーザー管理下のローカルLAN内計算資源で完結し、入力 データ(文書・音声・画像等)がデフォルトで外部クラウドへ送出されない構成」を指します(ローカルAPI サーバをLAN公開して別端末から使う形も含む)。LANサーブは LM Studio が「localhostまたはnetwork\nで提供」できること、また Ollama がWindows/macOS/Linuxで提供され、REST APIでローカル利用され\nる設計であることから、実務的に「ローカルLAN内推論」をローカルAIの範囲に含めるのが妥当です。\n技術的に“今”ローカルAIを成立させている中核は、(a) 重み量子化(4bit前後のweight-onlyが主流)と、(b) KVキャッシュ/長文コンテキストのメモリ管理(paged KV、KV量子化、再利用)です。AWQは「on-device LLMが重要(コスト削減・プライバシー)」という問題設定のもと、低bit量子化による実行を狙う代表例で す。 さらに、vLLMはpaged KV cache設計を前提にし、KVキャッシュをFP8等に量子化してメモリフット\nプリントを下げる機能を明示しています。 NVIDIA のTensorRT-LLMもpaged/quantized KV cacheや\nKV reuseを最適化として公式に強調しています。\n実運用の第一選択になりやすいランタイムは、クロスプラットフォーム汎用の「llama.cpp/GGUF系」と、UI +ローカルAPIサーバをセットで提供するOllama・LM Studio、Apple Silicon特化のMLX系です。llama.cpp はGGUF必須を明記し、複数ハードを対象に最小セットアップでのローカル推論を目的にしています。\nLM Studioは「llama.cpp(GGUF)エンジン+Apple MLXエンジン」を同梱し、OpenAI互換APIサーバとして も動作します。 Apple Silicon側は、Apple GPUがCPU/GPU同一メモリを共有する“unified memory\nmodel”であることがMetal公式ドキュメントとして明示され、MLXもUnified Memory前提で設計されている ことが公式に説明されています。\nハード“実用ライン”の結論(LLM中心、4bit中心、概算): - Apple Silicon(Unified Memory)16GB:現実的には3B〜7/8B級(4bit)をインタラクティブに回すライ ン。M1世代はUMAを強調し、M4世代でも統合メモリ前提で構成される。\n- Apple Silicon 24〜32GB:14B級(4bit)が「RAG含め業務用途の最小実用ライン」になりやすい(同時に ASR/TTSを載せても破綻しにくい)。 - Windows(離散GPU)VRAM 8/12/16/24GB:8GBは7B級の最小ライン、12GBで14B級が視野、16GBで“品 質寄り”が現実化、24GBで32〜34B級(4bit)や重い画像生成が実務域に入る(ただし長文コンテキストは KVが支配するため別管理)。このVRAMラインはコミュニティ知見が混ざるため、本レポートでは「重みメモ リの理論値(計算)」+「再現ベンチ(後述)」で最終判断する設計を採ります。\n- Windows CPU-only:AVX2以上の多コアCPU+32GB以上RAMで、7B級4bitが「使える」ライン。Intel CPU 最適化はAVX-512/VNNI/AMXを活用し得ることがIntel公式に明示されています。 Intel\n推奨スタック(3パターン、総論): - 低コスト:GGUF(Q4/K系)+llama.cpp系(Ollama/LM Studio含む)+軽量ASR(whisper.cppやfaster- whisperのCPU/INT8)+軽量TTS(Piper/Kokoro)+BGE系Embedding(bge-m3)で“最低限の業務自動 化”を組む。\n1\n2\n3\n4\n5 6\n7\n8\n9\n10\n11\n12\n13 14\n15\n1",
+      "normalized_text": "ローカルAI(オンデバイス/ローカル推論)技術調査 レポート\nエグゼクティブサマリ(実務要点) 本レポートは、ローカルAI(端末内・ローカルPC・ローカルLAN内推論)を対象に、カテゴリ網羅・特徴軸 評価・Apple Silicon(M1/M2/M3/M4)とWindows(CPU/GPU)前提の実用ライン・ユースケース別推奨ス タック(低コスト/高品質/ハード制約)を、一次ソース中心の根拠付きで整理するものです。\nローカルAIの定義は「推論がユーザー端末またはユーザー管理下のローカルLAN内計算資源で完結し、入力 データ(文書・音声・画像等)がデフォルトで外部クラウドへ送出されない構成」を指します(ローカルAPI サーバをLAN公開して別端末から使う形も含む)。LANサーブは LM Studio が「localhostまたはnetwork\nで提供」できること、また Ollama がWindows/macOS/Linuxで提供され、REST APIでローカル利用され\nる設計であることから、実務的に「ローカルLAN内推論」をローカルAIの範囲に含めるのが妥当です。\n技術的に“今”ローカルAIを成立させている中核は、(a) 重み量子化(4bit前後のweight-onlyが主流)と、(b) KVキャッシュ/長文コンテキストのメモリ管理(paged KV、KV量子化、再利用)です。AWQは「on-device LLMが重要(コスト削減・プライバシー)」という問題設定のもと、低bit量子化による実行を狙う代表例で す。 さらに、vLLMはpaged KV cache設計を前提にし、KVキャッシュをFP8等に量子化してメモリフット\nプリントを下げる機能を明示しています。 NVIDIA のTensorRT-LLMもpaged/quantized KV cacheや\nKV reuseを最適化として公式に強調しています。\n実運用の第一選択になりやすいランタイムは、クロスプラットフォーム汎用の「llama.cpp/GGUF系」と、UI +ローカルAPIサーバをセットで提供するOllama・LM Studio、Apple Silicon特化のMLX系です。llama.cpp はGGUF必須を明記し、複数ハードを対象に最小セットアップでのローカル推論を目的にしています。\nLM Studioは「llama.cpp(GGUF)エンジン+Apple MLXエンジン」を同梱し、OpenAI互換APIサーバとして も動作します。 Apple Silicon側は、Apple GPUがCPU/GPU同一メモリを共有する“unified memory\nmodel”であることがMetal公式ドキュメントとして明示され、MLXもUnified Memory前提で設計されている ことが公式に説明されています。\nハード“実用ライン”の結論(LLM中心、4bit中心、概算): - Apple Silicon(Unified Memory)16GB:現実的には3B〜7/8B級(4bit)をインタラクティブに回すライ ン。M1世代はUMAを強調し、M4世代でも統合メモリ前提で構成される。\n- Apple Silicon 24〜32GB:14B級(4bit)が「RAG含め業務用途の最小実用ライン」になりやすい(同時に ASR/TTSを載せても破綻しにくい)。 - Windows(離散GPU)VRAM 8/12/16/24GB:8GBは7B級の最小ライン、12GBで14B級が視野、16GBで“品 質寄り”が現実化、24GBで32〜34B級(4bit)や重い画像生成が実務域に入る(ただし長文コンテキストは KVが支配するため別管理)。このVRAMラインはコミュニティ知見が混ざるため、本レポートでは「重みメモ リの理論値(計算)」+「再現ベンチ(後述)」で最終判断する設計を採ります。\n- Windows CPU-only:AVX2以上の多コアCPU+32GB以上RAMで、7B級4bitが「使える」ライン。Intel CPU 最適化はAVX-512/VNNI/AMXを活用し得ることがIntel公式に明示されています。 Intel\n推奨スタック(3パターン、総論): - 低コスト:GGUF(Q4/K系)+llama.cpp系(Ollama/LM Studio含む)+軽量ASR(whisper.cppやfaster- whisperのCPU/INT8)+軽量TTS(Piper/Kokoro)+BGE系Embedding(bge-m3)で“最低限の業務自動 化”を組む。\n1\n2\n3\n4\n5 6\n7\n8\n9\n10\n11\n12\n13 14\n15\n1",
+      "heading_level": 1,
+      "numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "4",
+        "8",
+        "4",
+        "16",
+        "3",
+        "7",
+        "8",
+        "4",
+        "1",
+        "4",
+        "24",
+        "32",
+        "14",
+        "4",
+        "8",
+        "12",
+        "16",
+        "24",
+        "8",
+        "7",
+        "12",
+        "14",
+        "16",
+        "24",
+        "32",
+        "34",
+        "4",
+        "2",
+        "32",
+        "7",
+        "4",
+        "512",
+        "3",
+        "4",
+        "8",
+        "3",
+        "1\n",
+        "2\n",
+        "3\n",
+        "4\n",
+        "5 ",
+        "6\n",
+        "7\n",
+        "8\n",
+        "9\n",
+        "10\n",
+        "11\n",
+        "12\n",
+        "13 ",
+        "14\n",
+        "15\n",
+        "1"
+      ],
+      "hash": "c7532f00cacb380a",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 20
+      }
+    },
+    {
+      "chunk_id": "document_p002_c00002",
+      "block_type": "text",
+      "page_no": 2,
+      "order": 2,
+      "bbox": [
+        78.0,
+        72.23,
+        517.39,
+        139.62
+      ],
+      "text": "- 高品質:大きいLLM(32B〜70B級)+reranker(bge-reranker)+VLM(Qwen2-VL 7B級等)+GPU優先 (NVIDIAならTensorRT-LLM/vLLM/ExLlama等の適材)+ASRはfaster-whisper GPU、TTSはXTTS/StyleTTS2 等を用途に応じ採用。\n- ハード制約:3B〜4B級(Phi-3 mini等)+“短いコンテキストで完結する業務”に寄せ、RAGはEmbedding を重視してLLMを軽くする。 Microsoft",
+      "normalized_text": "- 高品質:大きいLLM(32B〜70B級)+reranker(bge-reranker)+VLM(Qwen2-VL 7B級等)+GPU優先 (NVIDIAならTensorRT-LLM/vLLM/ExLlama等の適材)+ASRはfaster-whisper GPU、TTSはXTTS/StyleTTS2 等を用途に応じ採用。\n- ハード制約:3B〜4B級(Phi-3 mini等)+“短いコンテキストで完結する業務”に寄せ、RAGはEmbedding を重視してLLMを軽くする。 Microsoft",
+      "heading_level": 0,
+      "numbers": [
+        "32",
+        "70",
+        "2",
+        "7",
+        "2 ",
+        "3",
+        "4",
+        "3 "
+      ],
+      "hash": "7c8f01e3fdb7301d",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 1
+      }
+    },
+    {
+      "chunk_id": "document_p002_c00003",
+      "block_type": "text",
+      "page_no": 2,
+      "order": 3,
+      "bbox": [
+        78.0,
+        171.31,
+        517.31,
+        393.39
+      ],
+      "text": "ローカルAIの定義\n(0)本レポートにおけるローカルAIとは、「推論(inference)が、ユーザー端末(オンデバイス)・ユー ザーのローカルPC・ユーザー管理下のローカルLAN内サーバのいずれかで完結し、入力データがデフォルト で外部クラウドへ送出されないAI実行形態」を指します。LM Studioが「localhostまたはnetworkでローカル LLM APIサーバとして提供できる」こと、OllamaがWindows/macOS/LinuxでローカルAPIとして動作するこ とから、ローカルLAN内サーブを明確に包含します。\n未指定事項の扱い(明示): - “完全オフライン”の要件はユーザー指定がないため、「モデル推論自体はオフラインで成立する」レベルを 基本とし、RAGの文書取り込みやモデル取得(初回ダウンロード)は別途ネットワークが必要になり得る点 を前提とします。LM Studioは「文書添付(RAG)をオフラインで実行可能」と説明していますが、これ は“実行時の外部送信をしない”という意味合いです。\n- 対象OSはユーザー指定の仮定どおり macOS Ventura以降/Windows 10/11 とし、Linuxサーバは 「Windows上でWSL2や別筐体で併用」の選択肢としてのみ触れます(特にTensorRT-LLMはLinux前提の資\n料が中心)。",
+      "normalized_text": "ローカルAIの定義\n(0)本レポートにおけるローカルAIとは、「推論(inference)が、ユーザー端末(オンデバイス)・ユー ザーのローカルPC・ユーザー管理下のローカルLAN内サーバのいずれかで完結し、入力データがデフォルト で外部クラウドへ送出されないAI実行形態」を指します。LM Studioが「localhostまたはnetworkでローカル LLM APIサーバとして提供できる」こと、OllamaがWindows/macOS/LinuxでローカルAPIとして動作するこ とから、ローカルLAN内サーブを明確に包含します。\n未指定事項の扱い(明示): - “完全オフライン”の要件はユーザー指定がないため、「モデル推論自体はオフラインで成立する」レベルを 基本とし、RAGの文書取り込みやモデル取得(初回ダウンロード)は別途ネットワークが必要になり得る点 を前提とします。LM Studioは「文書添付(RAG)をオフラインで実行可能」と説明していますが、これ は“実行時の外部送信をしない”という意味合いです。\n- 対象OSはユーザー指定の仮定どおり macOS Ventura以降/Windows 10/11 とし、Linuxサーバは 「Windows上でWSL2や別筐体で併用」の選択肢としてのみ触れます(特にTensorRT-LLMはLinux前提の資\n料が中心)。",
+      "heading_level": 1,
+      "numbers": [
+        "0",
+        "10",
+        "11 ",
+        "2"
+      ],
+      "hash": "7bad4321c41c2331",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 2
+      }
+    },
+    {
+      "chunk_id": "document_p002_c00004",
+      "block_type": "text",
+      "page_no": 2,
+      "order": 4,
+      "bbox": [
+        78.0,
+        101.01,
+        488.25,
+        812.02
+      ],
+      "text": "ローカルAIランドスケープ\n(1)カテゴリ → 代表モデル/方式 → 代表ランタイム → 主用途(網羅優先)\nflowchart LR A[ローカルAI] --> B[テキストLLM] A --> C[VLM/LMM] A --> D[ASR] A --> E[TTS] A --> F[Embedding/Reranker] A --> G[OCR/Document AI] A --> H[画像生成] A --> I[Agent/Tool-use] A --> J[音声前処理: VAD/ウェイクワード/ノイズ/話者分離]\nB --> B1[モデル例: Llama 3.1 / Qwen2.5 / Mixtral / Phi] B --> B2[ランタイム例: llama.cpp(GGUF) / Ollama / LM Studio / MLX-LM / vLLM / TensorRT- LLM / ExLlamaV2] C --> C1[モデル例: Qwen2-VL / Phi-3-Vision / InternVL2 / LLaVA] C --> C2[ランタイム例: MLX-VLM / transformers系 / vLLM(マルチモーダル) 等] D --> D1[方式: Whisper系] D --> D2[ランタイム例: whisper.cpp / faster-whisper(CTranslate2)] E --> E1[方式: 軽量TTS〜音声クローン] E --> E2[ランタイム例: Piper / Kokoro / Coqui TTS(XTTS) / StyleTTS2]\n16\n17 18\n3\n19\n20\n2",
+      "normalized_text": "ローカルAIランドスケープ\n(1)カテゴリ → 代表モデル/方式 → 代表ランタイム → 主用途(網羅優先)\nflowchart LR A[ローカルAI] --> B[テキストLLM] A --> C[VLM/LMM] A --> D[ASR] A --> E[TTS] A --> F[Embedding/Reranker] A --> G[OCR/Document AI] A --> H[画像生成] A --> I[Agent/Tool-use] A --> J[音声前処理: VAD/ウェイクワード/ノイズ/話者分離]\nB --> B1[モデル例: Llama 3.1 / Qwen2.5 / Mixtral / Phi] B --> B2[ランタイム例: llama.cpp(GGUF) / Ollama / LM Studio / MLX-LM / vLLM / TensorRT- LLM / ExLlamaV2] C --> C1[モデル例: Qwen2-VL / Phi-3-Vision / InternVL2 / LLaVA] C --> C2[ランタイム例: MLX-VLM / transformers系 / vLLM(マルチモーダル) 等] D --> D1[方式: Whisper系] D --> D2[ランタイム例: whisper.cpp / faster-whisper(CTranslate2)] E --> E1[方式: 軽量TTS〜音声クローン] E --> E2[ランタイム例: Piper / Kokoro / Coqui TTS(XTTS) / StyleTTS2]\n16\n17 18\n3\n19\n20\n2",
+      "heading_level": 1,
+      "numbers": [
+        "1",
+        "1",
+        "3.1 ",
+        "2.5 ",
+        "2",
+        "2",
+        "1",
+        "2",
+        "3",
+        "2 ",
+        "2",
+        "1",
+        "2",
+        "2",
+        "1",
+        "2",
+        "2",
+        "16\n",
+        "17 ",
+        "18\n",
+        "3\n",
+        "19\n",
+        "20\n",
+        "2"
+      ],
+      "hash": "e76a5c7fbb92a643",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 9
+      }
+    },
+    {
+      "chunk_id": "document_p003_c00005",
+      "block_type": "text",
+      "page_no": 3,
+      "order": 5,
+      "bbox": [
+        78.0,
+        72.23,
+        517.31,
+        320.73
+      ],
+      "text": "F --> F1[モデル例: bge-m3 / multilingual-e5 / bge-reranker] F --> F2[ランタイム例: transformers / ONNX / 各種推論サーバ] G --> G1[方式: 古典OCR + DocAI / OCR-free Doc理解] G --> G2[ランタイム例: Tesseract / PaddleOCR / Donut / LayoutLMv3] H --> H1[方式: Diffusion] H --> H2[ランタイム例: ComfyUI / AUTOMATIC1111 / 各種推論実装] I --> I1[方式: LLM+ツール(関数呼び出し) + 実行環境] I --> I2[例: OpenAI互換API + Agentフレームワーク] J --> J1[モデル例: Silero VAD / openWakeWord / RNNoise / pyannote]\n上図の“実務上の収束点”は以下です。 - テキストLLMの配布・実行は、(a) GGUF(llama.cpp系)か、(b) GPU向け量子化形式(GPTQ/AWQ/EXL2な ど)+CUDA系ランタイムに大別されます。llama.cppはGGUF必須を明記し、GGUF自体もGGML系推論向け バイナリ形式として仕様化されています。\n- macOSは「Metal/Unified Memory」前提の最適化が効く領域があり、MLXはApple Silicon最適化の配列フ レームワークとして提示され、MLX-LM/MLX-VLMによりLLM/VLMの実運用が成立しています。\n- Windowsは“GUIで回すなら”Ollama/LM Studioが現実的で、GPUをフルに使うServingは(実務上)Linux/ WSL2を選ぶ局面が多いです。OllamaはWindowsインストールを公式READMEに明記しています。",
+      "normalized_text": "F --> F1[モデル例: bge-m3 / multilingual-e5 / bge-reranker] F --> F2[ランタイム例: transformers / ONNX / 各種推論サーバ] G --> G1[方式: 古典OCR + DocAI / OCR-free Doc理解] G --> G2[ランタイム例: Tesseract / PaddleOCR / Donut / LayoutLMv3] H --> H1[方式: Diffusion] H --> H2[ランタイム例: ComfyUI / AUTOMATIC1111 / 各種推論実装] I --> I1[方式: LLM+ツール(関数呼び出し) + 実行環境] I --> I2[例: OpenAI互換API + Agentフレームワーク] J --> J1[モデル例: Silero VAD / openWakeWord / RNNoise / pyannote]\n上図の“実務上の収束点”は以下です。 - テキストLLMの配布・実行は、(a) GGUF(llama.cpp系)か、(b) GPU向け量子化形式(GPTQ/AWQ/EXL2な ど)+CUDA系ランタイムに大別されます。llama.cppはGGUF必須を明記し、GGUF自体もGGML系推論向け バイナリ形式として仕様化されています。\n- macOSは「Metal/Unified Memory」前提の最適化が効く領域があり、MLXはApple Silicon最適化の配列フ レームワークとして提示され、MLX-LM/MLX-VLMによりLLM/VLMの実運用が成立しています。\n- Windowsは“GUIで回すなら”Ollama/LM Studioが現実的で、GPUをフルに使うServingは(実務上)Linux/ WSL2を選ぶ局面が多いです。OllamaはWindowsインストールを公式READMEに明記しています。",
+      "heading_level": 0,
+      "numbers": [
+        "1",
+        "3 ",
+        "5 ",
+        "2",
+        "1",
+        "2",
+        "3",
+        "1",
+        "2",
+        "1111 ",
+        "1",
+        "2",
+        "1",
+        "2",
+        "2"
+      ],
+      "hash": "a70713da18ad1361",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 2
+      }
+    },
+    {
+      "chunk_id": "document_p003_c00006",
+      "block_type": "text",
+      "page_no": 3,
+      "order": 6,
+      "bbox": [
+        78.0,
+        254.76,
+        517.32,
+        812.02
+      ],
+      "text": "特徴軸の定義\n(2)以降の評価は、同一カテゴリ内でも「モデル」「量子化」「ランタイム」「ハード」で結果が変わる前 提で、次の特徴軸を共通物差しとして扱います(未指定だったため本レポートで定義)。\n指示追従(Instruction following) プロンプト制約・禁止事項・形式指定(例:箇条書き禁止、JSONのみ等)を守れる度合い。モデルのSFT/ DPO設計差と、ランタイムの“制約付きデコード”有無で大きく変動します(例:JSONモード相当)。\n幻覚耐性(Hallucination resistance) 根拠のない具体名・数値・手順を捏造しにくい性質。RAGがあっても「引用外の断定」が混ざるため、出力ポ リシー設計(根拠提示・不確実性明記)が必要です。\nJSON堅牢性(Structured output robustness) スキーマ遵守・構文破壊率の低さ。ツール呼び出し(function calling)や業務システム連携の成否を直接左 右します。OllamaのOpenAI互換APIはResponses API互換(非stateful)を含み、LM StudioもOpenAI互換エ ンドポイントを提供します。\n(※llama-cpp-python等ではresponse_formatでJSON限定に寄せる設計が存在しますが、ランタイム依存 です。 )\n長文耐性(Long-context stability) 長い入力に対する要約崩れ、重要情報の欠落、自己矛盾の増加。根本制約はKVキャッシュがメモリを線形消 費する点で、vLLM/TensorRT-LLMはpaged/quantized KVやKV reuse等の最適化を前面に出しています。\n推論計画(Planning) タスク分解、複数ステップの自己検証、外部ツール呼び出し順序の妥当性。Agent用途で重要。\n21\n22\n23\n24\n25\n26\n3",
+      "normalized_text": "特徴軸の定義\n(2)以降の評価は、同一カテゴリ内でも「モデル」「量子化」「ランタイム」「ハード」で結果が変わる前 提で、次の特徴軸を共通物差しとして扱います(未指定だったため本レポートで定義)。\n指示追従(Instruction following) プロンプト制約・禁止事項・形式指定(例:箇条書き禁止、JSONのみ等)を守れる度合い。モデルのSFT/ DPO設計差と、ランタイムの“制約付きデコード”有無で大きく変動します(例:JSONモード相当)。\n幻覚耐性(Hallucination resistance) 根拠のない具体名・数値・手順を捏造しにくい性質。RAGがあっても「引用外の断定」が混ざるため、出力ポ リシー設計(根拠提示・不確実性明記)が必要です。\nJSON堅牢性(Structured output robustness) スキーマ遵守・構文破壊率の低さ。ツール呼び出し(function calling)や業務システム連携の成否を直接左 右します。OllamaのOpenAI互換APIはResponses API互換(非stateful)を含み、LM StudioもOpenAI互換エ ンドポイントを提供します。\n(※llama-cpp-python等ではresponse_formatでJSON限定に寄せる設計が存在しますが、ランタイム依存 です。 )\n長文耐性(Long-context stability) 長い入力に対する要約崩れ、重要情報の欠落、自己矛盾の増加。根本制約はKVキャッシュがメモリを線形消 費する点で、vLLM/TensorRT-LLMはpaged/quantized KVやKV reuse等の最適化を前面に出しています。\n推論計画(Planning) タスク分解、複数ステップの自己検証、外部ツール呼び出し順序の妥当性。Agent用途で重要。\n21\n22\n23\n24\n25\n26\n3",
+      "heading_level": 1,
+      "numbers": [
+        "2",
+        "21\n",
+        "22\n",
+        "23\n",
+        "24\n",
+        "25\n",
+        "26\n",
+        "3"
+      ],
+      "hash": "02e96acb5a56ada4",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 13
+      }
+    },
+    {
+      "chunk_id": "document_p004_c00007",
+      "block_type": "text",
+      "page_no": 4,
+      "order": 7,
+      "bbox": [
+        78.0,
+        72.23,
+        517.33,
+        514.98
+      ],
+      "text": "ツール呼び出し適性(Tool-use suitability) 関数呼び出しの意思決定、必要引数の抽出、アンビギュイティの解消。Ollamaのローカル実行ガイドでは Chat Completions経由のtool calling例が提示されています。\n日本語品質 文法・敬語・語彙、業務文書スタイル、固有名詞の扱い。モデルの多言語設計差が出ます(例:多言語 Embeddingや多言語LLMなど)。\n音声品質(TTS) 自然さ(抑揚・間・破綻)、日本語アクセント、ノイズ、声質再現(クローン)など。用途により「軽量 TTS」か「音声クローン寄り」かを分けます。\n画像理解精度(VLM)\nOCR的読み取り、図表理解、空間関係、UIスクショ解釈。入力解像度・視覚トークン制御で変動し、MLX- VLMはQwen2-VLなどの例をREADMEで示しています。\n速度(tok/s, RTF) - tok/s:LLMの生成スループット。対話UXを決める(目安として“体感”は10 tok/s前後で差が出るが、これは 推測でありベンチで確定すべき)。 - RTF(Real-Time Factor):音声処理の実時間比(処理時間 ÷ 音声長)。ASR/TTSでRTF<1なら実時間より 速い。\nメモリ/VRAM要求 重み+KVキャッシュ+ランタイムオーバヘッド。量子化で重みは縮むが、KVが支配する局面が残るため、長 文は別設計。\n量子化耐性 4bit等に落としたときの品質劣化の小ささ。モデルと量子方式の相性が大きい。\nライセンス/コンプライアンス 「コードのOSSライセンス」と「モデル重みの利用条件」が別である点が重要(例:画像生成やTTSで重みが\n非商用制限等)。後述でモデルごとにリスク記載。",
+      "normalized_text": "ツール呼び出し適性(Tool-use suitability) 関数呼び出しの意思決定、必要引数の抽出、アンビギュイティの解消。Ollamaのローカル実行ガイドでは Chat Completions経由のtool calling例が提示されています。\n日本語品質 文法・敬語・語彙、業務文書スタイル、固有名詞の扱い。モデルの多言語設計差が出ます(例:多言語 Embeddingや多言語LLMなど)。\n音声品質(TTS) 自然さ(抑揚・間・破綻)、日本語アクセント、ノイズ、声質再現(クローン)など。用途により「軽量 TTS」か「音声クローン寄り」かを分けます。\n画像理解精度(VLM)\nOCR的読み取り、図表理解、空間関係、UIスクショ解釈。入力解像度・視覚トークン制御で変動し、MLX- VLMはQwen2-VLなどの例をREADMEで示しています。\n速度(tok/s, RTF) - tok/s:LLMの生成スループット。対話UXを決める(目安として“体感”は10 tok/s前後で差が出るが、これは 推測でありベンチで確定すべき)。 - RTF(Real-Time Factor):音声処理の実時間比(処理時間 ÷ 音声長)。ASR/TTSでRTF<1なら実時間より 速い。\nメモリ/VRAM要求 重み+KVキャッシュ+ランタイムオーバヘッド。量子化で重みは縮むが、KVが支配する局面が残るため、長 文は別設計。\n量子化耐性 4bit等に落としたときの品質劣化の小ささ。モデルと量子方式の相性が大きい。\nライセンス/コンプライアンス 「コードのOSSライセンス」と「モデル重みの利用条件」が別である点が重要(例:画像生成やTTSで重みが\n非商用制限等)。後述でモデルごとにリスク記載。",
+      "heading_level": 0,
+      "numbers": [
+        "2",
+        "10 ",
+        "1",
+        "4"
+      ],
+      "hash": "bdba7d5a4dbfcd82",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 8
+      }
+    },
+    {
+      "chunk_id": "document_p004_c00008",
+      "block_type": "text",
+      "page_no": 4,
+      "order": 8,
+      "bbox": [
+        78.0,
+        101.01,
+        511.53,
+        812.02
+      ],
+      "text": "カテゴリ別モデルカタログ\n(3)各カテゴリで3〜10の代表モデルを「サイズ/推奨量子化/得意不得意/ランタイム相性/リスク/採 用判断基準」で整理します。互換性・形式は一次ソースで確認できた範囲を“確認済”、確認できないもの は“未確認”と明記します。\n27\n28\n4",
+      "normalized_text": "カテゴリ別モデルカタログ\n(3)各カテゴリで3〜10の代表モデルを「サイズ/推奨量子化/得意不得意/ランタイム相性/リスク/採 用判断基準」で整理します。互換性・形式は一次ソースで確認できた範囲を“確認済”、確認できないもの は“未確認”と明記します。\n27\n28\n4",
+      "heading_level": 1,
+      "numbers": [
+        "3",
+        "3",
+        "10",
+        "27\n",
+        "28\n",
+        "4"
+      ],
+      "hash": "eba37387388f75a3",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 4
+      }
+    },
+    {
+      "chunk_id": "document_p005_c00009",
+      "block_type": "text",
+      "page_no": 5,
+      "order": 9,
+      "bbox": [
+        78.0,
+        72.27,
+        508.97,
+        812.02
+      ],
+      "text": "テキストLLM(汎用)\n代表モデル 規模 推奨量子化・\n実行形式\n得意/不得意(要\n点)\nランタイム相性 (macOS/\nWindows)\n主なリスク・\n採用判断\nLlama 3.1 Instruct (8B/70B/ 405B系)\n8B/70B/\n405B\nローカル実用 は8B/70Bを 4bit(GGUF\n等)中心(“方 式は環境依 存”)\n多言語対話用途 最適化を明記。 大規模は品質が 出るがローカル はハード制約。\nmac: GGUF/ MLX変換、Win:\nGGUF/各GPUラ ンタイム(形式 依存)\nライセンスが コミュニティ ライセンス系 で用途制約の 精査が必要。\nQwen2.5 Instruct (0.5〜 72B)\n0.5〜72B\n小〜中は4bit (GGUF/他) でローカル向 き。72Bは上 位ハード前 提。\n幅広いサイズ展 開を明記。ライ センスはサイズ により差がある 旨を公式ブログ で明記。\nmac: GGUF/ MLX、Win: GGUF/ExLlama/ vLLM等(形式 依存)\n「3B/72Bは Apache 2.0例 外」といった 条件差がある ためリポジト リ個別確認必 須。\nGemma 2 (2B/9B/ 27B系) 2B/9B/ 27B\n2B/9Bはロー カル向き。 27BはVRAM/ メモリ要求 増。\nモデルカード更 新日が明示され ており、責任あ る利用を前提に 整理されてい る。\nmac: MLX/ GGUF変換、 Win: GGUF/各 GPU\n“事実質問用途 での誤生成”は 一般に起こり 得る(モデル 一般リス ク)。\nMixtral 8x7B Instruct (MoE)\nMoE (8×7B)\nGPU向けで真 価が出やすい (量子化/実装 依存)。\n「Llama2 70Bを 多くのベンチで 上回る」等をモ デル説明で明 記。\nWin GPU: 適合 ランタイム (vLLM等)前 提、macは難易 度高め\nMoEは実装・ VRAM・スルー プットのブレ が大きい。\nPhi-3 Mini (3.8B) 3.8B\n4bitでローカ ル適性が高 い。長文版 (128K)の運 用はKVが支 配。\n128K文脈をうた うが、長文はメ モリ設計が前 提。\nmac/Winとも比 較的回しやすい (形式依存)\n“小さい=万 能”ではなく、 専門領域は RAG前提で補 う判断。\nPhi-4 (14B) 14B\n4bitでローカ ル上位ライン (32GB級以上 推奨)\nデータ品質重 視・合成データ 活用を技術報告 で明示。\nWin: GPU/CPU 最適化次第、 mac: MLX/変換 次第\n14Bは“重いが 現実的”の境 界。KV/長文設 計が重要。\ngpt-oss (20B/ 120B) 20B/120B\n“MXFP4量子 化で出荷”を明 記(他量子化 なし)。\nツール呼び出 し・ローカルAPI 利用までガイド がある。\nLM Studio/ Ollamaで手順 が提示される。\n20Bは少なくと も16GB VRAM/ 統合メモリ要 求を明記。 120Bは60GB 以上推奨を明 記。\n29\n30 31\n32\n33\n33\n34\n35\n36 37\n38\n38\n39\n40\n41\n27 27 41\n41\n5",
+      "normalized_text": "テキストLLM(汎用)\n代表モデル 規模 推奨量子化・\n実行形式\n得意/不得意(要\n点)\nランタイム相性 (macOS/\nWindows)\n主なリスク・\n採用判断\nLlama 3.1 Instruct (8B/70B/ 405B系)\n8B/70B/\n405B\nローカル実用 は8B/70Bを 4bit(GGUF\n等)中心(“方 式は環境依 存”)\n多言語対話用途 最適化を明記。 大規模は品質が 出るがローカル はハード制約。\nmac: GGUF/ MLX変換、Win:\nGGUF/各GPUラ ンタイム(形式 依存)\nライセンスが コミュニティ ライセンス系 で用途制約の 精査が必要。\nQwen2.5 Instruct (0.5〜 72B)\n0.5〜72B\n小〜中は4bit (GGUF/他) でローカル向 き。72Bは上 位ハード前 提。\n幅広いサイズ展 開を明記。ライ センスはサイズ により差がある 旨を公式ブログ で明記。\nmac: GGUF/ MLX、Win: GGUF/ExLlama/ vLLM等(形式 依存)\n「3B/72Bは Apache 2.0例 外」といった 条件差がある ためリポジト リ個別確認必 須。\nGemma 2 (2B/9B/ 27B系) 2B/9B/ 27B\n2B/9Bはロー カル向き。 27BはVRAM/ メモリ要求 増。\nモデルカード更 新日が明示され ており、責任あ る利用を前提に 整理されてい る。\nmac: MLX/ GGUF変換、 Win: GGUF/各 GPU\n“事実質問用途 での誤生成”は 一般に起こり 得る(モデル 一般リス ク)。\nMixtral 8x7B Instruct (MoE)\nMoE (8×7B)\nGPU向けで真 価が出やすい (量子化/実装 依存)。\n「Llama2 70Bを 多くのベンチで 上回る」等をモ デル説明で明 記。\nWin GPU: 適合 ランタイム (vLLM等)前 提、macは難易 度高め\nMoEは実装・ VRAM・スルー プットのブレ が大きい。\nPhi-3 Mini (3.8B) 3.8B\n4bitでローカ ル適性が高 い。長文版 (128K)の運 用はKVが支 配。\n128K文脈をうた うが、長文はメ モリ設計が前 提。\nmac/Winとも比 較的回しやすい (形式依存)\n“小さい=万 能”ではなく、 専門領域は RAG前提で補 う判断。\nPhi-4 (14B) 14B\n4bitでローカ ル上位ライン (32GB級以上 推奨)\nデータ品質重 視・合成データ 活用を技術報告 で明示。\nWin: GPU/CPU 最適化次第、 mac: MLX/変換 次第\n14Bは“重いが 現実的”の境 界。KV/長文設 計が重要。\ngpt-oss (20B/ 120B) 20B/120B\n“MXFP4量子 化で出荷”を明 記(他量子化 なし)。\nツール呼び出 し・ローカルAPI 利用までガイド がある。\nLM Studio/ Ollamaで手順 が提示される。\n20Bは少なくと も16GB VRAM/ 統合メモリ要 求を明記。 120Bは60GB 以上推奨を明 記。\n29\n30 31\n32\n33\n33\n34\n35\n36 37\n38\n38\n39\n40\n41\n27 27 41\n41\n5",
+      "heading_level": 3,
+      "numbers": [
+        "3.1 ",
+        "8",
+        "70",
+        "405",
+        "8",
+        "70",
+        "405",
+        "8",
+        "70",
+        "4",
+        "2.5 ",
+        "0.5",
+        "72",
+        "0.5",
+        "72",
+        "4",
+        "72",
+        "3",
+        "72",
+        "2.0",
+        "2 ",
+        "2",
+        "9",
+        "27",
+        "2",
+        "9",
+        "27",
+        "2",
+        "9",
+        "27",
+        "8",
+        "7",
+        "8",
+        "7",
+        "2 ",
+        "70",
+        "3 ",
+        "3.8",
+        "3.8",
+        "4",
+        "128",
+        "128",
+        "4 ",
+        "14",
+        "14",
+        "4",
+        "32",
+        "14",
+        "20",
+        "120",
+        "20",
+        "120",
+        "4",
+        "20",
+        "16",
+        "120",
+        "60",
+        "29\n",
+        "30 ",
+        "31\n",
+        "32\n",
+        "33\n",
+        "33\n",
+        "34\n",
+        "35\n",
+        "36 ",
+        "37\n",
+        "38\n",
+        "38\n",
+        "39\n",
+        "40\n",
+        "41\n",
+        "27 ",
+        "27 ",
+        "41\n",
+        "41\n",
+        "5"
+      ],
+      "hash": "c709eca3bab9bc06",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 53
+      }
+    },
+    {
+      "chunk_id": "document_p006_c00010",
+      "block_type": "text",
+      "page_no": 6,
+      "order": 10,
+      "bbox": [
+        78.0,
+        72.23,
+        517.28,
+        179.77
+      ],
+      "text": "採用判断基準(テキストLLM) - “ローカルで回す”最重要制約はメモリです。モデル選定は「必要品質→許容レイテンシ→許容メモリ→形式 (GGUF/GPTQ/AWQ/EXL2等)」の順に落とし込み、最後にランタイムを決めるのが破綻しにくい(逆に“ラ ンタイム先行”は形式制約で詰まりやすい)。これは設計上の推奨です。 - 7B〜14Bがローカル実務のボリュームゾーンになりやすく、3B級は“ハード制約モード”で使い分けます(後 述Tier表で具体化)。 - ライセンスはモデルごとに条件が異なり、同じファミリーでも例外があるため、モデルカードや公式ブログ の個別確認を必須化します(例:Qwen2.5の例外記載)。",
+      "normalized_text": "採用判断基準(テキストLLM) - “ローカルで回す”最重要制約はメモリです。モデル選定は「必要品質→許容レイテンシ→許容メモリ→形式 (GGUF/GPTQ/AWQ/EXL2等)」の順に落とし込み、最後にランタイムを決めるのが破綻しにくい(逆に“ラ ンタイム先行”は形式制約で詰まりやすい)。これは設計上の推奨です。 - 7B〜14Bがローカル実務のボリュームゾーンになりやすく、3B級は“ハード制約モード”で使い分けます(後 述Tier表で具体化)。 - ライセンスはモデルごとに条件が異なり、同じファミリーでも例外があるため、モデルカードや公式ブログ の個別確認を必須化します(例:Qwen2.5の例外記載)。",
+      "heading_level": 0,
+      "numbers": [
+        "2",
+        "7",
+        "14",
+        "3",
+        "2.5"
+      ],
+      "hash": "0c5ffd65f99d8bd9",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 1
+      }
+    },
+    {
+      "chunk_id": "document_p006_c00011",
+      "block_type": "text",
+      "page_no": 6,
+      "order": 11,
+      "bbox": [
+        78.0,
+        168.51,
+        517.28,
+        812.02
+      ],
+      "text": "VLM / LMM(画像理解・マルチモーダル)\n代表モデル 規模 推奨量子化・実 行形式 得意/不得意 (要点) ランタイム相性 リスク・採 用判断\nQwen2-VL (2B/7B/ 72B)\n2B/7B/ 72B\n2B/7Bがローカ ル現実ライン。 72Bは上位ハー ド。\n画像+テキスト の汎用。\nmac: MLX-VLMが Qwen2-VLの利用 例を明示。\n画像トーク ンが増える とメモリ/速 度が急落。\nPhi-3-Vision 128K Instruct\n軽量MM (Phi-3 系)\nローカル適性 (形式依存)。\n“軽量マルチ モーダル+長 文”をうたう。\nWin: transformers 系/推論エンジン、 mac: MLX変換次第\n長文はKVが 支配しやす く、現実に は文脈長の 設計が必 要。\nInternVL2 (例:4B) 4B等 モデル群が複数 サイズ。\n画像理解の系列 として設計さ れ、構成要素も モデルカードに 説明。\nGPU/形式次第\nエコシステ ム差(変 換・プロ セッサ依 存)が運用 難所。\nLLaVA (例:7B/ 13B系)\n7B/13B 等\n4bitでの運用が 示唆され、13B で12GB VRAM 級でも動作可能 と記載。\n画像チャット用 途。 Win GPUで構築し やすい。\nベースLLM や実装差が 大きく、モ デルカード/ 実装の整合 が必要。\n採用判断基準(VLM/LMM) - “画像理解”はテキストLLMより前処理・プロセッサ依存が強い(画像トークン化、解像度、マルチ画像、 OCRなど)。従って「ランタイムがそのモデルを明示サポートしているか(README等)」を一次確認する のが安全です(例:MLX-VLMがQwen2-VLの例を具体コマンドで提示)。\n- 72B級VLMはローカルでは上位機(96GB+統合メモリ、または複数GPU等)が前提になりやすく、現実には 2B/7B級で運用設計(不足はRAGやOCR併用で補う)に寄せます。\n33\n42 28\n43\n43\n44\n45\n46\n47\n28\n6",
+      "normalized_text": "VLM / LMM(画像理解・マルチモーダル)\n代表モデル 規模 推奨量子化・実 行形式 得意/不得意 (要点) ランタイム相性 リスク・採 用判断\nQwen2-VL (2B/7B/ 72B)\n2B/7B/ 72B\n2B/7Bがローカ ル現実ライン。 72Bは上位ハー ド。\n画像+テキスト の汎用。\nmac: MLX-VLMが Qwen2-VLの利用 例を明示。\n画像トーク ンが増える とメモリ/速 度が急落。\nPhi-3-Vision 128K Instruct\n軽量MM (Phi-3 系)\nローカル適性 (形式依存)。\n“軽量マルチ モーダル+長 文”をうたう。\nWin: transformers 系/推論エンジン、 mac: MLX変換次第\n長文はKVが 支配しやす く、現実に は文脈長の 設計が必 要。\nInternVL2 (例:4B) 4B等 モデル群が複数 サイズ。\n画像理解の系列 として設計さ れ、構成要素も モデルカードに 説明。\nGPU/形式次第\nエコシステ ム差(変 換・プロ セッサ依 存)が運用 難所。\nLLaVA (例:7B/ 13B系)\n7B/13B 等\n4bitでの運用が 示唆され、13B で12GB VRAM 級でも動作可能 と記載。\n画像チャット用 途。 Win GPUで構築し やすい。\nベースLLM や実装差が 大きく、モ デルカード/ 実装の整合 が必要。\n採用判断基準(VLM/LMM) - “画像理解”はテキストLLMより前処理・プロセッサ依存が強い(画像トークン化、解像度、マルチ画像、 OCRなど)。従って「ランタイムがそのモデルを明示サポートしているか(README等)」を一次確認する のが安全です(例:MLX-VLMがQwen2-VLの例を具体コマンドで提示)。\n- 72B級VLMはローカルでは上位機(96GB+統合メモリ、または複数GPU等)が前提になりやすく、現実には 2B/7B級で運用設計(不足はRAGやOCR併用で補う)に寄せます。\n33\n42 28\n43\n43\n44\n45\n46\n47\n28\n6",
+      "heading_level": 3,
+      "numbers": [
+        "2",
+        "2",
+        "7",
+        "72",
+        "2",
+        "7",
+        "72",
+        "2",
+        "7",
+        "72",
+        "2",
+        "3",
+        "128",
+        "3 ",
+        "2 ",
+        "4",
+        "4",
+        "7",
+        "13",
+        "7",
+        "13",
+        "4",
+        "13",
+        "12",
+        "2",
+        "72",
+        "96",
+        "2",
+        "7",
+        "33\n",
+        "42 ",
+        "28\n",
+        "43\n",
+        "43\n",
+        "44\n",
+        "45\n",
+        "46\n",
+        "47\n",
+        "28\n",
+        "6"
+      ],
+      "hash": "3acb1bc6811cbe94",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 32
+      }
+    },
+    {
+      "chunk_id": "document_p007_c00012",
+      "block_type": "text",
+      "page_no": 7,
+      "order": 12,
+      "bbox": [
+        78.0,
+        72.27,
+        517.31,
+        452.76
+      ],
+      "text": "ASR(音声認識)\n代表モデル/方式 規模 推奨量子 化・実行\n形式\n得意/不得\n意(要点) ランタイム相性 リスク・採用判断\nWhisper(研究/公 開) 複数サイ\nズ\nローカル 実装多数\n(下 記)。\n68万時間規 模の多言語 データで頑 健性を示 し、翻訳も 可能。\n直接実装/各派\n生に分岐\n高リスク領域で は“誤転記(幻 覚)”が実害になる 可能性が報道されて いるため、検証プロ セスが必須。\nfaster-whisper (CTranslate2) Whisper 互換\nCPU/GPU で8bit量 子化を明 記。\n同等精度で 最大4倍 速・低メモ リを主張。\nWin/mac/Linux で実装しやすい (Python)\n実時間(RTF)要件 がある業務はまずこ れでベンチし、足り なければGPU化。\nwhisper.cpp Whisper 互換\nggml系で ローカル 最適化。\nC/C++で軽 量運用、各 種最適化例 が豊富。\nmac/Winとも に導入可能\nバッチ向きに設計 し、ストリーミング 要件は別設計が必要 になるケースがある (一般論)。\n採用判断基準(ASR) - ローカルASRは「RTF」「メモリ」「誤転記」を同時に満たす必要があります。faster-whisperは速度・メモ リ面の利点を明示しているため、まず基準実装にする合理性があります。\n- 会議用途ではVAD(無音除去)・話者分離(後述)が品質の下限を決めます。",
+      "normalized_text": "ASR(音声認識)\n代表モデル/方式 規模 推奨量子 化・実行\n形式\n得意/不得\n意(要点) ランタイム相性 リスク・採用判断\nWhisper(研究/公 開) 複数サイ\nズ\nローカル 実装多数\n(下 記)。\n68万時間規 模の多言語 データで頑 健性を示 し、翻訳も 可能。\n直接実装/各派\n生に分岐\n高リスク領域で は“誤転記(幻 覚)”が実害になる 可能性が報道されて いるため、検証プロ セスが必須。\nfaster-whisper (CTranslate2) Whisper 互換\nCPU/GPU で8bit量 子化を明 記。\n同等精度で 最大4倍 速・低メモ リを主張。\nWin/mac/Linux で実装しやすい (Python)\n実時間(RTF)要件 がある業務はまずこ れでベンチし、足り なければGPU化。\nwhisper.cpp Whisper 互換\nggml系で ローカル 最適化。\nC/C++で軽 量運用、各 種最適化例 が豊富。\nmac/Winとも に導入可能\nバッチ向きに設計 し、ストリーミング 要件は別設計が必要 になるケースがある (一般論)。\n採用判断基準(ASR) - ローカルASRは「RTF」「メモリ」「誤転記」を同時に満たす必要があります。faster-whisperは速度・メモ リ面の利点を明示しているため、まず基準実装にする合理性があります。\n- 会議用途ではVAD(無音除去)・話者分離(後述)が品質の下限を決めます。",
+      "heading_level": 3,
+      "numbers": [
+        "68",
+        "2",
+        "8",
+        "4"
+      ],
+      "hash": "d14fe7a3759d5bf1",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 18
+      }
+    },
+    {
+      "chunk_id": "document_p007_c00013",
+      "block_type": "text",
+      "page_no": 7,
+      "order": 13,
+      "bbox": [
+        78.0,
+        194.09,
+        507.43,
+        812.02
+      ],
+      "text": "TTS(音声合成)\n代表モデル/方 式 規模\n推奨量 子化・ 実行形 式\n得意/不得意(要点) ランタ イム相 性 リスク・採用判断\nPiper(高速 ローカルTTS) 軽量\nローカ ル常駐 TTS向 き。\n“fast, local neural TTS”を明示。リポジト リはアーカイブされ移転 先が示されている。\n省リ ソース 環境で 有利\n移転・継続性リスク (運用はフォーク/移転 先を確認)。\nKokoro (82M) 82M\n軽量TTS として 使い分 け。\n82Mで高速・コスト効率 を主張し、Apacheライ センス重みをうたう。\nCPUで も成立 しやす い\n日本語品質は声・辞 書・前処理に依存し、 事前確認が必要。\nCoqui XTTS-v2 (音声クローン 寄り)\n大き め GPU推 奨。\n数秒の参照音声で多言語 クローンをうたう。\nGPU環 境で実 務的\n音声クローンは法務・ 倫理・権利リスクが大 きい(業務要件化する なら同意・監査が必 要)。\n48\n48 49\n50\n50\n51\n51\n50\n52\n52\n53\n53\n54\n54\n7",
+      "normalized_text": "TTS(音声合成)\n代表モデル/方 式 規模\n推奨量 子化・ 実行形 式\n得意/不得意(要点) ランタ イム相 性 リスク・採用判断\nPiper(高速 ローカルTTS) 軽量\nローカ ル常駐 TTS向 き。\n“fast, local neural TTS”を明示。リポジト リはアーカイブされ移転 先が示されている。\n省リ ソース 環境で 有利\n移転・継続性リスク (運用はフォーク/移転 先を確認)。\nKokoro (82M) 82M\n軽量TTS として 使い分 け。\n82Mで高速・コスト効率 を主張し、Apacheライ センス重みをうたう。\nCPUで も成立 しやす い\n日本語品質は声・辞 書・前処理に依存し、 事前確認が必要。\nCoqui XTTS-v2 (音声クローン 寄り)\n大き め GPU推 奨。\n数秒の参照音声で多言語 クローンをうたう。\nGPU環 境で実 務的\n音声クローンは法務・ 倫理・権利リスクが大 きい(業務要件化する なら同意・監査が必 要)。\n48\n48 49\n50\n50\n51\n51\n50\n52\n52\n53\n53\n54\n54\n7",
+      "heading_level": 3,
+      "numbers": [
+        "82",
+        "82",
+        "82",
+        "2 ",
+        "48\n",
+        "48 ",
+        "49\n",
+        "50\n",
+        "50\n",
+        "51\n",
+        "51\n",
+        "50\n",
+        "52\n",
+        "52\n",
+        "53\n",
+        "53\n",
+        "54\n",
+        "54\n",
+        "7"
+      ],
+      "hash": "fafc4955807af506",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 30
+      }
+    },
+    {
+      "chunk_id": "document_p008_c00014",
+      "block_type": "text",
+      "page_no": 8,
+      "order": 14,
+      "bbox": [
+        78.0,
+        76.73,
+        517.28,
+        233.02
+      ],
+      "text": "代表モデル/方 式 規模\n推奨量 子化・ 実行形 式\n得意/不得意(要点) ランタ イム相 性 リスク・採用判断\nStyleTTS2 研究 系\n高品質 TTS志 向。\n“human-level”を目標と する研究系。\nGPUが 望まし い\n実運用は依存関係・再 現性の確認が必須。\n採用判断基準(TTS) - “読み上げ(通知・要約)”と“クローン(本人声)”は別物として分離設計するのが現実的です。前者は Piper/Kokoroのような軽量系、後者はXTTS等で、リスク管理を別レイヤに置きます。",
+      "normalized_text": "代表モデル/方 式 規模\n推奨量 子化・ 実行形 式\n得意/不得意(要点) ランタ イム相 性 リスク・採用判断\nStyleTTS2 研究 系\n高品質 TTS志 向。\n“human-level”を目標と する研究系。\nGPUが 望まし い\n実運用は依存関係・再 現性の確認が必須。\n採用判断基準(TTS) - “読み上げ(通知・要約)”と“クローン(本人声)”は別物として分離設計するのが現実的です。前者は Piper/Kokoroのような軽量系、後者はXTTS等で、リスク管理を別レイヤに置きます。",
+      "heading_level": 0,
+      "numbers": [
+        "2 "
+      ],
+      "hash": "cd96917ae9a4d639",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 9
+      }
+    },
+    {
+      "chunk_id": "document_p008_c00015",
+      "block_type": "text",
+      "page_no": 8,
+      "order": 15,
+      "bbox": [
+        78.0,
+        154.08,
+        517.29,
+        812.02
+      ],
+      "text": "Embedding / Reranker(検索・RAG基盤)\n代表モデル 規模 推奨量子 化・実行 形式\n得意/不得意(要 点) ランタイム相性 リスク・採用判 断\nBGE-M3 (モデ ルカード 参照)\nまずは FP16/ INT8で安 定運用、 必要なら 量子化。\nMulti- Functionality/ Multi-Linguality/ Multi-Granularityを 特徴として明示。\nCPU/GPU/ ONNX等で運用 可能(環境依 存)\nRAGは Embedding品 質が上限を決め るため、まずこ こを堅くする。\nmultilingual- e5-large(- instruct) large 多言語検 索用途で 定番。\n技術報告が示さ れ、使用例が明 確。\ntransformers/ ONNX\n日本語含む多言 語を要するなら 候補。\nbge-reranker (large/v2等) 278M〜 560M等\nRAG の“再ラ ンキン グ”で精 度を上げ る。\nrerankerは「クエリ +文書を入力しス コアを直接出す」 とモデルカードで 説明。\nCPU/GPU(遅延 要件次第)\nrerankerはレイ テンシを増やす ため、p95要件 で採否。\n採用判断基準(Embedding/Reranker) - RAGの失敗の多くは「検索が外れる」「上位が弱い」「文脈が長すぎる」です。Embeddingで recall を確保 し、rerankerで precision を上げる二段構えが実務的です(この設計自体は一般的推奨)。 - 同時に、ローカル運用では“Embedding前計算(夜間バッチ)”が効くため、実時間はLLM応答に集中させら れます(後述)。\n55\n55\n56\n57\n58\n59 60\n61\n62\n8",
+      "normalized_text": "Embedding / Reranker(検索・RAG基盤)\n代表モデル 規模 推奨量子 化・実行 形式\n得意/不得意(要 点) ランタイム相性 リスク・採用判 断\nBGE-M3 (モデ ルカード 参照)\nまずは FP16/ INT8で安 定運用、 必要なら 量子化。\nMulti- Functionality/ Multi-Linguality/ Multi-Granularityを 特徴として明示。\nCPU/GPU/ ONNX等で運用 可能(環境依 存)\nRAGは Embedding品 質が上限を決め るため、まずこ こを堅くする。\nmultilingual- e5-large(- instruct) large 多言語検 索用途で 定番。\n技術報告が示さ れ、使用例が明 確。\ntransformers/ ONNX\n日本語含む多言 語を要するなら 候補。\nbge-reranker (large/v2等) 278M〜 560M等\nRAG の“再ラ ンキン グ”で精 度を上げ る。\nrerankerは「クエリ +文書を入力しス コアを直接出す」 とモデルカードで 説明。\nCPU/GPU(遅延 要件次第)\nrerankerはレイ テンシを増やす ため、p95要件 で採否。\n採用判断基準(Embedding/Reranker) - RAGの失敗の多くは「検索が外れる」「上位が弱い」「文脈が長すぎる」です。Embeddingで recall を確保 し、rerankerで precision を上げる二段構えが実務的です(この設計自体は一般的推奨)。 - 同時に、ローカル運用では“Embedding前計算(夜間バッチ)”が効くため、実時間はLLM応答に集中させら れます(後述)。\n55\n55\n56\n57\n58\n59 60\n61\n62\n8",
+      "heading_level": 3,
+      "numbers": [
+        "3 ",
+        "16",
+        "8",
+        "5",
+        "2",
+        "278",
+        "560",
+        "95",
+        "55\n",
+        "55\n",
+        "56\n",
+        "57\n",
+        "58\n",
+        "59 ",
+        "60\n",
+        "61\n",
+        "62\n",
+        "8"
+      ],
+      "hash": "a2f30e7fcb342685",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 25
+      }
+    },
+    {
+      "chunk_id": "document_p009_c00016",
+      "block_type": "text",
+      "page_no": 9,
+      "order": 16,
+      "bbox": [
+        78.0,
+        72.27,
+        517.28,
+        460.3
+      ],
+      "text": "OCR / Document AI\n代表モデル/方 式 方式 推奨実 行形態 得意/不得意(要点) ランタイム相 性 リスク・採用判 断\nTesseract OCR 古典 OCR + LSTM\nCPU常 駐/バッ チに強 い\nOCRエンジンで、 Tesseract 4がLSTM ベースOCRを追加した ことを明記。\nクロスプラッ トフォーム\n“画像品質が悪 いスキャン”は 限界が出るた め、前処理と併 用判断。\nPaddleOCR OCR/文 書解析 CPU/ GPU\nPDF/画像を構造化デー タ(JSON/Markdown 等)にする方向を強 調。\nPython中心\n依存関係・モデ ル選択が広く、 運用設計が必\n要。\nDonut(OCR- free Doc理解) OCR- free E2E\nGPU推 奨\n“OCR不要のend-to- end Transformerで文 書理解”を明記。\ntransformers 中心\n画像→構造抽出 に強いが、学習 済みタスク外は 崩れやすい。\nLayoutLMv3 DocAI 基盤 GPU推 奨\nDocAI向けの事前学習 として提示。 実装・運用は 要設計\n“現場で使う”に は推論パイプラ イン化が前提。\n採用判断基準(OCR/Document AI) - 「紙スキャン→検索→要約」の現実解は、(A) OCRでテキスト化してRAG、(B) Donutのように直接構造抽 出、の二系統です。Aは堅いがレイアウト情報が落ち、Bはタスク適合で強いが外れると崩れます。\n- 実務でまず必要なのは“再現可能なOCR品質ベンチ”であり、LLMの出来以前にここで詰まるケースが多い (設計上の注意)。",
+      "normalized_text": "OCR / Document AI\n代表モデル/方 式 方式 推奨実 行形態 得意/不得意(要点) ランタイム相 性 リスク・採用判 断\nTesseract OCR 古典 OCR + LSTM\nCPU常 駐/バッ チに強 い\nOCRエンジンで、 Tesseract 4がLSTM ベースOCRを追加した ことを明記。\nクロスプラッ トフォーム\n“画像品質が悪 いスキャン”は 限界が出るた め、前処理と併 用判断。\nPaddleOCR OCR/文 書解析 CPU/ GPU\nPDF/画像を構造化デー タ(JSON/Markdown 等)にする方向を強 調。\nPython中心\n依存関係・モデ ル選択が広く、 運用設計が必\n要。\nDonut(OCR- free Doc理解) OCR- free E2E\nGPU推 奨\n“OCR不要のend-to- end Transformerで文 書理解”を明記。\ntransformers 中心\n画像→構造抽出 に強いが、学習 済みタスク外は 崩れやすい。\nLayoutLMv3 DocAI 基盤 GPU推 奨\nDocAI向けの事前学習 として提示。 実装・運用は 要設計\n“現場で使う”に は推論パイプラ イン化が前提。\n採用判断基準(OCR/Document AI) - 「紙スキャン→検索→要約」の現実解は、(A) OCRでテキスト化してRAG、(B) Donutのように直接構造抽 出、の二系統です。Aは堅いがレイアウト情報が落ち、Bはタスク適合で強いが外れると崩れます。\n- 実務でまず必要なのは“再現可能なOCR品質ベンチ”であり、LLMの出来以前にここで詰まるケースが多い (設計上の注意)。",
+      "heading_level": 3,
+      "numbers": [
+        "4",
+        "2",
+        "3 "
+      ],
+      "hash": "f83b7dbd39f51222",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 19
+      }
+    },
+    {
+      "chunk_id": "document_p009_c00017",
+      "block_type": "text",
+      "page_no": 9,
+      "order": 17,
+      "bbox": [
+        78.0,
+        173.66,
+        505.97,
+        812.02
+      ],
+      "text": "画像生成(Diffusion)\n代表モデル/方 式 規模 推奨量子 化・実行 形式 得意/不得意(要点) ランタイム相 性 リスク・採用 判断\nSDXL base 1.0 diffusion\n基本は FP16中 心、環境 により最 適化\nライセンス (CreativeML Open RAIL++-M)とモデル 概要を明示。\nWin: A1111/ ComfyUI、 mac: 工夫必要\nVRAM要求は運 用・設定依存 で変動が大き い(後述ベン チで確定)。\nComfyUI ノード ベースUI\nワークフ ロー管理 が強い\nWindows/Linux/ macOS対応を明示。 Win中心に実 務化しやすい\nワークフロー が資産になる ため、バー ジョン固定が 重要。\n63\n64\n65\n66\n67 68\n69 69\n70\n71\n71\n72\n72\n9",
+      "normalized_text": "画像生成(Diffusion)\n代表モデル/方 式 規模 推奨量子 化・実行 形式 得意/不得意(要点) ランタイム相 性 リスク・採用 判断\nSDXL base 1.0 diffusion\n基本は FP16中 心、環境 により最 適化\nライセンス (CreativeML Open RAIL++-M)とモデル 概要を明示。\nWin: A1111/ ComfyUI、 mac: 工夫必要\nVRAM要求は運 用・設定依存 で変動が大き い(後述ベン チで確定)。\nComfyUI ノード ベースUI\nワークフ ロー管理 が強い\nWindows/Linux/ macOS対応を明示。 Win中心に実 務化しやすい\nワークフロー が資産になる ため、バー ジョン固定が 重要。\n63\n64\n65\n66\n67 68\n69 69\n70\n71\n71\n72\n72\n9",
+      "heading_level": 3,
+      "numbers": [
+        "1.0 ",
+        "16",
+        "1111",
+        "63\n",
+        "64\n",
+        "65\n",
+        "66\n",
+        "67 ",
+        "68\n",
+        "69 ",
+        "69\n",
+        "70\n",
+        "71\n",
+        "71\n",
+        "72\n",
+        "72\n",
+        "9"
+      ],
+      "hash": "0ae2bd4faa4cad78",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 22
+      }
+    },
+    {
+      "chunk_id": "document_p010_c00018",
+      "block_type": "text",
+      "page_no": 10,
+      "order": 18,
+      "bbox": [
+        78.0,
+        76.73,
+        517.31,
+        336.48
+      ],
+      "text": "代表モデル/方 式 規模 推奨量子 化・実行 形式 得意/不得意(要点) ランタイム相 性 リスク・採用 判断\nStable Diffusion WebUI (A1111) WebUI 拡張が豊 富\nWebUIとしての位置 付け。 Win中心\n拡張乱立によ る再現性低下 が起こりやす い。\nFLUX.1 (open- weight推論実\n装)\ndiffusion 形式・量 子化は実 装依存\n“open-weight modelsの推論コー ド”をGitHubで明\n示。\nComfyUI等と 併用されがち\nライセンス条 件(例:devモ デルの条件) などを個別精\n査が必要。\n採用判断基準(画像生成) - 画像生成はLLMよりVRAM消費が尖りやすく、かつ設定(解像度、バッチ、refiner等)で必要VRAMが激変し ます。そのため「VRAMライン」はコミュニティ知見(例:8GB/12GB/16GB目安)を参照しつつも、必ず自 社ワークフローで再現ベンチを取るべきです。",
+      "normalized_text": "代表モデル/方 式 規模 推奨量子 化・実行 形式 得意/不得意(要点) ランタイム相 性 リスク・採用 判断\nStable Diffusion WebUI (A1111) WebUI 拡張が豊 富\nWebUIとしての位置 付け。 Win中心\n拡張乱立によ る再現性低下 が起こりやす い。\nFLUX.1 (open- weight推論実\n装)\ndiffusion 形式・量 子化は実 装依存\n“open-weight modelsの推論コー ド”をGitHubで明\n示。\nComfyUI等と 併用されがち\nライセンス条 件(例:devモ デルの条件) などを個別精\n査が必要。\n採用判断基準(画像生成) - 画像生成はLLMよりVRAM消費が尖りやすく、かつ設定(解像度、バッチ、refiner等)で必要VRAMが激変し ます。そのため「VRAMライン」はコミュニティ知見(例:8GB/12GB/16GB目安)を参照しつつも、必ず自 社ワークフローで再現ベンチを取るべきです。",
+      "heading_level": 0,
+      "numbers": [
+        "1111",
+        "1 ",
+        "8",
+        "12",
+        "16"
+      ],
+      "hash": "16f7e80b08a8ce52",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 10
+      }
+    },
+    {
+      "chunk_id": "document_p010_c00019",
+      "block_type": "text",
+      "page_no": 10,
+      "order": 19,
+      "bbox": [
+        78.0,
+        352.34,
+        517.28,
+        651.12
+      ],
+      "text": "Agent / Tool-use(エージェント)\n代表方式/要素 位置付け 得意/不得意 (要点) ローカル実装の要点 一次ソース根拠\nOpenAI互換 API(ローカ ル)\n“道具にな るLLM”の 前提\n既存ツール チェーンを流 用しやすい\nLM Studio/Ollamaが互換エ ンドポイントを提供。\nLM Studio server / Ollama OpenAI互換 の公式説明\ntool calling (関数呼び出 し) Agent中核 JSON堅牢性 が失敗点\ngpt-oss×Ollamaのガイドで tool calling例が提示。 ガイドに実装例あり\n“ローカルLLM に外部ツール を与える” 実務自動化 ファイル操 作・RAG・検 索などに分解\nOpenHandsがLM Studioで ローカルLLMをサーブして接 続するガイドを提示。\nOpenHands公式ド キュメント\n採用判断基準(Agent/Tool-use) - ローカルAgentは「LLMの賢さ」より「JSON破壊率」「p95遅延」「ツール失敗時の復旧設計」で決まりま す。従って、モデル選定と同時に“制約付き生成(JSONモード等)を使えるか”と“ツール再試行の状態管 理”を要件化します(設計推奨)。 - 既存業務システム連携では、ローカルLLMを“OpenAI互換の社内API”として扱えるかが開発効率を決めま す。LM Studio/Ollamaが互換APIを提供する点は、実務上大きいです。",
+      "normalized_text": "Agent / Tool-use(エージェント)\n代表方式/要素 位置付け 得意/不得意 (要点) ローカル実装の要点 一次ソース根拠\nOpenAI互換 API(ローカ ル)\n“道具にな るLLM”の 前提\n既存ツール チェーンを流 用しやすい\nLM Studio/Ollamaが互換エ ンドポイントを提供。\nLM Studio server / Ollama OpenAI互換 の公式説明\ntool calling (関数呼び出 し) Agent中核 JSON堅牢性 が失敗点\ngpt-oss×Ollamaのガイドで tool calling例が提示。 ガイドに実装例あり\n“ローカルLLM に外部ツール を与える” 実務自動化 ファイル操 作・RAG・検 索などに分解\nOpenHandsがLM Studioで ローカルLLMをサーブして接 続するガイドを提示。\nOpenHands公式ド キュメント\n採用判断基準(Agent/Tool-use) - ローカルAgentは「LLMの賢さ」より「JSON破壊率」「p95遅延」「ツール失敗時の復旧設計」で決まりま す。従って、モデル選定と同時に“制約付き生成(JSONモード等)を使えるか”と“ツール再試行の状態管 理”を要件化します(設計推奨)。 - 既存業務システム連携では、ローカルLLMを“OpenAI互換の社内API”として扱えるかが開発効率を決めま す。LM Studio/Ollamaが互換APIを提供する点は、実務上大きいです。",
+      "heading_level": 3,
+      "numbers": [
+        "95"
+      ],
+      "hash": "75ff8dc90e6a7aad",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 12
+      }
+    },
+    {
+      "chunk_id": "document_p010_c00020",
+      "block_type": "text",
+      "page_no": 10,
+      "order": 20,
+      "bbox": [
+        78.0,
+        161.01,
+        503.65,
+        812.02
+      ],
+      "text": "話者分離/ノイズ除去/ウェイクワード/VAD 等(音声周辺)\n代表モデル/方式 役割 得意/不得意(要点) 実行要件 一次ソース 根拠\nSilero VAD 発話区間 検出\n30ms+チャンクが単一CPUスレッド で1ms未満等、“高速”を明示。 軽量(モデル 小) GitHub/ torch hub\n73\n73\n74 75\n76\n77\n78\n79\n27 27\n80\n80\n79\n81\n82 82\n10",
+      "normalized_text": "話者分離/ノイズ除去/ウェイクワード/VAD 等(音声周辺)\n代表モデル/方式 役割 得意/不得意(要点) 実行要件 一次ソース 根拠\nSilero VAD 発話区間 検出\n30ms+チャンクが単一CPUスレッド で1ms未満等、“高速”を明示。 軽量(モデル 小) GitHub/ torch hub\n73\n73\n74 75\n76\n77\n78\n79\n27 27\n80\n80\n79\n81\n82 82\n10",
+      "heading_level": 3,
+      "numbers": [
+        "30",
+        "1",
+        "73\n",
+        "73\n",
+        "74 ",
+        "75\n",
+        "76\n",
+        "77\n",
+        "78\n",
+        "79\n",
+        "27 ",
+        "27\n",
+        "80\n",
+        "80\n",
+        "79\n",
+        "81\n",
+        "82 ",
+        "82\n",
+        "10"
+      ],
+      "hash": "22a0a4767331c775",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 13
+      }
+    },
+    {
+      "chunk_id": "document_p011_c00021",
+      "block_type": "text",
+      "page_no": 11,
+      "order": 21,
+      "bbox": [
+        78.0,
+        76.73,
+        517.28,
+        277.58
+      ],
+      "text": "代表モデル/方式 役割 得意/不得意(要点) 実行要件 一次ソース 根拠\npyannote.audio 話者分離 話者分離のOSSツールキットとして 説明。 PyTorch依存 GitHub\nopenWakeWord ウェイク ワード\n事前学習済みモデル同梱を明示。 軽量運用向き GitHub\nRNNoise ノイズ抑 制\nRNNベースのノイズ抑制ライブラリ と明示。 C/C++で組込 みやすい GitHub\n採用判断基準(音声周辺) - “会議議事録”や“音声メモ”はASR単体では品質が頭打ちになります。VAD(無音/雑音除去)→ASR→話者分 離→LLM整形、の鎖が必要で、特にVADはコストが小さく効果が大きいため最初から入れるべきです。Silero VADは速度・軽量性を一次ソースで明示しています。",
+      "normalized_text": "代表モデル/方式 役割 得意/不得意(要点) 実行要件 一次ソース 根拠\npyannote.audio 話者分離 話者分離のOSSツールキットとして 説明。 PyTorch依存 GitHub\nopenWakeWord ウェイク ワード\n事前学習済みモデル同梱を明示。 軽量運用向き GitHub\nRNNoise ノイズ抑 制\nRNNベースのノイズ抑制ライブラリ と明示。 C/C++で組込 みやすい GitHub\n採用判断基準(音声周辺) - “会議議事録”や“音声メモ”はASR単体では品質が頭打ちになります。VAD(無音/雑音除去)→ASR→話者分 離→LLM整形、の鎖が必要で、特にVADはコストが小さく効果が大きいため最初から入れるべきです。Silero VADは速度・軽量性を一次ソースで明示しています。",
+      "heading_level": 0,
+      "numbers": [],
+      "hash": "d2a6edc1e2d201f6",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 7
+      }
+    },
+    {
+      "chunk_id": "document_p011_c00022",
+      "block_type": "text",
+      "page_no": 11,
+      "order": 22,
+      "bbox": [
+        78.0,
+        309.27,
+        517.3,
+        380.64
+      ],
+      "text": "ハード別の実用ライン整理\n(4)最重視項目:Apple Silicon(M1/M2/M3/M4)とWindows(CPU/GPU)前提で、速度・メモリ/ VRAM・常駐可否をTier化します。ここでは「理論重みメモリ(計算)」「KVキャッシュ概算(計算)」「一 次ソースで確認できる最適化要素」を統合し、現場で使える形に落とします。",
+      "normalized_text": "ハード別の実用ライン整理\n(4)最重視項目:Apple Silicon(M1/M2/M3/M4)とWindows(CPU/GPU)前提で、速度・メモリ/ VRAM・常駐可否をTier化します。ここでは「理論重みメモリ(計算)」「KVキャッシュ概算(計算)」「一 次ソースで確認できる最適化要素」を統合し、現場で使える形に落とします。",
+      "heading_level": 1,
+      "numbers": [
+        "4",
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "hash": "9f355e285f889a18",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 1
+      }
+    },
+    {
+      "chunk_id": "document_p011_c00023",
+      "block_type": "text",
+      "page_no": 11,
+      "order": 23,
+      "bbox": [
+        78.0,
+        127.26,
+        502.14,
+        812.02
+      ],
+      "text": "重みメモリの理論値(4bit中心、+10%オーバヘッド込みの概算)\n下表は“重みだけ”の概算です(実際はKVキャッシュ・ランタイムオーバヘッドが追加)。この計算はパラ メータ数×bit幅で算出した概算値です(推測ではなく計算)。\nモデル規模 4bit(4b) EXL2 4.5bpw INT8(8b) FP16(16b)\n0.5B 0.3 GiB 0.3 GiB 0.5 GiB 1.0 GiB\n1.5B 0.8 GiB 0.9 GiB 1.5 GiB 3.1 GiB\n3B 1.5 GiB 1.7 GiB 3.1 GiB 6.1 GiB\n7B 3.6 GiB 4.0 GiB 7.2 GiB 14.3 GiB\n8B 4.1 GiB 4.6 GiB 8.2 GiB 16.4 GiB\n14B 7.2 GiB 8.1 GiB 14.3 GiB 28.7 GiB\n27B 13.8 GiB 15.6 GiB 27.7 GiB 55.3 GiB\n32B 16.4 GiB 18.4 GiB 32.8 GiB 65.6 GiB\n34B 17.4 GiB 19.6 GiB 34.8 GiB 69.7 GiB\n70B 35.9 GiB 40.3 GiB 71.7 GiB 143.4 GiB\n注:EXL2はExLlamaV2が「2〜8bit、混合量子化で平均bitrateを調整可能」と説明しています。\n83 84\n85 85\n86\n86\n82\n87\n11",
+      "normalized_text": "重みメモリの理論値(4bit中心、+10%オーバヘッド込みの概算)\n下表は“重みだけ”の概算です(実際はKVキャッシュ・ランタイムオーバヘッドが追加)。この計算はパラ メータ数×bit幅で算出した概算値です(推測ではなく計算)。\nモデル規模 4bit(4b) EXL2 4.5bpw INT8(8b) FP16(16b)\n0.5B 0.3 GiB 0.3 GiB 0.5 GiB 1.0 GiB\n1.5B 0.8 GiB 0.9 GiB 1.5 GiB 3.1 GiB\n3B 1.5 GiB 1.7 GiB 3.1 GiB 6.1 GiB\n7B 3.6 GiB 4.0 GiB 7.2 GiB 14.3 GiB\n8B 4.1 GiB 4.6 GiB 8.2 GiB 16.4 GiB\n14B 7.2 GiB 8.1 GiB 14.3 GiB 28.7 GiB\n27B 13.8 GiB 15.6 GiB 27.7 GiB 55.3 GiB\n32B 16.4 GiB 18.4 GiB 32.8 GiB 65.6 GiB\n34B 17.4 GiB 19.6 GiB 34.8 GiB 69.7 GiB\n70B 35.9 GiB 40.3 GiB 71.7 GiB 143.4 GiB\n注:EXL2はExLlamaV2が「2〜8bit、混合量子化で平均bitrateを調整可能」と説明しています。\n83 84\n85 85\n86\n86\n82\n87\n11",
+      "heading_level": 3,
+      "numbers": [
+        "4",
+        "10%",
+        "4",
+        "4",
+        "2 ",
+        "4.5",
+        "8",
+        "8",
+        "16",
+        "16",
+        "0.5",
+        "0.3 ",
+        "0.3 ",
+        "0.5 ",
+        "1.0 ",
+        "1.5",
+        "0.8 ",
+        "0.9 ",
+        "1.5 ",
+        "3.1 ",
+        "3",
+        "1.5 ",
+        "1.7 ",
+        "3.1 ",
+        "6.1 ",
+        "7",
+        "3.6 ",
+        "4.0 ",
+        "7.2 ",
+        "14.3 ",
+        "8",
+        "4.1 ",
+        "4.6 ",
+        "8.2 ",
+        "16.4 ",
+        "14",
+        "7.2 ",
+        "8.1 ",
+        "14.3 ",
+        "28.7 ",
+        "27",
+        "13.8 ",
+        "15.6 ",
+        "27.7 ",
+        "55.3 ",
+        "32",
+        "16.4 ",
+        "18.4 ",
+        "32.8 ",
+        "65.6 ",
+        "34",
+        "17.4 ",
+        "19.6 ",
+        "34.8 ",
+        "69.7 ",
+        "70",
+        "35.9 ",
+        "40.3 ",
+        "71.7 ",
+        "143.4 ",
+        "2",
+        "2",
+        "2",
+        "8",
+        "83 ",
+        "84\n",
+        "85 ",
+        "85\n",
+        "86\n",
+        "86\n",
+        "82\n",
+        "87\n",
+        "11"
+      ],
+      "hash": "c4c4fdcd05d1eea1",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 19
+      }
+    },
+    {
+      "chunk_id": "document_p012_c00024",
+      "block_type": "text",
+      "page_no": 12,
+      "order": 24,
+      "bbox": [
+        78.0,
+        72.27,
+        517.31,
+        410.8
+      ],
+      "text": "KVキャッシュの支配性(Llama3 8B相当のパラメータ例での概算)\nLlama3 8B相当のKVパラメータ例として、llama.cppの議論内に n_layer=32, n_head_kv=8, head_dim=128 等が示されています。\nこの条件ではKVキャッシュは“コンテキスト長に比例して”増えます(計算)。\nコンテキスト長(tokens) FP16/BF16 FP8/INT8 INT4\n2,048 0.25 GiB 0.12 GiB 0.06 GiB\n4,096 0.50 GiB 0.25 GiB 0.12 GiB\n8,192 1.00 GiB 0.50 GiB 0.25 GiB\n16,384 2.00 GiB 1.00 GiB 0.50 GiB\n32,768 4.00 GiB 2.00 GiB 1.00 GiB\n131,072 16.00 GiB 8.00 GiB 4.00 GiB\n運用上の含意: - “長文/長時間会議”は、重みよりKVが先にメモリを食い潰します。したがって「文脈長を必要最小にする」 「プロンプトキャッシュを使う」「KV量子化/FP8 KVを使う」「要約で圧縮する」といった設計が必須です。 vLLMはQuantized KV Cache(FP8)を機能として明示し、TensorRT-LLMもKV cache最適化(paged/ quantized/reuse)を公式に強調しています。\n- llama.cppも“プロンプトキャッシュ(cache_prompt)”の存在が明示されており、固定の長いsystem promptを繰り返す用途で効きます。",
+      "normalized_text": "KVキャッシュの支配性(Llama3 8B相当のパラメータ例での概算)\nLlama3 8B相当のKVパラメータ例として、llama.cppの議論内に n_layer=32, n_head_kv=8, head_dim=128 等が示されています。\nこの条件ではKVキャッシュは“コンテキスト長に比例して”増えます(計算)。\nコンテキスト長(tokens) FP16/BF16 FP8/INT8 INT4\n2,048 0.25 GiB 0.12 GiB 0.06 GiB\n4,096 0.50 GiB 0.25 GiB 0.12 GiB\n8,192 1.00 GiB 0.50 GiB 0.25 GiB\n16,384 2.00 GiB 1.00 GiB 0.50 GiB\n32,768 4.00 GiB 2.00 GiB 1.00 GiB\n131,072 16.00 GiB 8.00 GiB 4.00 GiB\n運用上の含意: - “長文/長時間会議”は、重みよりKVが先にメモリを食い潰します。したがって「文脈長を必要最小にする」 「プロンプトキャッシュを使う」「KV量子化/FP8 KVを使う」「要約で圧縮する」といった設計が必須です。 vLLMはQuantized KV Cache(FP8)を機能として明示し、TensorRT-LLMもKV cache最適化(paged/ quantized/reuse)を公式に強調しています。\n- llama.cppも“プロンプトキャッシュ(cache_prompt)”の存在が明示されており、固定の長いsystem promptを繰り返す用途で効きます。",
+      "heading_level": 3,
+      "numbers": [
+        "3 ",
+        "8",
+        "3 ",
+        "8",
+        "32, ",
+        "8, ",
+        "128 ",
+        "16",
+        "16 ",
+        "8",
+        "8 ",
+        "4\n",
+        "2,048 ",
+        "0.25 ",
+        "0.12 ",
+        "0.06 ",
+        "4,096 ",
+        "0.50 ",
+        "0.25 ",
+        "0.12 ",
+        "8,192 ",
+        "1.00 ",
+        "0.50 ",
+        "0.25 ",
+        "16,384 ",
+        "2.00 ",
+        "1.00 ",
+        "0.50 ",
+        "32,768 ",
+        "4.00 ",
+        "2.00 ",
+        "1.00 ",
+        "131,072 ",
+        "16.00 ",
+        "8.00 ",
+        "4.00 ",
+        "8 ",
+        "8"
+      ],
+      "hash": "00ce1b0f3d22e1c9",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 9
+      }
+    },
+    {
+      "chunk_id": "document_p012_c00025",
+      "block_type": "text",
+      "page_no": 12,
+      "order": 25,
+      "bbox": [
+        78.0,
+        113.84,
+        513.65,
+        812.02
+      ],
+      "text": "Tier定義と“現実ライン”(Apple Silicon/Windows)\n以下は「重み(4bit中心)+KV(4k〜8k想定)+オーバヘッド」を踏まえた“現実ライン”です。数値は重み 理論値(計算)に基づきますが、最終は(6)のベンチで確定させてください(ここでは過度に楽観しない)。\nTier 想定ハード 現実的な LLM規模 (目安)\n常駐可 否 (LLM 単体)\n同時実行 (LLM+ASR+TTS) 設計指針\nA-16\nApple Silicon 16GB(M1/ M3/M4等)\n3B〜7/8B (4bit)\n“短文中 心”なら 可\n軽量構成なら可 (ASR/TTSは小さ め)\n文脈長を抑え、RAGは Embedding先計算。 AppleはUMAを公式に 強調。\nA-24/32 Apple Silicon 24〜 32GB\n7B〜14B (4bit)\n可(業 務最小 ライ ン)\n多くのユースケース で成立\n14B級を軸に、VLMは 2B〜小型を併用。M4世 代のメモリ構成例が公 式に提示。\nA-64 Apple Silicon 64GB\n14B〜32B (4bit) 可 余裕あり\n長文会議は要約で圧縮 し、KV最適化を活用。 M1 Max等で64GB構成 が公式に提示。\n88\n89\n90\n91\n92\n93\n12",
+      "normalized_text": "Tier定義と“現実ライン”(Apple Silicon/Windows)\n以下は「重み(4bit中心)+KV(4k〜8k想定)+オーバヘッド」を踏まえた“現実ライン”です。数値は重み 理論値(計算)に基づきますが、最終は(6)のベンチで確定させてください(ここでは過度に楽観しない)。\nTier 想定ハード 現実的な LLM規模 (目安)\n常駐可 否 (LLM 単体)\n同時実行 (LLM+ASR+TTS) 設計指針\nA-16\nApple Silicon 16GB(M1/ M3/M4等)\n3B〜7/8B (4bit)\n“短文中 心”なら 可\n軽量構成なら可 (ASR/TTSは小さ め)\n文脈長を抑え、RAGは Embedding先計算。 AppleはUMAを公式に 強調。\nA-24/32 Apple Silicon 24〜 32GB\n7B〜14B (4bit)\n可(業 務最小 ライ ン)\n多くのユースケース で成立\n14B級を軸に、VLMは 2B〜小型を併用。M4世 代のメモリ構成例が公 式に提示。\nA-64 Apple Silicon 64GB\n14B〜32B (4bit) 可 余裕あり\n長文会議は要約で圧縮 し、KV最適化を活用。 M1 Max等で64GB構成 が公式に提示。\n88\n89\n90\n91\n92\n93\n12",
+      "heading_level": 3,
+      "numbers": [
+        "4",
+        "4",
+        "8",
+        "6",
+        "16\n",
+        "16",
+        "1",
+        "3",
+        "4",
+        "3",
+        "7",
+        "8",
+        "4",
+        "24",
+        "32 ",
+        "24",
+        "32",
+        "7",
+        "14",
+        "4",
+        "14",
+        "2",
+        "4",
+        "64 ",
+        "64",
+        "14",
+        "32",
+        "4",
+        "1 ",
+        "64",
+        "88\n",
+        "89\n",
+        "90\n",
+        "91\n",
+        "92\n",
+        "93\n",
+        "12"
+      ],
+      "hash": "e7539c5385521bf6",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 25
+      }
+    },
+    {
+      "chunk_id": "document_p013_c00026",
+      "block_type": "text",
+      "page_no": 13,
+      "order": 26,
+      "bbox": [
+        78.0,
+        76.73,
+        517.32,
+        812.02
+      ],
+      "text": "Tier 想定ハード 現実的な LLM規模 (目安)\n常駐可 否 (LLM 単体)\n同時実行 (LLM+ASR+TTS) 設計指針\nA-96/128 Apple Silicon 96〜 128GB\n32B〜70B (4bit) 可(重 い) 構成次第で成立\n“高品質ローカル”の現 実ライン。M3/M4で最 大128GB構成が公式に 提示。\nW-CPU1\nWindows CPU-only (8C/16T級 + 32GB)\n3B〜7B (4bit)\n条件付 き(負 荷高)\n同時は厳しい(オン デマンド推奨)\nCPU最適化命令(AVX 等)を活かし、常駐 は“小型+短文”に限 定。Intel最適化要素は\n公式に明示。\nW-CPU2\nWindows CPU-only (16C/32T 級 + 64GB)\n7B〜14B (4bit)\n可(た だし速 度は要 検証)\n同時は設計次第 夜間バッチ (Embedding/OCR) で負荷平準化。\nG-8 Windows + NVIDIA VRAM 8GB\n7B (4bit) 中心\n可(短 文) 同時は軽量なら可\n画像生成SDXL等は設定 依存で厳しいことがあ るため要ベンチ。\nG-12 Windows + NVIDIA VRAM 12GB\n7B〜14B (4bit) 可 同時が現実化 VLM 2B〜7B級やASR GPUが載りやすい。\nG-16 Windows + NVIDIA VRAM 16GB\n14B〜27B (4bit) 可 “高品質寄り”が成立\nKV(長文)を意識して FP8 KV等の採用余地。\nG-24 Windows + NVIDIA VRAM 24GB\n27B〜34B (4bit) 可 余裕あり 画像生成や大きめVLM を実務的に回せる可能 性が高い。\n補足(AMD/Intel GPUの現実ライン) - AMD ROCmはRadeon向けに「ROCm 7.2でRadeon 9000/選択された7000シリーズにWindowsで\nPyTorch対応」等を明示していますが、対象GPUが限定されるため“購入前にサポート表で確定”が必須です。\n- Intel系はoneAPI/SYCLやOpenVINO、IPEX-LLMなどが選択肢になります。llama.cppはSYCLバックエンド等 を掲げ、Intel自身も「llama.cppのSYCLバックエンドでIntel GPUをサポート」と説明しています。\n常駐運用 vs オンデマンド運用(差分の要点) - 常駐:初回ロードは重いが、KVキャッシュ再利用やsystem promptキャッシュで“初動遅延(first token latency)”が改善し得ます。llama.cppではcache_prompt等の概念が示されています。\n- オンデマンド:RAM/VRAMを節約できるが、毎回ロードで遅い。個人PCやメモリ16GB帯ではオンデマンド 設計が現実解になることが多い(設計判断)。 - 夜間バッチ:Embedding生成、OCR、会議音声のASRなどを夜間に回し、日中はLLM応答(対話UX)に資 源を寄せるのが「ローカルAIでの生産性最大化」につながります(設計推奨)。\n94\n13\n77\n95\n96\n97\n98\n99\n13",
+      "normalized_text": "Tier 想定ハード 現実的な LLM規模 (目安)\n常駐可 否 (LLM 単体)\n同時実行 (LLM+ASR+TTS) 設計指針\nA-96/128 Apple Silicon 96〜 128GB\n32B〜70B (4bit) 可(重 い) 構成次第で成立\n“高品質ローカル”の現 実ライン。M3/M4で最 大128GB構成が公式に 提示。\nW-CPU1\nWindows CPU-only (8C/16T級 + 32GB)\n3B〜7B (4bit)\n条件付 き(負 荷高)\n同時は厳しい(オン デマンド推奨)\nCPU最適化命令(AVX 等)を活かし、常駐 は“小型+短文”に限 定。Intel最適化要素は\n公式に明示。\nW-CPU2\nWindows CPU-only (16C/32T 級 + 64GB)\n7B〜14B (4bit)\n可(た だし速 度は要 検証)\n同時は設計次第 夜間バッチ (Embedding/OCR) で負荷平準化。\nG-8 Windows + NVIDIA VRAM 8GB\n7B (4bit) 中心\n可(短 文) 同時は軽量なら可\n画像生成SDXL等は設定 依存で厳しいことがあ るため要ベンチ。\nG-12 Windows + NVIDIA VRAM 12GB\n7B〜14B (4bit) 可 同時が現実化 VLM 2B〜7B級やASR GPUが載りやすい。\nG-16 Windows + NVIDIA VRAM 16GB\n14B〜27B (4bit) 可 “高品質寄り”が成立\nKV(長文)を意識して FP8 KV等の採用余地。\nG-24 Windows + NVIDIA VRAM 24GB\n27B〜34B (4bit) 可 余裕あり 画像生成や大きめVLM を実務的に回せる可能 性が高い。\n補足(AMD/Intel GPUの現実ライン) - AMD ROCmはRadeon向けに「ROCm 7.2でRadeon 9000/選択された7000シリーズにWindowsで\nPyTorch対応」等を明示していますが、対象GPUが限定されるため“購入前にサポート表で確定”が必須です。\n- Intel系はoneAPI/SYCLやOpenVINO、IPEX-LLMなどが選択肢になります。llama.cppはSYCLバックエンド等 を掲げ、Intel自身も「llama.cppのSYCLバックエンドでIntel GPUをサポート」と説明しています。\n常駐運用 vs オンデマンド運用(差分の要点) - 常駐:初回ロードは重いが、KVキャッシュ再利用やsystem promptキャッシュで“初動遅延(first token latency)”が改善し得ます。llama.cppではcache_prompt等の概念が示されています。\n- オンデマンド:RAM/VRAMを節約できるが、毎回ロードで遅い。個人PCやメモリ16GB帯ではオンデマンド 設計が現実解になることが多い(設計判断)。 - 夜間バッチ:Embedding生成、OCR、会議音声のASRなどを夜間に回し、日中はLLM応答(対話UX)に資 源を寄せるのが「ローカルAIでの生産性最大化」につながります(設計推奨)。\n94\n13\n77\n95\n96\n97\n98\n99\n13",
+      "heading_level": 0,
+      "numbers": [
+        "96",
+        "128 ",
+        "96",
+        "128",
+        "32",
+        "70",
+        "4",
+        "3",
+        "4",
+        "128",
+        "1\n",
+        "8",
+        "16",
+        "32",
+        "3",
+        "7",
+        "4",
+        "2\n",
+        "16",
+        "32",
+        "64",
+        "7",
+        "14",
+        "4",
+        "8 ",
+        "8",
+        "7",
+        "4",
+        "12 ",
+        "12",
+        "7",
+        "14",
+        "4",
+        "2",
+        "7",
+        "16 ",
+        "16",
+        "14",
+        "27",
+        "4",
+        "8 ",
+        "24 ",
+        "24",
+        "27",
+        "34",
+        "4",
+        "7.2",
+        "9000",
+        "7000",
+        "16",
+        "94\n",
+        "13\n",
+        "77\n",
+        "95\n",
+        "96\n",
+        "97\n",
+        "98\n",
+        "99\n",
+        "13"
+      ],
+      "hash": "1a9d87d3bc76b057",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 40
+      }
+    },
+    {
+      "chunk_id": "document_p014_c00027",
+      "block_type": "text",
+      "page_no": 14,
+      "order": 27,
+      "bbox": [
+        78.0,
+        72.35,
+        500.4,
+        130.22
+      ],
+      "text": "ユースケース別推奨スタック\n(5)各ユースケースについて、推奨コンポーネントと「低コスト/高品質/ハード制約」の3構成、失敗 モードと回避策を提示します。ここでの推奨は(2)の特徴軸と(4)のTier前提で根拠付けします。",
+      "normalized_text": "ユースケース別推奨スタック\n(5)各ユースケースについて、推奨コンポーネントと「低コスト/高品質/ハード制約」の3構成、失敗 モードと回避策を提示します。ここでの推奨は(2)の特徴軸と(4)のTier前提で根拠付けします。",
+      "heading_level": 1,
+      "numbers": [
+        "5",
+        "3",
+        "2",
+        "4"
+      ],
+      "hash": "82884cc68b44d9e0",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 1
+      }
+    },
+    {
+      "chunk_id": "document_p014_c00028",
+      "block_type": "text",
+      "page_no": 14,
+      "order": 28,
+      "bbox": [
+        78.0,
+        145.73,
+        516.39,
+        406.89
+      ],
+      "text": "音声メモ → 整文化 → タスク抽出(個人・業務メモ)\n低コスト構成(A-16 / W-CPU1 / G-8想定) - VAD:Silero VAD(先に無音/雑音区間を落とす)\n- ASR:faster-whisper(CPUでINT8、GPUがあればGPU)\n- LLM整形:7B級(Qwen2.5-7B-Instruct等)を4bitで(GGUF系)\n- 出力:JSON(タスク配列)を要求。Ollama/LM StudioのOpenAI互換APIで業務アプリに繋ぐ。\n失敗モード:ASRの誤転記→タスク誤抽出。回避:音声区間分割(VAD)+重要箇所だけ再確認UI(設計)。\n高品質構成(A-64+/G-16+/G-24想定) - ASR:faster-whisper GPU、必要なら大きめWhisper系列(運用選択)\n- LLM:14B〜32B級(Phi-4やQwen2.5上位等)を4bit/GPUで\n- タスク抽出:ツール呼び出し(function calling)を前提にschema固定(JSON破壊率を下げる)。\n失敗モード:長文で要点漏れ。回避:逐次要約(rolling summary)+KV節約。\nハード制約構成(W-CPU1/A-16でギリギリ) - ASR:短音声に限定、または夜間バッチ。 - LLM:3B〜4B(Phi-3 mini等)で“抽出のみ”に寄せる。\n失敗モード:LLMの推論不足。回避:抽出テンプレを固定し、自由生成を減らす(設計)。",
+      "normalized_text": "音声メモ → 整文化 → タスク抽出(個人・業務メモ)\n低コスト構成(A-16 / W-CPU1 / G-8想定) - VAD:Silero VAD(先に無音/雑音区間を落とす)\n- ASR:faster-whisper(CPUでINT8、GPUがあればGPU)\n- LLM整形:7B級(Qwen2.5-7B-Instruct等)を4bitで(GGUF系)\n- 出力:JSON(タスク配列)を要求。Ollama/LM StudioのOpenAI互換APIで業務アプリに繋ぐ。\n失敗モード:ASRの誤転記→タスク誤抽出。回避:音声区間分割(VAD)+重要箇所だけ再確認UI(設計)。\n高品質構成(A-64+/G-16+/G-24想定) - ASR:faster-whisper GPU、必要なら大きめWhisper系列(運用選択)\n- LLM:14B〜32B級(Phi-4やQwen2.5上位等)を4bit/GPUで\n- タスク抽出:ツール呼び出し(function calling)を前提にschema固定(JSON破壊率を下げる)。\n失敗モード:長文で要点漏れ。回避:逐次要約(rolling summary)+KV節約。\nハード制約構成(W-CPU1/A-16でギリギリ) - ASR:短音声に限定、または夜間バッチ。 - LLM:3B〜4B(Phi-3 mini等)で“抽出のみ”に寄せる。\n失敗モード:LLMの推論不足。回避:抽出テンプレを固定し、自由生成を減らす(設計)。",
+      "heading_level": 3,
+      "numbers": [
+        "16 ",
+        "1 ",
+        "8",
+        "8",
+        "7",
+        "2.5",
+        "7",
+        "4",
+        "64",
+        "16",
+        "24",
+        "14",
+        "32",
+        "4",
+        "2.5",
+        "4",
+        "1",
+        "16",
+        "3",
+        "4",
+        "3 "
+      ],
+      "hash": "a70d8688a56a4b8d",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 3
+      }
+    },
+    {
+      "chunk_id": "document_p014_c00029",
+      "block_type": "text",
+      "page_no": 14,
+      "order": 29,
+      "bbox": [
+        78.0,
+        422.4,
+        517.27,
+        682.49
+      ],
+      "text": "会議議事録(話者分離+要約+アクション)\n低コスト構成 - VAD:Silero VAD\n- ASR:faster-whisper\n- 話者分離:pyannote.audio(精度重視だが依存重い)\n- LLM:7B級で要約・論点・決定事項・ToDo抽出 失敗モード:話者誤割当。回避:発話ターン統合ルール(短い切れ目はマージ)+参加者名の手動マッピン グ(設計)。\n高品質構成 - LLM:32B〜70B級(メモリ余裕必須)+長文はKV最適化(FP8 KV等)を検討\n- “議事録の事実性”を担保するため、要点ごとに「元発話時刻/区間」を付与する(設計。ASR側でタイムスタ ンプ活用)。Whisperはタイムスタンプ等の特殊トークンによるマルチタスクを説明しています。\n失敗モード:ASR幻覚(無音部分に文が入る等)。回避:VAD+“無音区間は破棄”+要審査フラグ。\nハード制約構成 - 話者分離は諦め、「話者なし→要約→タスク」へ縮退。 - 夜間バッチで長時間音声を処理し、朝に要約だけ見る(設計)。",
+      "normalized_text": "会議議事録(話者分離+要約+アクション)\n低コスト構成 - VAD:Silero VAD\n- ASR:faster-whisper\n- 話者分離:pyannote.audio(精度重視だが依存重い)\n- LLM:7B級で要約・論点・決定事項・ToDo抽出 失敗モード:話者誤割当。回避:発話ターン統合ルール(短い切れ目はマージ)+参加者名の手動マッピン グ(設計)。\n高品質構成 - LLM:32B〜70B級(メモリ余裕必須)+長文はKV最適化(FP8 KV等)を検討\n- “議事録の事実性”を担保するため、要点ごとに「元発話時刻/区間」を付与する(設計。ASR側でタイムスタ ンプ活用)。Whisperはタイムスタンプ等の特殊トークンによるマルチタスクを説明しています。\n失敗モード:ASR幻覚(無音部分に文が入る等)。回避:VAD+“無音区間は破棄”+要審査フラグ。\nハード制約構成 - 話者分離は諦め、「話者なし→要約→タスク」へ縮退。 - 夜間バッチで長時間音声を処理し、朝に要約だけ見る(設計)。",
+      "heading_level": 3,
+      "numbers": [
+        "7",
+        "32",
+        "70",
+        "8 "
+      ],
+      "hash": "1cc930457f260725",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 3
+      }
+    },
+    {
+      "chunk_id": "document_p014_c00030",
+      "block_type": "text",
+      "page_no": 14,
+      "order": 30,
+      "bbox": [
+        78.0,
+        187.29,
+        495.4,
+        812.02
+      ],
+      "text": "文書RAG(PDF/スキャン → OCR/解析 → 検索 → 回答)\n低コスト構成 - OCR:Tesseractでテキスト化(スキャン品質が高い場合)\n- Embedding:BGE-M3(多言語・多用途をうたう)\n82\n50\n100\n3\n101\n102\n27\n103\n82\n50\n84\n104\n105\n63\n58\n14",
+      "normalized_text": "文書RAG(PDF/スキャン → OCR/解析 → 検索 → 回答)\n低コスト構成 - OCR:Tesseractでテキスト化(スキャン品質が高い場合)\n- Embedding:BGE-M3(多言語・多用途をうたう)\n82\n50\n100\n3\n101\n102\n27\n103\n82\n50\n84\n104\n105\n63\n58\n14",
+      "heading_level": 3,
+      "numbers": [
+        "3",
+        "82\n",
+        "50\n",
+        "100\n",
+        "3\n",
+        "101\n",
+        "102\n",
+        "27\n",
+        "103\n",
+        "82\n",
+        "50\n",
+        "84\n",
+        "104\n",
+        "105\n",
+        "63\n",
+        "58\n",
+        "14"
+      ],
+      "hash": "d4bb296eaf8d6c32",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 17
+      }
+    },
+    {
+      "chunk_id": "document_p015_c00031",
+      "block_type": "text",
+      "page_no": 15,
+      "order": 31,
+      "bbox": [
+        78.0,
+        72.23,
+        512.38,
+        265.19
+      ],
+      "text": "- Reranker:bge-reranker-base/large(遅延許容に応じ)\n- LLM:7B級(4bit) 失敗モード:OCR誤りで検索が外れる。回避:OCR前処理(傾き補正等)+“原文スニペット引用”をUX要件 化。\n高品質構成 - OCR:PaddleOCR(構造化出力方向を強調)\n- OCR-free:Donutで情報抽出(フォーム/請求書等が適合する場合)\n- LLM:14B〜32B級+reranker大型 失敗モード:文書の図表/レイアウト由来の情報欠落。回避:LayoutLMv3系やDonut系でレイアウト情報を 保持。\nハード制約構成 - OCRは夜間バッチ、Embeddingも夜間生成。日中は検索と短い回答だけ。",
+      "normalized_text": "- Reranker:bge-reranker-base/large(遅延許容に応じ)\n- LLM:7B級(4bit) 失敗モード:OCR誤りで検索が外れる。回避:OCR前処理(傾き補正等)+“原文スニペット引用”をUX要件 化。\n高品質構成 - OCR:PaddleOCR(構造化出力方向を強調)\n- OCR-free:Donutで情報抽出(フォーム/請求書等が適合する場合)\n- LLM:14B〜32B級+reranker大型 失敗モード:文書の図表/レイアウト由来の情報欠落。回避:LayoutLMv3系やDonut系でレイアウト情報を 保持。\nハード制約構成 - OCRは夜間バッチ、Embeddingも夜間生成。日中は検索と短い回答だけ。",
+      "heading_level": 0,
+      "numbers": [
+        "7",
+        "4",
+        "14",
+        "32",
+        "3"
+      ],
+      "hash": "0339f98664a59108",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 3
+      }
+    },
+    {
+      "chunk_id": "document_p015_c00032",
+      "block_type": "text",
+      "page_no": 15,
+      "order": 32,
+      "bbox": [
+        78.0,
+        280.7,
+        512.16,
+        499.93
+      ],
+      "text": "画像理解(スクショ/写真の説明、情報抽出)\n低コスト構成 - VLM:Qwen2-VL 2B級(ローカル現実ライン)\n- ランタイム:macならMLX-VLM、WindowsならGPU推論(形式依存) 失敗モード:UI文字が読めず誤解。回避:必要ならOCR(PaddleOCR等)を併用して文字情報を別経路で供 給。\n高品質構成 - VLM:Qwen2-VL 7BやInternVL2等、必要に応じ上位\n- “画像+文書RAG”融合:画像から抽出→Embedding→RAG 失敗モード:視覚トークン肥大で遅い。回避:解像度/max-pixels制御(MLX-VLMはvideo_generate例で max-pixels等を示す)。\nハード制約構成 - 画像理解は“質問を限定”し、OCR+テキストLLMに逃がす(設計)。",
+      "normalized_text": "画像理解(スクショ/写真の説明、情報抽出)\n低コスト構成 - VLM:Qwen2-VL 2B級(ローカル現実ライン)\n- ランタイム:macならMLX-VLM、WindowsならGPU推論(形式依存) 失敗モード:UI文字が読めず誤解。回避:必要ならOCR(PaddleOCR等)を併用して文字情報を別経路で供 給。\n高品質構成 - VLM:Qwen2-VL 7BやInternVL2等、必要に応じ上位\n- “画像+文書RAG”融合:画像から抽出→Embedding→RAG 失敗モード:視覚トークン肥大で遅い。回避:解像度/max-pixels制御(MLX-VLMはvideo_generate例で max-pixels等を示す)。\nハード制約構成 - 画像理解は“質問を限定”し、OCR+テキストLLMに逃がす(設計)。",
+      "heading_level": 3,
+      "numbers": [
+        "2",
+        "2",
+        "2",
+        "7",
+        "2"
+      ],
+      "hash": "9236d8e76b6c9d6e",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 3
+      }
+    },
+    {
+      "chunk_id": "document_p015_c00033",
+      "block_type": "text",
+      "page_no": 15,
+      "order": 33,
+      "bbox": [
+        78.0,
+        74.01,
+        516.7,
+        812.02
+      ],
+      "text": "コーディング補助(ローカルIDE支援・リポジトリ理解)\n低コスト構成 - コードLLM:Qwen2.5-Coder 7B(サイズ展開を明示)\n- RAG:リポジトリをEmbedding化(BGE/E5)+関連ファイル抽出→LLM回答 - 実行:Ollama/LM StudioをローカルAPI化してIDE拡張と接続(OpenAI互換)\n失敗モード:生成コードの幻覚API。回避:コンパイル/テスト実行を“ツール”として組み込み、LLM出力を検 証ループに入れる(Agent設計)。\n高品質構成 - コードLLM:StarCoder2(3B/7B/15B)\n- LLM:大きめ(32B級)を併用し、設計レビューや長距離依存を担当。 失敗モード:長コンテキストで遅い。回避:prefix caching(vLLMのprefix caching概念など)を活用。\nハード制約構成 - 3B級で「補完+リファクタ提案」など短い支援に限定。\n61\n66\n68\n106\n107\n66\n108\n28\n109\n110\n111\n112\n15",
+      "normalized_text": "コーディング補助(ローカルIDE支援・リポジトリ理解)\n低コスト構成 - コードLLM:Qwen2.5-Coder 7B(サイズ展開を明示)\n- RAG:リポジトリをEmbedding化(BGE/E5)+関連ファイル抽出→LLM回答 - 実行:Ollama/LM StudioをローカルAPI化してIDE拡張と接続(OpenAI互換)\n失敗モード:生成コードの幻覚API。回避:コンパイル/テスト実行を“ツール”として組み込み、LLM出力を検 証ループに入れる(Agent設計)。\n高品質構成 - コードLLM:StarCoder2(3B/7B/15B)\n- LLM:大きめ(32B級)を併用し、設計レビューや長距離依存を担当。 失敗モード:長コンテキストで遅い。回避:prefix caching(vLLMのprefix caching概念など)を活用。\nハード制約構成 - 3B級で「補完+リファクタ提案」など短い支援に限定。\n61\n66\n68\n106\n107\n66\n108\n28\n109\n110\n111\n112\n15",
+      "heading_level": 3,
+      "numbers": [
+        "2.5",
+        "7",
+        "5",
+        "2",
+        "3",
+        "7",
+        "15",
+        "32",
+        "3",
+        "61\n",
+        "66\n",
+        "68\n",
+        "106\n",
+        "107\n",
+        "66\n",
+        "108\n",
+        "28\n",
+        "109\n",
+        "110\n",
+        "111\n",
+        "112\n",
+        "15"
+      ],
+      "hash": "f48dbedb7b4a5a2c",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 16
+      }
+    },
+    {
+      "chunk_id": "document_p016_c00034",
+      "block_type": "text",
+      "page_no": 16,
+      "order": 34,
+      "bbox": [
+        78.0,
+        72.27,
+        517.3,
+        278.01
+      ],
+      "text": "画像生成(資料・UIモック・社内コンテンツ)\n低コスト構成 - モデル:SDXL base 1.0(ライセンス確認)\n- UI:ComfyUI(Win/Linux/macOS対応を明示)\n失敗モード:VRAM不足。回避:解像度/バッチ/最適化(attention slicing等)を固定プロファイル化(設 計)。VRAM目安はモデルカード等に断片的記載があるが環境依存。\n高品質構成 - FLUX.1等の上位モデルを検討する場合、ライセンス条件(devの条件等)を必ず精査。\n- ワークフローはComfyUIで資産化し、seed固定で再現性を担保(設計)。\nハード制約構成 - 画像生成を夜間バッチに回し、日中はLLM中心に資源配分。 - どうしても厳しければ“画像生成は別筐体(ローカルLAN内)”に逃がす(ローカルAI定義内で許容)。",
+      "normalized_text": "画像生成(資料・UIモック・社内コンテンツ)\n低コスト構成 - モデル:SDXL base 1.0(ライセンス確認)\n- UI:ComfyUI(Win/Linux/macOS対応を明示)\n失敗モード:VRAM不足。回避:解像度/バッチ/最適化(attention slicing等)を固定プロファイル化(設 計)。VRAM目安はモデルカード等に断片的記載があるが環境依存。\n高品質構成 - FLUX.1等の上位モデルを検討する場合、ライセンス条件(devの条件等)を必ず精査。\n- ワークフローはComfyUIで資産化し、seed固定で再現性を担保(設計)。\nハード制約構成 - 画像生成を夜間バッチに回し、日中はLLM中心に資源配分。 - どうしても厳しければ“画像生成は別筐体(ローカルLAN内)”に逃がす(ローカルAI定義内で許容)。",
+      "heading_level": 3,
+      "numbers": [
+        "1.0",
+        "1"
+      ],
+      "hash": "9ed775498e67b92c",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 3
+      }
+    },
+    {
+      "chunk_id": "document_p016_c00035",
+      "block_type": "text",
+      "page_no": 16,
+      "order": 35,
+      "bbox": [
+        78.0,
+        309.35,
+        513.02,
+        367.22
+      ],
+      "text": "測定と比較の方法\n(6)ローカルAIは「モデル+量子化+ランタイム+ハード」の組合せ最適化問題です。再現可能なベンチを 定義し、p50/p95・tok/s・RTF・RAM/VRAMピーク・JSON破壊率などを定量化します。",
+      "normalized_text": "測定と比較の方法\n(6)ローカルAIは「モデル+量子化+ランタイム+ハード」の組合せ最適化問題です。再現可能なベンチを 定義し、p50/p95・tok/s・RTF・RAM/VRAMピーク・JSON破壊率などを定量化します。",
+      "heading_level": 1,
+      "numbers": [
+        "6",
+        "50",
+        "95"
+      ],
+      "hash": "ecb22bcc48108856",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 1
+      }
+    },
+    {
+      "chunk_id": "document_p016_c00036",
+      "block_type": "text",
+      "page_no": 16,
+      "order": 36,
+      "bbox": [
+        78.0,
+        382.73,
+        515.93,
+        557.75
+      ],
+      "text": "指標(定義)\np50/p95レイテンシ: LLM:TTFT(Time To First Token)と生成完了時間を分離し、p50/p95を取る。KV reuse (TensorRT-LLM)やprompt caching(llama.cpp)でTTFTが変わるため分離が必要。\ntok/s:生成トークン数 ÷ 生成時間。 RTF(ASR/TTS):処理時間 ÷ 音声長。 RAM/VRAMピーク:OS監視+プロセス単位(可能ならnvidia-smi等、Appleは統合メモリで要注 意)。 JSON破壊率:要求JSON出力に対し「パース失敗/スキーマ不一致」の比率。Ollama/LM Studioの OpenAI互換APIを経由して同一テストを流すと比較が容易。\n意味改変率:要約・整形で“意味が変わった”割合。自動評価はEmbedding類似度+人手監査が現実的 (設計提案)。",
+      "normalized_text": "指標(定義)\np50/p95レイテンシ: LLM:TTFT(Time To First Token)と生成完了時間を分離し、p50/p95を取る。KV reuse (TensorRT-LLM)やprompt caching(llama.cpp)でTTFTが変わるため分離が必要。\ntok/s:生成トークン数 ÷ 生成時間。 RTF(ASR/TTS):処理時間 ÷ 音声長。 RAM/VRAMピーク:OS監視+プロセス単位(可能ならnvidia-smi等、Appleは統合メモリで要注 意)。 JSON破壊率:要求JSON出力に対し「パース失敗/スキーマ不一致」の比率。Ollama/LM Studioの OpenAI互換APIを経由して同一テストを流すと比較が容易。\n意味改変率:要約・整形で“意味が変わった”割合。自動評価はEmbedding類似度+人手監査が現実的 (設計提案)。",
+      "heading_level": 3,
+      "numbers": [
+        "50",
+        "95",
+        "50",
+        "95"
+      ],
+      "hash": "4581222c75c4c3ba",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 1
+      }
+    },
+    {
+      "chunk_id": "document_p016_c00037",
+      "block_type": "text",
+      "page_no": 16,
+      "order": 37,
+      "bbox": [
+        78.0,
+        113.84,
+        512.55,
+        812.02
+      ],
+      "text": "手順(再現性のコア)\n条件固定:同一プロンプト、最大トークン、温度、top_p、同一量子化、同一コンテキスト長で統 一。 ウォームアップ:初回ロードと2回目以降を分離(常駐とオンデマンドの差が出る)。 KV影響の切り分け:短文(<512)と長文(4k/8k/32k)を分ける。vLLMのpaged KV/quantized KV の効果を見る。\nASRは同一音声・同一前処理:VAD有無で結果が変わるため、Silero VAD等の同一設定を固定。\nTTSは同一テキスト・同一話者:速度と品質を分離。 ログ保存:モデルハッシュ、量子化、ランタイムバージョン、ハード情報(CPU命令、VRAM等)を 記録。\n71\n72\n113\n76\n• •\n114\n• • •\n•\n79\n•\n1.\n2. 3.\n5\n4. 82\n5. 6.\n16",
+      "normalized_text": "手順(再現性のコア)\n条件固定:同一プロンプト、最大トークン、温度、top_p、同一量子化、同一コンテキスト長で統 一。 ウォームアップ:初回ロードと2回目以降を分離(常駐とオンデマンドの差が出る)。 KV影響の切り分け:短文(<512)と長文(4k/8k/32k)を分ける。vLLMのpaged KV/quantized KV の効果を見る。\nASRは同一音声・同一前処理:VAD有無で結果が変わるため、Silero VAD等の同一設定を固定。\nTTSは同一テキスト・同一話者:速度と品質を分離。 ログ保存:モデルハッシュ、量子化、ランタイムバージョン、ハード情報(CPU命令、VRAM等)を 記録。\n71\n72\n113\n76\n• •\n114\n• • •\n•\n79\n•\n1.\n2. 3.\n5\n4. 82\n5. 6.\n16",
+      "heading_level": 3,
+      "numbers": [
+        "2",
+        "512",
+        "4",
+        "8",
+        "32",
+        "71\n",
+        "72\n",
+        "113\n",
+        "76\n",
+        "114\n",
+        "79\n",
+        "1.\n",
+        "2. ",
+        "3.\n",
+        "5\n",
+        "4. ",
+        "82\n",
+        "5. ",
+        "6.\n",
+        "16"
+      ],
+      "hash": "c41c40b8fd27ca19",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 10
+      }
+    },
+    {
+      "chunk_id": "document_p017_c00038",
+      "block_type": "text",
+      "page_no": 17,
+      "order": 38,
+      "bbox": [
+        78.0,
+        72.27,
+        511.07,
+        551.09
+      ],
+      "text": "最小テストセット(例)\nLLM(テキスト)3プロンプト - P1(JSON):\n「次の文章からタスクを抽出し、 [{title,due_date,priority,owner}] だけを返せ。欠損はnull。」+日本 語入力 - P2(長文耐性): 2,000〜8,000トークン相当の議事録を与え、「決定事項/未決事項/リスク」を抽出 - P3(ツール適性): “関数仕様”を渡し、tool呼び出しの引数を生成させる(誤引数率を見る)\nVLM 3プロンプト - I1:UIスクショ(設定項目を列挙) - I2:図表(グラフの傾向要約) - I3:写真(物体検出+属性抽出)\nASR 3音声(各1〜3分) - A1:静音クリア音声 - A2:雑音あり(会議室) - A3:複数話者(被りあり)\nTTS 3テキスト - T1:短文通知(30字) - T2:ビジネス要約(200字) - T3:固有名詞多め(製品/人名)\nOCR/DocAI 3文書 - D1:テキストPDF - D2:スキャンPDF(傾きあり) - D3:表(請求書/見積)\n画像生成 3プロンプト - G1:社内資料向けアイコン調 - G2:UIモック背景 - G3:人物なし(権利/安全性の運用都合で簡易化)",
+      "normalized_text": "最小テストセット(例)\nLLM(テキスト)3プロンプト - P1(JSON):\n「次の文章からタスクを抽出し、 [{title,due_date,priority,owner}] だけを返せ。欠損はnull。」+日本 語入力 - P2(長文耐性): 2,000〜8,000トークン相当の議事録を与え、「決定事項/未決事項/リスク」を抽出 - P3(ツール適性): “関数仕様”を渡し、tool呼び出しの引数を生成させる(誤引数率を見る)\nVLM 3プロンプト - I1:UIスクショ(設定項目を列挙) - I2:図表(グラフの傾向要約) - I3:写真(物体検出+属性抽出)\nASR 3音声(各1〜3分) - A1:静音クリア音声 - A2:雑音あり(会議室) - A3:複数話者(被りあり)\nTTS 3テキスト - T1:短文通知(30字) - T2:ビジネス要約(200字) - T3:固有名詞多め(製品/人名)\nOCR/DocAI 3文書 - D1:テキストPDF - D2:スキャンPDF(傾きあり) - D3:表(請求書/見積)\n画像生成 3プロンプト - G1:社内資料向けアイコン調 - G2:UIモック背景 - G3:人物なし(権利/安全性の運用都合で簡易化)",
+      "heading_level": 3,
+      "numbers": [
+        "3",
+        "1",
+        "2",
+        "2,000",
+        "8,000",
+        "3",
+        "3",
+        "1",
+        "2",
+        "3",
+        "3",
+        "1",
+        "3",
+        "1",
+        "2",
+        "3",
+        "3",
+        "1",
+        "30",
+        "2",
+        "200",
+        "3",
+        "3",
+        "1",
+        "2",
+        "3",
+        "3",
+        "1",
+        "2",
+        "3"
+      ],
+      "hash": "b772f0bf2769e0e2",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 6
+      }
+    },
+    {
+      "chunk_id": "document_p017_c00039",
+      "block_type": "text",
+      "page_no": 17,
+      "order": 39,
+      "bbox": [
+        78.0,
+        582.43,
+        510.56,
+        812.02
+      ],
+      "text": "参考リンク一覧\n(7)一次ソース優先(可能なものは日付・更新情報も併記)。リンクは各引用から辿れる形式(citation) で提示します。\nランタイム/配布形態 - llama.cpp(GGUF必須、各種バックエンド、ローカル推論目的)\n- GGUF仕様(GGML向けモデル格納形式)\n- Ollama(Windows/macOS/Linux対応、llama.cppバックエンド、REST API)\n- Ollama OpenAI互換(Responses API互換の説明等)\n- LM Studio(Windows/macOS/Linux、ローカルAPIサーバ、互換エンドポイント)\n- MLX(Apple Silicon向け、Apple ML研究)\n- MLX-LM(Apple SiliconでLLM推論・量子化・Hub連携)\n115\n116\n23\n117\n118\n119\n120\n17",
+      "normalized_text": "参考リンク一覧\n(7)一次ソース優先(可能なものは日付・更新情報も併記)。リンクは各引用から辿れる形式(citation) で提示します。\nランタイム/配布形態 - llama.cpp(GGUF必須、各種バックエンド、ローカル推論目的)\n- GGUF仕様(GGML向けモデル格納形式)\n- Ollama(Windows/macOS/Linux対応、llama.cppバックエンド、REST API)\n- Ollama OpenAI互換(Responses API互換の説明等)\n- LM Studio(Windows/macOS/Linux、ローカルAPIサーバ、互換エンドポイント)\n- MLX(Apple Silicon向け、Apple ML研究)\n- MLX-LM(Apple SiliconでLLM推論・量子化・Hub連携)\n115\n116\n23\n117\n118\n119\n120\n17",
+      "heading_level": 1,
+      "numbers": [
+        "7",
+        "115\n",
+        "116\n",
+        "23\n",
+        "117\n",
+        "118\n",
+        "119\n",
+        "120\n",
+        "17"
+      ],
+      "hash": "a6d72ed968f50479",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 10
+      }
+    },
+    {
+      "chunk_id": "document_p018_c00040",
+      "block_type": "text",
+      "page_no": 18,
+      "order": 40,
+      "bbox": [
+        78.0,
+        72.23,
+        428.8,
+        812.02
+      ],
+      "text": "- MLX-VLM(MacでVLM/Omni、Qwen2-VL例)\n- vLLM(platform: cpu/cuda/rocm/xpu、paged attention、quantized KV cache)\n- TensorRT-LLM(最適化、paged KV、quantization、KV reuse)\n- ExLlamaV2(EXL2量子化説明)\n量子化 - GPTQ論文\n- AWQ論文/実装\n- AutoAWQ(AWQ実装)\n- AutoGPTQ(unmaintained/archivedの注意)\n- SmoothQuant(INT8最適化の研究)\nモデル(LLM/VLM) - Llama 3.1(8B/70B/405Bの説明)\n- Qwen2.5(0.5〜72Bの説明、ライセンス例外の説明)\n- Gemma 2 model card(更新日あり)\n- Mixtral 8x7B Instruct(MoE説明)\n- Phi-3 mini 128k(3.8B)\n- Phi-4(14B、技術報告)\n- Qwen2-VL(2/7/72B)\n- Phi-3-Vision 128K\n- InternVL2(4B等)\n- LLaVA(GitHub、4bit/12GB VRAM言及)\n- gpt-oss ローカル実行(LM Studio/Ollama、必要VRAM等)\n音声(ASR/TTS/周辺) - Whisper紹介(OpenAI公式、68万時間等)\n- faster-whisper(最大4倍速・低メモリ・8bit量子化)\n- whisper.cpp(ローカル実装)\n- Piper(ローカルTTS、アーカイブと移転先)\n- Kokoro(82M、open-weight、Apache)\n- XTTS-v2(音声クローン)\n- Silero VAD(高速の説明)\n- pyannote.audio(話者分離)\n- openWakeWord(ウェイクワード)\n- RNNoise(ノイズ抑制)\n- Whisperの誤転記リスク(報道調査)\nOCR/Document AI - Tesseract(LSTM OCR)\n- PaddleOCR(構造化出力方向)\n- Donut(OCR-free)\n- LayoutLMv3(DocAI事前学習)\n画像生成 - SDXL base 1.0(モデルカード・ライセンス)\n- ComfyUI(OS対応)\n- AUTOMATIC1111 webui\n- FLUX推論実装/重み(open-weightの説明、ライセンス文書)\n28\n121\n122\n87\n123\n124\n125\n126\n127\n29\n128\n35\n37\n38\n40\n42\n43\n44\n47\n41\n48\n50\n51\n52\n53\n54\n82\n84\n85\n86\n49\n63\n65\n68\n69\n71\n72\n73\n129\n18",
+      "normalized_text": "- MLX-VLM(MacでVLM/Omni、Qwen2-VL例)\n- vLLM(platform: cpu/cuda/rocm/xpu、paged attention、quantized KV cache)\n- TensorRT-LLM(最適化、paged KV、quantization、KV reuse)\n- ExLlamaV2(EXL2量子化説明)\n量子化 - GPTQ論文\n- AWQ論文/実装\n- AutoAWQ(AWQ実装)\n- AutoGPTQ(unmaintained/archivedの注意)\n- SmoothQuant(INT8最適化の研究)\nモデル(LLM/VLM) - Llama 3.1(8B/70B/405Bの説明)\n- Qwen2.5(0.5〜72Bの説明、ライセンス例外の説明)\n- Gemma 2 model card(更新日あり)\n- Mixtral 8x7B Instruct(MoE説明)\n- Phi-3 mini 128k(3.8B)\n- Phi-4(14B、技術報告)\n- Qwen2-VL(2/7/72B)\n- Phi-3-Vision 128K\n- InternVL2(4B等)\n- LLaVA(GitHub、4bit/12GB VRAM言及)\n- gpt-oss ローカル実行(LM Studio/Ollama、必要VRAM等)\n音声(ASR/TTS/周辺) - Whisper紹介(OpenAI公式、68万時間等)\n- faster-whisper(最大4倍速・低メモリ・8bit量子化)\n- whisper.cpp(ローカル実装)\n- Piper(ローカルTTS、アーカイブと移転先)\n- Kokoro(82M、open-weight、Apache)\n- XTTS-v2(音声クローン)\n- Silero VAD(高速の説明)\n- pyannote.audio(話者分離)\n- openWakeWord(ウェイクワード)\n- RNNoise(ノイズ抑制)\n- Whisperの誤転記リスク(報道調査)\nOCR/Document AI - Tesseract(LSTM OCR)\n- PaddleOCR(構造化出力方向)\n- Donut(OCR-free)\n- LayoutLMv3(DocAI事前学習)\n画像生成 - SDXL base 1.0(モデルカード・ライセンス)\n- ComfyUI(OS対応)\n- AUTOMATIC1111 webui\n- FLUX推論実装/重み(open-weightの説明、ライセンス文書)\n28\n121\n122\n87\n123\n124\n125\n126\n127\n29\n128\n35\n37\n38\n40\n42\n43\n44\n47\n41\n48\n50\n51\n52\n53\n54\n82\n84\n85\n86\n49\n63\n65\n68\n69\n71\n72\n73\n129\n18",
+      "heading_level": 0,
+      "numbers": [
+        "2",
+        "2",
+        "2",
+        "8",
+        "3.1",
+        "8",
+        "70",
+        "405",
+        "2.5",
+        "0.5",
+        "72",
+        "2 ",
+        "8",
+        "7",
+        "3 ",
+        "128",
+        "3.8",
+        "4",
+        "14",
+        "2",
+        "2",
+        "7",
+        "72",
+        "3",
+        "128",
+        "2",
+        "4",
+        "4",
+        "12",
+        "68",
+        "4",
+        "8",
+        "82",
+        "2",
+        "3",
+        "1.0",
+        "1111 ",
+        "28\n",
+        "121\n",
+        "122\n",
+        "87\n",
+        "123\n",
+        "124\n",
+        "125\n",
+        "126\n",
+        "127\n",
+        "29\n",
+        "128\n",
+        "35\n",
+        "37\n",
+        "38\n",
+        "40\n",
+        "42\n",
+        "43\n",
+        "44\n",
+        "47\n",
+        "41\n",
+        "48\n",
+        "50\n",
+        "51\n",
+        "52\n",
+        "53\n",
+        "54\n",
+        "82\n",
+        "84\n",
+        "85\n",
+        "86\n",
+        "49\n",
+        "63\n",
+        "65\n",
+        "68\n",
+        "69\n",
+        "71\n",
+        "72\n",
+        "73\n",
+        "129\n",
+        "18"
+      ],
+      "hash": "e9df302318a1a0df",
+      "meta": {
+        "body_font_size": 9.0,
+        "body_line_count": 46
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00041",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 41,
+      "bbox": [
+        78.0,
+        72.23,
+        291.61,
+        98.77
+      ],
+      "text": "ハード/Apple Silicon・Unified Memory - Apple GPUのunified memory model(Metal公式)",
+      "normalized_text": "ハード/Apple Silicon・Unified Memory - Apple GPUのunified memory model(Metal公式)",
+      "heading_level": 3,
+      "numbers": [],
+      "hash": "01689175e3e05251",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00042",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 42,
+      "bbox": [
+        78.0,
+        99.59,
+        290.36,
+        112.62
+      ],
+      "text": "- Apple M1のUMA言及(Apple公式ニュースルーム)",
+      "normalized_text": "- Apple M1のUMA言及(Apple公式ニュースルーム)",
+      "heading_level": 1,
+      "numbers": [
+        "1"
+      ],
+      "hash": "6d426db55246d610",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00043",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 43,
+      "bbox": [
+        78.0,
+        113.44,
+        277.46,
+        126.48
+      ],
+      "text": "- MLX Unified Memory説明(公式ドキュメント)",
+      "normalized_text": "- MLX Unified Memory説明(公式ドキュメント)",
+      "heading_level": 3,
+      "numbers": [],
+      "hash": "d38659c202d486da",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00044",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 44,
+      "bbox": [
+        78.0,
+        127.3,
+        359.64,
+        140.33
+      ],
+      "text": "- M1/M2/M3/M4のユニファイドメモリ構成例(Appleサポート/仕様)",
+      "normalized_text": "- M1/M2/M3/M4のユニファイドメモリ構成例(Appleサポート/仕様)",
+      "heading_level": 3,
+      "numbers": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "hash": "30520cef78ab62a2",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00045",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 45,
+      "bbox": [
+        78.0,
+        141.16,
+        216.21,
+        154.19
+      ],
+      "text": "- PyTorch MPS(Metal backend)",
+      "normalized_text": "- PyTorch MPS(Metal backend)",
+      "heading_level": 1,
+      "numbers": [],
+      "hash": "9bd35bd80ba963ab",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00046",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 46,
+      "bbox": [
+        78.0,
+        170.01,
+        346.03,
+        196.54
+      ],
+      "text": "Windows向けAMD/Intelスタック - ROCm Radeon/Ryzen(Windows対応GPUの明記、WSL互換表)",
+      "normalized_text": "Windows向けAMD/Intelスタック - ROCm Radeon/Ryzen(Windows対応GPUの明記、WSL互換表)",
+      "heading_level": 3,
+      "numbers": [],
+      "hash": "22cda94d013896de",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00047",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 47,
+      "bbox": [
+        78.0,
+        197.37,
+        357.45,
+        210.4
+      ],
+      "text": "- Intel Extension for PyTorch(AVX-512/VNNI/AMX/XMX最適化明記)",
+      "normalized_text": "- Intel Extension for PyTorch(AVX-512/VNNI/AMX/XMX最適化明記)",
+      "heading_level": 3,
+      "numbers": [
+        "512"
+      ],
+      "hash": "50a0e6451b140fa3",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00048",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 48,
+      "bbox": [
+        78.0,
+        211.22,
+        242.84,
+        224.25
+      ],
+      "text": "- Intel: llama.cpp SYCLバックエンド紹介",
+      "normalized_text": "- Intel: llama.cpp SYCLバックエンド紹介",
+      "heading_level": 3,
+      "numbers": [],
+      "hash": "cc06614ef18c004d",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00049",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 49,
+      "bbox": [
+        78.0,
+        225.08,
+        291.75,
+        238.11
+      ],
+      "text": "- OpenVINO(CPU/GPU/NPU対応、GenAI API言及)",
+      "normalized_text": "- OpenVINO(CPU/GPU/NPU対応、GenAI API言及)",
+      "heading_level": 3,
+      "numbers": [],
+      "hash": "01d78671766ab8e2",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00050",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 50,
+      "bbox": [
+        138.06,
+        269.68,
+        415.35,
+        282.72
+      ],
+      "text": "https://www.apple.com/newsroom/2020/11/apple-unleashes-m1/",
+      "normalized_text": "https://www.apple.com/newsroom/2020/11/apple-unleashes-m1/",
+      "heading_level": 3,
+      "numbers": [
+        "2020",
+        "11",
+        "1"
+      ],
+      "hash": "bd0231909dbcf02b",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00051",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 51,
+      "bbox": [
+        78.0,
+        285.04,
+        309.05,
+        295.9
+      ],
+      "text": "https://www.apple.com/newsroom/2020/11/apple-unleashes-m1/",
+      "normalized_text": "https://www.apple.com/newsroom/2020/11/apple-unleashes-m1/",
+      "heading_level": 3,
+      "numbers": [
+        "2020",
+        "11",
+        "1"
+      ],
+      "hash": "bd0231909dbcf02b",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00052",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 52,
+      "bbox": [
+        122.3,
+        304.07,
+        384.62,
+        317.1
+      ],
+      "text": "https://docs.openhands.dev/openhands/usage/llms/local-llms",
+      "normalized_text": "https://docs.openhands.dev/openhands/usage/llms/local-llms",
+      "heading_level": 3,
+      "numbers": [],
+      "hash": "d33e8b6a502b12bd",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00053",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 53,
+      "bbox": [
+        78.0,
+        319.43,
+        296.6,
+        330.29
+      ],
+      "text": "https://docs.openhands.dev/openhands/usage/llms/local-llms",
+      "normalized_text": "https://docs.openhands.dev/openhands/usage/llms/local-llms",
+      "heading_level": 3,
+      "numbers": [],
+      "hash": "d33e8b6a502b12bd",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00054",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 54,
+      "bbox": [
+        137.07,
+        338.46,
+        335.04,
+        351.49
+      ],
+      "text": "https://lmstudio.ai/docs/developer/core/server",
+      "normalized_text": "https://lmstudio.ai/docs/developer/core/server",
+      "heading_level": 3,
+      "numbers": [],
+      "hash": "8bf59dffac6486e6",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00055",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 55,
+      "bbox": [
+        78.0,
+        353.82,
+        242.91,
+        364.68
+      ],
+      "text": "https://lmstudio.ai/docs/developer/core/server",
+      "normalized_text": "https://lmstudio.ai/docs/developer/core/server",
+      "heading_level": 3,
+      "numbers": [],
+      "hash": "8bf59dffac6486e6",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00056",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 56,
+      "bbox": [
+        108.52,
+        372.85,
+        245.45,
+        385.88
+      ],
+      "text": "https://arxiv.org/abs/2306.00978",
+      "normalized_text": "https://arxiv.org/abs/2306.00978",
+      "heading_level": 3,
+      "numbers": [
+        "2306.00978"
+      ],
+      "hash": "9ede7b3020018014",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00057",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 57,
+      "bbox": [
+        78.0,
+        388.21,
+        192.12,
+        399.07
+      ],
+      "text": "https://arxiv.org/abs/2306.00978",
+      "normalized_text": "https://arxiv.org/abs/2306.00978",
+      "heading_level": 3,
+      "numbers": [
+        "2306.00978"
+      ],
+      "hash": "9ede7b3020018014",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00058",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 58,
+      "bbox": [
+        107.53,
+        407.23,
+        337.15,
+        420.26
+      ],
+      "text": "https://docs.vllm.ai/en/latest/design/paged_attention/",
+      "normalized_text": "https://docs.vllm.ai/en/latest/design/paged_attention/",
+      "heading_level": 3,
+      "numbers": [],
+      "hash": "38904dc3cadca302",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00059",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 59,
+      "bbox": [
+        78.0,
+        422.59,
+        269.3,
+        433.45
+      ],
+      "text": "https://docs.vllm.ai/en/latest/design/paged_attention/",
+      "normalized_text": "https://docs.vllm.ai/en/latest/design/paged_attention/",
+      "heading_level": 3,
+      "numbers": [],
+      "hash": "38904dc3cadca302",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00060",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 60,
+      "bbox": [
+        138.06,
+        441.62,
+        442.17,
+        454.65
+      ],
+      "text": "https://docs.vllm.ai/en/latest/features/quantization/quantized_kvcache/",
+      "normalized_text": "https://docs.vllm.ai/en/latest/features/quantization/quantized_kvcache/",
+      "heading_level": 3,
+      "numbers": [],
+      "hash": "f8c34d5cc9b63274",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00061",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 61,
+      "bbox": [
+        78.0,
+        456.98,
+        331.34,
+        467.84
+      ],
+      "text": "https://docs.vllm.ai/en/latest/features/quantization/quantized_kvcache/",
+      "normalized_text": "https://docs.vllm.ai/en/latest/features/quantization/quantized_kvcache/",
+      "heading_level": 3,
+      "numbers": [],
+      "hash": "f8c34d5cc9b63274",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00062",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 62,
+      "bbox": [
+        108.52,
+        476.01,
+        282.25,
+        489.04
+      ],
+      "text": "https://github.com/NVIDIA/TensorRT-LLM",
+      "normalized_text": "https://github.com/NVIDIA/TensorRT-LLM",
+      "heading_level": 3,
+      "numbers": [],
+      "hash": "af4c0eb2b567c7b3",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00063",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 63,
+      "bbox": [
+        78.0,
+        491.37,
+        222.73,
+        502.23
+      ],
+      "text": "https://github.com/NVIDIA/TensorRT-LLM",
+      "normalized_text": "https://github.com/NVIDIA/TensorRT-LLM",
+      "heading_level": 3,
+      "numbers": [],
+      "hash": "af4c0eb2b567c7b3",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00064",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 64,
+      "bbox": [
+        152.82,
+        510.4,
+        319.29,
+        523.43
+      ],
+      "text": "https://github.com/ggml-org/llama.cpp",
+      "normalized_text": "https://github.com/ggml-org/llama.cpp",
+      "heading_level": 3,
+      "numbers": [],
+      "hash": "c2ac4d992225abb2",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00065",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 65,
+      "bbox": [
+        78.0,
+        525.76,
+        216.69,
+        536.62
+      ],
+      "text": "https://github.com/ggml-org/llama.cpp",
+      "normalized_text": "https://github.com/ggml-org/llama.cpp",
+      "heading_level": 3,
+      "numbers": [],
+      "hash": "c2ac4d992225abb2",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00066",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 66,
+      "bbox": [
+        108.52,
+        544.78,
+        492.57,
+        557.81
+      ],
+      "text": "https://developer.apple.com/documentation/metal/choosing-a-resource-storage-mode-for-",
+      "normalized_text": "https://developer.apple.com/documentation/metal/choosing-a-resource-storage-mode-for-",
+      "heading_level": 3,
+      "numbers": [],
+      "hash": "256fba03b30d581c",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00067",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 67,
+      "bbox": [
+        78.0,
+        558.64,
+        437.37,
+        584.5
+      ],
+      "text": "apple-gpus\nhttps://developer.apple.com/documentation/metal/choosing-a-resource-storage-mode-for-apple-gpus",
+      "normalized_text": "apple-gpus\nhttps://developer.apple.com/documentation/metal/choosing-a-resource-storage-mode-for-apple-gpus",
+      "heading_level": 1,
+      "numbers": [],
+      "hash": "877c35a48c2cfec3",
+      "meta": {
+        "body_font_size": 6.0,
+        "body_line_count": 1
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00068",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 68,
+      "bbox": [
+        123.29,
+        592.67,
+        309.46,
+        605.7
+      ],
+      "text": "https://huggingface.co/wangkanai/sdxl-fp16",
+      "normalized_text": "https://huggingface.co/wangkanai/sdxl-fp16",
+      "heading_level": 3,
+      "numbers": [
+        "16"
+      ],
+      "hash": "191adf6581dd32fb",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00069",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 69,
+      "bbox": [
+        78.0,
+        608.03,
+        233.11,
+        618.89
+      ],
+      "text": "https://huggingface.co/wangkanai/sdxl-fp16",
+      "normalized_text": "https://huggingface.co/wangkanai/sdxl-fp16",
+      "heading_level": 3,
+      "numbers": [
+        "16"
+      ],
+      "hash": "191adf6581dd32fb",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00070",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 70,
+      "bbox": [
+        92.77,
+        627.06,
+        310.96,
+        640.09
+      ],
+      "text": "https://github.com/intel/intel-extension-for-pytorch",
+      "normalized_text": "https://github.com/intel/intel-extension-for-pytorch",
+      "heading_level": 3,
+      "numbers": [],
+      "hash": "4c286166b10e8228",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00071",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 71,
+      "bbox": [
+        78.0,
+        642.42,
+        259.76,
+        653.28
+      ],
+      "text": "https://github.com/intel/intel-extension-for-pytorch",
+      "normalized_text": "https://github.com/intel/intel-extension-for-pytorch",
+      "heading_level": 3,
+      "numbers": [],
+      "hash": "4c286166b10e8228",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00072",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 72,
+      "bbox": [
+        107.53,
+        661.44,
+        243.41,
+        674.48
+      ],
+      "text": "https://github.com/xiph/rnnoise",
+      "normalized_text": "https://github.com/xiph/rnnoise",
+      "heading_level": 3,
+      "numbers": [],
+      "hash": "f97d889caea3a79f",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00073",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 73,
+      "bbox": [
+        78.0,
+        676.81,
+        191.21,
+        687.67
+      ],
+      "text": "https://github.com/xiph/rnnoise",
+      "normalized_text": "https://github.com/xiph/rnnoise",
+      "heading_level": 3,
+      "numbers": [],
+      "hash": "f97d889caea3a79f",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00074",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 74,
+      "bbox": [
+        122.3,
+        695.83,
+        333.02,
+        708.86
+      ],
+      "text": "https://huggingface.co/meta-llama/Llama-3.1-70B",
+      "normalized_text": "https://huggingface.co/meta-llama/Llama-3.1-70B",
+      "heading_level": 3,
+      "numbers": [
+        "3.1",
+        "70"
+      ],
+      "hash": "423122de5950eaa0",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00075",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 75,
+      "bbox": [
+        78.0,
+        711.19,
+        253.57,
+        722.05
+      ],
+      "text": "https://huggingface.co/meta-llama/Llama-3.1-70B",
+      "normalized_text": "https://huggingface.co/meta-llama/Llama-3.1-70B",
+      "heading_level": 3,
+      "numbers": [
+        "3.1",
+        "70"
+      ],
+      "hash": "423122de5950eaa0",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00076",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 76,
+      "bbox": [
+        123.29,
+        730.22,
+        367.25,
+        743.25
+      ],
+      "text": "https://huggingface.co/microsoft/Phi-3-mini-128k-instruct",
+      "normalized_text": "https://huggingface.co/microsoft/Phi-3-mini-128k-instruct",
+      "heading_level": 3,
+      "numbers": [
+        "3",
+        "128"
+      ],
+      "hash": "b25f3e698abe890c",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00077",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 77,
+      "bbox": [
+        78.0,
+        87.51,
+        374.13,
+        756.44
+      ],
+      "text": "https://huggingface.co/microsoft/Phi-3-mini-128k-instruct\n130\n131\n132\n133\n134\n97\n13\n135\n136\n1 11 91 131\n2 18 80\n3 9 78 79\n4 124\n5 26\n6 89 95 104\n7 122\n8 15 21 98 115\n10 130\n12 77 113\n13\n14 86\n16 29 30\n17 38 103",
+      "normalized_text": "https://huggingface.co/microsoft/Phi-3-mini-128k-instruct\n130\n131\n132\n133\n134\n97\n13\n135\n136\n1 11 91 131\n2 18 80\n3 9 78 79\n4 124\n5 26\n6 89 95 104\n7 122\n8 15 21 98 115\n10 130\n12 77 113\n13\n14 86\n16 29 30\n17 38 103",
+      "heading_level": 3,
+      "numbers": [
+        "3",
+        "128",
+        "130\n",
+        "131\n",
+        "132\n",
+        "133\n",
+        "134\n",
+        "97\n",
+        "13\n",
+        "135\n",
+        "136\n",
+        "1 ",
+        "11 ",
+        "91 ",
+        "131\n",
+        "2 ",
+        "18 ",
+        "80\n",
+        "3 ",
+        "9 ",
+        "78 ",
+        "79\n",
+        "4 ",
+        "124\n",
+        "5 ",
+        "26\n",
+        "6 ",
+        "89 ",
+        "95 ",
+        "104\n",
+        "7 ",
+        "122\n",
+        "8 ",
+        "15 ",
+        "21 ",
+        "98 ",
+        "115\n",
+        "10 ",
+        "130\n",
+        "12 ",
+        "77 ",
+        "113\n",
+        "13\n",
+        "14 ",
+        "86\n",
+        "16 ",
+        "29 ",
+        "30\n",
+        "17 ",
+        "38 ",
+        "103"
+      ],
+      "hash": "38ee961d4997e745",
+      "meta": {
+        "body_font_size": 6.0,
+        "body_line_count": 23
+      }
+    },
+    {
+      "chunk_id": "document_p019_c00078",
+      "block_type": "text",
+      "page_no": 19,
+      "order": 78,
+      "bbox": [
+        292.49,
+        799.76,
+        302.79,
+        812.02
+      ],
+      "text": "19",
+      "normalized_text": "19",
+      "heading_level": 1,
+      "numbers": [
+        "19"
+      ],
+      "hash": "f4becfcfd9d0818b",
+      "meta": {
+        "body_font_size": 6.0
+      }
+    },
+    {
+      "chunk_id": "document_p020_c00079",
+      "block_type": "text",
+      "page_no": 20,
+      "order": 79,
+      "bbox": [
+        78.0,
+        72.23,
+        427.83,
+        751.82
+      ],
+      "text": "https://lmstudio.ai/docs/app\nhttps://lmstudio.ai/docs/app\nhttps://docs.nvidia.com/tensorrt-llm/index.html\nhttps://docs.nvidia.com/tensorrt-llm/index.html\nhttps://github.com/ml-explore/mlx\nhttps://github.com/ml-explore/mlx\nhttps://github.com/ollama/ollama\nhttps://github.com/ollama/ollama\nhttps://docs.ollama.com/api/openai-compatibility\nhttps://docs.ollama.com/api/openai-compatibility\nhttps://llama-cpp-python.readthedocs.io/en/latest/api-reference/\nhttps://llama-cpp-python.readthedocs.io/en/latest/api-reference/\nhttps://developers.openai.com/cookbook/articles/gpt-oss/run-locally-ollama/\nhttps://developers.openai.com/cookbook/articles/gpt-oss/run-locally-ollama/\nhttps://github.com/Blaizzy/mlx-vlm\nhttps://github.com/Blaizzy/mlx-vlm\nhttps://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct\nhttps://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct\nhttps://huggingface.co/Qwen/Qwen2.5-7B-Instruct\nhttps://huggingface.co/Qwen/Qwen2.5-7B-Instruct\nhttps://qwenlm.github.io/blog/qwen2.5/\nhttps://qwenlm.github.io/blog/qwen2.5/\nhttps://ai.google.dev/gemma/docs/core/model_card_2\nhttps://ai.google.dev/gemma/docs/core/model_card_2\nhttps://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1\nhttps://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1\nhttps://arxiv.org/abs/2412.08905\nhttps://arxiv.org/abs/2412.08905\nhttps://developers.openai.com/cookbook/articles/gpt-oss/run-locally-lmstudio/\nhttps://developers.openai.com/cookbook/articles/gpt-oss/run-locally-lmstudio/\nhttps://huggingface.co/Qwen/Qwen2-VL-72B\nhttps://huggingface.co/Qwen/Qwen2-VL-72B\nhttps://huggingface.co/microsoft/Phi-3-vision-128k-instruct\nhttps://huggingface.co/microsoft/Phi-3-vision-128k-instruct\nhttps://huggingface.co/OpenGVLab/InternVL2-4B\nhttps://huggingface.co/OpenGVLab/InternVL2-4B\nhttps://github.com/haotian-liu/LLaVA\nhttps://github.com/haotian-liu/LLaVA\nhttps://openai.com/index/whisper/\nhttps://openai.com/index/whisper/\n19 118\n20\n22 119\n23 110\n24 117\n25\n27\n28\n31\n32 100 128\n33\n34 35\n36 37\n39 40 102\n41\n42\n43\n44 45\n46 47\n48 105",
+      "normalized_text": "https://lmstudio.ai/docs/app\nhttps://lmstudio.ai/docs/app\nhttps://docs.nvidia.com/tensorrt-llm/index.html\nhttps://docs.nvidia.com/tensorrt-llm/index.html\nhttps://github.com/ml-explore/mlx\nhttps://github.com/ml-explore/mlx\nhttps://github.com/ollama/ollama\nhttps://github.com/ollama/ollama\nhttps://docs.ollama.com/api/openai-compatibility\nhttps://docs.ollama.com/api/openai-compatibility\nhttps://llama-cpp-python.readthedocs.io/en/latest/api-reference/\nhttps://llama-cpp-python.readthedocs.io/en/latest/api-reference/\nhttps://developers.openai.com/cookbook/articles/gpt-oss/run-locally-ollama/\nhttps://developers.openai.com/cookbook/articles/gpt-oss/run-locally-ollama/\nhttps://github.com/Blaizzy/mlx-vlm\nhttps://github.com/Blaizzy/mlx-vlm\nhttps://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct\nhttps://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct\nhttps://huggingface.co/Qwen/Qwen2.5-7B-Instruct\nhttps://huggingface.co/Qwen/Qwen2.5-7B-Instruct\nhttps://qwenlm.github.io/blog/qwen2.5/\nhttps://qwenlm.github.io/blog/qwen2.5/\nhttps://ai.google.dev/gemma/docs/core/model_card_2\nhttps://ai.google.dev/gemma/docs/core/model_card_2\nhttps://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1\nhttps://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1\nhttps://arxiv.org/abs/2412.08905\nhttps://arxiv.org/abs/2412.08905\nhttps://developers.openai.com/cookbook/articles/gpt-oss/run-locally-lmstudio/\nhttps://developers.openai.com/cookbook/articles/gpt-oss/run-locally-lmstudio/\nhttps://huggingface.co/Qwen/Qwen2-VL-72B\nhttps://huggingface.co/Qwen/Qwen2-VL-72B\nhttps://huggingface.co/microsoft/Phi-3-vision-128k-instruct\nhttps://huggingface.co/microsoft/Phi-3-vision-128k-instruct\nhttps://huggingface.co/OpenGVLab/InternVL2-4B\nhttps://huggingface.co/OpenGVLab/InternVL2-4B\nhttps://github.com/haotian-liu/LLaVA\nhttps://github.com/haotian-liu/LLaVA\nhttps://openai.com/index/whisper/\nhttps://openai.com/index/whisper/\n19 118\n20\n22 119\n23 110\n24 117\n25\n27\n28\n31\n32 100 128\n33\n34 35\n36 37\n39 40 102\n41\n42\n43\n44 45\n46 47\n48 105",
+      "heading_level": 3,
+      "numbers": [
+        "3",
+        "70",
+        "3",
+        "70",
+        "2.5",
+        "7",
+        "2.5",
+        "7",
+        "2.5",
+        "2.5",
+        "2\n",
+        "2\n",
+        "8",
+        "7",
+        "0.1\n",
+        "8",
+        "7",
+        "0.1\n",
+        "2412.08905\n",
+        "2412.08905\n",
+        "2",
+        "72",
+        "2",
+        "72",
+        "3",
+        "128",
+        "3",
+        "128",
+        "2",
+        "4",
+        "2",
+        "4",
+        "19 ",
+        "118\n",
+        "20\n",
+        "22 ",
+        "119\n",
+        "23 ",
+        "110\n",
+        "24 ",
+        "117\n",
+        "25\n",
+        "27\n",
+        "28\n",
+        "31\n",
+        "32 ",
+        "100 ",
+        "128\n",
+        "33\n",
+        "34 ",
+        "35\n",
+        "36 ",
+        "37\n",
+        "39 ",
+        "40 ",
+        "102\n",
+        "41\n",
+        "42\n",
+        "43\n",
+        "44 ",
+        "45\n",
+        "46 ",
+        "47\n",
+        "48 ",
+        "105"
+      ],
+      "hash": "374022f682052e0a",
+      "meta": {
+        "body_font_size": 7.5,
+        "body_line_count": 40
+      }
+    },
+    {
+      "chunk_id": "document_p020_c00080",
+      "block_type": "text",
+      "page_no": 20,
+      "order": 80,
+      "bbox": [
+        292.49,
+        799.76,
+        302.79,
+        812.02
+      ],
+      "text": "20",
+      "normalized_text": "20",
+      "heading_level": 3,
+      "numbers": [
+        "20"
+      ],
+      "hash": "dfd5d20add6e01b1",
+      "meta": {
+        "body_font_size": 7.5
+      }
+    },
+    {
+      "chunk_id": "document_p021_c00081",
+      "block_type": "text",
+      "page_no": 21,
+      "order": 81,
+      "bbox": [
+        78.0,
+        72.23,
+        366.64,
+        751.82
+      ],
+      "text": "https://apnews.com/article/90020cdf5fa16c79ca2e5b6c4c9bbb14\nhttps://apnews.com/article/90020cdf5fa16c79ca2e5b6c4c9bbb14\nhttps://github.com/SYSTRAN/faster-whisper\nhttps://github.com/SYSTRAN/faster-whisper\nhttps://github.com/ggml-org/whisper.cpp\nhttps://github.com/ggml-org/whisper.cpp\nhttps://github.com/rhasspy/piper\nhttps://github.com/rhasspy/piper\nhttps://github.com/hexgrad/kokoro\nhttps://github.com/hexgrad/kokoro\nhttps://huggingface.co/coqui/XTTS-v2\nhttps://huggingface.co/coqui/XTTS-v2\nhttps://github.com/yl4579/StyleTTS2\nhttps://github.com/yl4579/StyleTTS2\nhttps://huggingface.co/BAAI/bge-m3\nhttps://huggingface.co/BAAI/bge-m3\nhttps://huggingface.co/intfloat/multilingual-e5-large\nhttps://huggingface.co/intfloat/multilingual-e5-large\nhttps://huggingface.co/intfloat/multilingual-e5-large-instruct\nhttps://huggingface.co/intfloat/multilingual-e5-large-instruct\nhttps://huggingface.co/BAAI/bge-reranker-large\nhttps://huggingface.co/BAAI/bge-reranker-large\nhttps://huggingface.co/BAAI/bge-reranker-v2-m3\nhttps://huggingface.co/BAAI/bge-reranker-v2-m3\nhttps://github.com/tesseract-ocr/tesseract\nhttps://github.com/tesseract-ocr/tesseract\nhttps://github.com/PaddlePaddle/PaddleOCR\nhttps://github.com/PaddlePaddle/PaddleOCR\nhttps://github.com/clovaai/donut\nhttps://github.com/clovaai/donut\nhttps://arxiv.org/pdf/2204.08387\nhttps://arxiv.org/pdf/2204.08387\nhttps://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0\nhttps://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0\nhttps://github.com/Comfy-Org/ComfyUI\nhttps://github.com/Comfy-Org/ComfyUI\nhttps://github.com/AUTOMATIC1111/stable-diffusion-webui\nhttps://github.com/AUTOMATIC1111/stable-diffusion-webui\nhttps://github.com/black-forest-labs/flux\nhttps://github.com/black-forest-labs/flux\n49\n50 101\n51\n52 56\n53\n54\n55\n57 58\n59\n60\n61\n62\n63 64 70\n65 66\n67 68\n69 106\n71\n72\n73\n74 75 129",
+      "normalized_text": "https://apnews.com/article/90020cdf5fa16c79ca2e5b6c4c9bbb14\nhttps://apnews.com/article/90020cdf5fa16c79ca2e5b6c4c9bbb14\nhttps://github.com/SYSTRAN/faster-whisper\nhttps://github.com/SYSTRAN/faster-whisper\nhttps://github.com/ggml-org/whisper.cpp\nhttps://github.com/ggml-org/whisper.cpp\nhttps://github.com/rhasspy/piper\nhttps://github.com/rhasspy/piper\nhttps://github.com/hexgrad/kokoro\nhttps://github.com/hexgrad/kokoro\nhttps://huggingface.co/coqui/XTTS-v2\nhttps://huggingface.co/coqui/XTTS-v2\nhttps://github.com/yl4579/StyleTTS2\nhttps://github.com/yl4579/StyleTTS2\nhttps://huggingface.co/BAAI/bge-m3\nhttps://huggingface.co/BAAI/bge-m3\nhttps://huggingface.co/intfloat/multilingual-e5-large\nhttps://huggingface.co/intfloat/multilingual-e5-large\nhttps://huggingface.co/intfloat/multilingual-e5-large-instruct\nhttps://huggingface.co/intfloat/multilingual-e5-large-instruct\nhttps://huggingface.co/BAAI/bge-reranker-large\nhttps://huggingface.co/BAAI/bge-reranker-large\nhttps://huggingface.co/BAAI/bge-reranker-v2-m3\nhttps://huggingface.co/BAAI/bge-reranker-v2-m3\nhttps://github.com/tesseract-ocr/tesseract\nhttps://github.com/tesseract-ocr/tesseract\nhttps://github.com/PaddlePaddle/PaddleOCR\nhttps://github.com/PaddlePaddle/PaddleOCR\nhttps://github.com/clovaai/donut\nhttps://github.com/clovaai/donut\nhttps://arxiv.org/pdf/2204.08387\nhttps://arxiv.org/pdf/2204.08387\nhttps://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0\nhttps://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0\nhttps://github.com/Comfy-Org/ComfyUI\nhttps://github.com/Comfy-Org/ComfyUI\nhttps://github.com/AUTOMATIC1111/stable-diffusion-webui\nhttps://github.com/AUTOMATIC1111/stable-diffusion-webui\nhttps://github.com/black-forest-labs/flux\nhttps://github.com/black-forest-labs/flux\n49\n50 101\n51\n52 56\n53\n54\n55\n57 58\n59\n60\n61\n62\n63 64 70\n65 66\n67 68\n69 106\n71\n72\n73\n74 75 129",
+      "heading_level": 0,
+      "numbers": [
+        "90020",
+        "5",
+        "16",
+        "79",
+        "2",
+        "5",
+        "6",
+        "4",
+        "9",
+        "14\n",
+        "90020",
+        "5",
+        "16",
+        "79",
+        "2",
+        "5",
+        "6",
+        "4",
+        "9",
+        "14\n",
+        "2\n",
+        "2\n",
+        "4579",
+        "2\n",
+        "4579",
+        "2\n",
+        "3\n",
+        "3\n",
+        "5",
+        "5",
+        "5",
+        "5",
+        "2",
+        "3\n",
+        "2",
+        "3\n",
+        "2204.08387\n",
+        "2204.08387\n",
+        "1.0\n",
+        "1.0\n",
+        "1111",
+        "1111",
+        "49\n",
+        "50 ",
+        "101\n",
+        "51\n",
+        "52 ",
+        "56\n",
+        "53\n",
+        "54\n",
+        "55\n",
+        "57 ",
+        "58\n",
+        "59\n",
+        "60\n",
+        "61\n",
+        "62\n",
+        "63 ",
+        "64 ",
+        "70\n",
+        "65 ",
+        "66\n",
+        "67 ",
+        "68\n",
+        "69 ",
+        "106\n",
+        "71\n",
+        "72\n",
+        "73\n",
+        "74 ",
+        "75 ",
+        "129"
+      ],
+      "hash": "a1ec5298135f29c1",
+      "meta": {
+        "body_font_size": 7.5,
+        "body_line_count": 40
+      }
+    },
+    {
+      "chunk_id": "document_p021_c00082",
+      "block_type": "text",
+      "page_no": 21,
+      "order": 82,
+      "bbox": [
+        292.49,
+        799.76,
+        302.79,
+        812.02
+      ],
+      "text": "21",
+      "normalized_text": "21",
+      "heading_level": 3,
+      "numbers": [
+        "21"
+      ],
+      "hash": "26bdeeb3d4ad6ca0",
+      "meta": {
+        "body_font_size": 7.5
+      }
+    },
+    {
+      "chunk_id": "document_p022_c00083",
+      "block_type": "text",
+      "page_no": 22,
+      "order": 83,
+      "bbox": [
+        78.0,
+        72.23,
+        467.53,
+        751.82
+      ],
+      "text": "https://github.com/black-forest-labs/flux/blob/main/model_licenses/LICENSE-FLUX1-dev\nhttps://github.com/black-forest-labs/flux/blob/main/model_licenses/LICENSE-FLUX1-dev\nhttps://github.com/snakers4/silero-vad\nhttps://github.com/snakers4/silero-vad\nhttps://github.com/pyannote/pyannote-audio\nhttps://github.com/pyannote/pyannote-audio\nhttps://github.com/dscripka/openWakeWord\nhttps://github.com/dscripka/openWakeWord\nhttps://github.com/turboderp-org/exllamav2\nhttps://github.com/turboderp-org/exllamav2\nhttps://github.com/ggerganov/llama.cpp/discussions/7949\nhttps://github.com/ggerganov/llama.cpp/discussions/7949\nhttps://github.com/ggml-org/llama.cpp/discussions/8860\nhttps://github.com/ggml-org/llama.cpp/discussions/8860\nhttps://www.apple.com/macbook-pro/specs/\nhttps://www.apple.com/macbook-pro/specs/\nhttps://support.apple.com/en-us/111901\nhttps://support.apple.com/en-us/111901\nhttps://support.apple.com/ja-jp/117736\nhttps://support.apple.com/ja-jp/117736\nhttps://rocm.docs.amd.com/projects/radeon-ryzen/en/latest/index.html\nhttps://rocm.docs.amd.com/projects/radeon-ryzen/en/latest/index.html\nhttps://huggingface.co/collections/Qwen/qwen2-vl\nhttps://huggingface.co/collections/Qwen/qwen2-vl\nhttps://huggingface.co/Qwen/Qwen2-VL-7B-Instruct\nhttps://huggingface.co/Qwen/Qwen2-VL-7B-Instruct\nhttps://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct\nhttps://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct\nhttps://huggingface.co/docs/transformers/en/model_doc/starcoder2\nhttps://huggingface.co/docs/transformers/en/model_doc/starcoder2\nhttps://docs.vllm.ai/en/v0.9.2/design/automatic_prefix_caching.html\nhttps://docs.vllm.ai/en/v0.9.2/design/automatic_prefix_caching.html\nhttps://nvidia.github.io/TensorRT-LLM/advanced/kv-cache-reuse.html\nhttps://nvidia.github.io/TensorRT-LLM/advanced/kv-cache-reuse.html\nhttps://github.com/ggml-org/ggml/blob/master/docs/gguf.md\nhttps://github.com/ggml-org/ggml/blob/master/docs/gguf.md\nhttps://github.com/ml-explore/mlx-lm\nhttps://github.com/ml-explore/mlx-lm\nhttps://docs.vllm.ai/en/latest/api/vllm/platforms/\nhttps://docs.vllm.ai/en/latest/api/vllm/platforms/\n76\n81 82\n83 84\n85\n87\n88\n90 96 99\n92\n93 133\n94\n97\n107\n108\n109\n111\n112\n114\n116\n120\n121",
+      "normalized_text": "https://github.com/black-forest-labs/flux/blob/main/model_licenses/LICENSE-FLUX1-dev\nhttps://github.com/black-forest-labs/flux/blob/main/model_licenses/LICENSE-FLUX1-dev\nhttps://github.com/snakers4/silero-vad\nhttps://github.com/snakers4/silero-vad\nhttps://github.com/pyannote/pyannote-audio\nhttps://github.com/pyannote/pyannote-audio\nhttps://github.com/dscripka/openWakeWord\nhttps://github.com/dscripka/openWakeWord\nhttps://github.com/turboderp-org/exllamav2\nhttps://github.com/turboderp-org/exllamav2\nhttps://github.com/ggerganov/llama.cpp/discussions/7949\nhttps://github.com/ggerganov/llama.cpp/discussions/7949\nhttps://github.com/ggml-org/llama.cpp/discussions/8860\nhttps://github.com/ggml-org/llama.cpp/discussions/8860\nhttps://www.apple.com/macbook-pro/specs/\nhttps://www.apple.com/macbook-pro/specs/\nhttps://support.apple.com/en-us/111901\nhttps://support.apple.com/en-us/111901\nhttps://support.apple.com/ja-jp/117736\nhttps://support.apple.com/ja-jp/117736\nhttps://rocm.docs.amd.com/projects/radeon-ryzen/en/latest/index.html\nhttps://rocm.docs.amd.com/projects/radeon-ryzen/en/latest/index.html\nhttps://huggingface.co/collections/Qwen/qwen2-vl\nhttps://huggingface.co/collections/Qwen/qwen2-vl\nhttps://huggingface.co/Qwen/Qwen2-VL-7B-Instruct\nhttps://huggingface.co/Qwen/Qwen2-VL-7B-Instruct\nhttps://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct\nhttps://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct\nhttps://huggingface.co/docs/transformers/en/model_doc/starcoder2\nhttps://huggingface.co/docs/transformers/en/model_doc/starcoder2\nhttps://docs.vllm.ai/en/v0.9.2/design/automatic_prefix_caching.html\nhttps://docs.vllm.ai/en/v0.9.2/design/automatic_prefix_caching.html\nhttps://nvidia.github.io/TensorRT-LLM/advanced/kv-cache-reuse.html\nhttps://nvidia.github.io/TensorRT-LLM/advanced/kv-cache-reuse.html\nhttps://github.com/ggml-org/ggml/blob/master/docs/gguf.md\nhttps://github.com/ggml-org/ggml/blob/master/docs/gguf.md\nhttps://github.com/ml-explore/mlx-lm\nhttps://github.com/ml-explore/mlx-lm\nhttps://docs.vllm.ai/en/latest/api/vllm/platforms/\nhttps://docs.vllm.ai/en/latest/api/vllm/platforms/\n76\n81 82\n83 84\n85\n87\n88\n90 96 99\n92\n93 133\n94\n97\n107\n108\n109\n111\n112\n114\n116\n120\n121",
+      "heading_level": 0,
+      "numbers": [
+        "1",
+        "1",
+        "4",
+        "4",
+        "2\n",
+        "2\n",
+        "7949\n",
+        "7949\n",
+        "8860\n",
+        "8860\n",
+        "111901\n",
+        "111901\n",
+        "117736\n",
+        "117736\n",
+        "2",
+        "2",
+        "2",
+        "7",
+        "2",
+        "7",
+        "2.5",
+        "7",
+        "2.5",
+        "7",
+        "2\n",
+        "2\n",
+        "0.9",
+        "2",
+        "0.9",
+        "2",
+        "76\n",
+        "81 ",
+        "82\n",
+        "83 ",
+        "84\n",
+        "85\n",
+        "87\n",
+        "88\n",
+        "90 ",
+        "96 ",
+        "99\n",
+        "92\n",
+        "93 ",
+        "133\n",
+        "94\n",
+        "97\n",
+        "107\n",
+        "108\n",
+        "109\n",
+        "111\n",
+        "112\n",
+        "114\n",
+        "116\n",
+        "120\n",
+        "121"
+      ],
+      "hash": "02b7ecc4f9619427",
+      "meta": {
+        "body_font_size": 7.5,
+        "body_line_count": 40
+      }
+    },
+    {
+      "chunk_id": "document_p022_c00084",
+      "block_type": "text",
+      "page_no": 22,
+      "order": 84,
+      "bbox": [
+        292.49,
+        799.76,
+        302.79,
+        812.02
+      ],
+      "text": "22",
+      "normalized_text": "22",
+      "heading_level": 3,
+      "numbers": [
+        "22"
+      ],
+      "hash": "9ed2f0c33cb2f257",
+      "meta": {
+        "body_font_size": 7.5
+      }
+    },
+    {
+      "chunk_id": "document_p023_c00085",
+      "block_type": "text",
+      "page_no": 23,
+      "order": 85,
+      "bbox": [
+        78.0,
+        72.23,
+        502.58,
+        291.59
+      ],
+      "text": "https://arxiv.org/pdf/2210.17323\nhttps://arxiv.org/pdf/2210.17323\nhttps://github.com/casper-hansen/AutoAWQ\nhttps://github.com/casper-hansen/AutoAWQ\nhttps://github.com/AutoGPTQ/AutoGPTQ\nhttps://github.com/AutoGPTQ/AutoGPTQ\nhttps://arxiv.org/abs/2211.10438\nhttps://arxiv.org/abs/2211.10438\nhttps://ml-explore.github.io/mlx/build/html/usage/unified_memory.html\nhttps://ml-explore.github.io/mlx/build/html/usage/unified_memory.html\nhttps://developer.apple.com/metal/pytorch/\nhttps://developer.apple.com/metal/pytorch/\nhttps://www.intel.com/content/www/us/en/developer/articles/technical/run-llms-on-gpus-using-",
+      "normalized_text": "https://arxiv.org/pdf/2210.17323\nhttps://arxiv.org/pdf/2210.17323\nhttps://github.com/casper-hansen/AutoAWQ\nhttps://github.com/casper-hansen/AutoAWQ\nhttps://github.com/AutoGPTQ/AutoGPTQ\nhttps://github.com/AutoGPTQ/AutoGPTQ\nhttps://arxiv.org/abs/2211.10438\nhttps://arxiv.org/abs/2211.10438\nhttps://ml-explore.github.io/mlx/build/html/usage/unified_memory.html\nhttps://ml-explore.github.io/mlx/build/html/usage/unified_memory.html\nhttps://developer.apple.com/metal/pytorch/\nhttps://developer.apple.com/metal/pytorch/\nhttps://www.intel.com/content/www/us/en/developer/articles/technical/run-llms-on-gpus-using-",
+      "heading_level": 0,
+      "numbers": [
+        "2210.17323\n",
+        "2210.17323\n",
+        "2211.10438\n",
+        "2211.10438\n"
+      ],
+      "hash": "aa12a3f51b299619",
+      "meta": {
+        "body_font_size": 7.5,
+        "body_line_count": 7
+      }
+    },
+    {
+      "chunk_id": "document_p023_c00086",
+      "block_type": "text",
+      "page_no": 23,
+      "order": 86,
+      "bbox": [
+        78.0,
+        74.01,
+        472.44,
+        352.67
+      ],
+      "text": "llama-cpp.html\nhttps://www.intel.com/content/www/us/en/developer/articles/technical/run-llms-on-gpus-using-llama-cpp.html\nhttps://github.com/openvinotoolkit/openvino\nhttps://github.com/openvinotoolkit/openvino\n123\n125\n126\n127\n132\n134\n135\n136",
+      "normalized_text": "llama-cpp.html\nhttps://www.intel.com/content/www/us/en/developer/articles/technical/run-llms-on-gpus-using-llama-cpp.html\nhttps://github.com/openvinotoolkit/openvino\nhttps://github.com/openvinotoolkit/openvino\n123\n125\n126\n127\n132\n134\n135\n136",
+      "heading_level": 3,
+      "numbers": [
+        "123\n",
+        "125\n",
+        "126\n",
+        "127\n",
+        "132\n",
+        "134\n",
+        "135\n",
+        "136"
+      ],
+      "hash": "6684a7756fabdd41",
+      "meta": {
+        "body_font_size": 7.5,
+        "body_line_count": 10
+      }
+    },
+    {
+      "chunk_id": "document_p023_c00087",
+      "block_type": "text",
+      "page_no": 23,
+      "order": 87,
+      "bbox": [
+        292.49,
+        799.76,
+        302.79,
+        812.02
+      ],
+      "text": "23",
+      "normalized_text": "23",
+      "heading_level": 3,
+      "numbers": [
+        "23"
+      ],
+      "hash": "7caec3608fb4441e",
+      "meta": {
+        "body_font_size": 7.5
+      }
+    }
+  ]
+}

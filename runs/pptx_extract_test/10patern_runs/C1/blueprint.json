@@ -1,0 +1,99 @@
+{
+  "schema_version": "0.1",
+  "document_id": "C1",
+  "theme_id": "theme_default",
+  "slides": [
+    {
+      "slide_no": null,
+      "component_id": "comp_title_bullets",
+      "message": "[BACKGROUND]",
+      "slots": {
+        "TITLE": "[BACKGROUND]",
+        "BULLETS": [
+          "05",
+          "特徴軸（評価軸）\nの定義",
+          "評価の共通物差しと測定基準",
+          "KEY TAKEAWAYS",
+          "[IMAGE]",
+          "本章の要点",
+          "[IMAGE]",
+          "13の評価軸：\n 指示追従、JSON堅牢性、長文耐性、速度、メモリなど、多角的な視点でモデルを比較評価します。"
+        ]
+      },
+      "citations": [
+        {
+          "mark": "※1",
+          "page": 1,
+          "chunk_id": "s001_bg000"
+        }
+      ]
+    },
+    {
+      "slide_no": null,
+      "component_id": "comp_title_bullets",
+      "message": "[BACKGROUND]",
+      "slots": {
+        "TITLE": "[BACKGROUND]",
+        "BULLETS": [
+          "06",
+          "[IMAGE]",
+          "カテゴリ別\nモデルカタログ",
+          "主要9カテゴリの\n詳細データと採用判断",
+          "SECTION OVERVIEW",
+          "[IMAGE]",
+          "提示方針：三層構造",
+          "[IMAGE]"
+        ]
+      },
+      "citations": [
+        {
+          "mark": "※2",
+          "page": 2,
+          "chunk_id": "s002_bg000"
+        }
+      ]
+    },
+    {
+      "slide_no": null,
+      "component_id": "comp_title_bullets",
+      "message": "[BACKGROUND]",
+      "slots": {
+        "TITLE": "[BACKGROUND]",
+        "BULLETS": [
+          "07",
+          "[IMAGE]",
+          "メモリ設計の\nコア",
+          "重み量子化・KVキャッシュ管理と\n最適化技術",
+          "[IMAGE]",
+          "重みメモリの現実解：\n 4bit量子化（weight-only）が基本。理論値＋10%オーバーヘッドで設計します。",
+          "[IMAGE]",
+          "KVキャッシュの支配性：\n 長文コンテキストではKVがメモリを圧迫。vLLMのpaged/quantized KV[5,6]やTensorRT-LLMのKV reuse[7]が必須です。"
+        ]
+      },
+      "citations": [
+        {
+          "mark": "※3",
+          "page": 3,
+          "chunk_id": "s003_bg000"
+        }
+      ]
+    }
+  ],
+  "toc": [
+    {
+      "title": "[BACKGROUND]",
+      "level": 1,
+      "slide_index": 1
+    },
+    {
+      "title": "[BACKGROUND]",
+      "level": 1,
+      "slide_index": 2
+    },
+    {
+      "title": "[BACKGROUND]",
+      "level": 1,
+      "slide_index": 3
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "defaultMode": "acceptEdits",
+  "permissions": {
+    "allow": [
+      "Bash(uv run*)",
+      "Bash(uv run asura*)",
+      "Bash(python*)",
+      "Bash(pytest*)",
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git add*)",
+      "Bash(git commit*)",
+      "Bash(ls*)",
+      "Bash(find . *)",
+      "Bash(cat src/*)",
+      "Bash(cat runs/*)",
+      "Bash(mkdir -p*)",
+      "Bash(cp runs/*)",
+      "Bash(mv runs/*)"
+    ],
+    "deny": [
+      "Bash(uv add*)",
+      "Bash(pip install*)",
+      "Bash(npm install*)",
+      "Bash(npm ci*)",
+      "Bash(rm -rf*)",
+      "Bash(rm -r *)",
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Bash(cat .env*)",
+      "Bash(cat *secret*)",
+      "Bash(cat *token*)",
+      "Bash(cat *key*)",
+      "Bash(cat *password*)",
+      "Bash(echo * > .env*)",
+      "Bash(git push --force*)"
+    ]
+  }
+}

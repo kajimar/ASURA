@@ -1,0 +1,24 @@
+{
+  "extractor": "athra_pdf",
+  "schema_version": "0.1",
+  "document_id": "document",
+  "source_path": "input/テスト.pdf",
+  "page_count": 80,
+  "generated_at": "2026-02-23T07:28:41.982155+00:00",
+  "metrics": {
+    "total_chunks": 322,
+    "chunks_by_block_type": {
+      "text": 322
+    },
+    "chunks_by_heading_level": {
+      "0": 17,
+      "3": 262,
+      "2": 7,
+      "1": 36
+    },
+    "avg_chunks_per_page": 4.025,
+    "pages_with_headers": 0,
+    "pages_with_footers": 0
+  },
+  "suspicious_flags": []
+}

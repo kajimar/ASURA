@@ -2,8 +2,8 @@
     "schema_version": "0.1",
     "run_id": "run_20260222_0001",
     "inputs": {
-      "source_path": "inputs/sample.pdf",
-      "source_type": "pdf",
+      "source_path": "input/テスト2.pptx",
+      "source_type": "pptx",
       "theme_id": "theme_default",
       "icon_group": null,
       "llm_endpoint": "http://localhost:1234/v1",

@@ -17,6 +17,10 @@
           "source_path": { "type": "string", "minLength": 1 },
           "converted_pdf_path": { "type": "string" },
           "title": { "type": "string" },
+          "page": {
+            "type": "object",
+            "additionalProperties": true
+          },
           "page_count": { "type": "integer", "minimum": 1 }
         }
       },
@@ -39,7 +43,7 @@
         "required": ["chunk_id", "text", "normalized_text"],
         "properties": {
           "chunk_id": { "type": "string", "pattern": "^[a-zA-Z0-9_\\-]{1,64}$" },
-          "type": { "type": "string", "enum": ["text"] },
+          "type": { "type": "string", "enum": ["text", "image", "table", "shape"] },
           "page": { "type": "integer", "minimum": 1 },
           "slide": { "type": "integer", "minimum": 1 },
           "bbox_pt": { "$ref": "#/$defs/bbox_pt" },
@@ -53,6 +57,30 @@
               "h": { "type": "number", "minimum": 0 }
             },
             "required": ["x", "y", "w", "h"]
+          },
+          "kind": { "type": "string" },
+          "shape_kind": { "type": "string" },
+          "rotation_deg": { "type": "number" },
+          "z": { "type": "integer" },
+          "style": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "text_struct": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "image": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "table": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "meta": {
+            "type": "object",
+            "additionalProperties": true
           },
           "heading_level": { "type": "integer", "minimum": 0, "maximum": 10 },
           "text": { "type": "string" },

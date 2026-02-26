@@ -1,0 +1,540 @@
+{
+  "schema_version": "0.1",
+  "document": {
+    "document_id": "B1",
+    "source_type": "pptx",
+    "source_path": "/Users/kanji/ASURA/input/10patern/B1.pptx",
+    "page_count": 1,
+    "page": {
+      "w_emu": 12192000,
+      "h_emu": 6858000
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "s001_bg000",
+      "page": 1,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 12192000,
+        "h": 6858000
+      },
+      "text": "[BACKGROUND]",
+      "normalized_text": "[BACKGROUND]",
+      "heading_level": 0,
+      "kind": "shape",
+      "z": 0,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {}
+      },
+      "shape_kind": "rect"
+    },
+    {
+      "chunk_id": "s001_sh001",
+      "page": 1,
+      "bbox": {
+        "x": 0,
+        "y": 6476695,
+        "w": 12192609,
+        "h": 381305
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10001,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "F6F5F8"
+        },
+        "line": {
+          "width_emu": 15875,
+          "color_rgb": "E5E5E5"
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh002",
+      "page": 1,
+      "bbox": {
+        "x": 0,
+        "y": 6476695,
+        "w": 12192610,
+        "h": 381305
+      },
+      "text": "Page 1 | ローカルAI 技術調査レポート",
+      "normalized_text": "Page 1 | ローカルAI 技術調査レポート",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10002,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": "FFFFFF",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "Page 1 | ",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "color_rgb": "86868B"
+              },
+              {
+                "index": 1,
+                "text": "ローカル",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 114300,
+                "color_rgb": "86868B"
+              },
+              {
+                "index": 2,
+                "text": "AI ",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "color_rgb": "86868B"
+              },
+              {
+                "index": 3,
+                "text": "技術調査レポート",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 114300,
+                "color_rgb": "86868B"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh003",
+      "page": 1,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 12192001,
+        "h": 1050646
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10003,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "007AFF"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh004",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 391821,
+        "w": 237744,
+        "h": 267005
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10004,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "5918ae44c682a29151e87b8098f770641f0bfdb6c84150e6832b9f5012210d8c",
+        "ext": "png",
+        "byte_size": 761,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s001_sh005",
+      "page": 1,
+      "bbox": {
+        "x": 809244,
+        "y": 334669,
+        "w": 3653028,
+        "h": 381305
+      },
+      "text": "Windows Tier（完全版表1）",
+      "normalized_text": "Windows Tier（完全版表1）",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10005,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "Windows Tier",
+                "font_name": "Cambria",
+                "font_size_emu": 266700,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              },
+              {
+                "index": 1,
+                "text": "（完全版表",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 266700,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              },
+              {
+                "index": 2,
+                "text": "1",
+                "font_name": "Cambria",
+                "font_size_emu": 266700,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              },
+              {
+                "index": 3,
+                "text": "）",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 266700,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh006",
+      "page": 1,
+      "bbox": {
+        "x": 8651138,
+        "y": 457200,
+        "w": 3643884,
+        "h": 228600
+      },
+      "text": "W-CPU1 / W-CPU2 / G-8 / G-12 の現実ライン",
+      "normalized_text": "W-CPU1 / W-CPU2 / G-8 / G-12 の現実ライン",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10006,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "W-CPU1 / W-CPU2 / G-8 / G-12 ",
+                "font_name": "Cambria",
+                "font_size_emu": 152400,
+                "color_rgb": "E3F2FD"
+              },
+              {
+                "index": 1,
+                "text": "の現実ライン",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 152400,
+                "color_rgb": "E3F2FD"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh007",
+      "page": 1,
+      "bbox": {
+        "x": 466344,
+        "y": 1380744,
+        "w": 11277296,
+        "h": 4144253
+      },
+      "text": "[TABLE]",
+      "normalized_text": "[TABLE]",
+      "heading_level": 0,
+      "kind": "table",
+      "z": 10007,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {}
+      },
+      "table": {
+        "rows": 5,
+        "cols": 6,
+        "cells": [
+          {
+            "r": 0,
+            "c": 0,
+            "text": "Tier"
+          },
+          {
+            "r": 0,
+            "c": 1,
+            "text": "想定ハード"
+          },
+          {
+            "r": 0,
+            "c": 2,
+            "text": "現実的なLLM規模"
+          },
+          {
+            "r": 0,
+            "c": 3,
+            "text": "常駐可否"
+          },
+          {
+            "r": 0,
+            "c": 4,
+            "text": "同時実行"
+          },
+          {
+            "r": 0,
+            "c": 5,
+            "text": "設計指針"
+          },
+          {
+            "r": 1,
+            "c": 0,
+            "text": "W-CPU1"
+          },
+          {
+            "r": 1,
+            "c": 1,
+            "text": "CPU-only\n8C/16T級 + 32GB RAM"
+          },
+          {
+            "r": 1,
+            "c": 2,
+            "text": "3B〜7B (4bit)"
+          },
+          {
+            "r": 1,
+            "c": 3,
+            "text": "条件付き\n負荷高"
+          },
+          {
+            "r": 1,
+            "c": 4,
+            "text": "厳しい\nオンデマンド推奨"
+          },
+          {
+            "r": 1,
+            "c": 5,
+            "text": "CPU最適化命令（AVX-512/VNNI/AMX等）を活用[13]。常駐は“小型＋短文”に限定し、重い処理は避ける。"
+          },
+          {
+            "r": 2,
+            "c": 0,
+            "text": "W-CPU2"
+          },
+          {
+            "r": 2,
+            "c": 1,
+            "text": "CPU-only\n16C/32T級 + 64GB RAM"
+          },
+          {
+            "r": 2,
+            "c": 2,
+            "text": "7B〜14B (4bit)"
+          },
+          {
+            "r": 2,
+            "c": 3,
+            "text": "可\nただし速度要検証"
+          },
+          {
+            "r": 2,
+            "c": 4,
+            "text": "設計次第"
+          },
+          {
+            "r": 2,
+            "c": 5,
+            "text": "夜間バッチ（Embedding/OCR）で負荷平準化。メモリ余裕はあるが計算速度が律速。"
+          },
+          {
+            "r": 3,
+            "c": 0,
+            "text": "G-8"
+          },
+          {
+            "r": 3,
+            "c": 1,
+            "text": "NVIDIA GPU\nVRAM 8GB"
+          },
+          {
+            "r": 3,
+            "c": 2,
+            "text": "7B中心 (4bit)"
+          },
+          {
+            "r": 3,
+            "c": 3,
+            "text": "可\n短文に限る"
+          },
+          {
+            "r": 3,
+            "c": 4,
+            "text": "軽量なら可"
+          },
+          {
+            "r": 3,
+            "c": 5,
+            "text": "画像生成SDXL等は設定依存で厳しいため要ベンチ。7B級LLM単体なら快適に動作。"
+          },
+          {
+            "r": 4,
+            "c": 0,
+            "text": "G-12"
+          },
+          {
+            "r": 4,
+            "c": 1,
+            "text": "NVIDIA GPU\nVRAM 12GB"
+          },
+          {
+            "r": 4,
+            "c": 2,
+            "text": "7B〜14B (4bit)"
+          },
+          {
+            "r": 4,
+            "c": 3,
+            "text": "可"
+          },
+          {
+            "r": 4,
+            "c": 4,
+            "text": "現実化"
+          },
+          {
+            "r": 4,
+            "c": 5,
+            "text": "14B級が視野に入る。VLM 2B〜7B級やASR GPU版を同時に載せやすく、実用性が高い。"
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh008",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 1371600,
+        "w": 11296498,
+        "h": 4143146
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10008,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "D2D2D7"
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    }
+  ]
+}

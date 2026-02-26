@@ -1,0 +1,23 @@
+{
+  "extractor": "athra_pdf",
+  "schema_version": "0.1",
+  "document_id": "document",
+  "source_path": "/Users/kanji/ASURA/input/抽出元.pdf",
+  "page_count": 23,
+  "generated_at": "2026-02-23T11:42:05.480686+00:00",
+  "metrics": {
+    "total_chunks": 87,
+    "chunks_by_block_type": {
+      "text": 87
+    },
+    "chunks_by_heading_level": {
+      "1": 13,
+      "0": 13,
+      "3": 61
+    },
+    "avg_chunks_per_page": 3.783,
+    "pages_with_headers": 0,
+    "pages_with_footers": 0
+  },
+  "suspicious_flags": []
+}

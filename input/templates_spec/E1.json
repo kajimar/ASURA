@@ -1,0 +1,314 @@
+{
+    "schema_version": "slot_templates_spec.v1",
+    "document_id": "E1",
+    "page_count": 1,
+    "pages": [
+      {
+        "page": 1,
+        "template_class": "meta.cover",
+        "sub_class": "cover.tags_takeaway",
+        "slots": [
+          {
+            "slot_id": "decor.top_bar",
+            "role": "decor",
+            "kind": "shape",
+            "bbox": {
+              "x": 0,
+              "y": 0,
+              "w": 12192001,
+              "h": 75896
+            },
+            "style_fingerprint": "kind:shape|shape:rect|fill:solid|fill_rgb:027AFF|line_w:0|align:CENTER (2)"
+          },
+          {
+            "slot_id": "meta.background",
+            "role": "background",
+            "kind": "shape",
+            "bbox": {
+              "x": 0,
+              "y": 0,
+              "w": 12192000,
+              "h": 6858000
+            },
+            "style_fingerprint": "kind:shape|shape:rect|fill:background"
+          },
+          {
+            "slot_id": "meta.logo",
+            "role": "meta",
+            "kind": "image",
+            "bbox": {
+              "x": 2190902,
+              "y": 809244,
+              "w": 609905,
+              "h": 609905
+            },
+            "style_fingerprint": "kind:image|img_ext:png|img_sha256:9d1dd2cbfc739be2db82c2a80dad61c2d3f36b6a60ff9c62c1e12446496e4d04"
+          },
+          {
+            "slot_id": "meta.eyebrow",
+            "role": "meta",
+            "kind": "text",
+            "bbox": {
+              "x": 2133295,
+              "y": 1705356,
+              "w": 7925105,
+              "h": 257861
+            },
+            "style_fingerprint": "kind:text|fill:background|line_w:0|align:CENTER (2)|font:Cambria|size:165100|text_rgb:86868B"
+          },
+          {
+            "slot_id": "meta.title",
+            "role": "meta",
+            "kind": "text",
+            "bbox": {
+              "x": 1677924,
+              "y": 2190902,
+              "w": 8837676,
+              "h": 590702
+            },
+            "style_fingerprint": "kind:text|fill:background|line_w:0|align:CENTER (2)|font:Noto Sans JP|size:533400|bold:True|text_rgb:1D1D1F"
+          },
+          {
+            "slot_id": "meta.subtitle",
+            "role": "meta",
+            "kind": "text",
+            "bbox": {
+              "x": 2095805,
+              "y": 2929738,
+              "w": 8001000,
+              "h": 457200
+            },
+            "style_fingerprint": "kind:text|fill:background|line_w:0|align:CENTER (2)|font:Noto Sans JP|size:304800|text_rgb:424245"
+          },
+          {
+            "slot_id": "content.tags.tag_1.panel",
+            "role": "content",
+            "kind": "shape",
+            "bbox": {
+              "x": 3383279,
+              "y": 3844138,
+              "w": 534010,
+              "h": 309524
+            },
+            "style_fingerprint": "kind:shape|shape:rect|fill:solid|line_w:38100"
+          },
+          {
+            "slot_id": "content.tags.tag_1.label",
+            "role": "content",
+            "kind": "text",
+            "bbox": {
+              "x": 3384194,
+              "y": 3844138,
+              "w": 534010,
+              "h": 314554
+            },
+            "style_fingerprint": "kind:text|fill:background|line_w:0|align:CENTER (2)|font:Cambria|size:127000|text_rgb:1D1D1F"
+          },
+          {
+            "slot_id": "content.tags.tag_2.panel",
+            "role": "content",
+            "kind": "shape",
+            "bbox": {
+              "x": 4010558,
+              "y": 3844138,
+              "w": 526694,
+              "h": 309524
+            },
+            "style_fingerprint": "kind:shape|shape:rect|fill:solid|line_w:38100"
+          },
+          {
+            "slot_id": "content.tags.tag_2.label",
+            "role": "content",
+            "kind": "text",
+            "bbox": {
+              "x": 4005072,
+              "y": 3844138,
+              "w": 534010,
+              "h": 314554
+            },
+            "style_fingerprint": "kind:text|fill:background|line_w:0|align:CENTER (2)|font:Cambria|size:127000|text_rgb:1D1D1F"
+          },
+          {
+            "slot_id": "content.tags.tag_3.panel",
+            "role": "content",
+            "kind": "shape",
+            "bbox": {
+              "x": 4637837,
+              "y": 3844138,
+              "w": 512977,
+              "h": 309524
+            },
+            "style_fingerprint": "kind:shape|shape:rect|fill:solid|line_w:38100"
+          },
+          {
+            "slot_id": "content.tags.tag_3.label",
+            "role": "content",
+            "kind": "text",
+            "bbox": {
+              "x": 4631436,
+              "y": 3844138,
+              "w": 523951,
+              "h": 314554
+            },
+            "style_fingerprint": "kind:text|fill:background|line_w:0|align:CENTER (2)|font:Cambria|size:127000|text_rgb:1D1D1F"
+          },
+          {
+            "slot_id": "content.tags.tag_4.panel",
+            "role": "content",
+            "kind": "shape",
+            "bbox": {
+              "x": 5239510,
+              "y": 3844138,
+              "w": 504749,
+              "h": 309524
+            },
+            "style_fingerprint": "kind:shape|shape:rect|fill:solid|line_w:38100"
+          },
+          {
+            "slot_id": "content.tags.tag_4.label",
+            "role": "content",
+            "kind": "text",
+            "bbox": {
+              "x": 5244998,
+              "y": 3844138,
+              "w": 505663,
+              "h": 314554
+            },
+            "style_fingerprint": "kind:text|fill:background|line_w:0|align:CENTER (2)|font:Cambria|size:127000|text_rgb:1D1D1F"
+          },
+          {
+            "slot_id": "content.tags.tag_5.panel",
+            "role": "content",
+            "kind": "shape",
+            "bbox": {
+              "x": 5844846,
+              "y": 3844138,
+              "w": 532180,
+              "h": 309524
+            },
+            "style_fingerprint": "kind:shape|shape:rect|fill:solid|line_w:38100"
+          },
+          {
+            "slot_id": "content.tags.tag_5.label",
+            "role": "content",
+            "kind": "text",
+            "bbox": {
+              "x": 5844845,
+              "y": 3844138,
+              "w": 534010,
+              "h": 314554
+            },
+            "style_fingerprint": "kind:text|fill:background|line_w:0|align:CENTER (2)|font:Cambria|size:127000|text_rgb:1D1D1F"
+          },
+          {
+            "slot_id": "content.tags.tag_6.panel",
+            "role": "content",
+            "kind": "shape",
+            "bbox": {
+              "x": 6472124,
+              "y": 3847636,
+              "w": 1090878,
+              "h": 309524
+            },
+            "style_fingerprint": "kind:shape|shape:rect|fill:solid|line_w:38100"
+          },
+          {
+            "slot_id": "content.tags.tag_6.label",
+            "role": "content",
+            "kind": "text",
+            "bbox": {
+              "x": 6467551,
+              "y": 3844138,
+              "w": 1095451,
+              "h": 314554
+            },
+            "style_fingerprint": "kind:text|fill:background|line_w:0|align:CENTER (2)|font:Cambria|size:127000|text_rgb:1D1D1F"
+          },
+          {
+            "slot_id": "content.tags.tag_7.panel",
+            "role": "content",
+            "kind": "shape",
+            "bbox": {
+              "x": 7651698,
+              "y": 3844138,
+              "w": 1162202,
+              "h": 309524
+            },
+            "style_fingerprint": "kind:shape|shape:rect|fill:solid|line_w:38100"
+          },
+          {
+            "slot_id": "content.tags.tag_7.label",
+            "role": "content",
+            "kind": "text",
+            "bbox": {
+              "x": 7653528,
+              "y": 3844138,
+              "w": 1162202,
+              "h": 314554
+            },
+            "style_fingerprint": "kind:text|fill:background|line_w:0|align:CENTER (2)|font:Cambria|size:127000|text_rgb:1D1D1F"
+          },
+          {
+            "slot_id": "content.takeaway.panel",
+            "role": "content",
+            "kind": "shape",
+            "bbox": {
+              "x": 2190902,
+              "y": 4463186,
+              "w": 7810805,
+              "h": 1591056
+            },
+            "style_fingerprint": "kind:shape|shape:round_rect|fill:solid|fill_rgb:F5F5F7|line_w:0|align:None"
+          },
+          {
+            "slot_id": "decor.takeaway.accent_bar.left",
+            "role": "decor",
+            "kind": "shape",
+            "bbox": {
+              "x": 2190902,
+              "y": 4463186,
+              "w": 38405,
+              "h": 1591056
+            },
+            "style_fingerprint": "kind:shape|shape:round_rect|fill:solid|fill_rgb:007AFF|fill_alpha:0.0|line_w:12700|line_rgb:007AFF|line_alpha:0.0|line_vis:False|align:None"
+          },
+          {
+            "slot_id": "content.takeaway.title",
+            "role": "content",
+            "kind": "text",
+            "bbox": {
+              "x": 2533802,
+              "y": 4691786,
+              "w": 7277710,
+              "h": 228600
+            },
+            "style_fingerprint": "kind:text|fill:background|line_w:0|align:LEFT (1)|font:Cambria|size:152400|bold:True|text_rgb:007AFF"
+          },
+          {
+            "slot_id": "content.takeaway.body",
+            "role": "content",
+            "kind": "text",
+            "bbox": {
+              "x": 2533802,
+              "y": 4997196,
+              "w": 7239305,
+              "h": 829361
+            },
+            "style_fingerprint": "kind:text|fill:background|line_w:0|align:LEFT (1)|font:Cambria|size:165100|text_rgb:1D1D1F"
+          },
+          {
+            "slot_id": "meta.footer.deck_title",
+            "role": "meta",
+            "kind": "text",
+            "bbox": {
+              "x": 0,
+              "y": 6277356,
+              "w": 12306910,
+              "h": 200254
+            },
+            "style_fingerprint": "kind:text|fill:background|line_w:0|align:CENTER (2)|font:Cambria|size:127000|text_rgb:86868B"
+          }
+        ]
+      }
+    ]
+  }

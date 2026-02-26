@@ -103,11 +103,19 @@
             "type": "string",
             "pattern": "^[a-zA-Z0-9_\\-]{1,64}$"
           },
-          "kind": { "type": "string", "enum": ["textbox"] },
+          "kind": { "type": "string", "enum": ["textbox", "image"] },
           "bbox_pt": { "$ref": "#/$defs/bbox_pt" },
           "style": {
             "type": "object",
             "additionalProperties": true
+          },
+          "image": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "fit": { "type": "string", "enum": ["contain", "cover", "stretch"] },
+              "opacity": { "type": "number", "minimum": 0, "maximum": 1 }
+            }
           }
         }
       },

@@ -1,0 +1,1554 @@
+{
+  "schema_version": "slot_templates_spec.v1",
+  "document_id": "E4",
+  "pages": [
+    {
+      "page": 1,
+      "template_class": "reference.bibliography",
+      "sub_class": "list.references_2col_cards",
+      "slots": [
+        {
+          "slot_id": "slide.background",
+          "role": "background",
+          "kind": "shape",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "w": 12192000,
+            "h": 6858000
+          },
+          "style_fingerprint": "fill.type=background|shape=rect",
+          "optional": false
+        },
+        {
+          "slot_id": "meta.header.banner_image",
+          "role": "header.banner",
+          "kind": "image",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "w": 12191695,
+            "h": 1050646
+          },
+          "style_fingerprint": "line.w=0|line.color=None|img.ext=png",
+          "optional": false
+        },
+        {
+          "slot_id": "meta.brand.logo",
+          "role": "brand.logo",
+          "kind": "image",
+          "bbox": {
+            "x": 457200,
+            "y": 386792,
+            "w": 237744,
+            "h": 267005
+          },
+          "style_fingerprint": "line.w=0|line.color=None|img.ext=png",
+          "optional": false
+        },
+        {
+          "slot_id": "meta.footer.bar",
+          "role": "footer.bar",
+          "kind": "text",
+          "bbox": {
+            "x": 0,
+            "y": 6476695,
+            "w": 12192609,
+            "h": 381305
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=F6F5F8|line.w=15875|line.color=E5E5E5|shape=rect",
+          "optional": false
+        },
+        {
+          "slot_id": "meta.footer.page_and_deck_title",
+          "role": "footer.text",
+          "kind": "text",
+          "bbox": {
+            "x": 0,
+            "y": 6476695,
+            "w": 12192610,
+            "h": 381305
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|fill.alpha=0.0|line.w=0|line.color=FFFFFF|line.alpha=0.0|line.visible=False|p.align=CENTER (2)|font.name=Cambria|font.size=114300|font.color=86868B|shape=rect",
+          "optional": false
+        },
+        {
+          "slot_id": "section.title",
+          "role": "title",
+          "kind": "text",
+          "bbox": {
+            "x": 809244,
+            "y": 329642,
+            "w": 4884974,
+            "h": 381305
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=266700|font.bold=1|font.color=FFFFFF",
+          "optional": false
+        },
+        {
+          "slot_id": "section.subtitle",
+          "role": "subtitle",
+          "kind": "text",
+          "bbox": {
+            "x": 8753551,
+            "y": 395935,
+            "w": 3554273,
+            "h": 228600
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=152400",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.panel",
+          "role": "reference.column.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 1447494,
+            "w": 5486400,
+            "h": 4739337
+          },
+          "style_fingerprint": "fill.type=background|line.w=12700|line.color=D2D2D7|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.panel",
+          "role": "reference.column.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 6248095,
+            "y": 1446581,
+            "w": 5486400,
+            "h": 4305911
+          },
+          "style_fingerprint": "fill.type=background|line.w=12700|line.color=D2D2D7|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_1.panel",
+          "role": "reference.item.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 1447495,
+            "w": 5486400,
+            "h": 286207
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|line.w=0|line.color=None|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_1.label",
+          "role": "reference.item.label",
+          "kind": "text",
+          "bbox": {
+            "x": 533095,
+            "y": 1505102,
+            "w": 381305,
+            "h": 162763
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=114300|font.bold=1|font.color=007AFF",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_1.body",
+          "role": "reference.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 952805,
+            "y": 1514246,
+            "w": 3762756,
+            "h": 143561
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=101600|font.color=1D1D1F",
+          "optional": false
+        },
+        {
+          "slot_id": "decor.reference.column_1.item_1.separator",
+          "role": "decor.separator",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 1724558,
+            "w": 5486400,
+            "h": 9144
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=E5E5E5|fill.alpha=0.0|line.w=12700|line.color=E5E5E5|line.alpha=0.0|line.visible=False|shape=round_rect",
+          "optional": true
+        },
+        {
+          "slot_id": "reference.column_1.item_2.panel",
+          "role": "reference.item.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 1807769,
+            "w": 5486400,
+            "h": 286207
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|line.w=0|line.color=None|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_2.label",
+          "role": "reference.item.label",
+          "kind": "text",
+          "bbox": {
+            "x": 533095,
+            "y": 1865376,
+            "w": 381305,
+            "h": 162763
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=114300|font.bold=1|font.color=007AFF",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_2.body",
+          "role": "reference.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 952805,
+            "y": 1874520,
+            "w": 3762756,
+            "h": 143561
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=101600|font.color=1D1D1F",
+          "optional": false
+        },
+        {
+          "slot_id": "decor.reference.column_1.item_2.separator",
+          "role": "decor.separator",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 2084832,
+            "w": 5486400,
+            "h": 9144
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=E5E5E5|fill.alpha=0.0|line.w=12700|line.color=E5E5E5|line.alpha=0.0|line.visible=False|shape=round_rect",
+          "optional": true
+        },
+        {
+          "slot_id": "reference.column_1.item_3.panel",
+          "role": "reference.item.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 2168042,
+            "w": 5486400,
+            "h": 286207
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|line.w=0|line.color=None|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_3.label",
+          "role": "reference.item.label",
+          "kind": "text",
+          "bbox": {
+            "x": 533095,
+            "y": 2224735,
+            "w": 381305,
+            "h": 162763
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=114300|font.bold=1|font.color=007AFF",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_3.body",
+          "role": "reference.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 952805,
+            "y": 2234794,
+            "w": 3010205,
+            "h": 143561
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=101600|font.color=1D1D1F",
+          "optional": false
+        },
+        {
+          "slot_id": "decor.reference.column_1.item_3.separator",
+          "role": "decor.separator",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 2445106,
+            "w": 5486400,
+            "h": 9144
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=E5E5E5|fill.alpha=0.0|line.w=12700|line.color=E5E5E5|line.alpha=0.0|line.visible=False|shape=round_rect",
+          "optional": true
+        },
+        {
+          "slot_id": "reference.column_1.item_4.panel",
+          "role": "reference.item.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 2527402,
+            "w": 5486400,
+            "h": 286207
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|line.w=0|line.color=None|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_4.label",
+          "role": "reference.item.label",
+          "kind": "text",
+          "bbox": {
+            "x": 533095,
+            "y": 2585009,
+            "w": 381305,
+            "h": 162763
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=114300|font.bold=1|font.color=007AFF",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_4.body",
+          "role": "reference.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 952805,
+            "y": 2594153,
+            "w": 2100377,
+            "h": 143561
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=101600|font.color=1D1D1F",
+          "optional": false
+        },
+        {
+          "slot_id": "decor.reference.column_1.item_4.separator",
+          "role": "decor.separator",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 2804465,
+            "w": 5486400,
+            "h": 9144
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=E5E5E5|fill.alpha=0.0|line.w=12700|line.color=E5E5E5|line.alpha=0.0|line.visible=False|shape=round_rect",
+          "optional": true
+        },
+        {
+          "slot_id": "reference.column_1.item_5.panel",
+          "role": "reference.item.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 2887675,
+            "w": 5486400,
+            "h": 286207
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|line.w=0|line.color=None|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_5.label",
+          "role": "reference.item.label",
+          "kind": "text",
+          "bbox": {
+            "x": 533095,
+            "y": 2945282,
+            "w": 381305,
+            "h": 162763
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=114300|font.bold=1|font.color=007AFF",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_5.body",
+          "role": "reference.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 952805,
+            "y": 2954426,
+            "w": 3514954,
+            "h": 143561
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=101600|font.color=1D1D1F",
+          "optional": false
+        },
+        {
+          "slot_id": "decor.reference.column_1.item_5.separator",
+          "role": "decor.separator",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 3164738,
+            "w": 5486400,
+            "h": 9144
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=E5E5E5|fill.alpha=0.0|line.w=12700|line.color=E5E5E5|line.alpha=0.0|line.visible=False|shape=round_rect",
+          "optional": true
+        },
+        {
+          "slot_id": "reference.column_1.item_6.panel",
+          "role": "reference.item.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 3247949,
+            "w": 5486400,
+            "h": 286207
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|line.w=0|line.color=None|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_6.label",
+          "role": "reference.item.label",
+          "kind": "text",
+          "bbox": {
+            "x": 533095,
+            "y": 3304642,
+            "w": 381305,
+            "h": 162763
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=114300|font.bold=1|font.color=007AFF",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_6.body",
+          "role": "reference.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 952805,
+            "y": 3314700,
+            "w": 4582058,
+            "h": 143561
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=101600|font.color=1D1D1F",
+          "optional": false
+        },
+        {
+          "slot_id": "decor.reference.column_1.item_6.separator",
+          "role": "decor.separator",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 3525012,
+            "w": 5486400,
+            "h": 9144
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=E5E5E5|fill.alpha=0.0|line.w=12700|line.color=E5E5E5|line.alpha=0.0|line.visible=False|shape=round_rect",
+          "optional": true
+        },
+        {
+          "slot_id": "reference.column_1.item_7.panel",
+          "role": "reference.item.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 3608222,
+            "w": 5486400,
+            "h": 286207
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|line.w=0|line.color=None|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_7.label",
+          "role": "reference.item.label",
+          "kind": "text",
+          "bbox": {
+            "x": 533095,
+            "y": 3664915,
+            "w": 381305,
+            "h": 162763
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=114300|font.bold=1|font.color=007AFF",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_7.body",
+          "role": "reference.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 952805,
+            "y": 3674974,
+            "w": 2487168,
+            "h": 143561
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=101600|font.color=1D1D1F",
+          "optional": false
+        },
+        {
+          "slot_id": "decor.reference.column_1.item_7.separator",
+          "role": "decor.separator",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 3885286,
+            "w": 5486400,
+            "h": 9144
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=E5E5E5|fill.alpha=0.0|line.w=12700|line.color=E5E5E5|line.alpha=0.0|line.visible=False|shape=round_rect",
+          "optional": true
+        },
+        {
+          "slot_id": "reference.column_1.item_8.panel",
+          "role": "reference.item.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 3967582,
+            "w": 5486400,
+            "h": 286207
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|line.w=0|line.color=None|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_8.label",
+          "role": "reference.item.label",
+          "kind": "text",
+          "bbox": {
+            "x": 533095,
+            "y": 4025189,
+            "w": 381305,
+            "h": 162763
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=114300|font.bold=1|font.color=007AFF",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_8.body",
+          "role": "reference.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 952805,
+            "y": 4034333,
+            "w": 2427732,
+            "h": 143561
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=101600|font.color=1D1D1F",
+          "optional": false
+        },
+        {
+          "slot_id": "decor.reference.column_1.item_8.separator",
+          "role": "decor.separator",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 4244645,
+            "w": 5486400,
+            "h": 9144
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=E5E5E5|fill.alpha=0.0|line.w=12700|line.color=E5E5E5|line.alpha=0.0|line.visible=False|shape=round_rect",
+          "optional": true
+        },
+        {
+          "slot_id": "reference.column_1.item_9.panel",
+          "role": "reference.item.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 4327855,
+            "w": 5486400,
+            "h": 428854
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|line.w=0|line.color=None|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_9.label",
+          "role": "reference.item.label",
+          "kind": "text",
+          "bbox": {
+            "x": 533095,
+            "y": 4385462,
+            "w": 381305,
+            "h": 162763
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=114300|font.bold=1|font.color=007AFF",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_9.body",
+          "role": "reference.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 952805,
+            "y": 4394606,
+            "w": 4981651,
+            "h": 295351
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=101600|font.color=1D1D1F",
+          "optional": false
+        },
+        {
+          "slot_id": "decor.reference.column_1.item_9.separator",
+          "role": "decor.separator",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 4747565,
+            "w": 5486400,
+            "h": 9144
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=E5E5E5|fill.alpha=0.0|line.w=12700|line.color=E5E5E5|line.alpha=0.0|line.visible=False|shape=round_rect",
+          "optional": true
+        },
+        {
+          "slot_id": "reference.column_1.item_10.panel",
+          "role": "reference.item.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 4830775,
+            "w": 5486400,
+            "h": 286207
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|line.w=0|line.color=None|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_10.label",
+          "role": "reference.item.label",
+          "kind": "text",
+          "bbox": {
+            "x": 533095,
+            "y": 4888382,
+            "w": 381305,
+            "h": 162763
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=114300|font.bold=1|font.color=007AFF",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_10.body",
+          "role": "reference.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 952805,
+            "y": 4897526,
+            "w": 2754173,
+            "h": 143561
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=101600|font.color=1D1D1F",
+          "optional": false
+        },
+        {
+          "slot_id": "decor.reference.column_1.item_10.separator",
+          "role": "decor.separator",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 5107838,
+            "w": 5486400,
+            "h": 9144
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=E5E5E5|fill.alpha=0.0|line.w=12700|line.color=E5E5E5|line.alpha=0.0|line.visible=False|shape=round_rect",
+          "optional": true
+        },
+        {
+          "slot_id": "reference.column_1.item_11.panel",
+          "role": "reference.item.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 5191049,
+            "w": 5486400,
+            "h": 286207
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|line.w=0|line.color=None|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_11.label",
+          "role": "reference.item.label",
+          "kind": "text",
+          "bbox": {
+            "x": 533095,
+            "y": 5247742,
+            "w": 381305,
+            "h": 162763
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=114300|font.bold=1|font.color=007AFF",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_11.body",
+          "role": "reference.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 952805,
+            "y": 5257800,
+            "w": 3391510,
+            "h": 143561
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=101600|font.color=1D1D1F",
+          "optional": false
+        },
+        {
+          "slot_id": "decor.reference.column_1.item_11.separator",
+          "role": "decor.separator",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 5468112,
+            "w": 5486400,
+            "h": 9144
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=E5E5E5|fill.alpha=0.0|line.w=12700|line.color=E5E5E5|line.alpha=0.0|line.visible=False|shape=round_rect",
+          "optional": true
+        },
+        {
+          "slot_id": "reference.column_1.item_12.panel",
+          "role": "reference.item.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 5551322,
+            "w": 5486400,
+            "h": 286207
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|line.w=0|line.color=None|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_12.label",
+          "role": "reference.item.label",
+          "kind": "text",
+          "bbox": {
+            "x": 533095,
+            "y": 5608015,
+            "w": 381305,
+            "h": 162763
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=114300|font.bold=1|font.color=007AFF",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_12.body",
+          "role": "reference.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 952805,
+            "y": 5618074,
+            "w": 2030882,
+            "h": 143561
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=101600|font.color=1D1D1F",
+          "optional": false
+        },
+        {
+          "slot_id": "decor.reference.column_1.item_12.separator",
+          "role": "decor.separator",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 5828386,
+            "w": 5486400,
+            "h": 9144
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=E5E5E5|fill.alpha=0.0|line.w=12700|line.color=E5E5E5|line.alpha=0.0|line.visible=False|shape=round_rect",
+          "optional": true
+        },
+        {
+          "slot_id": "reference.column_1.item_13.panel",
+          "role": "reference.item.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 5910682,
+            "w": 5486400,
+            "h": 276149
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|fill.alpha=0.0|line.w=12700|line.color=FFFFFF|line.alpha=0.0|line.visible=False|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_13.label",
+          "role": "reference.item.label",
+          "kind": "text",
+          "bbox": {
+            "x": 533095,
+            "y": 5968289,
+            "w": 381305,
+            "h": 162763
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=114300|font.bold=1|font.color=007AFF",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.item_13.body",
+          "role": "reference.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 952805,
+            "y": 5977433,
+            "w": 3076956,
+            "h": 143561
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=101600|font.color=1D1D1F",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.item_1.panel",
+          "role": "reference.item.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 6248095,
+            "y": 1447495,
+            "w": 5486400,
+            "h": 286207
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|line.w=0|line.color=None|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.item_1.label",
+          "role": "reference.item.label",
+          "kind": "text",
+          "bbox": {
+            "x": 6324905,
+            "y": 1505102,
+            "w": 381305,
+            "h": 162763
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=114300|font.bold=1|font.color=007AFF",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.item_1.body",
+          "role": "reference.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 6743700,
+            "y": 1514246,
+            "w": 3706063,
+            "h": 143561
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=101600|font.color=1D1D1F",
+          "optional": false
+        },
+        {
+          "slot_id": "decor.reference.column_2.item_1.separator",
+          "role": "decor.separator",
+          "kind": "text",
+          "bbox": {
+            "x": 6248095,
+            "y": 1724558,
+            "w": 5486400,
+            "h": 9144
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=E5E5E5|fill.alpha=0.0|line.w=12700|line.color=E5E5E5|line.alpha=0.0|line.visible=False|shape=round_rect",
+          "optional": true
+        },
+        {
+          "slot_id": "reference.column_2.item_2.panel",
+          "role": "reference.item.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 6248095,
+            "y": 1807769,
+            "w": 5486400,
+            "h": 286207
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|line.w=0|line.color=None|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.item_2.label",
+          "role": "reference.item.label",
+          "kind": "text",
+          "bbox": {
+            "x": 6324905,
+            "y": 1865376,
+            "w": 381305,
+            "h": 162763
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=114300|font.bold=1|font.color=007AFF",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.item_2.body",
+          "role": "reference.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 6743700,
+            "y": 1874520,
+            "w": 1838858,
+            "h": 143561
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=101600|font.color=1D1D1F",
+          "optional": false
+        },
+        {
+          "slot_id": "decor.reference.column_2.item_2.separator",
+          "role": "decor.separator",
+          "kind": "text",
+          "bbox": {
+            "x": 6248095,
+            "y": 2084832,
+            "w": 5486400,
+            "h": 9144
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=E5E5E5|fill.alpha=0.0|line.w=12700|line.color=E5E5E5|line.alpha=0.0|line.visible=False|shape=round_rect",
+          "optional": true
+        },
+        {
+          "slot_id": "reference.column_2.item_3.panel",
+          "role": "reference.item.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 6248095,
+            "y": 2168042,
+            "w": 5486400,
+            "h": 286207
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|line.w=0|line.color=None|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.item_3.label",
+          "role": "reference.item.label",
+          "kind": "text",
+          "bbox": {
+            "x": 6324905,
+            "y": 2224735,
+            "w": 381305,
+            "h": 162763
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=114300|font.bold=1|font.color=007AFF",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.item_3.body",
+          "role": "reference.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 6743700,
+            "y": 2234794,
+            "w": 3076956,
+            "h": 143561
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=101600|font.color=1D1D1F",
+          "optional": false
+        },
+        {
+          "slot_id": "decor.reference.column_2.item_3.separator",
+          "role": "decor.separator",
+          "kind": "text",
+          "bbox": {
+            "x": 6248095,
+            "y": 2445106,
+            "w": 5486400,
+            "h": 9144
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=E5E5E5|fill.alpha=0.0|line.w=12700|line.color=E5E5E5|line.alpha=0.0|line.visible=False|shape=round_rect",
+          "optional": true
+        },
+        {
+          "slot_id": "reference.column_2.item_4.panel",
+          "role": "reference.item.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 6248095,
+            "y": 2527402,
+            "w": 5486400,
+            "h": 286207
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|line.w=0|line.color=None|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.item_4.label",
+          "role": "reference.item.label",
+          "kind": "text",
+          "bbox": {
+            "x": 6324905,
+            "y": 2585009,
+            "w": 381305,
+            "h": 162763
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=114300|font.bold=1|font.color=007AFF",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.item_4.body",
+          "role": "reference.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 6743700,
+            "y": 2594153,
+            "w": 2159813,
+            "h": 143561
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=101600|font.color=1D1D1F",
+          "optional": false
+        },
+        {
+          "slot_id": "decor.reference.column_2.item_4.separator",
+          "role": "decor.separator",
+          "kind": "text",
+          "bbox": {
+            "x": 6248095,
+            "y": 2804465,
+            "w": 5486400,
+            "h": 9144
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=E5E5E5|fill.alpha=0.0|line.w=12700|line.color=E5E5E5|line.alpha=0.0|line.visible=False|shape=round_rect",
+          "optional": true
+        },
+        {
+          "slot_id": "reference.column_2.item_5.panel",
+          "role": "reference.item.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 6248095,
+            "y": 2887675,
+            "w": 5486400,
+            "h": 286207
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|line.w=0|line.color=None|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.item_5.label",
+          "role": "reference.item.label",
+          "kind": "text",
+          "bbox": {
+            "x": 6324905,
+            "y": 2945282,
+            "w": 381305,
+            "h": 162763
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=114300|font.bold=1|font.color=007AFF",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.item_5.body",
+          "role": "reference.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 6743700,
+            "y": 2954426,
+            "w": 2100377,
+            "h": 143561
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=101600|font.color=1D1D1F",
+          "optional": false
+        },
+        {
+          "slot_id": "decor.reference.column_2.item_5.separator",
+          "role": "decor.separator",
+          "kind": "text",
+          "bbox": {
+            "x": 6248095,
+            "y": 3164738,
+            "w": 5486400,
+            "h": 9144
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=E5E5E5|fill.alpha=0.0|line.w=12700|line.color=E5E5E5|line.alpha=0.0|line.visible=False|shape=round_rect",
+          "optional": true
+        },
+        {
+          "slot_id": "reference.column_2.item_6.panel",
+          "role": "reference.item.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 6248095,
+            "y": 3247949,
+            "w": 5486400,
+            "h": 286207
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|line.w=0|line.color=None|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.item_6.label",
+          "role": "reference.item.label",
+          "kind": "text",
+          "bbox": {
+            "x": 6324905,
+            "y": 3304642,
+            "w": 381305,
+            "h": 162763
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=114300|font.bold=1|font.color=007AFF",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.item_6.body",
+          "role": "reference.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 6743700,
+            "y": 3314700,
+            "w": 3134563,
+            "h": 143561
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=101600|font.color=1D1D1F",
+          "optional": false
+        },
+        {
+          "slot_id": "decor.reference.column_2.item_6.separator",
+          "role": "decor.separator",
+          "kind": "text",
+          "bbox": {
+            "x": 6248095,
+            "y": 3525012,
+            "w": 5486400,
+            "h": 9144
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=E5E5E5|fill.alpha=0.0|line.w=12700|line.color=E5E5E5|line.alpha=0.0|line.visible=False|shape=round_rect",
+          "optional": true
+        },
+        {
+          "slot_id": "reference.column_2.item_7.panel",
+          "role": "reference.item.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 6248095,
+            "y": 3608222,
+            "w": 5486400,
+            "h": 286207
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|line.w=0|line.color=None|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.item_7.label",
+          "role": "reference.item.label",
+          "kind": "text",
+          "bbox": {
+            "x": 6324905,
+            "y": 3664915,
+            "w": 381305,
+            "h": 162763
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=114300|font.bold=1|font.color=007AFF",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.item_7.body",
+          "role": "reference.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 6743700,
+            "y": 3674974,
+            "w": 4144061,
+            "h": 143561
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=101600|font.color=1D1D1F",
+          "optional": false
+        },
+        {
+          "slot_id": "decor.reference.column_2.item_7.separator",
+          "role": "decor.separator",
+          "kind": "text",
+          "bbox": {
+            "x": 6248095,
+            "y": 3885286,
+            "w": 5486400,
+            "h": 9144
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=E5E5E5|fill.alpha=0.0|line.w=12700|line.color=E5E5E5|line.alpha=0.0|line.visible=False|shape=round_rect",
+          "optional": true
+        },
+        {
+          "slot_id": "reference.column_2.item_8.panel",
+          "role": "reference.item.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 6248095,
+            "y": 3967582,
+            "w": 5486400,
+            "h": 286207
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|line.w=0|line.color=None|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.item_8.label",
+          "role": "reference.item.label",
+          "kind": "text",
+          "bbox": {
+            "x": 6324905,
+            "y": 4025189,
+            "w": 381305,
+            "h": 162763
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=114300|font.bold=1|font.color=007AFF",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.item_8.body",
+          "role": "reference.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 6743700,
+            "y": 4034333,
+            "w": 4839005,
+            "h": 143561
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=101600|font.color=1D1D1F",
+          "optional": false
+        },
+        {
+          "slot_id": "decor.reference.column_2.item_8.separator",
+          "role": "decor.separator",
+          "kind": "text",
+          "bbox": {
+            "x": 6248095,
+            "y": 4244645,
+            "w": 5486400,
+            "h": 9144
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=E5E5E5|fill.alpha=0.0|line.w=12700|line.color=E5E5E5|line.alpha=0.0|line.visible=False|shape=round_rect",
+          "optional": true
+        },
+        {
+          "slot_id": "reference.column_2.item_9.panel",
+          "role": "reference.item.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 6248095,
+            "y": 4327855,
+            "w": 5486400,
+            "h": 286207
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|line.w=0|line.color=None|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.item_9.label",
+          "role": "reference.item.label",
+          "kind": "text",
+          "bbox": {
+            "x": 6324905,
+            "y": 4385462,
+            "w": 381305,
+            "h": 162763
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=114300|font.bold=1|font.color=007AFF",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.item_9.body",
+          "role": "reference.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 6743700,
+            "y": 4394606,
+            "w": 2229307,
+            "h": 143561
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=101600|font.color=1D1D1F",
+          "optional": false
+        },
+        {
+          "slot_id": "decor.reference.column_2.item_9.separator",
+          "role": "decor.separator",
+          "kind": "text",
+          "bbox": {
+            "x": 6248095,
+            "y": 4604918,
+            "w": 5486400,
+            "h": 9144
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=E5E5E5|fill.alpha=0.0|line.w=12700|line.color=E5E5E5|line.alpha=0.0|line.visible=False|shape=round_rect",
+          "optional": true
+        },
+        {
+          "slot_id": "reference.column_2.item_10.panel",
+          "role": "reference.item.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 6248095,
+            "y": 4688129,
+            "w": 5486400,
+            "h": 286207
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|line.w=0|line.color=None|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.item_10.label",
+          "role": "reference.item.label",
+          "kind": "text",
+          "bbox": {
+            "x": 6324905,
+            "y": 4744822,
+            "w": 381305,
+            "h": 162763
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=114300|font.bold=1|font.color=007AFF",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.item_10.body",
+          "role": "reference.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 6743700,
+            "y": 4754880,
+            "w": 3829507,
+            "h": 143561
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=101600|font.color=1D1D1F",
+          "optional": false
+        },
+        {
+          "slot_id": "decor.reference.column_2.item_10.separator",
+          "role": "decor.separator",
+          "kind": "text",
+          "bbox": {
+            "x": 6248095,
+            "y": 4965192,
+            "w": 5486400,
+            "h": 9144
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=E5E5E5|fill.alpha=0.0|line.w=12700|line.color=E5E5E5|line.alpha=0.0|line.visible=False|shape=round_rect",
+          "optional": true
+        },
+        {
+          "slot_id": "reference.column_2.item_11.panel",
+          "role": "reference.item.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 6248095,
+            "y": 5048402,
+            "w": 5486400,
+            "h": 286207
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|line.w=0|line.color=None|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.item_11.label",
+          "role": "reference.item.label",
+          "kind": "text",
+          "bbox": {
+            "x": 6324905,
+            "y": 5105095,
+            "w": 381305,
+            "h": 162763
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=114300|font.bold=1|font.color=007AFF",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.item_11.body",
+          "role": "reference.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 6743700,
+            "y": 5114239,
+            "w": 3076956,
+            "h": 143561
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=101600|font.color=1D1D1F",
+          "optional": false
+        },
+        {
+          "slot_id": "decor.reference.column_2.item_11.separator",
+          "role": "decor.separator",
+          "kind": "text",
+          "bbox": {
+            "x": 6248095,
+            "y": 5325466,
+            "w": 5486400,
+            "h": 9144
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=E5E5E5|fill.alpha=0.0|line.w=12700|line.color=E5E5E5|line.alpha=0.0|line.visible=False|shape=round_rect",
+          "optional": true
+        },
+        {
+          "slot_id": "reference.column_2.item_12.panel",
+          "role": "reference.item.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 6248095,
+            "y": 5407762,
+            "w": 5486400,
+            "h": 276149
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|fill.alpha=0.0|line.w=12700|line.color=FFFFFF|line.alpha=0.0|line.visible=False|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.item_12.label",
+          "role": "reference.item.label",
+          "kind": "text",
+          "bbox": {
+            "x": 6324905,
+            "y": 5465369,
+            "w": 381305,
+            "h": 162763
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=114300|font.bold=1|font.color=007AFF",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.item_12.body",
+          "role": "reference.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 6743700,
+            "y": 5474513,
+            "w": 2487168,
+            "h": 143561
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=101600|font.color=1D1D1F",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "template_class": "reference.bibliography",
+      "sub_class": "list.references_2col_table",
+      "slots": [
+        {
+          "slot_id": "slide.background",
+          "role": "background",
+          "kind": "shape",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "w": 12192000,
+            "h": 6858000
+          },
+          "style_fingerprint": "fill.type=background|shape=rect",
+          "optional": false
+        },
+        {
+          "slot_id": "meta.header.banner_image",
+          "role": "header.banner",
+          "kind": "image",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "w": 12191695,
+            "h": 1050646
+          },
+          "style_fingerprint": "line.w=0|line.color=None|img.ext=png",
+          "optional": false
+        },
+        {
+          "slot_id": "meta.brand.logo",
+          "role": "brand.logo",
+          "kind": "image",
+          "bbox": {
+            "x": 457200,
+            "y": 391821,
+            "w": 237744,
+            "h": 267005
+          },
+          "style_fingerprint": "line.w=0|line.color=None|img.ext=png",
+          "optional": false
+        },
+        {
+          "slot_id": "meta.footer.bar",
+          "role": "footer.bar",
+          "kind": "text",
+          "bbox": {
+            "x": 0,
+            "y": 6476695,
+            "w": 12192609,
+            "h": 381305
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=F6F5F8|line.w=15875|line.color=E5E5E5|shape=rect",
+          "optional": false
+        },
+        {
+          "slot_id": "meta.footer.page_and_deck_title",
+          "role": "footer.text",
+          "kind": "text",
+          "bbox": {
+            "x": 0,
+            "y": 6476695,
+            "w": 12192610,
+            "h": 381305
+          },
+          "style_fingerprint": "fill.type=solid|fill.color=FFFFFF|fill.alpha=0.0|line.w=0|line.color=FFFFFF|line.alpha=0.0|line.visible=False|p.align=CENTER (2)|font.name=Cambria|font.size=114300|font.color=86868B|shape=rect",
+          "optional": false
+        },
+        {
+          "slot_id": "section.title",
+          "role": "title",
+          "kind": "text",
+          "bbox": {
+            "x": 809244,
+            "y": 334671,
+            "w": 4612234,
+            "h": 381305
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=266700|font.bold=1|font.color=FFFFFF",
+          "optional": false
+        },
+        {
+          "slot_id": "section.subtitle",
+          "role": "subtitle",
+          "kind": "text",
+          "bbox": {
+            "x": 6931152,
+            "y": 411023,
+            "w": 5496458,
+            "h": 228600
+          },
+          "style_fingerprint": "fill.type=background|line.w=0|line.color=None|p.align=LEFT (1)|font.name=Cambria|font.size=152400",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.panel",
+          "role": "reference.column.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 362560,
+            "y": 1306619,
+            "w": 5505602,
+            "h": 4977249
+          },
+          "style_fingerprint": "fill.type=background|line.w=12700|line.color=D2D2D7|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.panel",
+          "role": "reference.column.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 6248095,
+            "y": 1312331,
+            "w": 5505602,
+            "h": 4816551
+          },
+          "style_fingerprint": "fill.type=background|line.w=12700|line.color=D2D2D7|shape=round_rect",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_1.table",
+          "role": "reference.column.table",
+          "kind": "table",
+          "bbox": {
+            "x": 372161,
+            "y": 1319138,
+            "w": 5486400,
+            "h": 4839000
+          },
+          "style_fingerprint": "",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.column_2.table",
+          "role": "reference.column.table",
+          "kind": "table",
+          "bbox": {
+            "x": 6257696,
+            "y": 1306619,
+            "w": 5486400,
+            "h": 4839000
+          },
+          "style_fingerprint": "",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

@@ -327,7 +327,7 @@ def cmd_render(args: argparse.Namespace) -> int:
         return 2
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    render_pptx(run_dir=run_dir, out_pptx=out_path)
+    render_pptx(run_dir=run_dir, out_pptx=out_path, mode=str(getattr(args, "mode", "template")))
     print(f"[OK] rendered: {out_path}")
     return 0
 
@@ -362,7 +362,11 @@ def cmd_extract(args: argparse.Namespace) -> int:
         return 2
 
     try:
-        data = extractor(in_path)
+        # pptx extractor can optionally emit extended fields.
+        if suf == ".pptx":
+            data = extractor(in_path, include_extended=bool(getattr(args, "extended", False)))
+        else:
+            data = extractor(in_path)
     except Exception as e:
         # Do not leave stale output behind.
         try:
@@ -398,6 +402,11 @@ def main() -> None:
     p_ext = sub.add_parser("extract", help="extract input into extraction.json (with bbox) [pdf|pptx]")
     p_ext.add_argument("input", help="path to input (.pdf or .pptx)")
     p_ext.add_argument("--out", required=True, help="output extraction.json path")
+    p_ext.add_argument(
+        "--extended",
+        action="store_true",
+        help="(pptx only) include extended fields (style, z-order, rotation, image/table payloads, etc.)",
+    )
     p_ext.set_defaults(func=cmd_extract)
 
     p_bp = sub.add_parser("blueprint", help="generate blueprint.json from extraction.json (deterministic v0.1)")
@@ -405,9 +414,15 @@ def main() -> None:
     p_bp.add_argument("--out", required=False, help="output blueprint.json path (default: <run>/blueprint.json)")
     p_bp.set_defaults(func=cmd_blueprint)
 
-    p_rnd = sub.add_parser("render", help="render pptx from template+blueprint")
+    p_rnd = sub.add_parser("render", help="render pptx (template mode) or recreate from extraction (dom mode)")
     p_rnd.add_argument("--run", required=True, help="run directory (e.g., runs/sample)")
     p_rnd.add_argument("--out", required=True, help="output .pptx path")
+    p_rnd.add_argument(
+        "--mode",
+        choices=["template", "dom"],
+        default="template",
+        help="rendering mode: 'template' uses template+blueprint; 'dom' draws from extraction.json extended fields",
+    )
     p_rnd.set_defaults(func=cmd_render)
 
     args = parser.parse_args()

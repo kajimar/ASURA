@@ -1,0 +1,189 @@
+{
+  "schema_version": "0.1",
+  "document_id": "D1",
+  "theme_id": "theme_default",
+  "slides": [
+    {
+      "slide_no": null,
+      "component_id": "comp_title_bullets",
+      "message": "[BACKGROUND]",
+      "slots": {
+        "TITLE": "[BACKGROUND]",
+        "BULLETS": [
+          "[IMAGE]",
+          "Page 1 | ローカルAI 技術調査レポート",
+          "[IMAGE]",
+          "採用判断基準（VLM/LMM）",
+          "ランタイム適合性と運用設計",
+          "[IMAGE]",
+          "結論：画像理解は前処理・プロセッサ依存が強いため、「ランタイムの明示サポート確認」が最優先です。2B/7B級を基本とし、不足分をRAG/OCRで補うのが安全策です。",
+          "[IMAGE]"
+        ]
+      },
+      "citations": [
+        {
+          "mark": "※1",
+          "page": 1,
+          "chunk_id": "s001_bg000"
+        }
+      ]
+    },
+    {
+      "slide_no": null,
+      "component_id": "comp_title_bullets",
+      "message": "[BACKGROUND]",
+      "slots": {
+        "TITLE": "[BACKGROUND]",
+        "BULLETS": [
+          "Page 2 | ローカルAI 技術調査レポート",
+          "[IMAGE]",
+          "採用判断基準（Agent / Tool-use）",
+          "JSONスキーマ固定と検証ループによる安全運用",
+          "[IMAGE]",
+          "結論：JSONスキーマ固定＋検証ループ（自動チェック）による安全運用を基本とし、Ollama/LM StudioのOpenAI互換APIで実装を統一します。",
+          "[IMAGE]",
+          "[IMAGE]"
+        ]
+      },
+      "citations": [
+        {
+          "mark": "※2",
+          "page": 2,
+          "chunk_id": "s002_bg000"
+        }
+      ]
+    },
+    {
+      "slide_no": null,
+      "component_id": "comp_title_bullets",
+      "message": "[BACKGROUND]",
+      "slots": {
+        "TITLE": "[BACKGROUND]",
+        "BULLETS": [
+          "[IMAGE]",
+          "Page 3 | ローカルAI 技術調査レポート",
+          "1",
+          "2",
+          "4",
+          "3",
+          "[IMAGE]",
+          "採用判断基準（ASR）"
+        ]
+      },
+      "citations": [
+        {
+          "mark": "※3",
+          "page": 3,
+          "chunk_id": "s003_bg000"
+        }
+      ]
+    },
+    {
+      "slide_no": null,
+      "component_id": "comp_title_bullets",
+      "message": "[BACKGROUND]",
+      "slots": {
+        "TITLE": "[BACKGROUND]",
+        "BULLETS": [
+          "[IMAGE]",
+          "Page 4 | ローカルAI 技術調査レポート",
+          "1",
+          "2",
+          "3",
+          "4",
+          "[IMAGE]",
+          "採用判断基準（TTS）"
+        ]
+      },
+      "citations": [
+        {
+          "mark": "※4",
+          "page": 4,
+          "chunk_id": "s004_bg000"
+        }
+      ]
+    },
+    {
+      "slide_no": null,
+      "component_id": "comp_title_bullets",
+      "message": "[BACKGROUND]",
+      "slots": {
+        "TITLE": "[BACKGROUND]",
+        "BULLETS": [
+          "[IMAGE]",
+          "Page 5 | ローカルAI 技術調査レポート",
+          "2",
+          "1",
+          "3",
+          "[IMAGE]",
+          "採用判断基準（Embedding / Reranker）",
+          "検索精度と運用安定化のための二段構え設計"
+        ]
+      },
+      "citations": [
+        {
+          "mark": "※5",
+          "page": 5,
+          "chunk_id": "s005_bg000"
+        }
+      ]
+    },
+    {
+      "slide_no": null,
+      "component_id": "comp_title_bullets",
+      "message": "[BACKGROUND]",
+      "slots": {
+        "TITLE": "[BACKGROUND]",
+        "BULLETS": [
+          "[IMAGE]",
+          "Page 6 | ローカルAI 技術調査レポート",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "[IMAGE]"
+        ]
+      },
+      "citations": [
+        {
+          "mark": "※6",
+          "page": 6,
+          "chunk_id": "s006_bg000"
+        }
+      ]
+    }
+  ],
+  "toc": [
+    {
+      "title": "[BACKGROUND]",
+      "level": 1,
+      "slide_index": 1
+    },
+    {
+      "title": "[BACKGROUND]",
+      "level": 1,
+      "slide_index": 2
+    },
+    {
+      "title": "[BACKGROUND]",
+      "level": 1,
+      "slide_index": 3
+    },
+    {
+      "title": "[BACKGROUND]",
+      "level": 1,
+      "slide_index": 4
+    },
+    {
+      "title": "[BACKGROUND]",
+      "level": 1,
+      "slide_index": 5
+    },
+    {
+      "title": "[BACKGROUND]",
+      "level": 1,
+      "slide_index": 6
+    }
+  ]
+}

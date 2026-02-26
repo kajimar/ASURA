@@ -1,0 +1,129 @@
+{
+  "schema_version": "0.1",
+  "document_id": "A1",
+  "theme_id": "theme_default",
+  "slides": [
+    {
+      "slide_no": null,
+      "component_id": "comp_title_bullets",
+      "message": "[BACKGROUND]",
+      "slots": {
+        "TITLE": "[BACKGROUND]",
+        "BULLETS": [
+          "エグゼクティブサマリ（実務要点）",
+          "ローカルAI導入における意思決定の重要ポイント",
+          "結論：ローカルAIは「4bit量子化＋KV管理」を前提に、\n GGUF/llama.cpp系とOllama/LM Studio/MLXで実務化可能です。",
+          "[IMAGE]",
+          "定義とスコープ",
+          "推論が端末orローカルLAN内で完結",
+          "入力データは外部へ送信されない",
+          "LANサーブ含む（LM Studio, Ollama）"
+        ]
+      },
+      "citations": [
+        {
+          "mark": "※1",
+          "page": 1,
+          "chunk_id": "s001_bg000"
+        }
+      ]
+    },
+    {
+      "slide_no": null,
+      "component_id": "comp_title_bullets",
+      "message": "[BACKGROUND]",
+      "slots": {
+        "TITLE": "[BACKGROUND]",
+        "BULLETS": [
+          "[IMAGE]",
+          "エグゼクティブサマリ（詳細1）",
+          "ローカルAIの定義と中核技術",
+          "結論：ローカルAIは「推論がユーザー管理下で完結する構成」と定義され、 \n重み量子化（4bit）とKVキャッシュ最適化が実運用の技術的基盤です。",
+          "[IMAGE]",
+          "ローカルAIの定義と射程",
+          "[IMAGE]",
+          "ユーザー端末（オンデバイス）、PC、またはローカルLAN内サーバで完結。"
+        ]
+      },
+      "citations": [
+        {
+          "mark": "※2",
+          "page": 2,
+          "chunk_id": "s002_bg000"
+        }
+      ]
+    },
+    {
+      "slide_no": null,
+      "component_id": "comp_title_bullets",
+      "message": "[BACKGROUND]",
+      "slots": {
+        "TITLE": "[BACKGROUND]",
+        "BULLETS": [
+          "実運用ランタイムとハードウェア実用ライン",
+          "結論：ランタイムはllama.cpp/GGUF系・MLXが第一選択となり、\nハードウェアはメモリ容量でTier化されます（長文はKV支配）。",
+          "[IMAGE]",
+          "実運用ランタイム（第一選択）",
+          "[IMAGE]",
+          "クロスプラットフォーム標準：",
+          "[IMAGE]",
+          "llama.cpp"
+        ]
+      },
+      "citations": [
+        {
+          "mark": "※3",
+          "page": 3,
+          "chunk_id": "s003_bg000"
+        }
+      ]
+    },
+    {
+      "slide_no": null,
+      "component_id": "comp_title_bullets",
+      "message": "[BACKGROUND]",
+      "slots": {
+        "TITLE": "[BACKGROUND]",
+        "BULLETS": [
+          "[IMAGE]",
+          "LLM自体を軽くし、検索精度で補う生成タスクを\n限定する",
+          "[IMAGE]",
+          "短いコンテキストで完結させるRAGは\nEmbedding検索を重視",
+          "[IMAGE]",
+          "[IMAGE]",
+          "Target HW",
+          "推奨スタック3パターン（Tier別構成案）"
+        ]
+      },
+      "citations": [
+        {
+          "mark": "※4",
+          "page": 4,
+          "chunk_id": "s004_bg000"
+        }
+      ]
+    }
+  ],
+  "toc": [
+    {
+      "title": "[BACKGROUND]",
+      "level": 1,
+      "slide_index": 1
+    },
+    {
+      "title": "[BACKGROUND]",
+      "level": 1,
+      "slide_index": 2
+    },
+    {
+      "title": "[BACKGROUND]",
+      "level": 1,
+      "slide_index": 3
+    },
+    {
+      "title": "[BACKGROUND]",
+      "level": 1,
+      "slide_index": 4
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+[
+  {
+    "page": 1,
+    "template_id": "E1",
+    "cleared_or_unmapped_text_slots": [
+      "content.tags.tag_4.label",
+      "content.tags.tag_5.label",
+      "content.tags.tag_6.label",
+      "content.tags.tag_7.label"
+    ],
+    "unmatched_slots": []
+  },
+  {
+    "page": 2,
+    "template_id": "A1-2",
+    "cleared_or_unmapped_text_slots": [
+      "decor.footnote.marker_4.label",
+      "decor.footnote.marker_5.label",
+      "content.card_2.item_6.body",
+      "decor.footnote.marker_6.label",
+      "content.card_2.item_8.body",
+      "decor.footnote.marker_7.label",
+      "decor.footnote.marker_1_2.label",
+      "content.card_1.tag_1.label",
+      "content.card_1.tag_2.label",
+      "content.card_1.tag_3.label"
+    ],
+    "unmatched_slots": []
+  },
+  {
+    "page": 3,
+    "template_id": "A1-4",
+    "cleared_or_unmapped_text_slots": [
+      "content.card_1.rag_embedding.body",
+      "content.card_2.rag_vlm.body",
+      "content.card_3.compromise.body"
+    ],
+    "unmatched_slots": []
+  },
+  {
+    "page": 4,
+    "template_id": "A1-1",
+    "cleared_or_unmapped_text_slots": [
+      "content.card_2.item_1.label",
+      "content.card_1.body_2",
+      "content.card_3.body_2",
+      "content.card_2.item_2.body",
+      "content.card_2.item_2.label",
+      "content.card_1.body_3",
+      "content.card_3.body_3",
+      "content.card_2.item_3.body",
+      "content.card_4.title",
+      "content.card_5.title",
+      "content.card_5.body_1",
+      "content.card_4.column_1.title",
+      "content.card_4.column_2.title",
+      "content.card_5.body_2",
+      "content.card_4.column_1.item_1",
+      "content.card_4.column_2.item_1",
+      "content.card_5.body_3",
+      "content.card_4.column_1.item_2",
+      "content.card_4.column_2.item_2",
+      "content.note.body"
+    ],
+    "unmatched_slots": []
+  },
+  {
+    "page": 5,
+    "template_id": "A3",
+    "cleared_or_unmapped_text_slots": [
+      "content.card_1.item_1.badge.text",
+      "content.card_2.item_1.badge.text",
+      "content.card_1.item_1.body",
+      "content.card_2.item_1.body",
+      "content.card_1.item_2.badge.text",
+      "content.card_2.item_2.badge.text",
+      "content.card_1.item_2.body",
+      "content.card_2.item_2.body",
+      "content.card_2.item_3.badge.text",
+      "content.card_1.item_3.body",
+      "content.card_2.item_3.body"
+    ],
+    "unmatched_slots": [
+      "content.card_1.item_3.badge.text"
+    ]
+  },
+  {
+    "page": 6,
+    "template_id": "A1-1",
+    "cleared_or_unmapped_text_slots": [
+      "content.card_2.item_1.label",
+      "content.card_1.body_2",
+      "content.card_3.body_2",
+      "content.card_2.item_2.body",
+      "content.card_2.item_2.label",
+      "content.card_1.body_3",
+      "content.card_3.body_3",
+      "content.card_2.item_3.body",
+      "content.card_4.title",
+      "content.card_5.title",
+      "content.card_5.body_1",
+      "content.card_4.column_1.title",
+      "content.card_4.column_2.title",
+      "content.card_5.body_2",
+      "content.card_4.column_1.item_1",
+      "content.card_4.column_2.item_1",
+      "content.card_5.body_3",
+      "content.card_4.column_1.item_2",
+      "content.card_4.column_2.item_2",
+      "content.note.body"
+    ],
+    "unmatched_slots": []
+  },
+  {
+    "page": 7,
+    "template_id": "D1-6",
+    "cleared_or_unmapped_text_slots": [
+      "content.card_1.body_2",
+      "content.card_2.body_2",
+      "content.card_3.body_2"
+    ],
+    "unmatched_slots": []
+  },
+  {
+    "page": 8,
+    "template_id": "A1-1",
+    "cleared_or_unmapped_text_slots": [
+      "content.card_2.item_1.label",
+      "content.card_1.body_2",
+      "content.card_3.body_2",
+      "content.card_2.item_2.body",
+      "content.card_2.item_2.label",
+      "content.card_1.body_3",
+      "content.card_3.body_3",
+      "content.card_2.item_3.body",
+      "content.card_4.title",
+      "content.card_5.title",
+      "content.card_5.body_1",
+      "content.card_4.column_1.title",
+      "content.card_4.column_2.title",
+      "content.card_5.body_2",
+      "content.card_4.column_1.item_1",
+      "content.card_4.column_2.item_1",
+      "content.card_5.body_3",
+      "content.card_4.column_1.item_2",
+      "content.card_4.column_2.item_2",
+      "content.note.body"
+    ],
+    "unmatched_slots": []
+  },
+  {
+    "page": 9,
+    "template_id": "A1-2",
+    "cleared_or_unmapped_text_slots": [
+      "decor.footnote.marker_4.label",
+      "decor.footnote.marker_5.label",
+      "content.card_2.item_6.body",
+      "decor.footnote.marker_6.label",
+      "content.card_2.item_8.body",
+      "decor.footnote.marker_7.label",
+      "decor.footnote.marker_1_2.label",
+      "content.card_1.tag_1.label",
+      "content.card_1.tag_2.label",
+      "content.card_1.tag_3.label"
+    ],
+    "unmatched_slots": []
+  },
+  {
+    "page": 10,
+    "template_id": "D1-6",
+    "cleared_or_unmapped_text_slots": [
+      "content.card_1.body_2",
+      "content.card_2.body_2",
+      "content.card_3.body_2"
+    ],
+    "unmatched_slots": []
+  },
+  {
+    "page": 11,
+    "template_id": "A1-1",
+    "cleared_or_unmapped_text_slots": [
+      "content.card_2.item_1.label",
+      "content.card_2.item_2.label",
+      "content.card_4.title",
+      "content.card_5.title",
+      "content.card_5.body_1",
+      "content.card_4.column_1.title",
+      "content.card_4.column_2.title",
+      "content.card_5.body_2",
+      "content.card_4.column_1.item_1",
+      "content.card_4.column_2.item_1",
+      "content.card_5.body_3",
+      "content.card_4.column_1.item_2",
+      "content.card_4.column_2.item_2",
+      "content.note.body"
+    ],
+    "unmatched_slots": []
+  }
+]

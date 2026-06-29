@@ -1,0 +1,1038 @@
+{
+  "schema_version": "0.1",
+  "document": {
+    "document_id": "E1",
+    "source_type": "pptx",
+    "source_path": "/Users/kanji/ASURA/input/10patern/E1.pptx",
+    "page_count": 1,
+    "page": {
+      "w_emu": 12192000,
+      "h_emu": 6858000
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "s001_bg000",
+      "page": 1,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 12192000,
+        "h": 6858000
+      },
+      "text": "[BACKGROUND]",
+      "normalized_text": "[BACKGROUND]",
+      "heading_level": 0,
+      "kind": "shape",
+      "z": 0,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {}
+      },
+      "shape_kind": "rect"
+    },
+    {
+      "chunk_id": "s001_sh001",
+      "page": 1,
+      "bbox": {
+        "x": 3383279,
+        "y": 3844138,
+        "w": 534010,
+        "h": 309524
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10001,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": null
+        },
+        "line": {
+          "width_emu": 38100,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh002",
+      "page": 1,
+      "bbox": {
+        "x": 5239510,
+        "y": 3844138,
+        "w": 504749,
+        "h": 309524
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10002,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": null
+        },
+        "line": {
+          "width_emu": 38100,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh003",
+      "page": 1,
+      "bbox": {
+        "x": 7651698,
+        "y": 3844138,
+        "w": 1162202,
+        "h": 309524
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10003,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": null
+        },
+        "line": {
+          "width_emu": 38100,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh004",
+      "page": 1,
+      "bbox": {
+        "x": 4637837,
+        "y": 3844138,
+        "w": 512977,
+        "h": 309524
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10004,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": null
+        },
+        "line": {
+          "width_emu": 38100,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh005",
+      "page": 1,
+      "bbox": {
+        "x": 4631436,
+        "y": 3844138,
+        "w": 523951,
+        "h": 314554
+      },
+      "text": "ASR",
+      "normalized_text": "ASR",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10005,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "ASR",
+                "font_name": "Cambria",
+                "font_size_emu": 127000,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh006",
+      "page": 1,
+      "bbox": {
+        "x": 3384194,
+        "y": 3844138,
+        "w": 534010,
+        "h": 314554
+      },
+      "text": "LLM",
+      "normalized_text": "LLM",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10006,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "LLM",
+                "font_name": "Cambria",
+                "font_size_emu": 127000,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh007",
+      "page": 1,
+      "bbox": {
+        "x": 5244998,
+        "y": 3844138,
+        "w": 505663,
+        "h": 314554
+      },
+      "text": "TTS",
+      "normalized_text": "TTS",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10007,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "TTS",
+                "font_name": "Cambria",
+                "font_size_emu": 127000,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh008",
+      "page": 1,
+      "bbox": {
+        "x": 7653528,
+        "y": 3844138,
+        "w": 1162202,
+        "h": 314554
+      },
+      "text": "Windows GPU",
+      "normalized_text": "Windows GPU",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10008,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "Windows GPU",
+                "font_name": "Cambria",
+                "font_size_emu": 127000,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh009",
+      "page": 1,
+      "bbox": {
+        "x": 4010558,
+        "y": 3844138,
+        "w": 526694,
+        "h": 309524
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10009,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": null
+        },
+        "line": {
+          "width_emu": 38100,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh010",
+      "page": 1,
+      "bbox": {
+        "x": 5844846,
+        "y": 3844138,
+        "w": 532180,
+        "h": 309524
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10010,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": null
+        },
+        "line": {
+          "width_emu": 38100,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh011",
+      "page": 1,
+      "bbox": {
+        "x": 6472124,
+        "y": 3847636,
+        "w": 1090878,
+        "h": 309524
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10011,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": null
+        },
+        "line": {
+          "width_emu": 38100,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh012",
+      "page": 1,
+      "bbox": {
+        "x": 4005072,
+        "y": 3844138,
+        "w": 534010,
+        "h": 314554
+      },
+      "text": "VLM",
+      "normalized_text": "VLM",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10012,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "VLM",
+                "font_name": "Cambria",
+                "font_size_emu": 127000,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh013",
+      "page": 1,
+      "bbox": {
+        "x": 5844845,
+        "y": 3844138,
+        "w": 534010,
+        "h": 314554
+      },
+      "text": "RAG",
+      "normalized_text": "RAG",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10013,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "RAG",
+                "font_name": "Cambria",
+                "font_size_emu": 127000,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh014",
+      "page": 1,
+      "bbox": {
+        "x": 6467551,
+        "y": 3844138,
+        "w": 1095451,
+        "h": 314554
+      },
+      "text": "Apple Silicon",
+      "normalized_text": "Apple Silicon",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10014,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "Apple Silicon",
+                "font_name": "Cambria",
+                "font_size_emu": 127000,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh015",
+      "page": 1,
+      "bbox": {
+        "x": 0,
+        "y": 6277356,
+        "w": 12306910,
+        "h": 200254
+      },
+      "text": "2026年2月15日 | ChatGPT",
+      "normalized_text": "2026年2月15日 | ChatGPT",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10015,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "2026年2月15日 | ChatGPT",
+                "font_name": "Cambria",
+                "font_size_emu": 127000,
+                "color_rgb": "86868B"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh016",
+      "page": 1,
+      "bbox": {
+        "x": 2190902,
+        "y": 809244,
+        "w": 609905,
+        "h": 609905
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10016,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "9d1dd2cbfc739be2db82c2a80dad61c2d3f36b6a60ff9c62c1e12446496e4d04",
+        "ext": "png",
+        "byte_size": 1894,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s001_sh017",
+      "page": 1,
+      "bbox": {
+        "x": 2133295,
+        "y": 1705356,
+        "w": 7925105,
+        "h": 257861
+      },
+      "text": "Technical Research Report",
+      "normalized_text": "Technical Research Report",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10017,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "Technical Research Report",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "86868B"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh018",
+      "page": 1,
+      "bbox": {
+        "x": 1677924,
+        "y": 2190902,
+        "w": 8837676,
+        "h": 590702
+      },
+      "text": "ローカルAI 技術調査レポート",
+      "normalized_text": "ローカルAI 技術調査レポート",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10018,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "ローカル",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 533400,
+                "bold": true,
+                "color_rgb": "1D1D1F"
+              },
+              {
+                "index": 1,
+                "text": "AI ",
+                "font_name": "Cambria",
+                "font_size_emu": 533400,
+                "bold": true,
+                "color_rgb": "1D1D1F"
+              },
+              {
+                "index": 2,
+                "text": "技術調査レポート",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 533400,
+                "bold": true,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh019",
+      "page": 1,
+      "bbox": {
+        "x": 2095805,
+        "y": 2929738,
+        "w": 8001000,
+        "h": 457200
+      },
+      "text": "オンデバイス／ローカル推論の現実解と推奨スタック",
+      "normalized_text": "オンデバイス／ローカル推論の現実解と推奨スタック",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10019,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "オンデバイス／ローカル推論の現実解と推奨スタック",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 304800,
+                "color_rgb": "424245"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh020",
+      "page": 1,
+      "bbox": {
+        "x": 2190902,
+        "y": 4463186,
+        "w": 7810805,
+        "h": 1591056
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10020,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "F5F5F7"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh021",
+      "page": 1,
+      "bbox": {
+        "x": 2190902,
+        "y": 4463186,
+        "w": 38405,
+        "h": 1591056
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10021,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "007AFF",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "007AFF",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh022",
+      "page": 1,
+      "bbox": {
+        "x": 2533802,
+        "y": 4691786,
+        "w": 7277710,
+        "h": 228600
+      },
+      "text": "Report Purpose",
+      "normalized_text": "Report Purpose",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10022,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "Report Purpose",
+                "font_name": "Cambria",
+                "font_size_emu": 152400,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh023",
+      "page": 1,
+      "bbox": {
+        "x": 2533802,
+        "y": 4997196,
+        "w": 7239305,
+        "h": 829361
+      },
+      "text": "Apple SiliconおよびWindows環境におけるローカルAIの実運用ラインと推奨スタックを提示。\n 「意思決定のための要点」と「根拠となる完全な技術詳細」を二層構造で網羅。",
+      "normalized_text": "Apple SiliconおよびWindows環境におけるローカルAIの実運用ラインと推奨スタックを提示。\n 「意思決定のための要点」と「根拠となる完全な技術詳細」を二層構造で網羅。",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10023,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": " Apple SiliconおよびWindows環境におけるローカルAIの実運用ラインと推奨スタックを提示。",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": " 「意思決定のための要点」と「根拠となる完全な技術詳細」を二層構造で網羅。 ",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh024",
+      "page": 1,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 12192001,
+        "h": 75896
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10024,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "027AFF"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "run1_chunk_count": 87,
+  "run2_chunk_count": 87,
+  "exact_match_rate": 1.0,
+  "exact_match_count": 87,
+  "added_count": 0,
+  "removed_count": 0,
+  "added_chunk_ids": [],
+  "removed_chunk_ids": [],
+  "total_order_changes": 0,
+  "pages_with_order_changes": {},
+  "stability": "stable"
+}

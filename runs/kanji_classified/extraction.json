@@ -1,0 +1,21 @@
+{
+    "schema_version": "0.1",
+    "document": {
+      "document_id": "doc_sample_0001",
+      "source_type": "pdf",
+      "source_path": "runs/sample/input.pdf",
+      "page_count": 1
+    },
+    "chunks": [
+      {
+        "chunk_id": "c_0001",
+        "type": "text",
+        "page": 1,
+        "bbox_pt": [0, 0, 100, 100],
+        "heading_level": 1,
+        "text": "サンプル見出し",
+        "normalized_text": "サンプル見出し"
+      }
+    ]
+  }
+  

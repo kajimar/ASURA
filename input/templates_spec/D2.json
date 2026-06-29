@@ -1,0 +1,518 @@
+{
+    "schema_version": "slot_templates_spec@0.1",
+    "document_id": "D2",
+    "page_count": 1,
+    "pages": [
+      {
+        "page": 1,
+        "template_class": "flow.steps",
+        "sub_class": "five_step_decision_flow_with_column_cards",
+        "slots": [
+          {
+            "slot_id": "decor.accent_bar.top",
+            "role": "accent_bar",
+            "kind": "shape",
+            "bbox": {
+              "x": 0,
+              "y": 0,
+              "w": 12192001,
+              "h": 54865
+            },
+            "style_fingerprint": "fill:solid;fill_color:007AFF;line_w:0"
+          },
+          {
+            "slot_id": "meta.background",
+            "role": "background",
+            "kind": "shape",
+            "bbox": {
+              "x": 0,
+              "y": 0,
+              "w": 12192000,
+              "h": 6858000
+            },
+            "style_fingerprint": "fill:background;line:none"
+          },
+          {
+            "slot_id": "meta.subtitle",
+            "role": "subtitle",
+            "kind": "text",
+            "bbox": {
+              "x": 481466,
+              "y": 220547,
+              "w": 2867558,
+              "h": 228600
+            },
+            "style_fingerprint": "fill:background;line_w:0"
+          },
+          {
+            "slot_id": "meta.brand.logo",
+            "role": "logo",
+            "kind": "image",
+            "bbox": {
+              "x": 481466,
+              "y": 594538,
+              "w": 304495,
+              "h": 267005
+            },
+            "style_fingerprint": "fill:none;line_w:0"
+          },
+          {
+            "slot_id": "meta.title",
+            "role": "title",
+            "kind": "text",
+            "bbox": {
+              "x": 939089,
+              "y": 514347,
+              "w": 4077310,
+              "h": 400507
+            },
+            "style_fingerprint": "fill:background;line_w:0"
+          },
+          {
+            "slot_id": "decor.rule.header_divider",
+            "role": "rule",
+            "kind": "shape",
+            "bbox": {
+              "x": 305,
+              "y": 1032380,
+              "w": 12191695,
+              "h": 36000
+            },
+            "style_fingerprint": "fill:solid;fill_color:E5E5E5;line_w:12700"
+          },
+          {
+            "slot_id": "flow.step_1.badge_bg",
+            "role": "step_badge_bg",
+            "kind": "shape",
+            "bbox": {
+              "x": 1205179,
+              "y": 1257730,
+              "w": 456286,
+              "h": 457200
+            },
+            "style_fingerprint": "fill:solid;fill_color:007AFF;line_w:0"
+          },
+          {
+            "slot_id": "flow.step_1.label",
+            "role": "step_label",
+            "kind": "text",
+            "bbox": {
+              "x": 1204722,
+              "y": 1257730,
+              "w": 457200,
+              "h": 457200
+            },
+            "style_fingerprint": "fill:background;line_w:0"
+          },
+          {
+            "slot_id": "flow.step_2.badge_bg",
+            "role": "step_badge_bg",
+            "kind": "shape",
+            "bbox": {
+              "x": 3536899,
+              "y": 1257730,
+              "w": 456286,
+              "h": 457200
+            },
+            "style_fingerprint": "fill:solid;fill_color:007AFF;line_w:0"
+          },
+          {
+            "slot_id": "flow.step_2.label",
+            "role": "step_label",
+            "kind": "text",
+            "bbox": {
+              "x": 3536442,
+              "y": 1257730,
+              "w": 457200,
+              "h": 457200
+            },
+            "style_fingerprint": "fill:background;line_w:0"
+          },
+          {
+            "slot_id": "flow.step_3.badge_bg",
+            "role": "step_badge_bg",
+            "kind": "shape",
+            "bbox": {
+              "x": 5868619,
+              "y": 1257730,
+              "w": 456286,
+              "h": 457200
+            },
+            "style_fingerprint": "fill:solid;fill_color:007AFF;line_w:0"
+          },
+          {
+            "slot_id": "flow.step_3.label",
+            "role": "step_label",
+            "kind": "text",
+            "bbox": {
+              "x": 5868162,
+              "y": 1257730,
+              "w": 457200,
+              "h": 457200
+            },
+            "style_fingerprint": "fill:background;line_w:0"
+          },
+          {
+            "slot_id": "flow.step_4.badge_bg",
+            "role": "step_badge_bg",
+            "kind": "shape",
+            "bbox": {
+              "x": 8200339,
+              "y": 1257730,
+              "w": 456286,
+              "h": 457200
+            },
+            "style_fingerprint": "fill:solid;fill_color:007AFF;line_w:0"
+          },
+          {
+            "slot_id": "flow.step_4.label",
+            "role": "step_label",
+            "kind": "text",
+            "bbox": {
+              "x": 8199882,
+              "y": 1257730,
+              "w": 457200,
+              "h": 457200
+            },
+            "style_fingerprint": "fill:background;line_w:0"
+          },
+          {
+            "slot_id": "flow.step_5.badge_bg",
+            "role": "step_badge_bg",
+            "kind": "shape",
+            "bbox": {
+              "x": 10532059,
+              "y": 1257730,
+              "w": 456286,
+              "h": 457200
+            },
+            "style_fingerprint": "fill:solid;fill_color:007AFF;line_w:0"
+          },
+          {
+            "slot_id": "flow.step_5.label",
+            "role": "step_label",
+            "kind": "text",
+            "bbox": {
+              "x": 10531602,
+              "y": 1257730,
+              "w": 457200,
+              "h": 457200
+            },
+            "style_fingerprint": "fill:background;line_w:0"
+          },
+          {
+            "slot_id": "flow.step_1.panel",
+            "role": "step_panel",
+            "kind": "shape",
+            "bbox": {
+              "x": 457200,
+              "y": 1741913,
+              "w": 1952244,
+              "h": 4214471
+            },
+            "style_fingerprint": "fill:background;line_w:12700;line_color:E5E5E5"
+          },
+          {
+            "slot_id": "flow.step_2.panel",
+            "role": "step_panel",
+            "kind": "shape",
+            "bbox": {
+              "x": 2788920,
+              "y": 1741913,
+              "w": 1952244,
+              "h": 4214471
+            },
+            "style_fingerprint": "fill:background;line_w:12700;line_color:E5E5E5"
+          },
+          {
+            "slot_id": "flow.step_3.panel",
+            "role": "step_panel",
+            "kind": "shape",
+            "bbox": {
+              "x": 5120640,
+              "y": 1741913,
+              "w": 1952244,
+              "h": 4214471
+            },
+            "style_fingerprint": "fill:background;line_w:12700;line_color:E5E5E5"
+          },
+          {
+            "slot_id": "flow.step_4.panel",
+            "role": "step_panel",
+            "kind": "shape",
+            "bbox": {
+              "x": 7452360,
+              "y": 1741913,
+              "w": 1952244,
+              "h": 4214471
+            },
+            "style_fingerprint": "fill:background;line_w:12700;line_color:E5E5E5"
+          },
+          {
+            "slot_id": "flow.step_5.panel",
+            "role": "step_panel",
+            "kind": "shape",
+            "bbox": {
+              "x": 9784080,
+              "y": 1741913,
+              "w": 1952244,
+              "h": 4214471
+            },
+            "style_fingerprint": "fill:background;line_w:12700;line_color:E5E5E5"
+          },
+          {
+            "slot_id": "flow.step_1.title",
+            "role": "step_title",
+            "kind": "text",
+            "bbox": {
+              "x": 455676,
+              "y": 1903763,
+              "w": 1953768,
+              "h": 372161
+            },
+            "style_fingerprint": "fill:background;line_w:0"
+          },
+          {
+            "slot_id": "flow.step_2.title",
+            "role": "step_title",
+            "kind": "text",
+            "bbox": {
+              "x": 2788920,
+              "y": 1903763,
+              "w": 1952244,
+              "h": 372161
+            },
+            "style_fingerprint": "fill:background;line_w:0"
+          },
+          {
+            "slot_id": "flow.step_3.title",
+            "role": "step_title",
+            "kind": "text",
+            "bbox": {
+              "x": 5120640,
+              "y": 1903763,
+              "w": 1952244,
+              "h": 372161
+            },
+            "style_fingerprint": "fill:background;line_w:0"
+          },
+          {
+            "slot_id": "flow.step_4.title",
+            "role": "step_title",
+            "kind": "text",
+            "bbox": {
+              "x": 7452360,
+              "y": 1903763,
+              "w": 1950720,
+              "h": 372161
+            },
+            "style_fingerprint": "fill:background;line_w:0"
+          },
+          {
+            "slot_id": "flow.step_5.title",
+            "role": "step_title",
+            "kind": "text",
+            "bbox": {
+              "x": 9791719,
+              "y": 1903763,
+              "w": 1952244,
+              "h": 372161
+            },
+            "style_fingerprint": "fill:background;line_w:0"
+          },
+          {
+            "slot_id": "decor.hidden.flow.step_1.rule",
+            "role": "hidden_rule",
+            "kind": "shape",
+            "bbox": {
+              "x": 619049,
+              "y": 2371022,
+              "w": 1628546,
+              "h": 9144
+            },
+            "style_fingerprint": "fill:solid;fill_color:F0F0F0;fill_alpha:0.0;line_w:12700;line_color:F0F0F0;line_alpha:0.0;line_visible:false"
+          },
+          {
+            "slot_id": "decor.hidden.flow.step_2.rule",
+            "role": "hidden_rule",
+            "kind": "shape",
+            "bbox": {
+              "x": 2950769,
+              "y": 2371022,
+              "w": 1628546,
+              "h": 9144
+            },
+            "style_fingerprint": "fill:solid;fill_color:F0F0F0;fill_alpha:0.0;line_w:12700;line_color:F0F0F0;line_alpha:0.0;line_visible:false"
+          },
+          {
+            "slot_id": "decor.hidden.flow.step_3.rule",
+            "role": "hidden_rule",
+            "kind": "shape",
+            "bbox": {
+              "x": 5282489,
+              "y": 2371022,
+              "w": 1628546,
+              "h": 9144
+            },
+            "style_fingerprint": "fill:solid;fill_color:F0F0F0;fill_alpha:0.0;line_w:12700;line_color:F0F0F0;line_alpha:0.0;line_visible:false"
+          },
+          {
+            "slot_id": "decor.hidden.flow.step_4.rule",
+            "role": "hidden_rule",
+            "kind": "shape",
+            "bbox": {
+              "x": 7614209,
+              "y": 2371022,
+              "w": 1628546,
+              "h": 9144
+            },
+            "style_fingerprint": "fill:solid;fill_color:F0F0F0;fill_alpha:0.0;line_w:12700;line_color:F0F0F0;line_alpha:0.0;line_visible:false"
+          },
+          {
+            "slot_id": "decor.hidden.flow.step_5.rule",
+            "role": "hidden_rule",
+            "kind": "shape",
+            "bbox": {
+              "x": 9945929,
+              "y": 2371022,
+              "w": 1628546,
+              "h": 9144
+            },
+            "style_fingerprint": "fill:solid;fill_color:F0F0F0;fill_alpha:0.0;line_w:12700;line_color:F0F0F0;line_alpha:0.0;line_visible:false"
+          },
+          {
+            "slot_id": "flow.step_1.body",
+            "role": "step_body",
+            "kind": "text",
+            "bbox": {
+              "x": 619049,
+              "y": 2608833,
+              "w": 1694383,
+              "h": 372161
+            },
+            "style_fingerprint": "fill:background;line_w:0"
+          },
+          {
+            "slot_id": "flow.step_2.body",
+            "role": "step_body",
+            "kind": "text",
+            "bbox": {
+              "x": 2950769,
+              "y": 2608833,
+              "w": 1694383,
+              "h": 372161
+            },
+            "style_fingerprint": "fill:background;line_w:0"
+          },
+          {
+            "slot_id": "flow.step_3.body",
+            "role": "step_body",
+            "kind": "text",
+            "bbox": {
+              "x": 5282489,
+              "y": 2608833,
+              "w": 1694383,
+              "h": 372161
+            },
+            "style_fingerprint": "fill:background;line_w:0"
+          },
+          {
+            "slot_id": "flow.step_4.body",
+            "role": "step_body",
+            "kind": "text",
+            "bbox": {
+              "x": 7614209,
+              "y": 2608833,
+              "w": 1694383,
+              "h": 372161
+            },
+            "style_fingerprint": "fill:background;line_w:0"
+          },
+          {
+            "slot_id": "flow.step_5.body",
+            "role": "step_body",
+            "kind": "text",
+            "bbox": {
+              "x": 9945929,
+              "y": 2608833,
+              "w": 1694383,
+              "h": 372161
+            },
+            "style_fingerprint": "fill:background;line_w:0"
+          },
+          {
+            "slot_id": "decor.flow.connector_1.arrow",
+            "role": "flow_connector",
+            "kind": "image",
+            "bbox": {
+              "x": 2536546,
+              "y": 3867385,
+              "w": 123444,
+              "h": 267005
+            },
+            "style_fingerprint": "fill:none;line_w:0"
+          },
+          {
+            "slot_id": "decor.flow.connector_2.arrow",
+            "role": "flow_connector",
+            "kind": "image",
+            "bbox": {
+              "x": 4868266,
+              "y": 3867385,
+              "w": 123444,
+              "h": 267005
+            },
+            "style_fingerprint": "fill:none;line_w:0"
+          },
+          {
+            "slot_id": "decor.flow.connector_3.arrow",
+            "role": "flow_connector",
+            "kind": "image",
+            "bbox": {
+              "x": 7199986,
+              "y": 3867385,
+              "w": 123444,
+              "h": 267005
+            },
+            "style_fingerprint": "fill:none;line_w:0"
+          },
+          {
+            "slot_id": "decor.flow.connector_4.arrow",
+            "role": "flow_connector",
+            "kind": "image",
+            "bbox": {
+              "x": 9531706,
+              "y": 3867385,
+              "w": 123444,
+              "h": 267005
+            },
+            "style_fingerprint": "fill:none;line_w:0"
+          },
+          {
+            "slot_id": "meta.footer.band",
+            "role": "footer_band",
+            "kind": "shape",
+            "bbox": {
+              "x": 0,
+              "y": 6476695,
+              "w": 12192609,
+              "h": 381305
+            },
+            "style_fingerprint": "fill:solid;fill_color:F6F5F8;line_w:15875;line_color:E5E5E5"
+          },
+          {
+            "slot_id": "decor.hidden.footer_text",
+            "role": "footer_text_hidden",
+            "kind": "text",
+            "bbox": {
+              "x": 0,
+              "y": 6476695,
+              "w": 12192610,
+              "h": 381305
+            },
+            "style_fingerprint": "fill:solid;fill_color:FFFFFF;fill_alpha:0.0;line_w:0;line_color:FFFFFF;line_alpha:0.0;line_visible:false"
+          }
+        ]
+      }
+    ]
+  }

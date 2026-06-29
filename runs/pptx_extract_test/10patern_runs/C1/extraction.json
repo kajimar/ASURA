@@ -1,0 +1,3779 @@
+{
+  "schema_version": "0.1",
+  "document": {
+    "document_id": "C1",
+    "source_type": "pptx",
+    "source_path": "/Users/kanji/ASURA/input/10patern/C1.pptx",
+    "page_count": 3,
+    "page": {
+      "w_emu": 12192000,
+      "h_emu": 6858000
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "s001_bg000",
+      "page": 1,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 12192000,
+        "h": 6858000
+      },
+      "text": "[BACKGROUND]",
+      "normalized_text": "[BACKGROUND]",
+      "heading_level": 0,
+      "kind": "shape",
+      "z": 0,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {}
+      },
+      "shape_kind": "rect"
+    },
+    {
+      "chunk_id": "s001_sh001",
+      "page": 1,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 5486400,
+        "h": 6858000
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10001,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "000000"
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh002",
+      "page": 1,
+      "bbox": {
+        "x": 5486705,
+        "y": 0,
+        "w": 6705295,
+        "h": 6858000
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10002,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "1D1D1F"
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh003",
+      "page": 1,
+      "bbox": {
+        "x": 761695,
+        "y": 1495285,
+        "w": 4153205,
+        "h": 1143000
+      },
+      "text": "05",
+      "normalized_text": "05",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10003,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "05",
+                "font_name": "Cambria",
+                "font_size_emu": 1143000,
+                "bold": true,
+                "color_rgb": "333336"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh004",
+      "page": 1,
+      "bbox": {
+        "x": 761695,
+        "y": 3270217,
+        "w": 4396714,
+        "h": 1367833
+      },
+      "text": "特徴軸（評価軸）\nの定義",
+      "normalized_text": "特徴軸（評価軸）\nの定義",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10004,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "特徴軸（評価軸）",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 533400,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "の定義",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 533400,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh005",
+      "page": 1,
+      "bbox": {
+        "x": 761695,
+        "y": 4672584,
+        "w": 4048963,
+        "h": 323134
+      },
+      "text": "評価の共通物差しと測定基準",
+      "normalized_text": "評価の共通物差しと測定基準",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10005,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "評価の共通物差しと測定基準",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 228600,
+                "color_rgb": "86868B"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh006",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 1009498,
+        "w": 5296205,
+        "h": 228600
+      },
+      "text": "KEY TAKEAWAYS",
+      "normalized_text": "KEY TAKEAWAYS",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10006,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "KEY TAKEAWAYS",
+                "font_name": "Cambria",
+                "font_size_emu": 152400,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh007",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 1429207,
+        "w": 5181905,
+        "h": 3705149
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10007,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "5e605c68ab1d4832bec690a3b46439d91c6a17dc95df56eb5c64537de8560763",
+        "ext": "png",
+        "byte_size": 42040,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s001_sh008",
+      "page": 1,
+      "bbox": {
+        "x": 6810451,
+        "y": 1714500,
+        "w": 4525366,
+        "h": 286207
+      },
+      "text": "本章の要点",
+      "normalized_text": "本章の要点",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10008,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": " ",
+                "font_name": "Cambria",
+                "font_size_emu": 190500,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              },
+              {
+                "index": 1,
+                "text": "本章の要点",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 190500,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              },
+              {
+                "index": 2,
+                "text": " ",
+                "font_name": "Cambria",
+                "font_size_emu": 190500,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh009",
+      "page": 1,
+      "bbox": {
+        "x": 6572707,
+        "y": 1762049,
+        "w": 142646,
+        "h": 190195
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10009,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "9a4692c8e6a7a59c941a90e240ea930a4b1b5a9b805f0483794f76ae023e5303",
+        "ext": "png",
+        "byte_size": 1175,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s001_sh010",
+      "page": 1,
+      "bbox": {
+        "x": 6801307,
+        "y": 2356201,
+        "w": 4420210,
+        "h": 615600
+      },
+      "text": "13の評価軸：\n 指示追従、JSON堅牢性、長文耐性、速度、メモリなど、多角的な視点でモデルを比較評価します。",
+      "normalized_text": "13の評価軸：\n 指示追従、JSON堅牢性、長文耐性、速度、メモリなど、多角的な視点でモデルを比較評価します。",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10010,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "13",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "bold": true,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 1,
+                "text": "の評価軸：",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "bold": true,
+                "color_rgb": "E5E5E5"
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": " ",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 1,
+                "text": "指示追従、",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 2,
+                "text": "JSON",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 3,
+                "text": "堅牢性、長文耐性、速度、メモリなど、多角的な視点でモデルを比較評価します。",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 4,
+                "text": " ",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh011",
+      "page": 1,
+      "bbox": {
+        "x": 6572707,
+        "y": 2356201,
+        "w": 114300,
+        "h": 133502
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10011,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "206fbd943cf1c17010cee9365e3086fc0148ee639dbf1769d15501feb4886584",
+        "ext": "png",
+        "byte_size": 365,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s001_sh012",
+      "page": 1,
+      "bbox": {
+        "x": 6801307,
+        "y": 3270217,
+        "w": 4420210,
+        "h": 615600
+      },
+      "text": "KVキャッシュ最適化：\n paged/quantized KVやreuse機能が、長文コンテキストや多同時リクエスト処理の鍵となります。",
+      "normalized_text": "KVキャッシュ最適化：\n paged/quantized KVやreuse機能が、長文コンテキストや多同時リクエスト処理の鍵となります。",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10012,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "KV",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "bold": true,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 1,
+                "text": "キャッシュ最適化：",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "bold": true,
+                "color_rgb": "E5E5E5"
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": " paged/quantized KV",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 1,
+                "text": "や",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 2,
+                "text": "reuse",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 3,
+                "text": "機能が、長文コンテキストや多同時リクエスト処理の鍵となります。",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 4,
+                "text": " ",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh013",
+      "page": 1,
+      "bbox": {
+        "x": 6572707,
+        "y": 3270217,
+        "w": 114300,
+        "h": 133502
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10013,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "206fbd943cf1c17010cee9365e3086fc0148ee639dbf1769d15501feb4886584",
+        "ext": "png",
+        "byte_size": 365,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s001_sh014",
+      "page": 1,
+      "bbox": {
+        "x": 6810451,
+        "y": 4184233,
+        "w": 4420210,
+        "h": 615600
+      },
+      "text": "JSON制約の重要性：\n ツール利用においてJSON出力の安定性は必須ですが、機能はランタイムに強く依存します。",
+      "normalized_text": "JSON制約の重要性：\n ツール利用においてJSON出力の安定性は必須ですが、機能はランタイムに強く依存します。",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10014,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "JSON",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "bold": true,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 1,
+                "text": "制約の重要性：",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "bold": true,
+                "color_rgb": "E5E5E5"
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": " ",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 1,
+                "text": "ツール利用において",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 2,
+                "text": "JSON",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 3,
+                "text": "出力の安定性は必須ですが、機能はランタイムに強く依存します。",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 4,
+                "text": " ",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh015",
+      "page": 1,
+      "bbox": {
+        "x": 6572707,
+        "y": 4184233,
+        "w": 114300,
+        "h": 133502
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10015,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "206fbd943cf1c17010cee9365e3086fc0148ee639dbf1769d15501feb4886584",
+        "ext": "png",
+        "byte_size": 365,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s001_sh016",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 5514746,
+        "w": 1276502,
+        "h": 333756
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10016,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "7ef797c016e2124aa6a94e72124ff43883f86fc649a8fa22c2a10277e36d191f",
+        "ext": "png",
+        "byte_size": 731,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s001_sh017",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 5514746,
+        "w": 1276502,
+        "h": 333756
+      },
+      "text": "13の評価軸定義",
+      "normalized_text": "13の評価軸定義",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10017,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "13",
+                "font_name": "Cambria",
+                "font_size_emu": 127000,
+                "color_rgb": "A1A1A6"
+              },
+              {
+                "index": 1,
+                "text": "の評価軸定義",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 127000,
+                "color_rgb": "A1A1A6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh018",
+      "page": 1,
+      "bbox": {
+        "x": 7638898,
+        "y": 5514746,
+        "w": 857707,
+        "h": 333756
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10018,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "ba17b2972f0d2292e4feb868d1151927a4eb44b0e22c6840d1b0e89e47c7e63f",
+        "ext": "png",
+        "byte_size": 663,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s001_sh019",
+      "page": 1,
+      "bbox": {
+        "x": 7638898,
+        "y": 5514746,
+        "w": 857707,
+        "h": 333756
+      },
+      "text": "測定手順",
+      "normalized_text": "測定手順",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10019,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "測定手順",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 127000,
+                "color_rgb": "A1A1A6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh020",
+      "page": 1,
+      "bbox": {
+        "x": 8609990,
+        "y": 5514746,
+        "w": 857707,
+        "h": 333756
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10020,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "ba17b2972f0d2292e4feb868d1151927a4eb44b0e22c6840d1b0e89e47c7e63f",
+        "ext": "png",
+        "byte_size": 663,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s001_sh021",
+      "page": 1,
+      "bbox": {
+        "x": 8609990,
+        "y": 5514746,
+        "w": 857707,
+        "h": 333756
+      },
+      "text": "設計含意",
+      "normalized_text": "設計含意",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10021,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "設計含意",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 127000,
+                "color_rgb": "A1A1A6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh022",
+      "page": 1,
+      "bbox": {
+        "x": 9581998,
+        "y": 5514746,
+        "w": 895198,
+        "h": 333756
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10022,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "251ecf2e6be9e147525494cd2dbf02f142b6c575503022b0de6f53264df281f9",
+        "ext": "png",
+        "byte_size": 687,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s001_sh023",
+      "page": 1,
+      "bbox": {
+        "x": 9581998,
+        "y": 5514746,
+        "w": 896112,
+        "h": 333756
+      },
+      "text": "KV最適化",
+      "normalized_text": "KV最適化",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10023,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "KV",
+                "font_name": "Cambria",
+                "font_size_emu": 127000,
+                "color_rgb": "A1A1A6"
+              },
+              {
+                "index": 1,
+                "text": "最適化",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 127000,
+                "color_rgb": "A1A1A6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh024",
+      "page": 1,
+      "bbox": {
+        "x": 761695,
+        "y": 2832811,
+        "w": 761695,
+        "h": 57607
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10024,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "a2e62ef3019b4a527c33be7c450599275ec603108faf123ee043032362b208b2",
+        "ext": "png",
+        "byte_size": 246,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s002_bg000",
+      "page": 2,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 12192000,
+        "h": 6858000
+      },
+      "text": "[BACKGROUND]",
+      "normalized_text": "[BACKGROUND]",
+      "heading_level": 0,
+      "kind": "shape",
+      "z": 0,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {}
+      },
+      "shape_kind": "rect"
+    },
+    {
+      "chunk_id": "s002_sh001",
+      "page": 2,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 5486400,
+        "h": 6858000
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10001,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "000000"
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s002_sh002",
+      "page": 2,
+      "bbox": {
+        "x": 5486400,
+        "y": 0,
+        "w": 6705295,
+        "h": 6858000
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10002,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "1D1D1F"
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s002_sh003",
+      "page": 2,
+      "bbox": {
+        "x": 761695,
+        "y": 1499616,
+        "w": 4153205,
+        "h": 1143000
+      },
+      "text": "06",
+      "normalized_text": "06",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10003,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "06",
+                "font_name": "Cambria",
+                "font_size_emu": 1143000,
+                "bold": true,
+                "color_rgb": "333336"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s002_sh004",
+      "page": 2,
+      "bbox": {
+        "x": 761695,
+        "y": 2832811,
+        "w": 761695,
+        "h": 57607
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10004,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "a2e62ef3019b4a527c33be7c450599275ec603108faf123ee043032362b208b2",
+        "ext": "png",
+        "byte_size": 246,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s002_sh005",
+      "page": 2,
+      "bbox": {
+        "x": 761695,
+        "y": 3270809,
+        "w": 4121201,
+        "h": 1181405
+      },
+      "text": "カテゴリ別\nモデルカタログ",
+      "normalized_text": "カテゴリ別\nモデルカタログ",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10005,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "カテゴリ別",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 533400,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "モデルカタログ",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 533400,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s002_sh006",
+      "page": 2,
+      "bbox": {
+        "x": 761695,
+        "y": 4672584,
+        "w": 4048963,
+        "h": 685800
+      },
+      "text": "主要9カテゴリの\n詳細データと採用判断",
+      "normalized_text": "主要9カテゴリの\n詳細データと採用判断",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10006,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "主要",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 228600,
+                "color_rgb": "86868B"
+              },
+              {
+                "index": 1,
+                "text": "9",
+                "font_name": "Cambria",
+                "font_size_emu": 228600,
+                "color_rgb": "86868B"
+              },
+              {
+                "index": 2,
+                "text": "カテゴリの",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 228600,
+                "color_rgb": "86868B"
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "詳細データと採用判断",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 228600,
+                "color_rgb": "86868B"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s002_sh007",
+      "page": 2,
+      "bbox": {
+        "x": 6248095,
+        "y": 1008965,
+        "w": 5296205,
+        "h": 228600
+      },
+      "text": "SECTION OVERVIEW",
+      "normalized_text": "SECTION OVERVIEW",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10007,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "SECTION OVERVIEW",
+                "font_name": "Cambria",
+                "font_size_emu": 152400,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s002_sh008",
+      "page": 2,
+      "bbox": {
+        "x": 6248094,
+        "y": 1428293,
+        "w": 5181905,
+        "h": 3372307
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10008,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "ac1925be528574af59491954735502a16a633fd0f5dbd4fc6fec4321009e4935",
+        "ext": "png",
+        "byte_size": 38317,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s002_sh009",
+      "page": 2,
+      "bbox": {
+        "x": 6848856,
+        "y": 1714424,
+        "w": 4448556,
+        "h": 286207
+      },
+      "text": "提示方針：三層構造",
+      "normalized_text": "提示方針：三層構造",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10009,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": " ",
+                "font_name": "Cambria",
+                "font_size_emu": 190500,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              },
+              {
+                "index": 1,
+                "text": "提示方針：三層構造",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 190500,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              },
+              {
+                "index": 2,
+                "text": " ",
+                "font_name": "Cambria",
+                "font_size_emu": 190500,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s002_sh010",
+      "page": 2,
+      "bbox": {
+        "x": 6552590,
+        "y": 1762431,
+        "w": 219456,
+        "h": 190195
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10010,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "84a950f339166012088b869c9115f8ad81780ee2bb23a710dbcd2684066efdab",
+        "ext": "png",
+        "byte_size": 1526,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s002_sh011",
+      "page": 2,
+      "bbox": {
+        "x": 6801307,
+        "y": 2356201,
+        "w": 4420210,
+        "h": 440138
+      },
+      "text": "概要（Overview）：\n カテゴリごとの主要トレンドと代表モデルの要点を概説。",
+      "normalized_text": "概要（Overview）：\n カテゴリごとの主要トレンドと代表モデルの要点を概説。",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10011,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "概要（",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "bold": true,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 1,
+                "text": "Overview",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "bold": true,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 2,
+                "text": "）：",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "bold": true,
+                "color_rgb": "E5E5E5"
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": " ",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 1,
+                "text": "カテゴリごとの主要トレンドと代表モデルの要点を概説。",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 2,
+                "text": " ",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s002_sh012",
+      "page": 2,
+      "bbox": {
+        "x": 6801307,
+        "y": 3043604,
+        "w": 4420210,
+        "h": 652940
+      },
+      "text": "完全版表（Full Data）：\n 規模・量子化・得意不得意・ランタイム相性・リスク・参考文献を列落ちなく全掲載。",
+      "normalized_text": "完全版表（Full Data）：\n 規模・量子化・得意不得意・ランタイム相性・リスク・参考文献を列落ちなく全掲載。",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10012,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "完全版表（",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "bold": true,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 1,
+                "text": "Full Data",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "bold": true,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 2,
+                "text": "）：",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "bold": true,
+                "color_rgb": "E5E5E5"
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": " ",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 1,
+                "text": "規模・量子化・得意不得意・ランタイム相性・リスク・参考文献を列落ちなく全掲載。",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 2,
+                "text": " ",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s002_sh013",
+      "page": 2,
+      "bbox": {
+        "x": 6572707,
+        "y": 3043604,
+        "w": 114300,
+        "h": 133502
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10013,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "206fbd943cf1c17010cee9365e3086fc0148ee639dbf1769d15501feb4886584",
+        "ext": "png",
+        "byte_size": 365,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s002_sh014",
+      "page": 2,
+      "bbox": {
+        "x": 6801307,
+        "y": 3943808,
+        "w": 4420210,
+        "h": 437234
+      },
+      "text": "採用判断（Decision）：\n 「どう選ぶか」の意思決定基準と失敗回避策を提示。",
+      "normalized_text": "採用判断（Decision）：\n 「どう選ぶか」の意思決定基準と失敗回避策を提示。",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10014,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "採用判断（",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "bold": true,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 1,
+                "text": "Decision",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "bold": true,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 2,
+                "text": "）：",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "bold": true,
+                "color_rgb": "E5E5E5"
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": " ",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 1,
+                "text": "「どう選ぶか」の意思決定基準と失敗回避策を提示。",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 2,
+                "text": " ",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s002_sh015",
+      "page": 2,
+      "bbox": {
+        "x": 6572707,
+        "y": 3943808,
+        "w": 114300,
+        "h": 133502
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10015,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "206fbd943cf1c17010cee9365e3086fc0148ee639dbf1769d15501feb4886584",
+        "ext": "png",
+        "byte_size": 365,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s002_sh016",
+      "page": 2,
+      "bbox": {
+        "x": 6248095,
+        "y": 5124298,
+        "w": 1114654,
+        "h": 333756
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10016,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "07f20996db705defb9c08b09c003cca970337e5f5547b23d5e15a1e4b6d4e49c",
+        "ext": "png",
+        "byte_size": 692,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s002_sh017",
+      "page": 2,
+      "bbox": {
+        "x": 6248095,
+        "y": 5124298,
+        "w": 1114654,
+        "h": 333756
+      },
+      "text": "テキストLLM",
+      "normalized_text": "テキストLLM",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10017,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "テキスト",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 127000,
+                "color_rgb": "A1A1A6"
+              },
+              {
+                "index": 1,
+                "text": "LLM",
+                "font_name": "Cambria",
+                "font_size_emu": 127000,
+                "color_rgb": "A1A1A6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s002_sh018",
+      "page": 2,
+      "bbox": {
+        "x": 7475220,
+        "y": 5124298,
+        "w": 942746,
+        "h": 333756
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10018,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "17f0ac78685e15a61f72c401e01192bc3eebc4bf92d2132102124d4a714356f0",
+        "ext": "png",
+        "byte_size": 678,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s002_sh019",
+      "page": 2,
+      "bbox": {
+        "x": 7475220,
+        "y": 5124298,
+        "w": 943661,
+        "h": 333756
+      },
+      "text": "VLM/LMM",
+      "normalized_text": "VLM/LMM",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10019,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "VLM/LMM",
+                "font_name": "Cambria",
+                "font_size_emu": 127000,
+                "color_rgb": "A1A1A6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s002_sh020",
+      "page": 2,
+      "bbox": {
+        "x": 8525866,
+        "y": 5124298,
+        "w": 580644,
+        "h": 333756
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10020,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "c61961f9f987a81208a1d06d22bd7ede1c34c67d6886dc515abb9818124023f9",
+        "ext": "png",
+        "byte_size": 621,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s002_sh021",
+      "page": 2,
+      "bbox": {
+        "x": 8525866,
+        "y": 5124298,
+        "w": 581558,
+        "h": 333756
+      },
+      "text": "ASR",
+      "normalized_text": "ASR",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10021,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "ASR",
+                "font_name": "Cambria",
+                "font_size_emu": 127000,
+                "color_rgb": "A1A1A6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s002_sh022",
+      "page": 2,
+      "bbox": {
+        "x": 9215323,
+        "y": 5124298,
+        "w": 562356,
+        "h": 333756
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10022,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "cdb068c3627976b4f48d8f8d83a15e6f3a3b1dc7b1158f9ae87dfc8b43fe783f",
+        "ext": "png",
+        "byte_size": 618,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s002_sh023",
+      "page": 2,
+      "bbox": {
+        "x": 9215323,
+        "y": 5124298,
+        "w": 562356,
+        "h": 333756
+      },
+      "text": "TTS",
+      "normalized_text": "TTS",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10023,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "TTS",
+                "font_name": "Cambria",
+                "font_size_emu": 127000,
+                "color_rgb": "A1A1A6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s002_sh024",
+      "page": 2,
+      "bbox": {
+        "x": 9891979,
+        "y": 5124298,
+        "w": 1057046,
+        "h": 333756
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10024,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "61872ab2cc832e5369d8ec1ce406efb0d26b18379432710ff6eb348c72bf0a9c",
+        "ext": "png",
+        "byte_size": 706,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s002_sh025",
+      "page": 2,
+      "bbox": {
+        "x": 9891979,
+        "y": 5124298,
+        "w": 1057961,
+        "h": 333756
+      },
+      "text": "Embedding",
+      "normalized_text": "Embedding",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10025,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "Embedding",
+                "font_name": "Cambria",
+                "font_size_emu": 127000,
+                "color_rgb": "A1A1A6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s002_sh026",
+      "page": 2,
+      "bbox": {
+        "x": 6248095,
+        "y": 5572354,
+        "w": 599846,
+        "h": 333756
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10026,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "5c18a9f0959d2f12f3a4670ecbc9e3535ba4bf2925fe6e86b5025fc765e750e3",
+        "ext": "png",
+        "byte_size": 620,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s002_sh027",
+      "page": 2,
+      "bbox": {
+        "x": 6248095,
+        "y": 5572354,
+        "w": 600761,
+        "h": 333756
+      },
+      "text": "OCR",
+      "normalized_text": "OCR",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10027,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "OCR",
+                "font_name": "Cambria",
+                "font_size_emu": 127000,
+                "color_rgb": "A1A1A6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s002_sh028",
+      "page": 2,
+      "bbox": {
+        "x": 6960413,
+        "y": 5572354,
+        "w": 857707,
+        "h": 333756
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10028,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "ba17b2972f0d2292e4feb868d1151927a4eb44b0e22c6840d1b0e89e47c7e63f",
+        "ext": "png",
+        "byte_size": 663,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s002_sh029",
+      "page": 2,
+      "bbox": {
+        "x": 6960413,
+        "y": 5572354,
+        "w": 857707,
+        "h": 333756
+      },
+      "text": "画像生成",
+      "normalized_text": "画像生成",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10029,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "画像生成",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 127000,
+                "color_rgb": "A1A1A6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s002_sh030",
+      "page": 2,
+      "bbox": {
+        "x": 7932420,
+        "y": 5572354,
+        "w": 694944,
+        "h": 333756
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10030,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "47ee4643db81444e3ae12b97c97002d40acc002185203ccb0028dabed1377058",
+        "ext": "png",
+        "byte_size": 630,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s002_sh031",
+      "page": 2,
+      "bbox": {
+        "x": 7932420,
+        "y": 5572354,
+        "w": 695858,
+        "h": 333756
+      },
+      "text": "Agent",
+      "normalized_text": "Agent",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10031,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "Agent",
+                "font_name": "Cambria",
+                "font_size_emu": 127000,
+                "color_rgb": "A1A1A6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s002_sh032",
+      "page": 2,
+      "bbox": {
+        "x": 6576339,
+        "y": 2356201,
+        "w": 114300,
+        "h": 133502
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10032,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "206fbd943cf1c17010cee9365e3086fc0148ee639dbf1769d15501feb4886584",
+        "ext": "png",
+        "byte_size": 365,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s003_bg000",
+      "page": 3,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 12192000,
+        "h": 6858000
+      },
+      "text": "[BACKGROUND]",
+      "normalized_text": "[BACKGROUND]",
+      "heading_level": 0,
+      "kind": "shape",
+      "z": 0,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {}
+      },
+      "shape_kind": "rect"
+    },
+    {
+      "chunk_id": "s003_sh001",
+      "page": 3,
+      "bbox": {
+        "x": 5486400,
+        "y": 0,
+        "w": 6705295,
+        "h": 6858000
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10001,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "1D1D1F"
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s003_sh002",
+      "page": 3,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 5486400,
+        "h": 6858000
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10002,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "000000"
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s003_sh003",
+      "page": 3,
+      "bbox": {
+        "x": 761695,
+        "y": 1499616,
+        "w": 4153205,
+        "h": 1143000
+      },
+      "text": "07",
+      "normalized_text": "07",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10003,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "07",
+                "font_name": "Cambria",
+                "font_size_emu": 1143000,
+                "bold": true,
+                "color_rgb": "333336"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s003_sh004",
+      "page": 3,
+      "bbox": {
+        "x": 761695,
+        "y": 2832811,
+        "w": 761695,
+        "h": 57607
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10004,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "a2e62ef3019b4a527c33be7c450599275ec603108faf123ee043032362b208b2",
+        "ext": "png",
+        "byte_size": 246,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s003_sh005",
+      "page": 3,
+      "bbox": {
+        "x": 761695,
+        "y": 3270809,
+        "w": 4121201,
+        "h": 1181405
+      },
+      "text": "メモリ設計の\nコア",
+      "normalized_text": "メモリ設計の\nコア",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10005,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "メモリ設計の",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 533400,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "コア",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 533400,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s003_sh006",
+      "page": 3,
+      "bbox": {
+        "x": 761695,
+        "y": 4672584,
+        "w": 4048963,
+        "h": 685800
+      },
+      "text": "重み量子化・KVキャッシュ管理と\n最適化技術",
+      "normalized_text": "重み量子化・KVキャッシュ管理と\n最適化技術",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10006,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "重み量子化・",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 228600,
+                "color_rgb": "86868B"
+              },
+              {
+                "index": 1,
+                "text": "KV",
+                "font_name": "Cambria",
+                "font_size_emu": 228600,
+                "color_rgb": "86868B"
+              },
+              {
+                "index": 2,
+                "text": "キャッシュ管理と",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 228600,
+                "color_rgb": "86868B"
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "最適化技術",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 228600,
+                "color_rgb": "86868B"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s003_sh007",
+      "page": 3,
+      "bbox": {
+        "x": 6248095,
+        "y": 1423721,
+        "w": 5181905,
+        "h": 3886200
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10007,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "1c17f7b62425c1d00e27dd06880ffa4230b2afe8a765025ed70b2f9a316dd9f3",
+        "ext": "png",
+        "byte_size": 44057,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s003_sh008",
+      "page": 3,
+      "bbox": {
+        "x": 6801307,
+        "y": 2356201,
+        "w": 4420210,
+        "h": 625657
+      },
+      "text": "重みメモリの現実解：\n 4bit量子化（weight-only）が基本。理論値＋10%オーバーヘッドで設計します。",
+      "normalized_text": "重みメモリの現実解：\n 4bit量子化（weight-only）が基本。理論値＋10%オーバーヘッドで設計します。",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10008,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "重みメモリの現実解：",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "bold": true,
+                "color_rgb": "E5E5E5"
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": " 4bit",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 1,
+                "text": "量子化（",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 2,
+                "text": "weight-only",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 3,
+                "text": "）が基本。理論値＋",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 4,
+                "text": "10%",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 5,
+                "text": "オーバーヘッドで設計します。",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 6,
+                "text": " ",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s003_sh009",
+      "page": 3,
+      "bbox": {
+        "x": 6586880,
+        "y": 2356201,
+        "w": 114300,
+        "h": 133502
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10009,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "206fbd943cf1c17010cee9365e3086fc0148ee639dbf1769d15501feb4886584",
+        "ext": "png",
+        "byte_size": 365,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s003_sh010",
+      "page": 3,
+      "bbox": {
+        "x": 6801307,
+        "y": 3226917,
+        "w": 4420210,
+        "h": 771754
+      },
+      "text": "KVキャッシュの支配性：\n 長文コンテキストではKVがメモリを圧迫。vLLMのpaged/quantized KV[5,6]やTensorRT-LLMのKV reuse[7]が必須です。",
+      "normalized_text": "KVキャッシュの支配性：\n 長文コンテキストではKVがメモリを圧迫。vLLMのpaged/quantized KV[5,6]やTensorRT-LLMのKV reuse[7]が必須です。",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10010,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "KV",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "bold": true,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 1,
+                "text": "キャッシュの支配性：",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "bold": true,
+                "color_rgb": "E5E5E5"
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": " ",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 1,
+                "text": "長文コンテキストでは",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 2,
+                "text": "KV",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 3,
+                "text": "がメモリを圧迫。",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 4,
+                "text": "vLLM",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 5,
+                "text": "の",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 6,
+                "text": "paged/quantized KV",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 7,
+                "text": "[5,6]",
+                "font_name": "Cambria",
+                "font_size_emu": 127000,
+                "color_rgb": "6B7280"
+              },
+              {
+                "index": 8,
+                "text": "や",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 9,
+                "text": "TensorRT-LLM",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 10,
+                "text": "の",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 11,
+                "text": "KV reuse",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 12,
+                "text": "[7]",
+                "font_name": "Cambria",
+                "font_size_emu": 127000,
+                "color_rgb": "6B7280"
+              },
+              {
+                "index": 13,
+                "text": "が必須です。",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 14,
+                "text": " ",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s003_sh011",
+      "page": 3,
+      "bbox": {
+        "x": 6572707,
+        "y": 3226917,
+        "w": 114300,
+        "h": 133502
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10011,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "206fbd943cf1c17010cee9365e3086fc0148ee639dbf1769d15501feb4886584",
+        "ext": "png",
+        "byte_size": 365,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s003_sh012",
+      "page": 3,
+      "bbox": {
+        "x": 6801307,
+        "y": 4243730,
+        "w": 4420210,
+        "h": 617028
+      },
+      "text": "最適化技術の活用：\n llama.cppのprompt cache[88,90]等でTTFTを短縮し、実用性を高めます。",
+      "normalized_text": "最適化技術の活用：\n llama.cppのprompt cache[88,90]等でTTFTを短縮し、実用性を高めます。",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10012,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "最適化技術の活用：",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "bold": true,
+                "color_rgb": "E5E5E5"
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": " llama.cpp",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 1,
+                "text": "の",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 2,
+                "text": "prompt cache",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 3,
+                "text": "[88,90]",
+                "font_name": "Cambria",
+                "font_size_emu": 127000,
+                "color_rgb": "6B7280"
+              },
+              {
+                "index": 4,
+                "text": "等で",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 5,
+                "text": "TTFT",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 6,
+                "text": "を短縮し、実用性を高めます。",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              },
+              {
+                "index": 7,
+                "text": " ",
+                "font_name": "Cambria",
+                "font_size_emu": 165100,
+                "color_rgb": "E5E5E5"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s003_sh013",
+      "page": 3,
+      "bbox": {
+        "x": 6572707,
+        "y": 4243730,
+        "w": 114300,
+        "h": 133502
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10013,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "206fbd943cf1c17010cee9365e3086fc0148ee639dbf1769d15501feb4886584",
+        "ext": "png",
+        "byte_size": 365,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s003_sh014",
+      "page": 3,
+      "bbox": {
+        "x": 6248095,
+        "y": 5605272,
+        "w": 1257300,
+        "h": 333756
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10014,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "0bbbefa639d3d057960cbd0fa004cd2f084f3f2051056f8150513409ad8fb1f6",
+        "ext": "png",
+        "byte_size": 716,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s003_sh015",
+      "page": 3,
+      "bbox": {
+        "x": 6247180,
+        "y": 5600700,
+        "w": 1257300,
+        "h": 333756
+      },
+      "text": "重み理論値計算",
+      "normalized_text": "重み理論値計算",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10015,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "重み理論値計算",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 127000,
+                "color_rgb": "A1A1A6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s003_sh016",
+      "page": 3,
+      "bbox": {
+        "x": 7619695,
+        "y": 5605272,
+        "w": 1429207,
+        "h": 333756
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10016,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "e817cccc11806e94a28ee7c64bee70cfb9e638fa8062dc59783e244a1efe3a39",
+        "ext": "png",
+        "byte_size": 760,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s003_sh017",
+      "page": 3,
+      "bbox": {
+        "x": 7619695,
+        "y": 5605272,
+        "w": 1429207,
+        "h": 333756
+      },
+      "text": "KVキャッシュ詳細",
+      "normalized_text": "KVキャッシュ詳細",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10017,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "KV",
+                "font_name": "Cambria",
+                "font_size_emu": 127000,
+                "color_rgb": "A1A1A6"
+              },
+              {
+                "index": 1,
+                "text": "キャッシュ詳細",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 127000,
+                "color_rgb": "A1A1A6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s003_sh018",
+      "page": 3,
+      "bbox": {
+        "x": 9156802,
+        "y": 5605272,
+        "w": 1123798,
+        "h": 333756
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10018,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "779ce6c955c29f366e9634b138641f28042a22587ee40a8feff0b8dd87cd0b00",
+        "ext": "png",
+        "byte_size": 703,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s003_sh019",
+      "page": 3,
+      "bbox": {
+        "x": 9156802,
+        "y": 5605272,
+        "w": 1124712,
+        "h": 333756
+      },
+      "text": "数式・数値例",
+      "normalized_text": "数式・数値例",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10019,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "数式・数値例",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 127000,
+                "color_rgb": "A1A1A6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s003_sh020",
+      "page": 3,
+      "bbox": {
+        "x": 10394899,
+        "y": 5605272,
+        "w": 990295,
+        "h": 333756
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10020,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "e8cab676aa5b78c2e7b4b17354d4725f49b6833537de9a0e4f7a0e10a7f77c2b",
+        "ext": "png",
+        "byte_size": 701,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s003_sh021",
+      "page": 3,
+      "bbox": {
+        "x": 10394899,
+        "y": 5605272,
+        "w": 991210,
+        "h": 333756
+      },
+      "text": "最適化技術",
+      "normalized_text": "最適化技術",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10021,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "最適化技術",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 127000,
+                "color_rgb": "A1A1A6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s003_sh022",
+      "page": 3,
+      "bbox": {
+        "x": 6810451,
+        "y": 1714500,
+        "w": 4525366,
+        "h": 286207
+      },
+      "text": "本章の要点",
+      "normalized_text": "本章の要点",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10022,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": " ",
+                "font_name": "Cambria",
+                "font_size_emu": 190500,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              },
+              {
+                "index": 1,
+                "text": "本章の要点",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 190500,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              },
+              {
+                "index": 2,
+                "text": " ",
+                "font_name": "Cambria",
+                "font_size_emu": 190500,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s003_sh023",
+      "page": 3,
+      "bbox": {
+        "x": 6572707,
+        "y": 1762049,
+        "w": 142646,
+        "h": 190195
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10023,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "9a4692c8e6a7a59c941a90e240ea930a4b1b5a9b805f0483794f76ae023e5303",
+        "ext": "png",
+        "byte_size": 1175,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s003_sh024",
+      "page": 3,
+      "bbox": {
+        "x": 6248095,
+        "y": 1009498,
+        "w": 5296205,
+        "h": 228600
+      },
+      "text": "KEY TAKEAWAYS",
+      "normalized_text": "KEY TAKEAWAYS",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10024,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "KEY TAKEAWAYS",
+                "font_name": "Cambria",
+                "font_size_emu": 152400,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

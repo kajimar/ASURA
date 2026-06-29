@@ -1,0 +1,69 @@
+{
+  "schema_version": "0.1",
+  "document_id": "E2",
+  "theme_id": "theme_default",
+  "slides": [
+    {
+      "slide_no": null,
+      "component_id": "comp_title_bullets",
+      "message": "[BACKGROUND]",
+      "slots": {
+        "TITLE": "[BACKGROUND]",
+        "BULLETS": [
+          "Page 1 | ローカルAI 技術調査レポート",
+          "Local AI Technical Report",
+          "目次（Agenda）",
+          "Total 13 Chapters",
+          "01",
+          "タイトル／目的／読み方",
+          "レポートの目的と、概要→詳細の二層構造の活用方法。",
+          "02"
+        ]
+      },
+      "citations": [
+        {
+          "mark": "※1",
+          "page": 1,
+          "chunk_id": "s001_bg000"
+        }
+      ]
+    },
+    {
+      "slide_no": null,
+      "component_id": "comp_title_bullets",
+      "message": "[BACKGROUND]",
+      "slots": {
+        "TITLE": "[BACKGROUND]",
+        "BULLETS": [
+          "Page 2 | ローカルAI 技術調査レポート",
+          "[IMAGE]",
+          "[IMAGE]",
+          "各評価軸の測定手法と設計含意は、次スライド以降で詳細に解説します",
+          "ライセンス (License & Compliance)",
+          "量子化耐性 (Quantization Robustness)",
+          "重み＋KVキャッシュ＋ランタイムオーバーヘッドの総消費量。",
+          "メモリ/VRAM (Memory Footprint)"
+        ]
+      },
+      "citations": [
+        {
+          "mark": "※2",
+          "page": 2,
+          "chunk_id": "s002_bg000"
+        }
+      ]
+    }
+  ],
+  "toc": [
+    {
+      "title": "[BACKGROUND]",
+      "level": 1,
+      "slide_index": 1
+    },
+    {
+      "title": "[BACKGROUND]",
+      "level": 1,
+      "slide_index": 2
+    }
+  ]
+}

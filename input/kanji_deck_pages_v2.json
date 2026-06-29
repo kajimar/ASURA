@@ -1,0 +1,409 @@
+{
+  "schema_version": "kanji_deck_plan_v2",
+  "purpose": "11ページ構成の会社報告用スライドを、選定済み templates_spec に割り当てた中間JSON",
+  "notes": [
+    "renderer 直投入用の低レベル slot 埋めではなく、ページごとの template 選択と意味内容を保持する中間表現",
+    "template_source は files_uploaded_in_conversation 内の JSON ファイル名に対応",
+    "ページ本文は日本語で記述し、後段で slot 単位に分解しやすいよう meta / takeaway / cards / steps を分離している"
+  ],
+  "deck": {
+    "title": "一次情報の収集・安全化・構造化による生成AI活用の試作",
+    "subtitle": "3つのユースケースを通じた実務適用の整理",
+    "page_count": 11
+  },
+  "pages": [
+    {
+      "page": 1,
+      "template_source": "E1.json",
+      "template_id": "E1",
+      "template_class": "meta.cover",
+      "sub_class": "cover.tags_takeaway",
+      "content": {
+        "eyebrow": "Company Report / AI Utilization",
+        "title": "一次情報の収集・安全化・構造化による生成AI活用の試作",
+        "subtitle": "3つのユースケースを通じた実務適用の整理",
+        "tags": [
+          "Context Design",
+          "Local LLM",
+          "Template Routing"
+        ],
+        "takeaway": "生成AIの品質差は、モデル差よりも、一次情報をどれだけ集めて、安全に前処理し、目的に沿って構造化して渡せるかで決まる。"
+      }
+    },
+    {
+      "page": 2,
+      "template_source": "A1-2.json",
+      "template_id": "A1-2",
+      "template_class": "content.cards",
+      "sub_class": "cards_2col_def_and_tech",
+      "content": {
+        "subtitle": "My Perspective",
+        "title": "モデル差より、一次情報の収集と入力設計が価値になる",
+        "takeaway": "生成AIの性能は今後も上がる。現場で差が出るのは、何をどう渡せるかである。",
+        "columns": [
+          {
+            "title": "前提",
+            "body": [
+              "モデル自体を作る競争では、大手基盤モデル企業に勝ちにくい。",
+              "そのため、利用側の差別化ポイントはモデル開発より運用設計へ移る。",
+              "人間の役割は、一次情報を集めて目的に沿って渡すことにある。"
+            ]
+          },
+          {
+            "title": "実務上の含意",
+            "body": [
+              "AIが会議を理解しない、自分らしく書かない、少しずれるといった課題は、多くの場合コンテキスト不足で起きる。",
+              "重要なのは、収集・安全化・構造化を一連で設計すること。",
+              "本資料では、その考え方を3つのユースケースで整理する。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "page": 3,
+      "template_source": "A1-4.json",
+      "template_id": "A1-4",
+      "template_class": "content.catalog",
+      "sub_class": "catalog_3tier_stack",
+      "content": {
+        "subtitle": "Use Cases Overview",
+        "title": "今回紹介する3つのユースケース",
+        "takeaway": "3つとも、一次情報を集めて目的別の出力へ変換するという共通思想で動いている。",
+        "tiers": [
+          {
+            "header": "Use Case 1",
+            "title": "会議コンテキストを収集し、マスキング後に外部生成AIで壁打ち品質を上げる",
+            "body": [
+              "会議音声・アジェンダ・補足文脈を収集する。",
+              "Whisper で文字起こしした後、企業名・顧客名・数値・日付をローカルでマスキングする。",
+              "安全化済みコンテキストだけを外部生成AIへ渡し、壁打ち品質を上げる。"
+            ],
+            "caption": "External AI + Masking"
+          },
+          {
+            "header": "Use Case 2",
+            "title": "会議・議事録から、ローカル完結で報告資料や提案資料を生成する",
+            "body": [
+              "会議ログを文字起こしし、ローカルLLMで構造化する。",
+              "JSON 中間表現へ落とし、テンプレート選択を通じて PowerPoint 化する。",
+              "外部AIを使わず、成果物生成までローカルで完結させる。"
+            ],
+            "caption": "Local Only"
+          },
+          {
+            "header": "Use Case 3",
+            "title": "自作ノート・公開資料・許諾済み資料を学習コンテンツ化する",
+            "body": [
+              "扱ってよい情報だけを入力対象にする。",
+              "要約・音声・動画など、学習しやすい形式へ再加工する。",
+              "AI活用を業務以外のインプット改善にも広げる。"
+            ],
+            "caption": "Learning Content"
+          }
+        ]
+      }
+    },
+    {
+      "page": 4,
+      "template_source": "A1-1.json",
+      "template_id": "A1-1",
+      "template_class": "content.cards",
+      "sub_class": "cards_3up_plus_2down",
+      "content": {
+        "subtitle": "Use Case 1",
+        "title": "会議コンテキストを収集し、マスキング後に外部生成AIで壁打ち品質を上げる",
+        "takeaway": "外部生成AIを使うなら、文脈収集とマスキングはセットで設計する必要がある。",
+        "cards": [
+          {
+            "title": "収集",
+            "body": [
+              "PLAUD NotePin や議事録ツールで会議音声・アジェンダ・補足文脈を集める。"
+            ]
+          },
+          {
+            "title": "前処理",
+            "body": [
+              "Whisper で文字起こしし、企業名・顧客名・数値・日付をローカルでマスキングする。"
+            ]
+          },
+          {
+            "title": "活用",
+            "body": [
+              "安全化済みコンテキストだけを外部生成AIへ渡し、壁打ちや論点整理の品質を上げる。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "page": 5,
+      "template_source": "A3.json",
+      "template_id": "A3",
+      "template_class": "content.alert",
+      "sub_class": "alert_conclusion_plus_dual_columns",
+      "content": {
+        "eyebrow": "Use Case 1 Detail",
+        "title": "なぜユースケース1ではマスキングが必要か",
+        "takeaway": "会議文脈は応答品質に効くが、そのまま外部AIへ渡すと企業利用には乗らない。",
+        "left_column": {
+          "title": "そのまま外部AIへ渡す場合",
+          "items": [
+            "企業名・顧客名・数値・日付がそのまま入力される。",
+            "利用者ごとの自己判断に依存し、運用が再現しにくい。",
+            "情報統制の観点で説明が難しくなる。"
+          ]
+        },
+        "right_column": {
+          "title": "ローカル前処理を挟む場合",
+          "items": [
+            "マスキング済みコンテキストのみを外部AIへ渡せる。",
+            "手順を標準化でき、誰でも同じ流れで利用しやすい。",
+            "最終確認だけを人間に残せる。"
+          ]
+        }
+      }
+    },
+    {
+      "page": 6,
+      "template_source": "A1-1.json",
+      "template_id": "A1-1",
+      "template_class": "content.cards",
+      "sub_class": "cards_3up_plus_2down",
+      "content": {
+        "subtitle": "Use Case 2",
+        "title": "会議・議事録から、ローカル完結で報告資料や提案資料を生成する",
+        "takeaway": "会議ログを記録で終わらせず、ローカル完結で成果物へ変換する。",
+        "cards": [
+          {
+            "title": "入力",
+            "body": [
+              "会議音声、議事録、アジェンダ、補足メモを入力として扱う。"
+            ]
+          },
+          {
+            "title": "構造化",
+            "body": [
+              "Whisper とローカルLLMで内容を構造化し、JSON 中間表現へ落とす。"
+            ]
+          },
+          {
+            "title": "出力",
+            "body": [
+              "テンプレート選択を通じて、報告資料や提案資料へ変換する。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "page": 7,
+      "template_source": "D1-6.json",
+      "template_id": "D1-6",
+      "template_class": "flow.steps",
+      "sub_class": "steps5_cards3",
+      "content": {
+        "subtitle": "Use Case 2 Detail",
+        "title": "ユースケース2では、直接生成ではなく中間表現を挟んで品質を固定する",
+        "takeaway": "PowerPoint を直接生成せず、JSON とテンプレート選択を挟むことで品質を安定化できる。",
+        "steps": [
+          {
+            "label": "1",
+            "body": "会議データを文字起こしする"
+          },
+          {
+            "label": "2",
+            "body": "ローカルで内容を構造化する"
+          },
+          {
+            "label": "3",
+            "body": "JSON 中間表現へ落とす"
+          },
+          {
+            "label": "4",
+            "body": "分類・抽出・選択でテンプレートを決める"
+          },
+          {
+            "label": "5",
+            "body": "PowerPoint へ変換する"
+          }
+        ],
+        "cards": [
+          {
+            "title": "分類",
+            "body": [
+              "Insight / Flow / Failure / Table のどれに載せるかを決める。"
+            ]
+          },
+          {
+            "title": "抽出",
+            "body": [
+              "タイトル、本文、比較軸、表要素として使う情報を抜き出す。"
+            ]
+          },
+          {
+            "title": "選択",
+            "body": [
+              "A1 / A3 / D1 などのテンプレートへ割り当てる。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "page": 8,
+      "template_source": "A1-1.json",
+      "template_id": "A1-1",
+      "template_class": "content.cards",
+      "sub_class": "cards_3up_plus_2down",
+      "content": {
+        "subtitle": "Use Case 3",
+        "title": "自作ノート・公開資料・許諾済み資料を学習コンテンツ化する",
+        "takeaway": "扱ってよい情報を、要約・音声・動画など学習しやすい形式へ変換する。",
+        "cards": [
+          {
+            "title": "入力対象",
+            "body": [
+              "自作ノート、公開資料、許諾済み資料に限定する。"
+            ]
+          },
+          {
+            "title": "変換内容",
+            "body": [
+              "要約、音声、動画、学習用整理資料などへ再加工する。"
+            ]
+          },
+          {
+            "title": "狙い",
+            "body": [
+              "AI 活用を業務効率化だけでなく、インプット改善にも広げる。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "page": 9,
+      "template_source": "A1-2.json",
+      "template_id": "A1-2",
+      "template_class": "content.cards",
+      "sub_class": "cards_2col_def_and_tech",
+      "content": {
+        "subtitle": "Shared Principle",
+        "title": "3ユースケースに共通する考え方",
+        "takeaway": "重要なのは、モデルの使い分けそのものより、一次情報をどう集め、どう安全化し、どう構造化するかである。",
+        "columns": [
+          {
+            "title": "共通ステップ",
+            "body": [
+              "まず一次情報を集める。",
+              "必要に応じてローカルで安全化する。",
+              "目的別の出力へ変換する。"
+            ]
+          },
+          {
+            "title": "設計上の意味",
+            "body": [
+              "ユースケース1では外部AI活用の前提としてマスキングが必要。",
+              "ユースケース2ではローカル完結を前提に成果物化へ寄せる。",
+              "ユースケース3では扱ってよい情報に限定して学習支援へ広げる。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "page": 10,
+      "template_source": "D1-6.json",
+      "template_id": "D1-6",
+      "template_class": "flow.steps",
+      "sub_class": "steps5_cards3",
+      "content": {
+        "subtitle": "Overall Architecture",
+        "title": "一次情報の収集から成果物化までの全体フロー",
+        "takeaway": "出力品質を左右するのは、生成そのものより前後の設計である。",
+        "steps": [
+          {
+            "label": "1",
+            "body": "一次情報を収集する"
+          },
+          {
+            "label": "2",
+            "body": "必要に応じてローカルで安全化する"
+          },
+          {
+            "label": "3",
+            "body": "外部AIまたはローカルLLMへ接続する"
+          },
+          {
+            "label": "4",
+            "body": "JSON 中間表現へ構造化する"
+          },
+          {
+            "label": "5",
+            "body": "テンプレート選択を通じて成果物化する"
+          }
+        ],
+        "cards": [
+          {
+            "title": "入力",
+            "body": [
+              "会議音声、議事録、メモ、資料などの一次情報を集める。"
+            ]
+          },
+          {
+            "title": "変換",
+            "body": [
+              "安全化・構造化・分類・選択の工程を経る。"
+            ]
+          },
+          {
+            "title": "出力",
+            "body": [
+              "壁打ち、資料生成、学習コンテンツ化など目的別に出力する。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "page": 11,
+      "template_source": "A1-1.json",
+      "template_id": "A1-1",
+      "template_class": "content.cards",
+      "sub_class": "cards_3up_plus_2down",
+      "content": {
+        "subtitle": "Implementation Status",
+        "title": "現時点の実装状況と今後の課題",
+        "takeaway": "基本動作は作れているが、精度・厳密運用・評価設計には追加検証が必要である。",
+        "cards": [
+          {
+            "title": "実装済み",
+            "body": [
+              "一次情報収集の流れ",
+              "文字起こし",
+              "JSON 中間表現",
+              "テンプレート選択の基本動作"
+            ]
+          },
+          {
+            "title": "一部実装 / 検証中",
+            "body": [
+              "マスキング精度",
+              "意味分類精度",
+              "一部テンプレートの厳密運用"
+            ]
+          },
+          {
+            "title": "今後の課題",
+            "body": [
+              "テンプレート準拠率の定義",
+              "精度の定量評価",
+              "利用シーンごとの運用整理"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,5087 @@
+{
+  "schema_version": "0.1",
+  "document": {
+    "document_id": "E4",
+    "source_type": "pptx",
+    "source_path": "/Users/kanji/ASURA/input/10patern/E4.pptx",
+    "page_count": 2,
+    "page": {
+      "w_emu": 12192000,
+      "h_emu": 6858000
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "s001_bg000",
+      "page": 1,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 12192000,
+        "h": 6858000
+      },
+      "text": "[BACKGROUND]",
+      "normalized_text": "[BACKGROUND]",
+      "heading_level": 0,
+      "kind": "shape",
+      "z": 0,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {}
+      },
+      "shape_kind": "rect"
+    },
+    {
+      "chunk_id": "s001_sh001",
+      "page": 1,
+      "bbox": {
+        "x": 0,
+        "y": 6476695,
+        "w": 12192609,
+        "h": 381305
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10001,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "F6F5F8"
+        },
+        "line": {
+          "width_emu": 15875,
+          "color_rgb": "E5E5E5"
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh002",
+      "page": 1,
+      "bbox": {
+        "x": 0,
+        "y": 6476695,
+        "w": 12192610,
+        "h": 381305
+      },
+      "text": "Page 1 | ローカルAI 技術調査レポート",
+      "normalized_text": "Page 1 | ローカルAI 技術調査レポート",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10002,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": "FFFFFF",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "Page 1 | ",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "color_rgb": "86868B"
+              },
+              {
+                "index": 1,
+                "text": "ローカル",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 114300,
+                "color_rgb": "86868B"
+              },
+              {
+                "index": 2,
+                "text": "AI ",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "color_rgb": "86868B"
+              },
+              {
+                "index": 3,
+                "text": "技術調査レポート",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 114300,
+                "color_rgb": "86868B"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh003",
+      "page": 1,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 12191695,
+        "h": 1050646
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10003,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "7331c6ef5b9e93764feab126149c0771991cc558282e25c3f617164fd7a98b18",
+        "ext": "png",
+        "byte_size": 1474,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s001_sh004",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 386792,
+        "w": 237744,
+        "h": 267005
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10004,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "5918ae44c682a29151e87b8098f770641f0bfdb6c84150e6832b9f5012210d8c",
+        "ext": "png",
+        "byte_size": 761,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s001_sh005",
+      "page": 1,
+      "bbox": {
+        "x": 809244,
+        "y": 329642,
+        "w": 4884974,
+        "h": 381305
+      },
+      "text": "References（参考文献リスト1/4）",
+      "normalized_text": "References（参考文献リスト1/4）",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10005,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "References",
+                "font_name": "Cambria",
+                "font_size_emu": 266700,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              },
+              {
+                "index": 1,
+                "text": "（参考文献リスト",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 266700,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              },
+              {
+                "index": 2,
+                "text": "1/4",
+                "font_name": "Cambria",
+                "font_size_emu": 266700,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              },
+              {
+                "index": 3,
+                "text": "）",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 266700,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh006",
+      "page": 1,
+      "bbox": {
+        "x": 8753551,
+        "y": 395935,
+        "w": 3554273,
+        "h": 228600
+      },
+      "text": "Technical Research Report Sources [1-34]",
+      "normalized_text": "Technical Research Report Sources [1-34]",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10006,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "Technical Research Report Sources [1-34]",
+                "font_name": "Cambria",
+                "font_size_emu": 152400,
+                "color_rgb": null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh007",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 1447495,
+        "w": 5486400,
+        "h": 286207
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10007,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh008",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 1724558,
+        "w": 5486400,
+        "h": 9144
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10008,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh009",
+      "page": 1,
+      "bbox": {
+        "x": 533095,
+        "y": 1505102,
+        "w": 381305,
+        "h": 162763
+      },
+      "text": "[1]",
+      "normalized_text": "[1]",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10009,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "[1]",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh010",
+      "page": 1,
+      "bbox": {
+        "x": 952805,
+        "y": 1514246,
+        "w": 3762756,
+        "h": 143561
+      },
+      "text": "https://www.apple.com/newsroom/2020/11/apple-unleashes-m1/",
+      "normalized_text": "https://www.apple.com/newsroom/2020/11/apple-unleashes-m1/",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10010,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "https://www.apple.com/newsroom/2020/11/apple-unleashes-m1/",
+                "font_name": "Cambria",
+                "font_size_emu": 101600,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh011",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 1807769,
+        "w": 5486400,
+        "h": 286207
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10011,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh012",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 2084832,
+        "w": 5486400,
+        "h": 9144
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10012,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh013",
+      "page": 1,
+      "bbox": {
+        "x": 533095,
+        "y": 1865376,
+        "w": 381305,
+        "h": 162763
+      },
+      "text": "[2]",
+      "normalized_text": "[2]",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10013,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "[2]",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh014",
+      "page": 1,
+      "bbox": {
+        "x": 952805,
+        "y": 1874520,
+        "w": 3762756,
+        "h": 143561
+      },
+      "text": "https://docs.openhands.dev/openhands/usage/llms/local-llms",
+      "normalized_text": "https://docs.openhands.dev/openhands/usage/llms/local-llms",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10014,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "https://docs.openhands.dev/openhands/usage/llms/local-llms",
+                "font_name": "Cambria",
+                "font_size_emu": 101600,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh015",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 2168042,
+        "w": 5486400,
+        "h": 286207
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10015,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh016",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 2445106,
+        "w": 5486400,
+        "h": 9144
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10016,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh017",
+      "page": 1,
+      "bbox": {
+        "x": 533095,
+        "y": 2224735,
+        "w": 381305,
+        "h": 162763
+      },
+      "text": "[3]",
+      "normalized_text": "[3]",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10017,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "[3]",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh018",
+      "page": 1,
+      "bbox": {
+        "x": 952805,
+        "y": 2234794,
+        "w": 3010205,
+        "h": 143561
+      },
+      "text": "https://lmstudio.ai/docs/developer/core/server",
+      "normalized_text": "https://lmstudio.ai/docs/developer/core/server",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10018,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "https://lmstudio.ai/docs/developer/core/server",
+                "font_name": "Cambria",
+                "font_size_emu": 101600,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh019",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 2527402,
+        "w": 5486400,
+        "h": 286207
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10019,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh020",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 2804465,
+        "w": 5486400,
+        "h": 9144
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10020,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh021",
+      "page": 1,
+      "bbox": {
+        "x": 533095,
+        "y": 2585009,
+        "w": 381305,
+        "h": 162763
+      },
+      "text": "[4]",
+      "normalized_text": "[4]",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10021,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "[4]",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh022",
+      "page": 1,
+      "bbox": {
+        "x": 952805,
+        "y": 2594153,
+        "w": 2100377,
+        "h": 143561
+      },
+      "text": "https://arxiv.org/abs/2306.00978",
+      "normalized_text": "https://arxiv.org/abs/2306.00978",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10022,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "https://arxiv.org/abs/2306.00978",
+                "font_name": "Cambria",
+                "font_size_emu": 101600,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh023",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 2887675,
+        "w": 5486400,
+        "h": 286207
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10023,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh024",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 3164738,
+        "w": 5486400,
+        "h": 9144
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10024,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh025",
+      "page": 1,
+      "bbox": {
+        "x": 533095,
+        "y": 2945282,
+        "w": 381305,
+        "h": 162763
+      },
+      "text": "[5]",
+      "normalized_text": "[5]",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10025,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "[5]",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh026",
+      "page": 1,
+      "bbox": {
+        "x": 952805,
+        "y": 2954426,
+        "w": 3514954,
+        "h": 143561
+      },
+      "text": "https://docs.vllm.ai/en/latest/design/paged_attention/",
+      "normalized_text": "https://docs.vllm.ai/en/latest/design/paged_attention/",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10026,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "https://docs.vllm.ai/en/latest/design/paged_attention/",
+                "font_name": "Cambria",
+                "font_size_emu": 101600,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh027",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 3247949,
+        "w": 5486400,
+        "h": 286207
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10027,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh028",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 3525012,
+        "w": 5486400,
+        "h": 9144
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10028,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh029",
+      "page": 1,
+      "bbox": {
+        "x": 533095,
+        "y": 3304642,
+        "w": 381305,
+        "h": 162763
+      },
+      "text": "[6]",
+      "normalized_text": "[6]",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10029,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "[6]",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh030",
+      "page": 1,
+      "bbox": {
+        "x": 952805,
+        "y": 3314700,
+        "w": 4582058,
+        "h": 143561
+      },
+      "text": "https://docs.vllm.ai/en/latest/features/quantization/quantized_kvcache/",
+      "normalized_text": "https://docs.vllm.ai/en/latest/features/quantization/quantized_kvcache/",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10030,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "https://docs.vllm.ai/en/latest/features/quantization/quantized_kvcache/",
+                "font_name": "Cambria",
+                "font_size_emu": 101600,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh031",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 3608222,
+        "w": 5486400,
+        "h": 286207
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10031,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh032",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 3885286,
+        "w": 5486400,
+        "h": 9144
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10032,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh033",
+      "page": 1,
+      "bbox": {
+        "x": 533095,
+        "y": 3664915,
+        "w": 381305,
+        "h": 162763
+      },
+      "text": "[7]",
+      "normalized_text": "[7]",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10033,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "[7]",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh034",
+      "page": 1,
+      "bbox": {
+        "x": 952805,
+        "y": 3674974,
+        "w": 2487168,
+        "h": 143561
+      },
+      "text": "https://github.com/NVIDIA/TensorRT-LLM",
+      "normalized_text": "https://github.com/NVIDIA/TensorRT-LLM",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10034,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "https://github.com/NVIDIA/TensorRT-LLM",
+                "font_name": "Cambria",
+                "font_size_emu": 101600,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh035",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 3967582,
+        "w": 5486400,
+        "h": 286207
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10035,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh036",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 4244645,
+        "w": 5486400,
+        "h": 9144
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10036,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh037",
+      "page": 1,
+      "bbox": {
+        "x": 533095,
+        "y": 4025189,
+        "w": 381305,
+        "h": 162763
+      },
+      "text": "[8]",
+      "normalized_text": "[8]",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10037,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "[8]",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh038",
+      "page": 1,
+      "bbox": {
+        "x": 952805,
+        "y": 4034333,
+        "w": 2427732,
+        "h": 143561
+      },
+      "text": "https://github.com/ggml-org/llama.cpp",
+      "normalized_text": "https://github.com/ggml-org/llama.cpp",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10038,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "https://github.com/ggml-org/llama.cpp",
+                "font_name": "Cambria",
+                "font_size_emu": 101600,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh039",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 4327855,
+        "w": 5486400,
+        "h": 428854
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10039,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh040",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 4747565,
+        "w": 5486400,
+        "h": 9144
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10040,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh041",
+      "page": 1,
+      "bbox": {
+        "x": 533095,
+        "y": 4385462,
+        "w": 381305,
+        "h": 162763
+      },
+      "text": "[10]",
+      "normalized_text": "[10]",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10041,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "[10]",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh042",
+      "page": 1,
+      "bbox": {
+        "x": 952805,
+        "y": 4394606,
+        "w": 4981651,
+        "h": 295351
+      },
+      "text": "https://developer.apple.com/documentation/metal/choosing-a-resource-storage-mode-for-apple-gpus",
+      "normalized_text": "https://developer.apple.com/documentation/metal/choosing-a-resource-storage-mode-for-apple-gpus",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10042,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "https://developer.apple.com/documentation/metal/choosing-a-resource-storage-mode-for-apple-gpus",
+                "font_name": "Cambria",
+                "font_size_emu": 101600,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh043",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 4830775,
+        "w": 5486400,
+        "h": 286207
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10043,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh044",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 5107838,
+        "w": 5486400,
+        "h": 9144
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10044,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh045",
+      "page": 1,
+      "bbox": {
+        "x": 533095,
+        "y": 4888382,
+        "w": 381305,
+        "h": 162763
+      },
+      "text": "[12]",
+      "normalized_text": "[12]",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10045,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "[12]",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh046",
+      "page": 1,
+      "bbox": {
+        "x": 952805,
+        "y": 4897526,
+        "w": 2754173,
+        "h": 143561
+      },
+      "text": "https://huggingface.co/wangkanai/sdxl-fp16",
+      "normalized_text": "https://huggingface.co/wangkanai/sdxl-fp16",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10046,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "https://huggingface.co/wangkanai/sdxl-fp16",
+                "font_name": "Cambria",
+                "font_size_emu": 101600,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh047",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 5191049,
+        "w": 5486400,
+        "h": 286207
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10047,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh048",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 5468112,
+        "w": 5486400,
+        "h": 9144
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10048,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh049",
+      "page": 1,
+      "bbox": {
+        "x": 533095,
+        "y": 5247742,
+        "w": 381305,
+        "h": 162763
+      },
+      "text": "[13]",
+      "normalized_text": "[13]",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10049,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "[13]",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh050",
+      "page": 1,
+      "bbox": {
+        "x": 952805,
+        "y": 5257800,
+        "w": 3391510,
+        "h": 143561
+      },
+      "text": "https://github.com/intel/intel-extension-for-pytorch",
+      "normalized_text": "https://github.com/intel/intel-extension-for-pytorch",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10050,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "https://github.com/intel/intel-extension-for-pytorch",
+                "font_name": "Cambria",
+                "font_size_emu": 101600,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh051",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 5551322,
+        "w": 5486400,
+        "h": 286207
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10051,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh052",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 5828386,
+        "w": 5486400,
+        "h": 9144
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10052,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh053",
+      "page": 1,
+      "bbox": {
+        "x": 533095,
+        "y": 5608015,
+        "w": 381305,
+        "h": 162763
+      },
+      "text": "[14]",
+      "normalized_text": "[14]",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10053,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "[14]",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh054",
+      "page": 1,
+      "bbox": {
+        "x": 952805,
+        "y": 5618074,
+        "w": 2030882,
+        "h": 143561
+      },
+      "text": "https://github.com/xiph/rnnoise",
+      "normalized_text": "https://github.com/xiph/rnnoise",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10054,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "https://github.com/xiph/rnnoise",
+                "font_name": "Cambria",
+                "font_size_emu": 101600,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh055",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 5910682,
+        "w": 5486400,
+        "h": 276149
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10055,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "FFFFFF",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh056",
+      "page": 1,
+      "bbox": {
+        "x": 533095,
+        "y": 5968289,
+        "w": 381305,
+        "h": 162763
+      },
+      "text": "[16]",
+      "normalized_text": "[16]",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10056,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "[16]",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh057",
+      "page": 1,
+      "bbox": {
+        "x": 952805,
+        "y": 5977433,
+        "w": 3076956,
+        "h": 143561
+      },
+      "text": "https://huggingface.co/meta-llama/Llama-3.1-70B",
+      "normalized_text": "https://huggingface.co/meta-llama/Llama-3.1-70B",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10057,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "https://huggingface.co/meta-llama/Llama-3.1-70B",
+                "font_name": "Cambria",
+                "font_size_emu": 101600,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh058",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 1447495,
+        "w": 5486400,
+        "h": 286207
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10058,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh059",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 1724558,
+        "w": 5486400,
+        "h": 9144
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10059,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh060",
+      "page": 1,
+      "bbox": {
+        "x": 6324905,
+        "y": 1505102,
+        "w": 381305,
+        "h": 162763
+      },
+      "text": "[17]",
+      "normalized_text": "[17]",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10060,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "[17]",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh061",
+      "page": 1,
+      "bbox": {
+        "x": 6743700,
+        "y": 1514246,
+        "w": 3706063,
+        "h": 143561
+      },
+      "text": "https://huggingface.co/microsoft/Phi-3-mini-128k-instruct",
+      "normalized_text": "https://huggingface.co/microsoft/Phi-3-mini-128k-instruct",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10061,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "https://huggingface.co/microsoft/Phi-3-mini-128k-instruct",
+                "font_name": "Cambria",
+                "font_size_emu": 101600,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh062",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 1807769,
+        "w": 5486400,
+        "h": 286207
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10062,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh063",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 2084832,
+        "w": 5486400,
+        "h": 9144
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10063,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh064",
+      "page": 1,
+      "bbox": {
+        "x": 6324905,
+        "y": 1865376,
+        "w": 381305,
+        "h": 162763
+      },
+      "text": "[19]",
+      "normalized_text": "[19]",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10064,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "[19]",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh065",
+      "page": 1,
+      "bbox": {
+        "x": 6743700,
+        "y": 1874520,
+        "w": 1838858,
+        "h": 143561
+      },
+      "text": "https://lmstudio.ai/docs/app",
+      "normalized_text": "https://lmstudio.ai/docs/app",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10065,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "https://lmstudio.ai/docs/app",
+                "font_name": "Cambria",
+                "font_size_emu": 101600,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh066",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 2168042,
+        "w": 5486400,
+        "h": 286207
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10066,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh067",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 2445106,
+        "w": 5486400,
+        "h": 9144
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10067,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh068",
+      "page": 1,
+      "bbox": {
+        "x": 6324905,
+        "y": 2224735,
+        "w": 381305,
+        "h": 162763
+      },
+      "text": "[20]",
+      "normalized_text": "[20]",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10068,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "[20]",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh069",
+      "page": 1,
+      "bbox": {
+        "x": 6743700,
+        "y": 2234794,
+        "w": 3076956,
+        "h": 143561
+      },
+      "text": "https://docs.nvidia.com/tensorrt-llm/index.html",
+      "normalized_text": "https://docs.nvidia.com/tensorrt-llm/index.html",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10069,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "https://docs.nvidia.com/tensorrt-llm/index.html",
+                "font_name": "Cambria",
+                "font_size_emu": 101600,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh070",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 2527402,
+        "w": 5486400,
+        "h": 286207
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10070,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh071",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 2804465,
+        "w": 5486400,
+        "h": 9144
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10071,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh072",
+      "page": 1,
+      "bbox": {
+        "x": 6324905,
+        "y": 2585009,
+        "w": 381305,
+        "h": 162763
+      },
+      "text": "[22]",
+      "normalized_text": "[22]",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10072,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "[22]",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh073",
+      "page": 1,
+      "bbox": {
+        "x": 6743700,
+        "y": 2594153,
+        "w": 2159813,
+        "h": 143561
+      },
+      "text": "https://github.com/ml-explore/mlx",
+      "normalized_text": "https://github.com/ml-explore/mlx",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10073,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "https://github.com/ml-explore/mlx",
+                "font_name": "Cambria",
+                "font_size_emu": 101600,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh074",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 2887675,
+        "w": 5486400,
+        "h": 286207
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10074,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh075",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 3164738,
+        "w": 5486400,
+        "h": 9144
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10075,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh076",
+      "page": 1,
+      "bbox": {
+        "x": 6324905,
+        "y": 2945282,
+        "w": 381305,
+        "h": 162763
+      },
+      "text": "[23]",
+      "normalized_text": "[23]",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10076,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "[23]",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh077",
+      "page": 1,
+      "bbox": {
+        "x": 6743700,
+        "y": 2954426,
+        "w": 2100377,
+        "h": 143561
+      },
+      "text": "https://github.com/ollama/ollama",
+      "normalized_text": "https://github.com/ollama/ollama",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10077,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "https://github.com/ollama/ollama",
+                "font_name": "Cambria",
+                "font_size_emu": 101600,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh078",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 3247949,
+        "w": 5486400,
+        "h": 286207
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10078,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh079",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 3525012,
+        "w": 5486400,
+        "h": 9144
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10079,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh080",
+      "page": 1,
+      "bbox": {
+        "x": 6324905,
+        "y": 3304642,
+        "w": 381305,
+        "h": 162763
+      },
+      "text": "[24]",
+      "normalized_text": "[24]",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10080,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "[24]",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh081",
+      "page": 1,
+      "bbox": {
+        "x": 6743700,
+        "y": 3314700,
+        "w": 3134563,
+        "h": 143561
+      },
+      "text": "https://docs.ollama.com/api/openai-compatibility",
+      "normalized_text": "https://docs.ollama.com/api/openai-compatibility",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10081,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "https://docs.ollama.com/api/openai-compatibility",
+                "font_name": "Cambria",
+                "font_size_emu": 101600,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh082",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 3608222,
+        "w": 5486400,
+        "h": 286207
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10082,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh083",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 3885286,
+        "w": 5486400,
+        "h": 9144
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10083,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh084",
+      "page": 1,
+      "bbox": {
+        "x": 6324905,
+        "y": 3664915,
+        "w": 381305,
+        "h": 162763
+      },
+      "text": "[25]",
+      "normalized_text": "[25]",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10084,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "[25]",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh085",
+      "page": 1,
+      "bbox": {
+        "x": 6743700,
+        "y": 3674974,
+        "w": 4144061,
+        "h": 143561
+      },
+      "text": "https://llama-cpp-python.readthedocs.io/en/latest/api-reference/",
+      "normalized_text": "https://llama-cpp-python.readthedocs.io/en/latest/api-reference/",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10085,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "https://llama-cpp-python.readthedocs.io/en/latest/api-reference/",
+                "font_name": "Cambria",
+                "font_size_emu": 101600,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh086",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 3967582,
+        "w": 5486400,
+        "h": 286207
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10086,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh087",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 4244645,
+        "w": 5486400,
+        "h": 9144
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10087,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh088",
+      "page": 1,
+      "bbox": {
+        "x": 6324905,
+        "y": 4025189,
+        "w": 381305,
+        "h": 162763
+      },
+      "text": "[27]",
+      "normalized_text": "[27]",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10088,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "[27]",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh089",
+      "page": 1,
+      "bbox": {
+        "x": 6743700,
+        "y": 4034333,
+        "w": 4839005,
+        "h": 143561
+      },
+      "text": "https://developers.openai.com/cookbook/articles/gpt-oss/run-locally-ollama/",
+      "normalized_text": "https://developers.openai.com/cookbook/articles/gpt-oss/run-locally-ollama/",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10089,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "https://developers.openai.com/cookbook/articles/gpt-oss/run-locally-ollama/",
+                "font_name": "Cambria",
+                "font_size_emu": 101600,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh090",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 4327855,
+        "w": 5486400,
+        "h": 286207
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10090,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh091",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 4604918,
+        "w": 5486400,
+        "h": 9144
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10091,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh092",
+      "page": 1,
+      "bbox": {
+        "x": 6324905,
+        "y": 4385462,
+        "w": 381305,
+        "h": 162763
+      },
+      "text": "[28]",
+      "normalized_text": "[28]",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10092,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "[28]",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh093",
+      "page": 1,
+      "bbox": {
+        "x": 6743700,
+        "y": 4394606,
+        "w": 2229307,
+        "h": 143561
+      },
+      "text": "https://github.com/Blaizzy/mlx-vlm",
+      "normalized_text": "https://github.com/Blaizzy/mlx-vlm",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10093,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "https://github.com/Blaizzy/mlx-vlm",
+                "font_name": "Cambria",
+                "font_size_emu": 101600,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh094",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 4688129,
+        "w": 5486400,
+        "h": 286207
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10094,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh095",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 4965192,
+        "w": 5486400,
+        "h": 9144
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10095,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh096",
+      "page": 1,
+      "bbox": {
+        "x": 6324905,
+        "y": 4744822,
+        "w": 381305,
+        "h": 162763
+      },
+      "text": "[31]",
+      "normalized_text": "[31]",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10096,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "[31]",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh097",
+      "page": 1,
+      "bbox": {
+        "x": 6743700,
+        "y": 4754880,
+        "w": 3829507,
+        "h": 143561
+      },
+      "text": "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct",
+      "normalized_text": "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10097,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct",
+                "font_name": "Cambria",
+                "font_size_emu": 101600,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh098",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 5048402,
+        "w": 5486400,
+        "h": 286207
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10098,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh099",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 5325466,
+        "w": 5486400,
+        "h": 9144
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10099,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "E5E5E5",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh100",
+      "page": 1,
+      "bbox": {
+        "x": 6324905,
+        "y": 5105095,
+        "w": 381305,
+        "h": 162763
+      },
+      "text": "[32]",
+      "normalized_text": "[32]",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10100,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "[32]",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh101",
+      "page": 1,
+      "bbox": {
+        "x": 6743700,
+        "y": 5114239,
+        "w": 3076956,
+        "h": 143561
+      },
+      "text": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+      "normalized_text": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10101,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+                "font_name": "Cambria",
+                "font_size_emu": 101600,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh102",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 5407762,
+        "w": 5486400,
+        "h": 276149
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10102,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "FFFFFF",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh103",
+      "page": 1,
+      "bbox": {
+        "x": 6324905,
+        "y": 5465369,
+        "w": 381305,
+        "h": 162763
+      },
+      "text": "[33]",
+      "normalized_text": "[33]",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10103,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "[33]",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "bold": true,
+                "color_rgb": "007AFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh104",
+      "page": 1,
+      "bbox": {
+        "x": 6743700,
+        "y": 5474513,
+        "w": 2487168,
+        "h": 143561
+      },
+      "text": "https://qwenlm.github.io/blog/qwen2.5/",
+      "normalized_text": "https://qwenlm.github.io/blog/qwen2.5/",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10104,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "https://qwenlm.github.io/blog/qwen2.5/",
+                "font_name": "Cambria",
+                "font_size_emu": 101600,
+                "color_rgb": "1D1D1F"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh105",
+      "page": 1,
+      "bbox": {
+        "x": 457200,
+        "y": 1447494,
+        "w": 5486400,
+        "h": 4739337
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10105,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "D2D2D7"
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s001_sh106",
+      "page": 1,
+      "bbox": {
+        "x": 6248095,
+        "y": 1446581,
+        "w": 5486400,
+        "h": 4305911
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10106,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "D2D2D7"
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s002_bg000",
+      "page": 2,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 12192000,
+        "h": 6858000
+      },
+      "text": "[BACKGROUND]",
+      "normalized_text": "[BACKGROUND]",
+      "heading_level": 0,
+      "kind": "shape",
+      "z": 0,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {}
+      },
+      "shape_kind": "rect"
+    },
+    {
+      "chunk_id": "s002_sh001",
+      "page": 2,
+      "bbox": {
+        "x": 0,
+        "y": 6476695,
+        "w": 12192609,
+        "h": 381305
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10001,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "F6F5F8"
+        },
+        "line": {
+          "width_emu": 15875,
+          "color_rgb": "E5E5E5"
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s002_sh002",
+      "page": 2,
+      "bbox": {
+        "x": 0,
+        "y": 6476695,
+        "w": 12192610,
+        "h": 381305
+      },
+      "text": "Page 2 | ローカルAI 技術調査レポート",
+      "normalized_text": "Page 2 | ローカルAI 技術調査レポート",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10002,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "solid",
+          "color_rgb": "FFFFFF",
+          "alpha": 0.0
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": "FFFFFF",
+          "alpha": 0.0,
+          "visible": false
+        }
+      },
+      "shape_kind": "rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "CENTER (2)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "Page 2 | ",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "color_rgb": "86868B"
+              },
+              {
+                "index": 1,
+                "text": "ローカル",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 114300,
+                "color_rgb": "86868B"
+              },
+              {
+                "index": 2,
+                "text": "AI ",
+                "font_name": "Cambria",
+                "font_size_emu": 114300,
+                "color_rgb": "86868B"
+              },
+              {
+                "index": 3,
+                "text": "技術調査レポート",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 114300,
+                "color_rgb": "86868B"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s002_sh003",
+      "page": 2,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 12191695,
+        "h": 1050646
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10003,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "7331c6ef5b9e93764feab126149c0771991cc558282e25c3f617164fd7a98b18",
+        "ext": "png",
+        "byte_size": 1474,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s002_sh004",
+      "page": 2,
+      "bbox": {
+        "x": 372161,
+        "y": 1319138,
+        "w": 5486400,
+        "h": 4839000
+      },
+      "text": "[TABLE]",
+      "normalized_text": "[TABLE]",
+      "heading_level": 0,
+      "kind": "table",
+      "z": 10004,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {}
+      },
+      "table": {
+        "rows": 12,
+        "cols": 2,
+        "cells": [
+          {
+            "r": 0,
+            "c": 0,
+            "text": "[35]"
+          },
+          {
+            "r": 0,
+            "c": 1,
+            "text": "Gemma 2 Model Card\nhttps://ai.google.dev/gemma/docs/core/model_card_2"
+          },
+          {
+            "r": 1,
+            "c": 0,
+            "text": "[37]"
+          },
+          {
+            "r": 1,
+            "c": 1,
+            "text": "Mixtral 8x7B Instruct\nhttps://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1"
+          },
+          {
+            "r": 2,
+            "c": 0,
+            "text": "[40]"
+          },
+          {
+            "r": 2,
+            "c": 1,
+            "text": "Phi-4 Technical Report (Arxiv)\nhttps://arxiv.org/abs/2412.08905"
+          },
+          {
+            "r": 3,
+            "c": 0,
+            "text": "[41]"
+          },
+          {
+            "r": 3,
+            "c": 1,
+            "text": "OpenAI Cookbook (Run locally LM Studio)\nhttps://developers.openai.com/cookbook/articles/gpt-oss/run-locally-lmstudio/"
+          },
+          {
+            "r": 4,
+            "c": 0,
+            "text": "[42]"
+          },
+          {
+            "r": 4,
+            "c": 1,
+            "text": "Qwen2-VL 72B\nhttps://huggingface.co/Qwen/Qwen2-VL-72B"
+          },
+          {
+            "r": 5,
+            "c": 0,
+            "text": "[43]"
+          },
+          {
+            "r": 5,
+            "c": 1,
+            "text": "Phi-3-vision 128k Instruct\nhttps://huggingface.co/microsoft/Phi-3-vision-128k-instruct"
+          },
+          {
+            "r": 6,
+            "c": 0,
+            "text": "[45]"
+          },
+          {
+            "r": 6,
+            "c": 1,
+            "text": "InternVL2 4B\nhttps://huggingface.co/OpenGVLab/InternVL2-4B"
+          },
+          {
+            "r": 7,
+            "c": 0,
+            "text": "[47]"
+          },
+          {
+            "r": 7,
+            "c": 1,
+            "text": "LLaVA Repository\nhttps://github.com/haotian-liu/LLaVA"
+          },
+          {
+            "r": 8,
+            "c": 0,
+            "text": "[48]"
+          },
+          {
+            "r": 8,
+            "c": 1,
+            "text": "OpenAI Whisper\nhttps://openai.com/index/whisper/"
+          },
+          {
+            "r": 9,
+            "c": 0,
+            "text": "[49]"
+          },
+          {
+            "r": 9,
+            "c": 1,
+            "text": "AP News (Whisper Hallucination Risk)\nhttps://apnews.com/article/90020cdf5fa16c79ca2e5b6c4c9bbb14"
+          },
+          {
+            "r": 10,
+            "c": 0,
+            "text": "[50]"
+          },
+          {
+            "r": 10,
+            "c": 1,
+            "text": "faster-whisper (SYSTRAN)\nhttps://github.com/SYSTRAN/faster-whisper"
+          },
+          {
+            "r": 11,
+            "c": 0,
+            "text": "[51]"
+          },
+          {
+            "r": 11,
+            "c": 1,
+            "text": "whisper.cpp (ggml)\nhttps://github.com/ggml-org/whisper.cpp"
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s002_sh005",
+      "page": 2,
+      "bbox": {
+        "x": 6257696,
+        "y": 1306619,
+        "w": 5486400,
+        "h": 4839000
+      },
+      "text": "[TABLE]",
+      "normalized_text": "[TABLE]",
+      "heading_level": 0,
+      "kind": "table",
+      "z": 10005,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {}
+      },
+      "table": {
+        "rows": 12,
+        "cols": 2,
+        "cells": [
+          {
+            "r": 0,
+            "c": 0,
+            "text": "[52]"
+          },
+          {
+            "r": 0,
+            "c": 1,
+            "text": "Piper TTS\nhttps://github.com/rhasspy/piper"
+          },
+          {
+            "r": 1,
+            "c": 0,
+            "text": "[53]"
+          },
+          {
+            "r": 1,
+            "c": 1,
+            "text": "Kokoro TTS\nhttps://github.com/hexgrad/kokoro"
+          },
+          {
+            "r": 2,
+            "c": 0,
+            "text": "[54]"
+          },
+          {
+            "r": 2,
+            "c": 1,
+            "text": "Coqui XTTS-v2\nhttps://huggingface.co/coqui/XTTS-v2"
+          },
+          {
+            "r": 3,
+            "c": 0,
+            "text": "[55]"
+          },
+          {
+            "r": 3,
+            "c": 1,
+            "text": "StyleTTS2\nhttps://github.com/yl4579/StyleTTS2"
+          },
+          {
+            "r": 4,
+            "c": 0,
+            "text": "[58]"
+          },
+          {
+            "r": 4,
+            "c": 1,
+            "text": "BGE-M3 Embedding\nhttps://huggingface.co/BAAI/bge-m3"
+          },
+          {
+            "r": 5,
+            "c": 0,
+            "text": "[59]"
+          },
+          {
+            "r": 5,
+            "c": 1,
+            "text": "Multilingual-E5 Large\nhttps://huggingface.co/intfloat/multilingual-e5-large"
+          },
+          {
+            "r": 6,
+            "c": 0,
+            "text": "[60]"
+          },
+          {
+            "r": 6,
+            "c": 1,
+            "text": "Multilingual-E5 Large Instruct\nhttps://huggingface.co/intfloat/multilingual-e5-large-instruct"
+          },
+          {
+            "r": 7,
+            "c": 0,
+            "text": "[61]"
+          },
+          {
+            "r": 7,
+            "c": 1,
+            "text": "BGE Reranker Large\nhttps://huggingface.co/BAAI/bge-reranker-large"
+          },
+          {
+            "r": 8,
+            "c": 0,
+            "text": "[62]"
+          },
+          {
+            "r": 8,
+            "c": 1,
+            "text": "BGE Reranker v2 M3\nhttps://huggingface.co/BAAI/bge-reranker-v2-m3"
+          },
+          {
+            "r": 9,
+            "c": 0,
+            "text": "[64]"
+          },
+          {
+            "r": 9,
+            "c": 1,
+            "text": "Tesseract OCR\nhttps://github.com/tesseract-ocr/tesseract"
+          },
+          {
+            "r": 10,
+            "c": 0,
+            "text": "[66]"
+          },
+          {
+            "r": 10,
+            "c": 1,
+            "text": "PaddleOCR\nhttps://github.com/PaddlePaddle/PaddleOCR"
+          },
+          {
+            "r": 11,
+            "c": 0,
+            "text": "[68]"
+          },
+          {
+            "r": 11,
+            "c": 1,
+            "text": "Donut (Document Understanding Transformer)\nhttps://github.com/clovaai/donut"
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s002_sh006",
+      "page": 2,
+      "bbox": {
+        "x": 457200,
+        "y": 391821,
+        "w": 237744,
+        "h": 267005
+      },
+      "text": "[IMAGE]",
+      "normalized_text": "[IMAGE]",
+      "heading_level": 0,
+      "kind": "image",
+      "z": 10006,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {},
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "image": {
+        "sha256": "5918ae44c682a29151e87b8098f770641f0bfdb6c84150e6832b9f5012210d8c",
+        "ext": "png",
+        "byte_size": 761,
+        "filename": "image.png"
+      }
+    },
+    {
+      "chunk_id": "s002_sh007",
+      "page": 2,
+      "bbox": {
+        "x": 809244,
+        "y": 334671,
+        "w": 4612234,
+        "h": 381305
+      },
+      "text": "References（参考文献リスト 2/4）",
+      "normalized_text": "References（参考文献リスト 2/4）",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10007,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "References",
+                "font_name": "Cambria",
+                "font_size_emu": 266700,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              },
+              {
+                "index": 1,
+                "text": "（参考文献リスト",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 266700,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              },
+              {
+                "index": 2,
+                "text": " 2/4",
+                "font_name": "Cambria",
+                "font_size_emu": 266700,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              },
+              {
+                "index": 3,
+                "text": "）",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 266700,
+                "bold": true,
+                "color_rgb": "FFFFFF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s002_sh008",
+      "page": 2,
+      "bbox": {
+        "x": 6931152,
+        "y": 411023,
+        "w": 5496458,
+        "h": 228600
+      },
+      "text": "[35]～[68] Llama / Qwen / Gemma / Phi / VLM / Whisper / TTS / OCR",
+      "normalized_text": "[35]～[68] Llama / Qwen / Gemma / Phi / VLM / Whisper / TTS / OCR",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10008,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 0,
+          "color_rgb": null
+        }
+      },
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "LEFT (1)",
+            "level": 0,
+            "runs": [
+              {
+                "index": 0,
+                "text": "[35]",
+                "font_name": "Cambria",
+                "font_size_emu": 152400,
+                "color_rgb": null
+              },
+              {
+                "index": 1,
+                "text": "～",
+                "font_name": "Noto Sans JP",
+                "font_size_emu": 152400,
+                "color_rgb": null
+              },
+              {
+                "index": 2,
+                "text": "[68] Llama / Qwen / Gemma / Phi / VLM / Whisper / TTS / OCR",
+                "font_name": "Cambria",
+                "font_size_emu": 152400,
+                "color_rgb": null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s002_sh009",
+      "page": 2,
+      "bbox": {
+        "x": 362560,
+        "y": 1306619,
+        "w": 5505602,
+        "h": 4977249
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10009,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "D2D2D7"
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "chunk_id": "s002_sh010",
+      "page": 2,
+      "bbox": {
+        "x": 6248095,
+        "y": 1312331,
+        "w": 5505602,
+        "h": 4816551
+      },
+      "text": "",
+      "normalized_text": "",
+      "heading_level": 0,
+      "kind": "text",
+      "z": 10010,
+      "rotation_deg": 0.0,
+      "style": {
+        "fill": {
+          "type": "background"
+        },
+        "line": {
+          "width_emu": 12700,
+          "color_rgb": "D2D2D7"
+        }
+      },
+      "shape_kind": "round_rect",
+      "text_struct": {
+        "paragraphs": [
+          {
+            "index": 0,
+            "alignment": "None",
+            "level": 0,
+            "runs": []
+          }
+        ]
+      }
+    }
+  ]
+}

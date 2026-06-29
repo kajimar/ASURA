@@ -1,0 +1,68 @@
+{
+  "schema_version": "0.1",
+  "document_id": "E4",
+  "theme_id": "theme_default",
+  "slides": [
+    {
+      "slide_no": null,
+      "component_id": "comp_title_bullets",
+      "message": "[BACKGROUND]",
+      "slots": {
+        "TITLE": "[BACKGROUND]",
+        "BULLETS": [
+          "Page 1 | ローカルAI 技術調査レポート",
+          "[IMAGE]",
+          "[IMAGE]",
+          "References（参考文献リスト1/4）",
+          "Technical Research Report Sources [1-34]",
+          "[1]",
+          "https://www.apple.com/newsroom/2020/11/apple-unleashes-m1/",
+          "[2]"
+        ]
+      },
+      "citations": [
+        {
+          "mark": "※1",
+          "page": 1,
+          "chunk_id": "s001_bg000"
+        }
+      ]
+    },
+    {
+      "slide_no": null,
+      "component_id": "comp_title_bullets",
+      "message": "[BACKGROUND]",
+      "slots": {
+        "TITLE": "[BACKGROUND]",
+        "BULLETS": [
+          "Page 2 | ローカルAI 技術調査レポート",
+          "[IMAGE]",
+          "[TABLE]",
+          "[TABLE]",
+          "[IMAGE]",
+          "References（参考文献リスト 2/4）",
+          "[35]～[68] Llama / Qwen / Gemma / Phi / VLM / Whisper / TTS / OCR"
+        ]
+      },
+      "citations": [
+        {
+          "mark": "※2",
+          "page": 2,
+          "chunk_id": "s002_bg000"
+        }
+      ]
+    }
+  ],
+  "toc": [
+    {
+      "title": "[BACKGROUND]",
+      "level": 1,
+      "slide_index": 1
+    },
+    {
+      "title": "[BACKGROUND]",
+      "level": 1,
+      "slide_index": 2
+    }
+  ]
+}

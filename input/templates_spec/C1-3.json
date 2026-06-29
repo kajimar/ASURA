@@ -1,0 +1,325 @@
+{
+  "schema_version": "slot_templates_spec@0.1",
+  "document_id": "C1-3",
+  "source_path": "/Users/kanji/ASURA/input/10patern/C1.pptx",
+  "page_size_emu": {
+    "w_emu": 12192000,
+    "h_emu": 6858000
+  },
+  "slot_fields": [
+    "slot_id",
+    "role",
+    "kind",
+    "bbox",
+    "style_fingerprint"
+  ],
+  "pages": [
+    {
+      "page": 3,
+      "template_class": "section.divider",
+      "sub_class": "divider.key_takeaways_with_footer_nav",
+      "slots": [
+        [
+          "meta.background",
+          "background",
+          "shape",
+          {
+            "x": 0,
+            "y": 0,
+            "w": 12192000,
+            "h": 6858000
+          },
+          "fp_5f2b1f49ae"
+        ],
+        [
+          "decor.split_panel.left",
+          "layout_split_left",
+          "text",
+          {
+            "x": 0,
+            "y": 0,
+            "w": 5486400,
+            "h": 6858000
+          },
+          "fp_2c97dd24c8"
+        ],
+        [
+          "decor.split_panel.right",
+          "layout_split_right",
+          "text",
+          {
+            "x": 5486400,
+            "y": 0,
+            "w": 6705295,
+            "h": 6858000
+          },
+          "fp_16a00f0ba7"
+        ],
+        [
+          "content.eyebrow",
+          "panel_eyebrow",
+          "text",
+          {
+            "x": 6248095,
+            "y": 1009498,
+            "w": 5296205,
+            "h": 228600
+          },
+          "fp_2d87e6c0d1"
+        ],
+        [
+          "content.panel.image",
+          "panel_image",
+          "image",
+          {
+            "x": 6248095,
+            "y": 1423721,
+            "w": 5181905,
+            "h": 3886200
+          },
+          "fp_b0e60bd75d"
+        ],
+        [
+          "decor.section.rule",
+          "section_rule",
+          "image",
+          {
+            "x": 761695,
+            "y": 2832811,
+            "w": 761695,
+            "h": 57607
+          },
+          "fp_e73ec34aa2"
+        ],
+        [
+          "section.title",
+          "section_title",
+          "text",
+          {
+            "x": 761695,
+            "y": 3270809,
+            "w": 4121201,
+            "h": 1181405
+          },
+          "fp_bf5f8b0c4b"
+        ],
+        [
+          "section.subtitle",
+          "section_subtitle",
+          "text",
+          {
+            "x": 761695,
+            "y": 4672584,
+            "w": 4048963,
+            "h": 685800
+          },
+          "fp_87f4e4f21c"
+        ],
+        [
+          "section.number",
+          "section_number",
+          "text",
+          {
+            "x": 761695,
+            "y": 1499616,
+            "w": 4153205,
+            "h": 1143000
+          },
+          "fp_83d9c47a64"
+        ],
+        [
+          "content.takeaways.title",
+          "takeaways_title",
+          "text",
+          {
+            "x": 6810451,
+            "y": 1714500,
+            "w": 4525366,
+            "h": 286207
+          },
+          "fp_b32e0ddc6b"
+        ],
+        [
+          "content.takeaways.title_icon",
+          "takeaways_title_icon",
+          "image",
+          {
+            "x": 6572707,
+            "y": 1762049,
+            "w": 142646,
+            "h": 190195
+          },
+          "fp_8f227c5d3c"
+        ],
+        [
+          "content.takeaway_1.text",
+          "takeaway_text",
+          "text",
+          {
+            "x": 6801307,
+            "y": 2356201,
+            "w": 4420210,
+            "h": 625657
+          },
+          "fp_7fe9c5fa80"
+        ],
+        [
+          "content.takeaway_1.icon",
+          "takeaway_icon",
+          "image",
+          {
+            "x": 6586880,
+            "y": 2356201,
+            "w": 114300,
+            "h": 133502
+          },
+          "fp_7f3f25b50b"
+        ],
+        [
+          "content.takeaway_2.text",
+          "takeaway_text",
+          "text",
+          {
+            "x": 6801307,
+            "y": 3226917,
+            "w": 4420210,
+            "h": 771754
+          },
+          "fp_0f3d40ad88"
+        ],
+        [
+          "content.takeaway_2.icon",
+          "takeaway_icon",
+          "image",
+          {
+            "x": 6572707,
+            "y": 3226917,
+            "w": 114300,
+            "h": 133502
+          },
+          "fp_7f3f25b50b"
+        ],
+        [
+          "content.takeaway_3.text",
+          "takeaway_text",
+          "text",
+          {
+            "x": 6801307,
+            "y": 4243730,
+            "w": 4420210,
+            "h": 617028
+          },
+          "fp_a195b43eb9"
+        ],
+        [
+          "content.takeaway_3.icon",
+          "takeaway_icon",
+          "image",
+          {
+            "x": 6572707,
+            "y": 4243730,
+            "w": 114300,
+            "h": 133502
+          },
+          "fp_7f3f25b50b"
+        ],
+        [
+          "meta.footer.nav.item_1.icon",
+          "footer_nav_icon",
+          "image",
+          {
+            "x": 6248095,
+            "y": 5605272,
+            "w": 1257300,
+            "h": 333756
+          },
+          "fp_a65b1d3e55"
+        ],
+        [
+          "meta.footer.nav.item_1.label",
+          "footer_nav_label",
+          "text",
+          {
+            "x": 6247180,
+            "y": 5600700,
+            "w": 1257300,
+            "h": 333756
+          },
+          "fp_3a1f0fa0ed"
+        ],
+        [
+          "meta.footer.nav.item_2.icon",
+          "footer_nav_icon",
+          "image",
+          {
+            "x": 7619695,
+            "y": 5605272,
+            "w": 1429207,
+            "h": 333756
+          },
+          "fp_0f60fe2b0d"
+        ],
+        [
+          "meta.footer.nav.item_2.label",
+          "footer_nav_label",
+          "text",
+          {
+            "x": 7619695,
+            "y": 5605272,
+            "w": 1429207,
+            "h": 333756
+          },
+          "fp_04e0aa7a5d"
+        ],
+        [
+          "meta.footer.nav.item_3.icon",
+          "footer_nav_icon",
+          "image",
+          {
+            "x": 9156802,
+            "y": 5605272,
+            "w": 1123798,
+            "h": 333756
+          },
+          "fp_c92e3ad06d"
+        ],
+        [
+          "meta.footer.nav.item_3.label",
+          "footer_nav_label",
+          "text",
+          {
+            "x": 9156802,
+            "y": 5605272,
+            "w": 1124712,
+            "h": 333756
+          },
+          "fp_2fcb1d5d66"
+        ],
+        [
+          "meta.footer.nav.item_4.icon",
+          "footer_nav_icon",
+          "image",
+          {
+            "x": 10394899,
+            "y": 5605272,
+            "w": 990295,
+            "h": 333756
+          },
+          "fp_17a5f7a2a4"
+        ],
+        [
+          "meta.footer.nav.item_4.label",
+          "footer_nav_label",
+          "text",
+          {
+            "x": 10394899,
+            "y": 5605272,
+            "w": 991210,
+            "h": 333756
+          },
+          "fp_15c63c3c66"
+        ]
+      ]
+    }
+  ]
+}

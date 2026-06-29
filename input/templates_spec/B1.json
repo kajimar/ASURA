@@ -1,0 +1,126 @@
+{
+    "schema_version": "slot_templates_spec@0.1",
+    "document_id": "B1",
+    "page_count": 1,
+    "page_size_emu": {
+      "w_emu": 12192000,
+      "h_emu": 6858000
+    },
+    "pages": [
+      {
+        "page": 1,
+        "template_class": "table.matrix",
+        "sub_class": "matrix.header_bar_footer",
+        "slots": [
+          {
+            "slot_id": "slide.background",
+            "role": "background",
+            "kind": "shape",
+            "bbox": {
+              "x": 0,
+              "y": 0,
+              "w": 12192000,
+              "h": 6858000
+            },
+            "style_fingerprint": "sha1:cef02e6f27"
+          },
+          {
+            "slot_id": "meta.footer.band",
+            "role": "footer_band",
+            "kind": "text",
+            "bbox": {
+              "x": 0,
+              "y": 6476695,
+              "w": 12192609,
+              "h": 381305
+            },
+            "style_fingerprint": "sha1:77cf77c007"
+          },
+          {
+            "slot_id": "meta.footer.line",
+            "role": "footer_text",
+            "kind": "text",
+            "bbox": {
+              "x": 0,
+              "y": 6476695,
+              "w": 12192610,
+              "h": 381305
+            },
+            "style_fingerprint": "sha1:3a9b26a00a"
+          },
+          {
+            "slot_id": "meta.header.band",
+            "role": "header_band",
+            "kind": "text",
+            "bbox": {
+              "x": 0,
+              "y": 0,
+              "w": 12192001,
+              "h": 1050646
+            },
+            "style_fingerprint": "sha1:7fe6fcc400"
+          },
+          {
+            "slot_id": "meta.header.logo",
+            "role": "logo",
+            "kind": "image",
+            "bbox": {
+              "x": 457200,
+              "y": 391821,
+              "w": 237744,
+              "h": 267005
+            },
+            "style_fingerprint": "sha1:64870ca347"
+          },
+          {
+            "slot_id": "meta.title",
+            "role": "title",
+            "kind": "text",
+            "bbox": {
+              "x": 809244,
+              "y": 334669,
+              "w": 3653028,
+              "h": 381305
+            },
+            "style_fingerprint": "sha1:0c1c33cee6"
+          },
+          {
+            "slot_id": "meta.subtitle",
+            "role": "subtitle",
+            "kind": "text",
+            "bbox": {
+              "x": 8651138,
+              "y": 457200,
+              "w": 3643884,
+              "h": 228600
+            },
+            "style_fingerprint": "sha1:7fc260c2ad"
+          },
+          {
+            "slot_id": "table.grid",
+            "role": "table_grid",
+            "kind": "table",
+            "bbox": {
+              "x": 466344,
+              "y": 1380744,
+              "w": 11277296,
+              "h": 4144253
+            },
+            "style_fingerprint": "sha1:faec59e025"
+          },
+          {
+            "slot_id": "decor.table.frame",
+            "role": "table_frame",
+            "kind": "text",
+            "bbox": {
+              "x": 457200,
+              "y": 1371600,
+              "w": 11296498,
+              "h": 4143146
+            },
+            "style_fingerprint": "sha1:c245a479ab"
+          }
+        ]
+      }
+    ]
+  }

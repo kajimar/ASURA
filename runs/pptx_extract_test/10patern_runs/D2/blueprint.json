@@ -1,0 +1,39 @@
+{
+  "schema_version": "0.1",
+  "document_id": "D2",
+  "theme_id": "theme_default",
+  "slides": [
+    {
+      "slide_no": null,
+      "component_id": "comp_title_bullets",
+      "message": "[BACKGROUND]",
+      "slots": {
+        "TITLE": "[BACKGROUND]",
+        "BULLETS": [
+          "Page1 | ローカルAI 技術調査レポート",
+          "要件定義\nRequirements",
+          "Tier選定\nHardware Tier",
+          "モデル選定\nModel Select",
+          "ランタイム\nRuntime",
+          "検証・最適化\nVerify",
+          "[IMAGE]",
+          "まとめ（意思決定フロー）"
+        ]
+      },
+      "citations": [
+        {
+          "mark": "※1",
+          "page": 1,
+          "chunk_id": "s001_bg000"
+        }
+      ]
+    }
+  ],
+  "toc": [
+    {
+      "title": "[BACKGROUND]",
+      "level": 1,
+      "slide_index": 1
+    }
+  ]
+}

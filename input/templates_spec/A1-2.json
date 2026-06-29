@@ -1,0 +1,588 @@
+{
+  "version": "slot_templates_spec_v1",
+  "pages": [
+    {
+      "page": 2,
+      "template_class": "content.cards",
+      "sub_class": "cards_2col_def_and_tech",
+      "slots": [
+        {
+          "slot_id": "meta.background",
+          "role": "background",
+          "kind": "shape",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "w": 12192000,
+            "h": 6858000
+          },
+          "style_fingerprint": "shape|shape=rect|fill=background"
+        },
+        {
+          "slot_id": "decor.accent_bar.top",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "w": 12192001,
+            "h": 54865
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|007AFF|a=1.0|align=CENTER (2)"
+        },
+        {
+          "slot_id": "meta.subtitle",
+          "role": "title",
+          "kind": "text",
+          "bbox": {
+            "x": 475532,
+            "y": 208940,
+            "w": 2397557,
+            "h": 257861
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Noto Sans JP|size=127000|bold=0|color=86868B|align=LEFT (1)"
+        },
+        {
+          "slot_id": "meta.title",
+          "role": "title",
+          "kind": "text",
+          "bbox": {
+            "x": 914400,
+            "y": 495605,
+            "w": 4620463,
+            "h": 457200
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Noto Sans JP|size=304800|bold=1|color=1D1D1F|align=LEFT (1)"
+        },
+        {
+          "slot_id": "meta.brand.icon",
+          "role": "brand",
+          "kind": "image",
+          "bbox": {
+            "x": 475532,
+            "y": 571500,
+            "w": 304495,
+            "h": 304495
+          },
+          "style_fingerprint": "image|sha=bb5354734a63d968"
+        },
+        {
+          "slot_id": "decor.divider.top",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 305,
+            "y": 1032380,
+            "w": 12191695,
+            "h": 36000
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|E5E5E5|a=1.0|linew=12700|la=1.0|align=None"
+        },
+        {
+          "slot_id": "decor.accent_bar.left",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 488450,
+            "y": 1311250,
+            "w": 49717,
+            "h": 791160
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|007AFF|a=1.0|align=CENTER (2)"
+        },
+        {
+          "slot_id": "content.takeaway.panel",
+          "role": "takeaway",
+          "kind": "text",
+          "bbox": {
+            "x": 481888,
+            "y": 1312153,
+            "w": 11221662,
+            "h": 790509
+          },
+          "style_fingerprint": "text|shape=round_rect|fill=solid|F0F9FF|a=1.0|align=None"
+        },
+        {
+          "slot_id": "content.takeaway.body",
+          "role": "takeaway",
+          "kind": "text",
+          "bbox": {
+            "x": 914400,
+            "y": 1426920,
+            "w": 10849356,
+            "h": 648310
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Noto Sans JP|size=228600|bold=1|color=1D1D1F|align=LEFT (1)"
+        },
+        {
+          "slot_id": "content.card_1.panel",
+          "role": "card.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 538167,
+            "y": 2381097,
+            "w": 5486400,
+            "h": 3981298
+          },
+          "style_fingerprint": "text|shape=round_rect|fill=solid|FFFFFF|a=1.0|linew=12700|linec=E5E5E5|la=1.0|align=None"
+        },
+        {
+          "slot_id": "content.card_2.panel",
+          "role": "card.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 6329062,
+            "y": 2381097,
+            "w": 5486400,
+            "h": 3981298
+          },
+          "style_fingerprint": "text|shape=round_rect|fill=solid|FFFFFF|a=1.0|linew=12700|linec=E5E5E5|la=1.0|align=None"
+        },
+        {
+          "slot_id": "content.card_1.item_1.body",
+          "role": "card.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 1109667,
+            "y": 2619755,
+            "w": 2171700,
+            "h": 419710
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Noto Sans JP|size=190500|bold=1|color=1D1D1F|align=LEFT (1)"
+        },
+        {
+          "slot_id": "content.card_2.item_1.body",
+          "role": "card.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 6872216,
+            "y": 2619755,
+            "w": 3324758,
+            "h": 419710
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Noto Sans JP|size=190500|bold=1|color=1D1D1F|align=LEFT (1)"
+        },
+        {
+          "slot_id": "content.card_1.icon",
+          "role": "card.icon",
+          "kind": "image",
+          "bbox": {
+            "x": 775911,
+            "y": 2667304,
+            "w": 219456,
+            "h": 190195
+          },
+          "style_fingerprint": "image|sha=2a69ed31ce1ff0a8"
+        },
+        {
+          "slot_id": "content.card_2.icon",
+          "role": "card.icon",
+          "kind": "image",
+          "bbox": {
+            "x": 6567721,
+            "y": 2667304,
+            "w": 190195,
+            "h": 190195
+          },
+          "style_fingerprint": "image|sha=e396b83a94068d0f"
+        },
+        {
+          "slot_id": "decor.divider.card_1.horizontal",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 775911,
+            "y": 3019348,
+            "w": 5009998,
+            "h": 19202
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|F5F5F7|a=0.0|linew=12700|linec=F5F5F7|la=0.0|align=None"
+        },
+        {
+          "slot_id": "decor.divider.card_2.horizontal",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 6567721,
+            "y": 3019348,
+            "w": 5009998,
+            "h": 19202
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|F5F5F7|a=0.0|linew=12700|linec=F5F5F7|la=0.0|align=None"
+        },
+        {
+          "slot_id": "content.card_1.item_1.icon",
+          "role": "card.item.icon",
+          "kind": "image",
+          "bbox": {
+            "x": 775911,
+            "y": 3191255,
+            "w": 105156,
+            "h": 114300
+          },
+          "style_fingerprint": "image|sha=8b100f89b626ee7c"
+        },
+        {
+          "slot_id": "content.card_2.item_1.icon",
+          "role": "card.item.icon",
+          "kind": "image",
+          "bbox": {
+            "x": 6567721,
+            "y": 3191255,
+            "w": 114300,
+            "h": 114300
+          },
+          "style_fingerprint": "image|sha=e6089dbbd9bba366"
+        },
+        {
+          "slot_id": "content.card_1.title",
+          "role": "card.title",
+          "kind": "text",
+          "bbox": {
+            "x": 976165,
+            "y": 3434486,
+            "w": 4886554,
+            "h": 495605
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Noto Sans JP|size=152400|bold=0|color=424245|align=LEFT (1)"
+        },
+        {
+          "slot_id": "content.card_2.title",
+          "role": "card.title",
+          "kind": "text",
+          "bbox": {
+            "x": 6777118,
+            "y": 3434486,
+            "w": 4877410,
+            "h": 495605
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Cambria|size=152400|bold=0|color=424245|align=LEFT (1)"
+        },
+        {
+          "slot_id": "decor.footnote.marker_4.icon",
+          "role": "decor",
+          "kind": "image",
+          "bbox": {
+            "x": 10510613,
+            "y": 3717035,
+            "w": 256946,
+            "h": 200254
+          },
+          "style_fingerprint": "image|sha=65cfddb5ff4fe32b"
+        },
+        {
+          "slot_id": "decor.footnote.marker_4.label",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 10510613,
+            "y": 3717035,
+            "w": 257861,
+            "h": 200254
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|FFFFFF|a=0.0|font=Cambria|size=114300|bold=0|color=6B7280|align=CENTER (2)"
+        },
+        {
+          "slot_id": "content.card_1.item_2.icon",
+          "role": "card.item.icon",
+          "kind": "image",
+          "bbox": {
+            "x": 775911,
+            "y": 4037075,
+            "w": 105156,
+            "h": 114300
+          },
+          "style_fingerprint": "image|sha=8b100f89b626ee7c"
+        },
+        {
+          "slot_id": "content.card_2.item_2.icon",
+          "role": "card.item.icon",
+          "kind": "image",
+          "bbox": {
+            "x": 6567721,
+            "y": 4037075,
+            "w": 133502,
+            "h": 114300
+          },
+          "style_fingerprint": "image|sha=40d3173c1a2c19ef"
+        },
+        {
+          "slot_id": "content.card_1.item_2.body",
+          "role": "card.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 976165,
+            "y": 4280306,
+            "w": 4886554,
+            "h": 495605
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Noto Sans JP|size=152400|bold=0|color=424245|align=LEFT (1)"
+        },
+        {
+          "slot_id": "content.card_2.item_3.body",
+          "role": "card.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 6796321,
+            "y": 4280306,
+            "w": 3781958,
+            "h": 247802
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Noto Sans JP|size=152400|bold=0|color=424245|align=LEFT (1)"
+        },
+        {
+          "slot_id": "content.card_2.item_4.body",
+          "role": "card.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 7024921,
+            "y": 4561941,
+            "w": 3477463,
+            "h": 219456
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Cambria|size=127000|bold=1|color=4B5563|align=LEFT (1)"
+        },
+        {
+          "slot_id": "decor.footnote.marker_5.icon",
+          "role": "decor",
+          "kind": "image",
+          "bbox": {
+            "x": 10129309,
+            "y": 4573828,
+            "w": 256946,
+            "h": 200254
+          },
+          "style_fingerprint": "image|sha=65cfddb5ff4fe32b"
+        },
+        {
+          "slot_id": "decor.footnote.marker_5.label",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 10129309,
+            "y": 4573828,
+            "w": 257861,
+            "h": 200254
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|FFFFFF|a=0.0|font=Cambria|size=114300|bold=0|color=6B7280|align=CENTER (2)"
+        },
+        {
+          "slot_id": "content.card_2.item_6.body",
+          "role": "card.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 7024921,
+            "y": 4774082,
+            "w": 3477463,
+            "h": 219456
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Cambria|size=127000|bold=1|color=4B5563|align=LEFT (1)"
+        },
+        {
+          "slot_id": "decor.footnote.marker_6.icon",
+          "role": "decor",
+          "kind": "image",
+          "bbox": {
+            "x": 9850417,
+            "y": 4785055,
+            "w": 256946,
+            "h": 200254
+          },
+          "style_fingerprint": "image|sha=65cfddb5ff4fe32b"
+        },
+        {
+          "slot_id": "decor.footnote.marker_6.label",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 9850417,
+            "y": 4785055,
+            "w": 257861,
+            "h": 200254
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|FFFFFF|a=0.0|font=Cambria|size=114300|bold=0|color=6B7280|align=CENTER (2)"
+        },
+        {
+          "slot_id": "content.card_1.item_3.icon",
+          "role": "card.item.icon",
+          "kind": "image",
+          "bbox": {
+            "x": 775911,
+            "y": 4881981,
+            "w": 105156,
+            "h": 114300
+          },
+          "style_fingerprint": "image|sha=8b100f89b626ee7c"
+        },
+        {
+          "slot_id": "content.card_2.item_8.body",
+          "role": "card.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 7024921,
+            "y": 4985308,
+            "w": 3477463,
+            "h": 219456
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Cambria|size=127000|bold=1|color=4B5563|align=LEFT (1)"
+        },
+        {
+          "slot_id": "decor.footnote.marker_7.icon",
+          "role": "decor",
+          "kind": "image",
+          "bbox": {
+            "x": 10006779,
+            "y": 4996281,
+            "w": 256946,
+            "h": 200254
+          },
+          "style_fingerprint": "image|sha=65cfddb5ff4fe32b"
+        },
+        {
+          "slot_id": "decor.footnote.marker_7.label",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 10006779,
+            "y": 4996281,
+            "w": 257861,
+            "h": 200254
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|FFFFFF|a=0.0|font=Cambria|size=114300|bold=0|color=6B7280|align=CENTER (2)"
+        },
+        {
+          "slot_id": "content.card_1.item_3.body",
+          "role": "card.item.body",
+          "kind": "text",
+          "bbox": {
+            "x": 976165,
+            "y": 5126126,
+            "w": 4886554,
+            "h": 495605
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Cambria|size=152400|bold=0|color=424245|align=LEFT (1)"
+        },
+        {
+          "slot_id": "decor.footnote.marker_1_2.icon",
+          "role": "decor",
+          "kind": "image",
+          "bbox": {
+            "x": 1052974,
+            "y": 5408675,
+            "w": 400507,
+            "h": 200254
+          },
+          "style_fingerprint": "image|sha=c572c3f93c5ee4eb"
+        },
+        {
+          "slot_id": "decor.footnote.marker_1_2.label",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 1052974,
+            "y": 5408675,
+            "w": 400507,
+            "h": 200254
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|FFFFFF|a=0.0|font=Cambria|size=114300|bold=0|color=6B7280|align=CENTER (2)"
+        },
+        {
+          "slot_id": "content.card_1.tag_1.panel",
+          "role": "tag.panel",
+          "kind": "image",
+          "bbox": {
+            "x": 775911,
+            "y": 5766206,
+            "w": 857707,
+            "h": 276149
+          },
+          "style_fingerprint": "image|sha=defd60989b57ee4f"
+        },
+        {
+          "slot_id": "content.card_1.tag_1.label",
+          "role": "tag.label",
+          "kind": "text",
+          "bbox": {
+            "x": 775911,
+            "y": 5766206,
+            "w": 857707,
+            "h": 277063
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|FFFFFF|a=0.0|font=Cambria|size=127000|bold=1|color=0369A1|align=CENTER (2)"
+        },
+        {
+          "slot_id": "content.card_1.tag_2.panel",
+          "role": "tag.panel",
+          "kind": "image",
+          "bbox": {
+            "x": 1704027,
+            "y": 5766206,
+            "w": 1285646,
+            "h": 276149
+          },
+          "style_fingerprint": "image|sha=390dbdc1777f693b"
+        },
+        {
+          "slot_id": "content.card_1.tag_2.label",
+          "role": "tag.label",
+          "kind": "text",
+          "bbox": {
+            "x": 1704027,
+            "y": 5766206,
+            "w": 1286561,
+            "h": 277063
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|FFFFFF|a=0.0|font=Cambria|size=127000|bold=1|color=0369A1|align=CENTER (2)"
+        },
+        {
+          "slot_id": "content.card_1.tag_3.panel",
+          "role": "tag.panel",
+          "kind": "image",
+          "bbox": {
+            "x": 3058253,
+            "y": 5766206,
+            "w": 1028700,
+            "h": 276149
+          },
+          "style_fingerprint": "image|sha=c1c74386b62d8190"
+        },
+        {
+          "slot_id": "content.card_1.tag_3.label",
+          "role": "tag.label",
+          "kind": "text",
+          "bbox": {
+            "x": 3058253,
+            "y": 5766206,
+            "w": 1028700,
+            "h": 277063
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|FFFFFF|a=0.0|font=Cambria|size=127000|bold=1|color=0369A1|align=CENTER (2)"
+        },
+        {
+          "slot_id": "meta.footer.band",
+          "role": "footer",
+          "kind": "text",
+          "bbox": {
+            "x": 0,
+            "y": 6476695,
+            "w": 12192609,
+            "h": 381305
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|F6F5F8|a=1.0|linew=15875|linec=E5E5E5|la=1.0|align=CENTER (2)"
+        },
+        {
+          "slot_id": "meta.footer.page_info",
+          "role": "footer",
+          "kind": "text",
+          "bbox": {
+            "x": 0,
+            "y": 6476695,
+            "w": 12192610,
+            "h": 381305
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|FFFFFF|a=0.0|font=Cambria|size=114300|bold=0|color=86868B|align=CENTER (2)"
+        }
+      ]
+    }
+  ]
+}

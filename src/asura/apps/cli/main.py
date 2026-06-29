@@ -6,6 +6,7 @@ from pathlib import Path
 
 from jsonschema import Draft202012Validator
 
+from asura.core.render.classified_renderer import render_classified_pptx
 from asura.core.render.pptx_renderer import render_pptx
 
 
@@ -327,7 +328,7 @@ def cmd_render(args: argparse.Namespace) -> int:
         return 2
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    render_pptx(run_dir=run_dir, out_pptx=out_path)
+    render_pptx(run_dir=run_dir, out_pptx=out_path, mode=str(getattr(args, "mode", "template")))
     print(f"[OK] rendered: {out_path}")
     return 0
 
@@ -362,7 +363,11 @@ def cmd_extract(args: argparse.Namespace) -> int:
         return 2
 
     try:
-        data = extractor(in_path)
+        # pptx extractor can optionally emit extended fields.
+        if suf == ".pptx":
+            data = extractor(in_path, include_extended=bool(getattr(args, "extended", False)))
+        else:
+            data = extractor(in_path)
     except Exception as e:
         # Do not leave stale output behind.
         try:
@@ -376,6 +381,31 @@ def cmd_extract(args: argparse.Namespace) -> int:
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"[OK] extracted: {out_path}")
+    return 0
+
+
+def cmd_render_classified(args: argparse.Namespace) -> int:
+    classified_path = Path(args.classified).resolve()
+    out_path = Path(args.out).resolve()
+
+    if not classified_path.exists():
+        print(f"[NG] classified json not found: {classified_path}")
+        return 2
+
+    try:
+        result = render_classified_pptx(
+            classified_path=classified_path,
+            out_pptx=out_path,
+            templates_spec_dir=Path(args.templates_spec_dir).resolve(),
+            template_runs_dir=Path(args.template_runs_dir).resolve(),
+            dump_extraction_path=(Path(args.dump_extraction).resolve() if args.dump_extraction else None),
+        )
+    except Exception as e:
+        print("[NG] classified render failed")
+        print(f"      detail: {e}")
+        return 2
+
+    print(f"[OK] classified rendered: {result}")
     return 0
 
 
@@ -398,6 +428,11 @@ def main() -> None:
     p_ext = sub.add_parser("extract", help="extract input into extraction.json (with bbox) [pdf|pptx]")
     p_ext.add_argument("input", help="path to input (.pdf or .pptx)")
     p_ext.add_argument("--out", required=True, help="output extraction.json path")
+    p_ext.add_argument(
+        "--extended",
+        action="store_true",
+        help="(pptx only) include extended fields (style, z-order, rotation, image/table payloads, etc.)",
+    )
     p_ext.set_defaults(func=cmd_extract)
 
     p_bp = sub.add_parser("blueprint", help="generate blueprint.json from extraction.json (deterministic v0.1)")
@@ -405,10 +440,39 @@ def main() -> None:
     p_bp.add_argument("--out", required=False, help="output blueprint.json path (default: <run>/blueprint.json)")
     p_bp.set_defaults(func=cmd_blueprint)
 
-    p_rnd = sub.add_parser("render", help="render pptx from template+blueprint")
+    p_rnd = sub.add_parser("render", help="render pptx (template mode) or recreate from extraction (dom mode)")
     p_rnd.add_argument("--run", required=True, help="run directory (e.g., runs/sample)")
     p_rnd.add_argument("--out", required=True, help="output .pptx path")
+    p_rnd.add_argument(
+        "--mode",
+        choices=["template", "dom"],
+        default="template",
+        help="rendering mode: 'template' uses template+blueprint; 'dom' draws from extraction.json extended fields",
+    )
     p_rnd.set_defaults(func=cmd_render)
+
+    p_rndc = sub.add_parser(
+        "render-classified",
+        help="render PPTX directly from deck_template_classified JSON using templates_spec",
+    )
+    p_rndc.add_argument("classified", help="path to deck_template_classified_v1 JSON")
+    p_rndc.add_argument("--out", required=True, help="output .pptx path")
+    p_rndc.add_argument(
+        "--templates-spec-dir",
+        default=str(_project_root() / "input" / "templates_spec"),
+        help="directory containing templates_spec JSON files",
+    )
+    p_rndc.add_argument(
+        "--template-runs-dir",
+        default=str(_project_root() / "runs" / "pptx_extract_test" / "10patern_runs"),
+        help="directory containing extracted template run folders (A1, A3, D1, E1, ...)",
+    )
+    p_rndc.add_argument(
+        "--dump-extraction",
+        required=False,
+        help="optional path to write the synthetic extraction.json used for DOM rendering",
+    )
+    p_rndc.set_defaults(func=cmd_render_classified)
 
     args = parser.parse_args()
     raise SystemExit(args.func(args))

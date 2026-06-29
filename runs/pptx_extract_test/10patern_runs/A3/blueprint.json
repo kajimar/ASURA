@@ -1,0 +1,39 @@
+{
+  "schema_version": "0.1",
+  "document_id": "A3",
+  "theme_id": "theme_default",
+  "slides": [
+    {
+      "slide_no": null,
+      "component_id": "comp_title_bullets",
+      "message": "[BACKGROUND]",
+      "slots": {
+        "TITLE": "[BACKGROUND]",
+        "BULLETS": [
+          "Page 1 | ローカルAI 技術調査レポート",
+          "逐次要約（Rolling Summary）＋KV節約",
+          "LLM最適化",
+          "前処理",
+          "短い切れ目のマージ＋手動マッピング",
+          "ASR幻覚（Hallucination）",
+          "致命的",
+          "話者誤割当（Diarization Error）"
+        ]
+      },
+      "citations": [
+        {
+          "mark": "※1",
+          "page": 1,
+          "chunk_id": "s001_bg000"
+        }
+      ]
+    }
+  ],
+  "toc": [
+    {
+      "title": "[BACKGROUND]",
+      "level": 1,
+      "slide_index": 1
+    }
+  ]
+}

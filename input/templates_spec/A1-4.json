@@ -1,0 +1,864 @@
+{
+  "version": "slot_templates_spec_v1",
+  "pages": [
+    {
+      "page": 4,
+      "template_class": "content.catalog",
+      "sub_class": "catalog_3tier_stack",
+      "slots": [
+        {
+          "slot_id": "meta.background",
+          "role": "background",
+          "kind": "shape",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "w": 12192000,
+            "h": 6858000
+          },
+          "style_fingerprint": "shape|shape=rect|fill=background"
+        },
+        {
+          "slot_id": "decor.accent_bar.top",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "w": 12192001,
+            "h": 54865
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|007AFF|a=1.0|align=CENTER (2)"
+        },
+        {
+          "slot_id": "meta.subtitle",
+          "role": "title",
+          "kind": "text",
+          "bbox": {
+            "x": 475532,
+            "y": 204825,
+            "w": 3353105,
+            "h": 257861
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Noto Sans JP|size=127000|bold=0|color=86868B|align=LEFT (1)"
+        },
+        {
+          "slot_id": "meta.title",
+          "role": "title",
+          "kind": "text",
+          "bbox": {
+            "x": 914400,
+            "y": 495605,
+            "w": 4620463,
+            "h": 457200
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Noto Sans JP|size=304800|bold=1|color=1D1D1F|align=LEFT (1)"
+        },
+        {
+          "slot_id": "meta.brand.icon",
+          "role": "brand",
+          "kind": "image",
+          "bbox": {
+            "x": 475532,
+            "y": 571500,
+            "w": 304495,
+            "h": 304495
+          },
+          "style_fingerprint": "image|sha=bb5354734a63d968"
+        },
+        {
+          "slot_id": "decor.divider.top",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 305,
+            "y": 1032380,
+            "w": 12191695,
+            "h": 36000
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|E5E5E5|a=1.0|linew=12700|la=1.0|align=None"
+        },
+        {
+          "slot_id": "decor.accent_bar.left",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 488450,
+            "y": 1311250,
+            "w": 49717,
+            "h": 791160
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|007AFF|a=1.0|align=CENTER (2)"
+        },
+        {
+          "slot_id": "content.takeaway.panel",
+          "role": "takeaway",
+          "kind": "text",
+          "bbox": {
+            "x": 481888,
+            "y": 1312153,
+            "w": 11221662,
+            "h": 790509
+          },
+          "style_fingerprint": "text|shape=round_rect|fill=solid|F0F9FF|a=1.0|align=None"
+        },
+        {
+          "slot_id": "content.takeaway.body",
+          "role": "takeaway",
+          "kind": "text",
+          "bbox": {
+            "x": 914400,
+            "y": 1428522,
+            "w": 10840212,
+            "h": 571500
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Noto Sans JP|size=|bold=1|color=1D1D1F|align=LEFT (1)"
+        },
+        {
+          "slot_id": "content.card_1.header.panel",
+          "role": "tier.header.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 466344,
+            "y": 2393074,
+            "w": 3619195,
+            "h": 609905
+          },
+          "style_fingerprint": "text|shape=round_rect|fill=solid|34C759|a=1.0|linew=12700|la=1.0|align=None"
+        },
+        {
+          "slot_id": "content.card_2.header.panel",
+          "role": "tier.header.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 4289450,
+            "y": 2393074,
+            "w": 3619195,
+            "h": 609905
+          },
+          "style_fingerprint": "text|shape=round_rect|fill=solid|007AFF|a=1.0|linew=12700|la=1.0|align=None"
+        },
+        {
+          "slot_id": "content.card_3.header.panel",
+          "role": "tier.header.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 8112557,
+            "y": 2393074,
+            "w": 3619195,
+            "h": 609905
+          },
+          "style_fingerprint": "text|shape=round_rect|fill=solid|FF9500|a=1.0|linew=12700|la=1.0|align=None"
+        },
+        {
+          "slot_id": "content.card_1.header.icon_bg",
+          "role": "tier.header.icon_bg",
+          "kind": "text",
+          "bbox": {
+            "x": 1501445,
+            "y": 2545779,
+            "w": 304495,
+            "h": 304495
+          },
+          "style_fingerprint": "text|shape=ellipse|fill=solid|FFFFFF|a=0.2|linew=12700|linec=FFFFFF|la=0.0|align=None"
+        },
+        {
+          "slot_id": "content.card_2.header.icon_bg",
+          "role": "tier.header.icon_bg",
+          "kind": "text",
+          "bbox": {
+            "x": 5419649,
+            "y": 2545779,
+            "w": 304495,
+            "h": 304495
+          },
+          "style_fingerprint": "text|shape=ellipse|fill=solid|FFFFFF|a=0.2|linew=12700|linec=FFFFFF|la=0.0|align=None"
+        },
+        {
+          "slot_id": "content.card_3.header.icon_bg",
+          "role": "tier.header.icon_bg",
+          "kind": "text",
+          "bbox": {
+            "x": 9051646,
+            "y": 2545779,
+            "w": 304495,
+            "h": 304495
+          },
+          "style_fingerprint": "text|shape=ellipse|fill=solid|FFFFFF|a=0.2|linew=12700|linec=FFFFFF|la=0.0|align=None"
+        },
+        {
+          "slot_id": "content.card_1.header.title",
+          "role": "tier.header.title",
+          "kind": "text",
+          "bbox": {
+            "x": 1901952,
+            "y": 2554923,
+            "w": 1234440,
+            "h": 286207
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Noto Sans JP|size=190500|bold=1|color=FFFFFF|align=LEFT (1)"
+        },
+        {
+          "slot_id": "content.card_2.header.title",
+          "role": "tier.header.title",
+          "kind": "text",
+          "bbox": {
+            "x": 5820156,
+            "y": 2554923,
+            "w": 1028700,
+            "h": 286207
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Noto Sans JP|size=190500|bold=1|color=FFFFFF|align=LEFT (1)"
+        },
+        {
+          "slot_id": "content.card_3.header.title",
+          "role": "tier.header.title",
+          "kind": "text",
+          "bbox": {
+            "x": 9452153,
+            "y": 2554923,
+            "w": 1440180,
+            "h": 286207
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Noto Sans JP|size=190500|bold=1|color=FFFFFF|align=LEFT (1)"
+        },
+        {
+          "slot_id": "content.card_1.header.icon",
+          "role": "tier.header.icon",
+          "kind": "image",
+          "bbox": {
+            "x": 1544422,
+            "y": 2602472,
+            "w": 219456,
+            "h": 190195
+          },
+          "style_fingerprint": "image|sha=b55b1ba3b9324528"
+        },
+        {
+          "slot_id": "content.card_2.header.icon",
+          "role": "tier.header.icon",
+          "kind": "image",
+          "bbox": {
+            "x": 5462626,
+            "y": 2602472,
+            "w": 219456,
+            "h": 190195
+          },
+          "style_fingerprint": "image|sha=c8736114b15f441b"
+        },
+        {
+          "slot_id": "content.card_3.header.icon",
+          "role": "tier.header.icon",
+          "kind": "image",
+          "bbox": {
+            "x": 9109253,
+            "y": 2602472,
+            "w": 190195,
+            "h": 190195
+          },
+          "style_fingerprint": "image|sha=9e30d55c7532cf8a"
+        },
+        {
+          "slot_id": "content.card_3.panel",
+          "role": "tier.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 8110703,
+            "y": 2667523,
+            "w": 3638398,
+            "h": 3710145
+          },
+          "style_fingerprint": "text|shape=round_rect|fill=background|linew=19050|linec=E5E5E5|la=1.0|align=None"
+        },
+        {
+          "slot_id": "content.card_1.panel",
+          "role": "tier.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 2670105,
+            "w": 3638398,
+            "h": 3710145
+          },
+          "style_fingerprint": "text|shape=round_rect|fill=background|linew=19050|linec=E5E5E5|la=1.0|align=None"
+        },
+        {
+          "slot_id": "content.card_2.panel",
+          "role": "tier.panel",
+          "kind": "text",
+          "bbox": {
+            "x": 4284878,
+            "y": 2670105,
+            "w": 3638398,
+            "h": 3710145
+          },
+          "style_fingerprint": "text|shape=round_rect|fill=background|linew=19050|linec=E5E5E5|la=1.0|align=None"
+        },
+        {
+          "slot_id": "content.card_1.target_hw.label",
+          "role": "tier.section.label",
+          "kind": "text",
+          "bbox": {
+            "x": 657454,
+            "y": 3193174,
+            "w": 3353105,
+            "h": 191110
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Cambria|size=114300|bold=1|color=86868B|align=LEFT (1)"
+        },
+        {
+          "slot_id": "content.card_3.target_hw.label",
+          "role": "tier.section.label",
+          "kind": "text",
+          "bbox": {
+            "x": 8290865,
+            "y": 3193174,
+            "w": 3353105,
+            "h": 191110
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Cambria|size=114300|bold=1|color=86868B|align=LEFT (1)"
+        },
+        {
+          "slot_id": "content.card_2.target_hw.label",
+          "role": "tier.section.label",
+          "kind": "text",
+          "bbox": {
+            "x": 4477817,
+            "y": 3198158,
+            "w": 3353105,
+            "h": 191110
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Cambria|size=114300|bold=1|color=86868B|align=LEFT (1)"
+        },
+        {
+          "slot_id": "content.card_1.target_hw.body",
+          "role": "tier.section.body",
+          "kind": "text",
+          "bbox": {
+            "x": 657454,
+            "y": 3415499,
+            "w": 3238805,
+            "h": 335343
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|FFFFFF|a=0.0|font=Cambria|size=139700|bold=0|color=1D1D1F|align=CENTER (2)"
+        },
+        {
+          "slot_id": "content.card_3.target_hw.panel",
+          "role": "tier.section.panel",
+          "kind": "image",
+          "bbox": {
+            "x": 8295741,
+            "y": 3416831,
+            "w": 3238805,
+            "h": 352044
+          },
+          "style_fingerprint": "image|sha=fc95bda5b377c2e3"
+        },
+        {
+          "slot_id": "content.card_2.target_hw.body",
+          "role": "tier.section.body",
+          "kind": "text",
+          "bbox": {
+            "x": 4479646,
+            "y": 3417201,
+            "w": 3238805,
+            "h": 351673
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|FFFFFF|a=0.0|font=Cambria|size=139700|bold=0|color=1D1D1F|align=CENTER (2)"
+        },
+        {
+          "slot_id": "content.card_1.target_hw.panel",
+          "role": "tier.section.panel",
+          "kind": "image",
+          "bbox": {
+            "x": 657454,
+            "y": 3417202,
+            "w": 3238805,
+            "h": 352044
+          },
+          "style_fingerprint": "image|sha=fc95bda5b377c2e3"
+        },
+        {
+          "slot_id": "content.card_2.target_hw.panel",
+          "role": "tier.section.panel",
+          "kind": "image",
+          "bbox": {
+            "x": 4479645,
+            "y": 3417202,
+            "w": 3238805,
+            "h": 352044
+          },
+          "style_fingerprint": "image|sha=fc95bda5b377c2e3"
+        },
+        {
+          "slot_id": "content.card_3.target_hw.body",
+          "role": "tier.section.body",
+          "kind": "text",
+          "bbox": {
+            "x": 8302752,
+            "y": 3417202,
+            "w": 3238805,
+            "h": 350076
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|FFFFFF|a=0.0|font=Noto Sans JP|size=139700|bold=0|color=1D1D1F|align=CENTER (2)"
+        },
+        {
+          "slot_id": "content.card_3.llm_runtime.label",
+          "role": "tier.section.label",
+          "kind": "text",
+          "bbox": {
+            "x": 8318298,
+            "y": 3870642,
+            "w": 3353105,
+            "h": 110642
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Cambria|size=114300|bold=1|color=86868B|align=LEFT (1)"
+        },
+        {
+          "slot_id": "content.card_2.llm_runtime.label",
+          "role": "tier.section.label",
+          "kind": "text",
+          "bbox": {
+            "x": 4493363,
+            "y": 3887665,
+            "w": 3353105,
+            "h": 110642
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Cambria|size=114300|bold=1|color=86868B|align=LEFT (1)"
+        },
+        {
+          "slot_id": "content.card_1.llm_runtime.label",
+          "role": "tier.section.label",
+          "kind": "text",
+          "bbox": {
+            "x": 662941,
+            "y": 3890380,
+            "w": 3353105,
+            "h": 110642
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Cambria|size=114300|bold=1|color=86868B|align=LEFT (1)"
+        },
+        {
+          "slot_id": "content.card_3.llm_runtime.panel",
+          "role": "tier.section.panel",
+          "kind": "image",
+          "bbox": {
+            "x": 8311895,
+            "y": 4033339,
+            "w": 3238805,
+            "h": 352044
+          },
+          "style_fingerprint": "image|sha=fc95bda5b377c2e3"
+        },
+        {
+          "slot_id": "content.card_3.llm_runtime.body",
+          "role": "tier.section.body",
+          "kind": "text",
+          "bbox": {
+            "x": 8302752,
+            "y": 4047632,
+            "w": 3238805,
+            "h": 333050
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|FFFFFF|a=0.0|font=Cambria|size=139700|bold=0|color=1D1D1F|align=CENTER (2)"
+        },
+        {
+          "slot_id": "content.card_2.llm_runtime.body",
+          "role": "tier.section.body",
+          "kind": "text",
+          "bbox": {
+            "x": 4476597,
+            "y": 4049600,
+            "w": 3238805,
+            "h": 352044
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|FFFFFF|a=0.0|font=Cambria|size=139700|bold=0|color=1D1D1F|align=CENTER (2)"
+        },
+        {
+          "slot_id": "content.card_2.llm_runtime.panel",
+          "role": "tier.section.panel",
+          "kind": "image",
+          "bbox": {
+            "x": 4486960,
+            "y": 4050362,
+            "w": 3238805,
+            "h": 352044
+          },
+          "style_fingerprint": "image|sha=fc95bda5b377c2e3"
+        },
+        {
+          "slot_id": "content.card_1.llm_runtime.panel",
+          "role": "tier.section.panel",
+          "kind": "image",
+          "bbox": {
+            "x": 656538,
+            "y": 4053077,
+            "w": 3238805,
+            "h": 352044
+          },
+          "style_fingerprint": "image|sha=fc95bda5b377c2e3"
+        },
+        {
+          "slot_id": "content.card_1.llm_runtime.body",
+          "role": "tier.section.body",
+          "kind": "text",
+          "bbox": {
+            "x": 657454,
+            "y": 4058321,
+            "w": 3238805,
+            "h": 337241
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|FFFFFF|a=0.0|font=Cambria|size=139700|bold=0|color=1D1D1F|align=CENTER (2)"
+        },
+        {
+          "slot_id": "content.card_3.strategy.label",
+          "role": "tier.section.label",
+          "kind": "text",
+          "bbox": {
+            "x": 8302752,
+            "y": 4461185,
+            "w": 3353105,
+            "h": 191110
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Cambria|size=114300|bold=1|color=86868B|align=LEFT (1)"
+        },
+        {
+          "slot_id": "content.card_2.asr_tts.label",
+          "role": "tier.section.label",
+          "kind": "text",
+          "bbox": {
+            "x": 4493363,
+            "y": 4517553,
+            "w": 3353105,
+            "h": 127418
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Cambria|size=114300|bold=1|color=86868B|align=LEFT (1)"
+        },
+        {
+          "slot_id": "content.card_1.asr_tts.label",
+          "role": "tier.section.label",
+          "kind": "text",
+          "bbox": {
+            "x": 662941,
+            "y": 4520268,
+            "w": 3353105,
+            "h": 127418
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Cambria|size=114300|bold=1|color=86868B|align=LEFT (1)"
+        },
+        {
+          "slot_id": "content.card_3.strategy.body",
+          "role": "tier.section.body",
+          "kind": "text",
+          "bbox": {
+            "x": 8312810,
+            "y": 4656671,
+            "w": 3238805,
+            "h": 519728
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|FFFFFF|a=0.0|font=Noto Sans JP|size=139700|bold=0|color=1D1D1F|align=CENTER (2)"
+        },
+        {
+          "slot_id": "content.card_3.strategy.panel",
+          "role": "tier.section.panel",
+          "kind": "image",
+          "bbox": {
+            "x": 8312810,
+            "y": 4658530,
+            "w": 3238805,
+            "h": 517869
+          },
+          "style_fingerprint": "image|sha=fc95bda5b377c2e3"
+        },
+        {
+          "slot_id": "content.card_2.asr_tts.panel",
+          "role": "tier.section.panel",
+          "kind": "image",
+          "bbox": {
+            "x": 4486960,
+            "y": 4686237,
+            "w": 3238805,
+            "h": 352044
+          },
+          "style_fingerprint": "image|sha=fc95bda5b377c2e3"
+        },
+        {
+          "slot_id": "content.card_1.asr_tts.panel",
+          "role": "tier.section.panel",
+          "kind": "image",
+          "bbox": {
+            "x": 656538,
+            "y": 4688952,
+            "w": 3238805,
+            "h": 352044
+          },
+          "style_fingerprint": "image|sha=fc95bda5b377c2e3"
+        },
+        {
+          "slot_id": "content.card_1.asr_tts.body",
+          "role": "tier.section.body",
+          "kind": "text",
+          "bbox": {
+            "x": 662941,
+            "y": 4688952,
+            "w": 3238805,
+            "h": 358876
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|FFFFFF|a=0.0|font=Cambria|size=139700|bold=0|color=1D1D1F|align=CENTER (2)"
+        },
+        {
+          "slot_id": "content.card_2.asr_tts.body",
+          "role": "tier.section.body",
+          "kind": "text",
+          "bbox": {
+            "x": 4473316,
+            "y": 4688952,
+            "w": 3238805,
+            "h": 352044
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|FFFFFF|a=0.0|font=Cambria|size=139700|bold=0|color=1D1D1F|align=CENTER (2)"
+        },
+        {
+          "slot_id": "content.card_2.rag_vlm.label",
+          "role": "tier.section.label",
+          "kind": "text",
+          "bbox": {
+            "x": 4487876,
+            "y": 5111864,
+            "w": 3353105,
+            "h": 191110
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Cambria|size=114300|bold=1|color=86868B|align=LEFT (1)"
+        },
+        {
+          "slot_id": "content.card_1.rag_embedding.label",
+          "role": "tier.section.label",
+          "kind": "text",
+          "bbox": {
+            "x": 657454,
+            "y": 5114579,
+            "w": 3353105,
+            "h": 191110
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Cambria|size=114300|bold=1|color=86868B|align=LEFT (1)"
+        },
+        {
+          "slot_id": "content.card_3.compromise.label",
+          "role": "tier.section.label",
+          "kind": "text",
+          "bbox": {
+            "x": 8293609,
+            "y": 5264102,
+            "w": 3353105,
+            "h": 191110
+          },
+          "style_fingerprint": "text|shape=|fill=background|font=Cambria|size=114300|bold=1|color=86868B|align=LEFT (1)"
+        },
+        {
+          "slot_id": "content.card_2.rag_vlm.panel",
+          "role": "tier.section.panel",
+          "kind": "image",
+          "bbox": {
+            "x": 4477817,
+            "y": 5324774,
+            "w": 3238805,
+            "h": 352044
+          },
+          "style_fingerprint": "image|sha=fc95bda5b377c2e3"
+        },
+        {
+          "slot_id": "content.card_1.rag_embedding.body",
+          "role": "tier.section.body",
+          "kind": "text",
+          "bbox": {
+            "x": 656538,
+            "y": 5324827,
+            "w": 3238805,
+            "h": 344251
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|FFFFFF|a=0.0|font=Cambria|size=139700|bold=0|color=1D1D1F|align=CENTER (2)"
+        },
+        {
+          "slot_id": "content.card_1.rag_embedding.panel",
+          "role": "tier.section.panel",
+          "kind": "image",
+          "bbox": {
+            "x": 647395,
+            "y": 5327489,
+            "w": 3238805,
+            "h": 352044
+          },
+          "style_fingerprint": "image|sha=fc95bda5b377c2e3"
+        },
+        {
+          "slot_id": "content.card_2.rag_vlm.body",
+          "role": "tier.section.body",
+          "kind": "text",
+          "bbox": {
+            "x": 4473316,
+            "y": 5334974,
+            "w": 3238805,
+            "h": 352044
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|FFFFFF|a=0.0|font=Cambria|size=139700|bold=0|color=1D1D1F|align=CENTER (2)"
+        },
+        {
+          "slot_id": "content.card_3.compromise.panel",
+          "role": "tier.section.panel",
+          "kind": "image",
+          "bbox": {
+            "x": 8302752,
+            "y": 5459587,
+            "w": 3238805,
+            "h": 517869
+          },
+          "style_fingerprint": "image|sha=fc95bda5b377c2e3"
+        },
+        {
+          "slot_id": "content.card_3.compromise.body",
+          "role": "tier.section.body",
+          "kind": "text",
+          "bbox": {
+            "x": 8302752,
+            "y": 5482698,
+            "w": 3238805,
+            "h": 492995
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|FFFFFF|a=0.0|font=Cambria|size=139700|bold=0|color=1D1D1F|align=CENTER (2)"
+        },
+        {
+          "slot_id": "content.card_1.caption.panel",
+          "role": "tier.caption.panel",
+          "kind": "image",
+          "bbox": {
+            "x": 2494527,
+            "y": 5933772,
+            "w": 1333195,
+            "h": 247802
+          },
+          "style_fingerprint": "image|sha=4f961a892ab1a6d8"
+        },
+        {
+          "slot_id": "content.card_1.caption.label",
+          "role": "tier.caption",
+          "kind": "text",
+          "bbox": {
+            "x": 2713983,
+            "y": 5933772,
+            "w": 1114654,
+            "h": 247802
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|FFFFFF|a=0.0|font=Noto Sans JP|size=114300|bold=0|color=666666|align=CENTER (2)"
+        },
+        {
+          "slot_id": "content.card_2.caption.panel",
+          "role": "tier.caption.panel",
+          "kind": "image",
+          "bbox": {
+            "x": 6270040,
+            "y": 5933772,
+            "w": 1447495,
+            "h": 247802
+          },
+          "style_fingerprint": "image|sha=e29bfdd065051c74"
+        },
+        {
+          "slot_id": "content.card_2.caption.label",
+          "role": "tier.caption",
+          "kind": "text",
+          "bbox": {
+            "x": 6489496,
+            "y": 5933772,
+            "w": 1228954,
+            "h": 247802
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|FFFFFF|a=0.0|font=Noto Sans JP|size=114300|bold=0|color=666666|align=CENTER (2)"
+        },
+        {
+          "slot_id": "content.card_1.caption.icon",
+          "role": "tier.caption.icon",
+          "kind": "image",
+          "bbox": {
+            "x": 2570422,
+            "y": 6000523,
+            "w": 105156,
+            "h": 114300
+          },
+          "style_fingerprint": "image|sha=fdc19d3e27942c06"
+        },
+        {
+          "slot_id": "content.card_2.caption.icon",
+          "role": "tier.caption.icon",
+          "kind": "image",
+          "bbox": {
+            "x": 6346849,
+            "y": 6000523,
+            "w": 105156,
+            "h": 114300
+          },
+          "style_fingerprint": "image|sha=fdc19d3e27942c06"
+        },
+        {
+          "slot_id": "content.card_3.caption.panel",
+          "role": "tier.caption.panel",
+          "kind": "image",
+          "bbox": {
+            "x": 10331805,
+            "y": 6077577,
+            "w": 1218895,
+            "h": 247802
+          },
+          "style_fingerprint": "image|sha=1b80add3a3c23388"
+        },
+        {
+          "slot_id": "content.card_3.caption.label",
+          "role": "tier.caption",
+          "kind": "text",
+          "bbox": {
+            "x": 10551261,
+            "y": 6077577,
+            "w": 1000354,
+            "h": 247802
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|FFFFFF|a=0.0|font=Noto Sans JP|size=114300|bold=0|color=666666|align=CENTER (2)"
+        },
+        {
+          "slot_id": "content.card_3.caption.icon",
+          "role": "tier.caption.icon",
+          "kind": "image",
+          "bbox": {
+            "x": 10407700,
+            "y": 6148900,
+            "w": 105156,
+            "h": 114300
+          },
+          "style_fingerprint": "image|sha=fdc19d3e27942c06"
+        },
+        {
+          "slot_id": "meta.footer.page_info",
+          "role": "footer",
+          "kind": "text",
+          "bbox": {
+            "x": 0,
+            "y": 6473375,
+            "w": 12192610,
+            "h": 381305
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|FFFFFF|a=0.0|font=Cambria|size=114300|bold=0|color=86868B|align=CENTER (2)"
+        },
+        {
+          "slot_id": "meta.footer.band",
+          "role": "footer",
+          "kind": "text",
+          "bbox": {
+            "x": 0,
+            "y": 6476695,
+            "w": 12192609,
+            "h": 381305
+          },
+          "style_fingerprint": "text|shape=rect|fill=solid|F6F5F8|a=1.0|linew=15875|linec=E5E5E5|la=1.0|align=CENTER (2)"
+        }
+      ]
+    }
+  ]
+}

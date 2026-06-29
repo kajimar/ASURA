@@ -1,0 +1,839 @@
+{
+  "schema_version": "slot_templates_spec.v1",
+  "document": {
+    "document_id": "D1-1",
+    "page_count": 1,
+    "page_size_emu": {
+      "w": 12192000,
+      "h": 6858000
+    }
+  },
+  "pages": [
+    {
+      "page": 1,
+      "template_class": "flow.steps",
+      "sub_class": "steps4_cards3",
+      "slots": [
+        {
+          "slot_id": "meta.background",
+          "role": "background",
+          "kind": "shape",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "w": 12192000,
+            "h": 6858000
+          },
+          "style_fingerprint": "sha1:1e3952f9837c7faa",
+          "optional": false
+        },
+        {
+          "slot_id": "meta.footer.bar",
+          "role": "footer",
+          "kind": "image",
+          "bbox": {
+            "x": 0,
+            "y": 6476695,
+            "w": 12191695,
+            "h": 381305
+          },
+          "style_fingerprint": "sha1:98345e6bf4ddb0e8",
+          "optional": false
+        },
+        {
+          "slot_id": "meta.footer.page_info",
+          "role": "footer",
+          "kind": "text",
+          "bbox": {
+            "x": 0,
+            "y": 6476695,
+            "w": 12192610,
+            "h": 381305
+          },
+          "style_fingerprint": "sha1:d93858d38f033259",
+          "optional": false
+        },
+        {
+          "slot_id": "meta.header.logo",
+          "role": "header",
+          "kind": "image",
+          "bbox": {
+            "x": 457200,
+            "y": 243230,
+            "w": 267005,
+            "h": 267005
+          },
+          "style_fingerprint": "sha1:98345e6bf4ddb0e8",
+          "optional": true
+        },
+        {
+          "slot_id": "meta.title",
+          "role": "title",
+          "kind": "text",
+          "bbox": {
+            "x": 875995,
+            "y": 0,
+            "w": 4004158,
+            "h": 752551
+          },
+          "style_fingerprint": "sha1:4c5e507857ea3465",
+          "optional": false
+        },
+        {
+          "slot_id": "meta.subtitle",
+          "role": "subtitle",
+          "kind": "text",
+          "bbox": {
+            "x": 9756648,
+            "y": 261518,
+            "w": 2139696,
+            "h": 228600
+          },
+          "style_fingerprint": "sha1:420b2b08e29b3a95",
+          "optional": true
+        },
+        {
+          "slot_id": "content.hero.image",
+          "role": "hero",
+          "kind": "image",
+          "bbox": {
+            "x": 457200,
+            "y": 990295,
+            "w": 11277295,
+            "h": 838505
+          },
+          "style_fingerprint": "sha1:98345e6bf4ddb0e8",
+          "optional": false
+        },
+        {
+          "slot_id": "content.takeaway",
+          "role": "takeaway",
+          "kind": "text",
+          "bbox": {
+            "x": 743407,
+            "y": 1143000,
+            "w": 10840212,
+            "h": 534010
+          },
+          "style_fingerprint": "sha1:1af4110d610b015a",
+          "optional": false
+        },
+        {
+          "slot_id": "reference.item_1",
+          "role": "reference",
+          "kind": "text",
+          "bbox": {
+            "x": 1837944,
+            "y": 3458261,
+            "w": 247802,
+            "h": 162763
+          },
+          "style_fingerprint": "sha1:9de7319416dc2fb8",
+          "optional": true
+        },
+        {
+          "slot_id": "reference.item_1.badge_icon",
+          "role": "reference",
+          "kind": "image",
+          "bbox": {
+            "x": 1837944,
+            "y": 3458261,
+            "w": 247802,
+            "h": 161849
+          },
+          "style_fingerprint": "sha1:98345e6bf4ddb0e8",
+          "optional": true
+        },
+        {
+          "slot_id": "decor.flow.connector_1",
+          "role": "decor",
+          "kind": "image",
+          "bbox": {
+            "x": 1827886,
+            "y": 2447849,
+            "w": 228600,
+            "h": 228600
+          },
+          "style_fingerprint": "sha1:98345e6bf4ddb0e8",
+          "optional": true
+        },
+        {
+          "slot_id": "decor.flow.connector_2",
+          "role": "decor",
+          "kind": "image",
+          "bbox": {
+            "x": 3274466,
+            "y": 2681021,
+            "w": 105156,
+            "h": 171907
+          },
+          "style_fingerprint": "sha1:98345e6bf4ddb0e8",
+          "optional": true
+        },
+        {
+          "slot_id": "decor.flow.connector_3",
+          "role": "decor",
+          "kind": "image",
+          "bbox": {
+            "x": 6043270,
+            "y": 2681021,
+            "w": 105156,
+            "h": 171907
+          },
+          "style_fingerprint": "sha1:98345e6bf4ddb0e8",
+          "optional": true
+        },
+        {
+          "slot_id": "decor.flow.connector_4",
+          "role": "decor",
+          "kind": "image",
+          "bbox": {
+            "x": 7366406,
+            "y": 2515514,
+            "w": 228600,
+            "h": 228600
+          },
+          "style_fingerprint": "sha1:98345e6bf4ddb0e8",
+          "optional": true
+        },
+        {
+          "slot_id": "decor.flow.connector_5",
+          "role": "decor",
+          "kind": "image",
+          "bbox": {
+            "x": 8812987,
+            "y": 2681021,
+            "w": 105156,
+            "h": 171907
+          },
+          "style_fingerprint": "sha1:98345e6bf4ddb0e8",
+          "optional": true
+        },
+        {
+          "slot_id": "decor.flow.connector_6",
+          "role": "decor",
+          "kind": "image",
+          "bbox": {
+            "x": 10136124,
+            "y": 2515514,
+            "w": 228600,
+            "h": 228600
+          },
+          "style_fingerprint": "sha1:98345e6bf4ddb0e8",
+          "optional": true
+        },
+        {
+          "slot_id": "flow.step_1.label",
+          "role": "flow_step",
+          "kind": "text",
+          "bbox": {
+            "x": 1474927,
+            "y": 2905049,
+            "w": 943661,
+            "h": 219456
+          },
+          "style_fingerprint": "sha1:22021f67f02e94ef",
+          "optional": false
+        },
+        {
+          "slot_id": "flow.step_1.body",
+          "role": "flow_step",
+          "kind": "text",
+          "bbox": {
+            "x": 1370686,
+            "y": 3195828,
+            "w": 1230782,
+            "h": 409651
+          },
+          "style_fingerprint": "sha1:11de2d9026db5eba",
+          "optional": false
+        },
+        {
+          "slot_id": "flow.step_2.label",
+          "role": "flow_step",
+          "kind": "text",
+          "bbox": {
+            "x": 4387291,
+            "y": 2972714,
+            "w": 657454,
+            "h": 219456
+          },
+          "style_fingerprint": "sha1:22021f67f02e94ef",
+          "optional": false
+        },
+        {
+          "slot_id": "flow.step_2.body",
+          "role": "flow_step",
+          "kind": "text",
+          "bbox": {
+            "x": 4155948,
+            "y": 3263494,
+            "w": 1114654,
+            "h": 277063
+          },
+          "style_fingerprint": "sha1:23bba0b4b26bd132",
+          "optional": false
+        },
+        {
+          "slot_id": "flow.step_2.icon",
+          "role": "flow_step",
+          "kind": "image",
+          "bbox": {
+            "x": 4582973,
+            "y": 2515514,
+            "w": 256946,
+            "h": 228600
+          },
+          "style_fingerprint": "sha1:98345e6bf4ddb0e8",
+          "optional": true
+        },
+        {
+          "slot_id": "flow.step_3.label",
+          "role": "flow_step",
+          "kind": "text",
+          "bbox": {
+            "x": 7013448,
+            "y": 2972714,
+            "w": 943661,
+            "h": 219456
+          },
+          "style_fingerprint": "sha1:22021f67f02e94ef",
+          "optional": false
+        },
+        {
+          "slot_id": "flow.step_3.body",
+          "role": "flow_step",
+          "kind": "text",
+          "bbox": {
+            "x": 6876288,
+            "y": 3263494,
+            "w": 1209751,
+            "h": 277063
+          },
+          "style_fingerprint": "sha1:23bba0b4b26bd132",
+          "optional": false
+        },
+        {
+          "slot_id": "flow.step_4.label",
+          "role": "flow_step",
+          "kind": "text",
+          "bbox": {
+            "x": 9784994,
+            "y": 2972714,
+            "w": 933602,
+            "h": 219456
+          },
+          "style_fingerprint": "sha1:22021f67f02e94ef",
+          "optional": false
+        },
+        {
+          "slot_id": "flow.step_4.body",
+          "role": "flow_step",
+          "kind": "text",
+          "bbox": {
+            "x": 9702698,
+            "y": 3263494,
+            "w": 1095451,
+            "h": 277063
+          },
+          "style_fingerprint": "sha1:23bba0b4b26bd132",
+          "optional": false
+        },
+        {
+          "slot_id": "flow.steps.panel",
+          "role": "panel",
+          "kind": "inferred",
+          "bbox": {
+            "x": 1120686,
+            "y": 2197849,
+            "w": 9927463,
+            "h": 1657630
+          },
+          "style_fingerprint": "sha1:24e948b2e0cf4324",
+          "optional": true
+        },
+        {
+          "slot_id": "content.card_1.title",
+          "role": "card_title",
+          "kind": "text",
+          "bbox": {
+            "x": 1057046,
+            "y": 4347058,
+            "w": 1317650,
+            "h": 228600
+          },
+          "style_fingerprint": "sha1:1591daa3d50eee7f",
+          "optional": false
+        },
+        {
+          "slot_id": "content.card_1.icon",
+          "role": "card_icon",
+          "kind": "image",
+          "bbox": {
+            "x": 752551,
+            "y": 4394606,
+            "w": 114300,
+            "h": 133502
+          },
+          "style_fingerprint": "sha1:98345e6bf4ddb0e8",
+          "optional": true
+        },
+        {
+          "slot_id": "content.card_1.body_1",
+          "role": "card_body",
+          "kind": "text",
+          "bbox": {
+            "x": 752551,
+            "y": 4873752,
+            "w": 3219602,
+            "h": 562356
+          },
+          "style_fingerprint": "sha1:91cac7eb33f06dac",
+          "optional": false
+        },
+        {
+          "slot_id": "content.card_1.bullet_icon_1",
+          "role": "card_bullet_icon",
+          "kind": "image",
+          "bbox": {
+            "x": 591468,
+            "y": 4892604,
+            "w": 95098,
+            "h": 95098
+          },
+          "style_fingerprint": "sha1:98345e6bf4ddb0e8",
+          "optional": true
+        },
+        {
+          "slot_id": "content.card_1.body_2",
+          "role": "card_body",
+          "kind": "text",
+          "bbox": {
+            "x": 752551,
+            "y": 5445119,
+            "w": 3219602,
+            "h": 562356
+          },
+          "style_fingerprint": "sha1:91cac7eb33f06dac",
+          "optional": true
+        },
+        {
+          "slot_id": "content.card_1.bullet_icon_2",
+          "role": "card_bullet_icon",
+          "kind": "image",
+          "bbox": {
+            "x": 591468,
+            "y": 5463971,
+            "w": 95098,
+            "h": 95098
+          },
+          "style_fingerprint": "sha1:98345e6bf4ddb0e8",
+          "optional": true
+        },
+        {
+          "slot_id": "content.card_1.panel",
+          "role": "panel",
+          "kind": "inferred",
+          "bbox": {
+            "x": 391468,
+            "y": 4147058,
+            "w": 3780685,
+            "h": 2060417
+          },
+          "style_fingerprint": "sha1:71a2704694673dcc",
+          "optional": true
+        },
+        {
+          "slot_id": "content.card_2.title",
+          "role": "card_title",
+          "kind": "text",
+          "bbox": {
+            "x": 4880153,
+            "y": 4347058,
+            "w": 1591056,
+            "h": 228600
+          },
+          "style_fingerprint": "sha1:1591daa3d50eee7f",
+          "optional": false
+        },
+        {
+          "slot_id": "content.card_2.icon",
+          "role": "card_icon",
+          "kind": "image",
+          "bbox": {
+            "x": 4546397,
+            "y": 4394606,
+            "w": 171907,
+            "h": 133502
+          },
+          "style_fingerprint": "sha1:98345e6bf4ddb0e8",
+          "optional": true
+        },
+        {
+          "slot_id": "content.card_2.body_1",
+          "role": "card_body",
+          "kind": "text",
+          "bbox": {
+            "x": 4574743,
+            "y": 4873752,
+            "w": 3219602,
+            "h": 562356
+          },
+          "style_fingerprint": "sha1:91cac7eb33f06dac",
+          "optional": false
+        },
+        {
+          "slot_id": "content.card_2.bullet_icon_1",
+          "role": "card_bullet_icon",
+          "kind": "image",
+          "bbox": {
+            "x": 4413660,
+            "y": 4892604,
+            "w": 95098,
+            "h": 95098
+          },
+          "style_fingerprint": "sha1:98345e6bf4ddb0e8",
+          "optional": true
+        },
+        {
+          "slot_id": "content.card_2.body_2",
+          "role": "card_body",
+          "kind": "text",
+          "bbox": {
+            "x": 4574743,
+            "y": 5445119,
+            "w": 3219602,
+            "h": 562356
+          },
+          "style_fingerprint": "sha1:91cac7eb33f06dac",
+          "optional": true
+        },
+        {
+          "slot_id": "content.card_2.bullet_icon_2",
+          "role": "card_bullet_icon",
+          "kind": "image",
+          "bbox": {
+            "x": 4413660,
+            "y": 5463971,
+            "w": 95098,
+            "h": 95098
+          },
+          "style_fingerprint": "sha1:98345e6bf4ddb0e8",
+          "optional": true
+        },
+        {
+          "slot_id": "content.card_2.panel",
+          "role": "panel",
+          "kind": "inferred",
+          "bbox": {
+            "x": 4213660,
+            "y": 4147058,
+            "w": 3780685,
+            "h": 2060417
+          },
+          "style_fingerprint": "sha1:f14a3aaf3539a8a2",
+          "optional": true
+        },
+        {
+          "slot_id": "content.card_3.title",
+          "role": "card_title",
+          "kind": "text",
+          "bbox": {
+            "x": 8702345,
+            "y": 4347058,
+            "w": 1686154,
+            "h": 228600
+          },
+          "style_fingerprint": "sha1:1591daa3d50eee7f",
+          "optional": false
+        },
+        {
+          "slot_id": "content.card_3.icon",
+          "role": "card_icon",
+          "kind": "image",
+          "bbox": {
+            "x": 8388706,
+            "y": 4394606,
+            "w": 133502,
+            "h": 133502
+          },
+          "style_fingerprint": "sha1:98345e6bf4ddb0e8",
+          "optional": true
+        },
+        {
+          "slot_id": "content.card_3.body_1",
+          "role": "card_body",
+          "kind": "text",
+          "bbox": {
+            "x": 8397850,
+            "y": 4873752,
+            "w": 3219602,
+            "h": 562356
+          },
+          "style_fingerprint": "sha1:91cac7eb33f06dac",
+          "optional": false
+        },
+        {
+          "slot_id": "content.card_3.bullet_icon_1",
+          "role": "card_bullet_icon",
+          "kind": "image",
+          "bbox": {
+            "x": 8236766,
+            "y": 4892604,
+            "w": 95098,
+            "h": 95098
+          },
+          "style_fingerprint": "sha1:98345e6bf4ddb0e8",
+          "optional": true
+        },
+        {
+          "slot_id": "content.card_3.body_2",
+          "role": "card_body",
+          "kind": "text",
+          "bbox": {
+            "x": 8397850,
+            "y": 5445119,
+            "w": 3219602,
+            "h": 562356
+          },
+          "style_fingerprint": "sha1:91cac7eb33f06dac",
+          "optional": true
+        },
+        {
+          "slot_id": "content.card_3.bullet_icon_2",
+          "role": "card_bullet_icon",
+          "kind": "image",
+          "bbox": {
+            "x": 8236766,
+            "y": 5463971,
+            "w": 95098,
+            "h": 95098
+          },
+          "style_fingerprint": "sha1:98345e6bf4ddb0e8",
+          "optional": true
+        },
+        {
+          "slot_id": "content.card_3.panel",
+          "role": "panel",
+          "kind": "inferred",
+          "bbox": {
+            "x": 8036766,
+            "y": 4147058,
+            "w": 3780686,
+            "h": 2060417
+          },
+          "style_fingerprint": "sha1:0ac9d38fbf733e89",
+          "optional": true
+        },
+        {
+          "slot_id": "decor.empty_s001_sh002",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 0,
+            "y": 752551,
+            "w": 12191695,
+            "h": 9144
+          },
+          "style_fingerprint": "sha1:72a24cd099c4590f",
+          "optional": true
+        },
+        {
+          "slot_id": "decor.empty_s001_sh009",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 2095805,
+            "w": 11277295,
+            "h": 1714500
+          },
+          "style_fingerprint": "sha1:2ec333c2db1e415c",
+          "optional": true
+        },
+        {
+          "slot_id": "decor.empty_s001_sh013",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 457200,
+            "y": 4109314,
+            "w": 3638398,
+            "h": 1977847
+          },
+          "style_fingerprint": "sha1:2ec333c2db1e415c",
+          "optional": true
+        },
+        {
+          "slot_id": "decor.empty_s001_sh014",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 657454,
+            "y": 4689958,
+            "w": 3238805,
+            "h": 9144
+          },
+          "style_fingerprint": "sha1:2bc03275f39aeff4",
+          "optional": true
+        },
+        {
+          "slot_id": "decor.empty_s001_sh015",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 657454,
+            "y": 4308653,
+            "w": 304495,
+            "h": 304495
+          },
+          "style_fingerprint": "sha1:e2bb06d38957b6f1",
+          "optional": true
+        },
+        {
+          "slot_id": "decor.empty_s001_sh022",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 4280306,
+            "y": 4109314,
+            "w": 3638398,
+            "h": 1977847
+          },
+          "style_fingerprint": "sha1:2ec333c2db1e415c",
+          "optional": true
+        },
+        {
+          "slot_id": "decor.empty_s001_sh023",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 4479646,
+            "y": 4689958,
+            "w": 3238805,
+            "h": 9144
+          },
+          "style_fingerprint": "sha1:2bc03275f39aeff4",
+          "optional": true
+        },
+        {
+          "slot_id": "decor.empty_s001_sh024",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 4479646,
+            "y": 4308653,
+            "w": 304495,
+            "h": 304495
+          },
+          "style_fingerprint": "sha1:c76e228be3ab3762",
+          "optional": true
+        },
+        {
+          "slot_id": "decor.empty_s001_sh031",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 8102498,
+            "y": 4109314,
+            "w": 3638398,
+            "h": 1977847
+          },
+          "style_fingerprint": "sha1:2ec333c2db1e415c",
+          "optional": true
+        },
+        {
+          "slot_id": "decor.empty_s001_sh032",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 8302752,
+            "y": 4689958,
+            "w": 3238805,
+            "h": 9144
+          },
+          "style_fingerprint": "sha1:2bc03275f39aeff4",
+          "optional": true
+        },
+        {
+          "slot_id": "decor.empty_s001_sh033",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 8302752,
+            "y": 4308653,
+            "w": 304495,
+            "h": 304495
+          },
+          "style_fingerprint": "sha1:cbc4bcb46a0bcabf",
+          "optional": true
+        },
+        {
+          "slot_id": "decor.empty_s001_sh040",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 1675181,
+            "y": 2295144,
+            "w": 533095,
+            "h": 533095
+          },
+          "style_fingerprint": "sha1:c00e59658eeeabb9",
+          "optional": true
+        },
+        {
+          "slot_id": "decor.empty_s001_sh046",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 4444898,
+            "y": 2363724,
+            "w": 533095,
+            "h": 533095
+          },
+          "style_fingerprint": "sha1:c00e59658eeeabb9",
+          "optional": true
+        },
+        {
+          "slot_id": "decor.empty_s001_sh050",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 7213702,
+            "y": 2363724,
+            "w": 533095,
+            "h": 533095
+          },
+          "style_fingerprint": "sha1:c00e59658eeeabb9",
+          "optional": true
+        },
+        {
+          "slot_id": "decor.empty_s001_sh054",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 9983419,
+            "y": 2363724,
+            "w": 533095,
+            "h": 533095
+          },
+          "style_fingerprint": "sha1:dcdbc3acaf1d085e",
+          "optional": true
+        },
+        {
+          "slot_id": "decor.empty_s001_sh058",
+          "role": "decor",
+          "kind": "text",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "w": 12192001,
+            "h": 54865
+          },
+          "style_fingerprint": "sha1:b4a142db8986591b",
+          "optional": true
+        }
+      ]
+    }
+  ]
+}

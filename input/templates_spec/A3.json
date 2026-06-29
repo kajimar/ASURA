@@ -1,0 +1,622 @@
+{
+    "schema_version": "slot_templates_spec_v1",
+    "source_extraction_schema_version": "0.1",
+    "document": {
+      "document_id": "A3",
+      "page_count": 1,
+      "page": {
+        "w_emu": 12192000,
+        "h_emu": 6858000
+      }
+    },
+    "page_specs": [
+      {
+        "page": 1,
+        "template_class": "content.alert",
+        "sub_class": "alert_conclusion_plus_dual_columns",
+        "slots": [
+          {
+            "slot_id": "slide.background",
+            "role": "background",
+            "kind": "shape",
+            "bbox": {
+              "x": 0,
+              "y": 0,
+              "w": 12192000,
+              "h": 6858000
+            },
+            "style_fingerprint": "shape|fill=background|shape=rect",
+            "optional": false
+          },
+          {
+            "slot_id": "decor.header.top_bar",
+            "role": "decor",
+            "kind": "shape",
+            "bbox": {
+              "x": 0,
+              "y": 0,
+              "w": 12192001,
+              "h": 54865
+            },
+            "style_fingerprint": "shape|fill=solid|fill_rgb=E21C48|line_w=0|shape=rect",
+            "optional": true
+          },
+          {
+            "slot_id": "meta.eyebrow",
+            "role": "eyebrow",
+            "kind": "text",
+            "bbox": {
+              "x": 482397,
+              "y": 205740,
+              "w": 1841602,
+              "h": 257861
+            },
+            "style_fingerprint": "text|align=LEFT (1)|font=Noto Sans JP|fs=127000|rgb=86868B",
+            "optional": true
+          },
+          {
+            "slot_id": "meta.icon",
+            "role": "icon",
+            "kind": "image",
+            "bbox": {
+              "x": 480858,
+              "y": 587045,
+              "w": 299169,
+              "h": 258797
+            },
+            "style_fingerprint": "image|w=299169|h=258797",
+            "optional": true
+          },
+          {
+            "slot_id": "meta.title",
+            "role": "title",
+            "kind": "text",
+            "bbox": {
+              "x": 939089,
+              "y": 491490,
+              "w": 4772254,
+              "h": 457200
+            },
+            "style_fingerprint": "text|align=LEFT (1)|font=Noto Sans JP|fs=304800|b=1|rgb=1D1D1F",
+            "optional": false
+          },
+          {
+            "slot_id": "decor.separator.header_line",
+            "role": "divider",
+            "kind": "shape",
+            "bbox": {
+              "x": 305,
+              "y": 1032380,
+              "w": 12191695,
+              "h": 36000
+            },
+            "style_fingerprint": "shape|fill=solid|fill_rgb=E5E5E5|line_w=12700|shape=rect",
+            "optional": true
+          },
+          {
+            "slot_id": "content.takeaway.panel",
+            "role": "panel",
+            "kind": "shape",
+            "bbox": {
+              "x": 481888,
+              "y": 1312153,
+              "w": 11221662,
+              "h": 790509
+            },
+            "style_fingerprint": "shape|fill=solid|fill_rgb=FFF2F2|line_w=0|shape=round_rect",
+            "optional": false
+          },
+          {
+            "slot_id": "decor.accent_bar.left",
+            "role": "accent_bar",
+            "kind": "shape",
+            "bbox": {
+              "x": 488450,
+              "y": 1311250,
+              "w": 49717,
+              "h": 791160
+            },
+            "style_fingerprint": "shape|fill=solid|fill_rgb=E21C48|line_w=0|shape=rect",
+            "optional": true
+          },
+          {
+            "slot_id": "content.takeaway.body",
+            "role": "takeaway",
+            "kind": "text",
+            "bbox": {
+              "x": 939089,
+              "y": 1318555,
+              "w": 10849356,
+              "h": 782289
+            },
+            "style_fingerprint": "text|align=JUSTIFY (4)|font=Cambria|fs=228600|b=1|rgb=DC2626",
+            "optional": false
+          },
+          {
+            "slot_id": "content.card_1.panel",
+            "role": "panel",
+            "kind": "shape",
+            "bbox": {
+              "x": 488451,
+              "y": 2398643,
+              "w": 5482742,
+              "h": 3504896
+            },
+            "style_fingerprint": "shape|fill=background|line_w=12700|line_rgb=E5E5E5|shape=round_rect",
+            "optional": false
+          },
+          {
+            "slot_id": "content.card_1.icon",
+            "role": "icon",
+            "kind": "image",
+            "bbox": {
+              "x": 726194,
+              "y": 2620431,
+              "w": 190195,
+              "h": 190195
+            },
+            "style_fingerprint": "image|w=190195|h=190195",
+            "optional": true
+          },
+          {
+            "slot_id": "content.card_1.title",
+            "role": "title",
+            "kind": "text",
+            "bbox": {
+              "x": 1031604,
+              "y": 2397730,
+              "w": 3096158,
+              "h": 619048
+            },
+            "style_fingerprint": "text|align=LEFT (1)|font=Noto Sans JP|fs=190500|b=1|rgb=1D1D1F",
+            "optional": false
+          },
+          {
+            "slot_id": "content.card_1.item_1.icon",
+            "role": "icon",
+            "kind": "image",
+            "bbox": {
+              "x": 744482,
+              "y": 3241263,
+              "w": 114300,
+              "h": 152705
+            },
+            "style_fingerprint": "image|w=114300|h=152705",
+            "optional": true
+          },
+          {
+            "slot_id": "content.card_1.item_1.badge.panel",
+            "role": "badge_panel",
+            "kind": "shape",
+            "bbox": {
+              "x": 3643515,
+              "y": 3223943,
+              "w": 484247,
+              "h": 187345
+            },
+            "style_fingerprint": "shape|fill=solid|fill_rgb=FFF2F2|line_w=0|shape=round_rect",
+            "optional": true
+          },
+          {
+            "slot_id": "content.card_1.item_1.badge.text",
+            "role": "badge_text",
+            "kind": "text",
+            "bbox": {
+              "x": 3639473,
+              "y": 3212459,
+              "w": 505663,
+              "h": 210312
+            },
+            "style_fingerprint": "text|align=CENTER (2)|font=Noto Sans JP|fs=114300|b=1|rgb=991B1B|fill_a=0.0",
+            "optional": true
+          },
+          {
+            "slot_id": "content.card_1.item_1.title",
+            "role": "item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 992284,
+              "y": 3188685,
+              "w": 4905756,
+              "h": 257861
+            },
+            "style_fingerprint": "text|align=LEFT (1)|font=Noto Sans JP|fs=165100|b=1|rgb=1F2937",
+            "optional": false
+          },
+          {
+            "slot_id": "content.card_1.item_1.body",
+            "role": "body",
+            "kind": "text",
+            "bbox": {
+              "x": 992284,
+              "y": 3484036,
+              "w": 4867351,
+              "h": 428854
+            },
+            "style_fingerprint": "text|align=LEFT (1)|font=Noto Sans JP|fs=139700|rgb=4B5563",
+            "optional": false
+          },
+          {
+            "slot_id": "content.card_1.item_2.icon",
+            "role": "icon",
+            "kind": "image",
+            "bbox": {
+              "x": 734424,
+              "y": 4118172,
+              "w": 114300,
+              "h": 152705
+            },
+            "style_fingerprint": "image|w=114300|h=152705",
+            "optional": true
+          },
+          {
+            "slot_id": "content.card_1.item_2.badge.panel",
+            "role": "badge_panel",
+            "kind": "shape",
+            "bbox": {
+              "x": 3190694,
+              "y": 4100852,
+              "w": 484247,
+              "h": 187345
+            },
+            "style_fingerprint": "shape|fill=solid|fill_rgb=FFF2F2|line_w=0|shape=round_rect",
+            "optional": true
+          },
+          {
+            "slot_id": "content.card_1.item_2.badge.text",
+            "role": "badge_text",
+            "kind": "text",
+            "bbox": {
+              "x": 3182272,
+              "y": 4089368,
+              "w": 505663,
+              "h": 210312
+            },
+            "style_fingerprint": "text|align=CENTER (2)|font=Noto Sans JP|fs=114300|b=1|rgb=991B1B|fill_a=0.0",
+            "optional": true
+          },
+          {
+            "slot_id": "content.card_1.item_2.title",
+            "role": "item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 970339,
+              "y": 4065594,
+              "w": 4924958,
+              "h": 257861
+            },
+            "style_fingerprint": "text|align=LEFT (1)|font=Cambria|fs=165100|b=1|rgb=1F2937",
+            "optional": false
+          },
+          {
+            "slot_id": "content.card_1.item_2.body",
+            "role": "body",
+            "kind": "text",
+            "bbox": {
+              "x": 970339,
+              "y": 4360946,
+              "w": 4886554,
+              "h": 428854
+            },
+            "style_fingerprint": "text|align=LEFT (1)|font=Noto Sans JP|fs=139700|rgb=4B5563",
+            "optional": false
+          },
+          {
+            "slot_id": "content.card_1.item_3.icon",
+            "role": "icon",
+            "kind": "image",
+            "bbox": {
+              "x": 743568,
+              "y": 4994168,
+              "w": 114300,
+              "h": 152705
+            },
+            "style_fingerprint": "image|w=114300|h=152705",
+            "optional": true
+          },
+          {
+            "slot_id": "content.card_1.item_3.badge.panel",
+            "role": "badge_panel",
+            "kind": "shape",
+            "bbox": null,
+            "style_fingerprint": "shape|badge_panel|unknown",
+            "optional": true
+          },
+          {
+            "slot_id": "content.card_1.item_3.badge.text",
+            "role": "badge_text",
+            "kind": "text",
+            "bbox": null,
+            "style_fingerprint": "text|badge_text|unknown",
+            "optional": true
+          },
+          {
+            "slot_id": "content.card_1.item_3.title",
+            "role": "item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 989541,
+              "y": 4941590,
+              "w": 4981651,
+              "h": 257861
+            },
+            "style_fingerprint": "text|align=LEFT (1)|font=Noto Sans JP|fs=165100|b=1|rgb=1F2937",
+            "optional": false
+          },
+          {
+            "slot_id": "content.card_1.item_3.body",
+            "role": "body",
+            "kind": "text",
+            "bbox": {
+              "x": 989541,
+              "y": 5236941,
+              "w": 4867351,
+              "h": 428854
+            },
+            "style_fingerprint": "text|align=LEFT (1)|font=Noto Sans JP|fs=139700|rgb=4B5563",
+            "optional": false
+          },
+          {
+            "slot_id": "content.card_2.panel",
+            "role": "panel",
+            "kind": "shape",
+            "bbox": {
+              "x": 6275686,
+              "y": 2398643,
+              "w": 5490974,
+              "h": 3504896
+            },
+            "style_fingerprint": "shape|fill=background|line_w=12700|line_rgb=E5E5E5|shape=round_rect",
+            "optional": false
+          },
+          {
+            "slot_id": "content.card_2.icon",
+            "role": "icon",
+            "kind": "image",
+            "bbox": {
+              "x": 6479599,
+              "y": 2620431,
+              "w": 190195,
+              "h": 190195
+            },
+            "style_fingerprint": "image|w=190195|h=190195",
+            "optional": true
+          },
+          {
+            "slot_id": "content.card_2.title",
+            "role": "title",
+            "kind": "text",
+            "bbox": {
+              "x": 6784094,
+              "y": 2396826,
+              "w": 2563063,
+              "h": 619496
+            },
+            "style_fingerprint": "text|align=LEFT (1)|font=Noto Sans JP|fs=190500|b=1|rgb=1D1D1F",
+            "optional": false
+          },
+          {
+            "slot_id": "content.card_2.item_1.icon",
+            "role": "icon",
+            "kind": "image",
+            "bbox": {
+              "x": 6486914,
+              "y": 3241263,
+              "w": 133502,
+              "h": 152705
+            },
+            "style_fingerprint": "image|w=133502|h=152705",
+            "optional": true
+          },
+          {
+            "slot_id": "content.card_2.item_1.badge.panel",
+            "role": "badge_panel",
+            "kind": "shape",
+            "bbox": {
+              "x": 9729376,
+              "y": 3246292,
+              "w": 391363,
+              "h": 187345
+            },
+            "style_fingerprint": "shape|fill=solid|fill_rgb=DCEAFE|line_w=0|shape=round_rect",
+            "optional": true
+          },
+          {
+            "slot_id": "content.card_2.item_1.badge.text",
+            "role": "badge_text",
+            "kind": "text",
+            "bbox": {
+              "x": 9729375,
+              "y": 3249950,
+              "w": 391363,
+              "h": 183687
+            },
+            "style_fingerprint": "text|align=CENTER (2)|font=Noto Sans JP|fs=114300|b=1|rgb=1E40AF|fill_a=0.0",
+            "optional": true
+          },
+          {
+            "slot_id": "content.card_2.item_1.title",
+            "role": "item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 6742032,
+              "y": 3188685,
+              "w": 4981651,
+              "h": 257861
+            },
+            "style_fingerprint": "text|align=LEFT (1)|font=Noto Sans JP|fs=165100|b=1|rgb=1F2937",
+            "optional": false
+          },
+          {
+            "slot_id": "content.card_2.item_1.body",
+            "role": "body",
+            "kind": "text",
+            "bbox": {
+              "x": 6742032,
+              "y": 3484036,
+              "w": 4867351,
+              "h": 428854
+            },
+            "style_fingerprint": "text|align=LEFT (1)|font=Noto Sans JP|fs=139700|rgb=4B5563",
+            "optional": false
+          },
+          {
+            "slot_id": "content.card_2.item_2.icon",
+            "role": "icon",
+            "kind": "image",
+            "bbox": {
+              "x": 6479599,
+              "y": 4118172,
+              "w": 152705,
+              "h": 152705
+            },
+            "style_fingerprint": "image|w=152705|h=152705",
+            "optional": true
+          },
+          {
+            "slot_id": "content.card_2.item_2.badge.panel",
+            "role": "badge_panel",
+            "kind": "shape",
+            "bbox": {
+              "x": 8865269,
+              "y": 4089825,
+              "w": 504749,
+              "h": 209398
+            },
+            "style_fingerprint": "shape|fill=solid|fill_rgb=DCEAFE|line_w=0|shape=round_rect",
+            "optional": true
+          },
+          {
+            "slot_id": "content.card_2.item_2.badge.text",
+            "role": "badge_text",
+            "kind": "text",
+            "bbox": {
+              "x": 8866183,
+              "y": 4089368,
+              "w": 505663,
+              "h": 210312
+            },
+            "style_fingerprint": "text|align=CENTER (2)|font=Noto Sans JP|fs=114300|b=1|rgb=1E40AF|fill_a=0.0",
+            "optional": true
+          },
+          {
+            "slot_id": "content.card_2.item_2.title",
+            "role": "item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 6746604,
+              "y": 4065594,
+              "w": 4972507,
+              "h": 257861
+            },
+            "style_fingerprint": "text|align=LEFT (1)|font=Cambria|fs=165100|b=1|rgb=1F2937",
+            "optional": false
+          },
+          {
+            "slot_id": "content.card_2.item_2.body",
+            "role": "body",
+            "kind": "text",
+            "bbox": {
+              "x": 6746604,
+              "y": 4360946,
+              "w": 4858207,
+              "h": 428854
+            },
+            "style_fingerprint": "text|align=LEFT (1)|font=Cambria|fs=139700|rgb=4B5563",
+            "optional": false
+          },
+          {
+            "slot_id": "content.card_2.item_3.icon",
+            "role": "icon",
+            "kind": "image",
+            "bbox": {
+              "x": 6479599,
+              "y": 4994168,
+              "w": 171907,
+              "h": 152705
+            },
+            "style_fingerprint": "image|w=171907|h=152705",
+            "optional": true
+          },
+          {
+            "slot_id": "content.card_2.item_3.badge.panel",
+            "role": "badge_panel",
+            "kind": "shape",
+            "bbox": {
+              "x": 10032957,
+              "y": 4967704,
+              "w": 724205,
+              "h": 205633
+            },
+            "style_fingerprint": "shape|fill=solid|fill_rgb=DCEAFE|line_w=0|shape=round_rect",
+            "optional": true
+          },
+          {
+            "slot_id": "content.card_2.item_3.badge.text",
+            "role": "badge_text",
+            "kind": "text",
+            "bbox": {
+              "x": 10032957,
+              "y": 4965364,
+              "w": 724205,
+              "h": 210312
+            },
+            "style_fingerprint": "text|align=CENTER (2)|font=Cambria|fs=114300|b=1|rgb=1E40AF|fill_a=0.0",
+            "optional": true
+          },
+          {
+            "slot_id": "content.card_2.item_3.title",
+            "role": "item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 6765806,
+              "y": 4941590,
+              "w": 4877410,
+              "h": 257861
+            },
+            "style_fingerprint": "text|align=LEFT (1)|font=Noto Sans JP|fs=165100|b=1|rgb=1F2937",
+            "optional": false
+          },
+          {
+            "slot_id": "content.card_2.item_3.body",
+            "role": "body",
+            "kind": "text",
+            "bbox": {
+              "x": 6765806,
+              "y": 5236941,
+              "w": 4839005,
+              "h": 428854
+            },
+            "style_fingerprint": "text|align=LEFT (1)|font=Noto Sans JP|fs=139700|rgb=4B5563",
+            "optional": false
+          },
+          {
+            "slot_id": "meta.footer.panel",
+            "role": "footer_panel",
+            "kind": "shape",
+            "bbox": {
+              "x": 0,
+              "y": 6476695,
+              "w": 12192609,
+              "h": 381305
+            },
+            "style_fingerprint": "shape|fill=solid|fill_rgb=F6F5F8|line_w=15875|line_rgb=E5E5E5|shape=rect",
+            "optional": true
+          },
+          {
+            "slot_id": "meta.footer.text",
+            "role": "footer_text",
+            "kind": "text",
+            "bbox": {
+              "x": 0,
+              "y": 6476695,
+              "w": 12192610,
+              "h": 381305
+            },
+            "style_fingerprint": "text|align=CENTER (2)|font=Cambria|fs=114300|rgb=86868B|fill_a=0.0",
+            "optional": true
+          }
+        ]
+      }
+    ]
+  }

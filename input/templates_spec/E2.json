@@ -1,0 +1,1224 @@
+{
+    "schema": "templates_spec.v1",
+    "document_id": "E2",
+    "page_size_emu": {
+      "w": 12192000,
+      "h": 6858000
+    },
+    "page_templates": [
+      {
+        "page": 1,
+        "template_class": "meta.toc",
+        "sub_class": "two_column_list_13_with_callout",
+        "slots": [
+          {
+            "slot_id": "content.callout.icon",
+            "role": "callout_icon",
+            "kind": "image",
+            "bbox": {
+              "x": 6561633,
+              "y": 5961154,
+              "w": 114300,
+              "h": 114300
+            },
+            "style_fingerprint": "fp_daa48092f761"
+          },
+          {
+            "slot_id": "content.callout.panel",
+            "role": "callout_panel",
+            "kind": "image",
+            "bbox": {
+              "x": 6390640,
+              "y": 5833138,
+              "w": 4045306,
+              "h": 362102
+            },
+            "style_fingerprint": "fp_5bb4ae612f3f"
+          },
+          {
+            "slot_id": "content.callout.text",
+            "role": "callout_text",
+            "kind": "text",
+            "bbox": {
+              "x": 6751828,
+              "y": 5928235,
+              "w": 3734410,
+              "h": 171907
+            },
+            "style_fingerprint": "fp_543c86f16da0"
+          },
+          {
+            "slot_id": "decor.accent_bar.top",
+            "role": "decor",
+            "kind": "text",
+            "bbox": {
+              "x": 0,
+              "y": 0,
+              "w": 12192001,
+              "h": 54865
+            },
+            "style_fingerprint": "fp_9d97ee6dce5f"
+          },
+          {
+            "slot_id": "decor.divider.horizontal_1",
+            "role": "decor",
+            "kind": "text",
+            "bbox": {
+              "x": 305,
+              "y": 1032380,
+              "w": 12191695,
+              "h": 36000
+            },
+            "style_fingerprint": "fp_7a4cd1a04e13"
+          },
+          {
+            "slot_id": "meta.counter",
+            "role": "counter",
+            "kind": "text",
+            "bbox": {
+              "x": 10613844,
+              "y": 740110,
+              "w": 1281074,
+              "h": 200254
+            },
+            "style_fingerprint": "fp_e71e3eb82732"
+          },
+          {
+            "slot_id": "meta.footer.band",
+            "role": "footer_band",
+            "kind": "text",
+            "bbox": {
+              "x": 0,
+              "y": 6476695,
+              "w": 12192609,
+              "h": 381305
+            },
+            "style_fingerprint": "fp_080ad5d2a622"
+          },
+          {
+            "slot_id": "meta.footer.page_deck",
+            "role": "footer_text",
+            "kind": "text",
+            "bbox": {
+              "x": 0,
+              "y": 6476695,
+              "w": 12192610,
+              "h": 381305
+            },
+            "style_fingerprint": "fp_c50bb56a6b06"
+          },
+          {
+            "slot_id": "meta.kicker",
+            "role": "kicker",
+            "kind": "text",
+            "bbox": {
+              "x": 476402,
+              "y": 235458,
+              "w": 2436876,
+              "h": 200254
+            },
+            "style_fingerprint": "fp_6d14d5f97dfc"
+          },
+          {
+            "slot_id": "meta.title",
+            "role": "title",
+            "kind": "text",
+            "bbox": {
+              "x": 470307,
+              "y": 488746,
+              "w": 2436876,
+              "h": 457200
+            },
+            "style_fingerprint": "fp_d8b1f18e4bb6"
+          },
+          {
+            "slot_id": "slide.background",
+            "role": "background",
+            "kind": "shape",
+            "bbox": {
+              "x": 0,
+              "y": 0,
+              "w": 12192000,
+              "h": 6858000
+            },
+            "style_fingerprint": "fp_3c0e7b7130d2"
+          },
+          {
+            "slot_id": "toc.item_1.body",
+            "role": "toc_item_body",
+            "kind": "text",
+            "bbox": {
+              "x": 923442,
+              "y": 1475107,
+              "w": 5048402,
+              "h": 181051
+            },
+            "style_fingerprint": "fp_3f3c26d3a5a3"
+          },
+          {
+            "slot_id": "toc.item_1.number",
+            "role": "toc_item_number",
+            "kind": "text",
+            "bbox": {
+              "x": 580542,
+              "y": 1250165,
+              "w": 419710,
+              "h": 228600
+            },
+            "style_fingerprint": "fp_0a75f9975f0f"
+          },
+          {
+            "slot_id": "toc.item_1.title",
+            "role": "toc_item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 923442,
+              "y": 1250165,
+              "w": 5048402,
+              "h": 210312
+            },
+            "style_fingerprint": "fp_63fba4633f28"
+          },
+          {
+            "slot_id": "toc.item_10.body",
+            "role": "toc_item_body",
+            "kind": "text",
+            "bbox": {
+              "x": 6733540,
+              "y": 2988439,
+              "w": 5048402,
+              "h": 181051
+            },
+            "style_fingerprint": "fp_4d0c3c3fbeb5"
+          },
+          {
+            "slot_id": "toc.item_10.number",
+            "role": "toc_item_number",
+            "kind": "text",
+            "bbox": {
+              "x": 6390640,
+              "y": 2763497,
+              "w": 419710,
+              "h": 228600
+            },
+            "style_fingerprint": "fp_cdd48f2f3b66"
+          },
+          {
+            "slot_id": "toc.item_10.title",
+            "role": "toc_item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 6733540,
+              "y": 2763497,
+              "w": 5048402,
+              "h": 210312
+            },
+            "style_fingerprint": "fp_20436ac66121"
+          },
+          {
+            "slot_id": "toc.item_11.body",
+            "role": "toc_item_body",
+            "kind": "text",
+            "bbox": {
+              "x": 6733540,
+              "y": 3744648,
+              "w": 5048402,
+              "h": 181051
+            },
+            "style_fingerprint": "fp_3f3c26d3a5a3"
+          },
+          {
+            "slot_id": "toc.item_11.number",
+            "role": "toc_item_number",
+            "kind": "text",
+            "bbox": {
+              "x": 6390640,
+              "y": 3519705,
+              "w": 419710,
+              "h": 228600
+            },
+            "style_fingerprint": "fp_cdd48f2f3b66"
+          },
+          {
+            "slot_id": "toc.item_11.title",
+            "role": "toc_item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 6733540,
+              "y": 3519705,
+              "w": 5048402,
+              "h": 210312
+            },
+            "style_fingerprint": "fp_b90880ed677f"
+          },
+          {
+            "slot_id": "toc.item_12.body",
+            "role": "toc_item_body",
+            "kind": "text",
+            "bbox": {
+              "x": 6733540,
+              "y": 4500857,
+              "w": 5048402,
+              "h": 181051
+            },
+            "style_fingerprint": "fp_3f3c26d3a5a3"
+          },
+          {
+            "slot_id": "toc.item_12.number",
+            "role": "toc_item_number",
+            "kind": "text",
+            "bbox": {
+              "x": 6390640,
+              "y": 4275914,
+              "w": 419710,
+              "h": 228600
+            },
+            "style_fingerprint": "fp_cdd48f2f3b66"
+          },
+          {
+            "slot_id": "toc.item_12.title",
+            "role": "toc_item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 6733540,
+              "y": 4275914,
+              "w": 5048402,
+              "h": 210312
+            },
+            "style_fingerprint": "fp_ce6c1bfe60ac"
+          },
+          {
+            "slot_id": "toc.item_13.body",
+            "role": "toc_item_body",
+            "kind": "text",
+            "bbox": {
+              "x": 6733540,
+              "y": 5257980,
+              "w": 5048402,
+              "h": 181051
+            },
+            "style_fingerprint": "fp_4d0c3c3fbeb5"
+          },
+          {
+            "slot_id": "toc.item_13.number",
+            "role": "toc_item_number",
+            "kind": "text",
+            "bbox": {
+              "x": 6390640,
+              "y": 5033037,
+              "w": 419710,
+              "h": 228600
+            },
+            "style_fingerprint": "fp_cdd48f2f3b66"
+          },
+          {
+            "slot_id": "toc.item_13.title",
+            "role": "toc_item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 6733540,
+              "y": 5033037,
+              "w": 4972507,
+              "h": 210312
+            },
+            "style_fingerprint": "fp_07fb3d7854b0"
+          },
+          {
+            "slot_id": "toc.item_2.body",
+            "role": "toc_item_body",
+            "kind": "text",
+            "bbox": {
+              "x": 923442,
+              "y": 2231316,
+              "w": 5048402,
+              "h": 181051
+            },
+            "style_fingerprint": "fp_3f3c26d3a5a3"
+          },
+          {
+            "slot_id": "toc.item_2.number",
+            "role": "toc_item_number",
+            "kind": "text",
+            "bbox": {
+              "x": 580542,
+              "y": 2006373,
+              "w": 419710,
+              "h": 228600
+            },
+            "style_fingerprint": "fp_0a75f9975f0f"
+          },
+          {
+            "slot_id": "toc.item_2.title",
+            "role": "toc_item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 923442,
+              "y": 2006373,
+              "w": 5048402,
+              "h": 210312
+            },
+            "style_fingerprint": "fp_9af00c199b1e"
+          },
+          {
+            "slot_id": "toc.item_3.body",
+            "role": "toc_item_body",
+            "kind": "text",
+            "bbox": {
+              "x": 923442,
+              "y": 2988439,
+              "w": 5048402,
+              "h": 181051
+            },
+            "style_fingerprint": "fp_4d0c3c3fbeb5"
+          },
+          {
+            "slot_id": "toc.item_3.number",
+            "role": "toc_item_number",
+            "kind": "text",
+            "bbox": {
+              "x": 580542,
+              "y": 2763497,
+              "w": 419710,
+              "h": 228600
+            },
+            "style_fingerprint": "fp_0a75f9975f0f"
+          },
+          {
+            "slot_id": "toc.item_3.title",
+            "role": "toc_item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 923442,
+              "y": 2763497,
+              "w": 5048402,
+              "h": 210312
+            },
+            "style_fingerprint": "fp_4bb096d8a4d8"
+          },
+          {
+            "slot_id": "toc.item_4.body",
+            "role": "toc_item_body",
+            "kind": "text",
+            "bbox": {
+              "x": 923442,
+              "y": 3744648,
+              "w": 5048402,
+              "h": 181051
+            },
+            "style_fingerprint": "fp_4d0c3c3fbeb5"
+          },
+          {
+            "slot_id": "toc.item_4.number",
+            "role": "toc_item_number",
+            "kind": "text",
+            "bbox": {
+              "x": 580542,
+              "y": 3519705,
+              "w": 419710,
+              "h": 228600
+            },
+            "style_fingerprint": "fp_0a75f9975f0f"
+          },
+          {
+            "slot_id": "toc.item_4.title",
+            "role": "toc_item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 923442,
+              "y": 3519705,
+              "w": 5048402,
+              "h": 210312
+            },
+            "style_fingerprint": "fp_4bb096d8a4d8"
+          },
+          {
+            "slot_id": "toc.item_5.body",
+            "role": "toc_item_body",
+            "kind": "text",
+            "bbox": {
+              "x": 923442,
+              "y": 4500857,
+              "w": 5048402,
+              "h": 181051
+            },
+            "style_fingerprint": "fp_4d0c3c3fbeb5"
+          },
+          {
+            "slot_id": "toc.item_5.number",
+            "role": "toc_item_number",
+            "kind": "text",
+            "bbox": {
+              "x": 580542,
+              "y": 4275914,
+              "w": 419710,
+              "h": 228600
+            },
+            "style_fingerprint": "fp_0a75f9975f0f"
+          },
+          {
+            "slot_id": "toc.item_5.title",
+            "role": "toc_item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 923442,
+              "y": 4275914,
+              "w": 5048402,
+              "h": 210312
+            },
+            "style_fingerprint": "fp_6c6bbad310a8"
+          },
+          {
+            "slot_id": "toc.item_6.body",
+            "role": "toc_item_body",
+            "kind": "text",
+            "bbox": {
+              "x": 923442,
+              "y": 5257980,
+              "w": 4972507,
+              "h": 181051
+            },
+            "style_fingerprint": "fp_4d0c3c3fbeb5"
+          },
+          {
+            "slot_id": "toc.item_6.number",
+            "role": "toc_item_number",
+            "kind": "text",
+            "bbox": {
+              "x": 580542,
+              "y": 5033037,
+              "w": 419710,
+              "h": 228600
+            },
+            "style_fingerprint": "fp_0a75f9975f0f"
+          },
+          {
+            "slot_id": "toc.item_6.title",
+            "role": "toc_item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 923442,
+              "y": 5033037,
+              "w": 5048402,
+              "h": 210312
+            },
+            "style_fingerprint": "fp_12f3ad2e3379"
+          },
+          {
+            "slot_id": "toc.item_7.body",
+            "role": "toc_item_body",
+            "kind": "text",
+            "bbox": {
+              "x": 923442,
+              "y": 6014189,
+              "w": 5048402,
+              "h": 181051
+            },
+            "style_fingerprint": "fp_4d0c3c3fbeb5"
+          },
+          {
+            "slot_id": "toc.item_7.number",
+            "role": "toc_item_number",
+            "kind": "text",
+            "bbox": {
+              "x": 580542,
+              "y": 5789246,
+              "w": 419710,
+              "h": 228600
+            },
+            "style_fingerprint": "fp_0a75f9975f0f"
+          },
+          {
+            "slot_id": "toc.item_7.title",
+            "role": "toc_item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 923442,
+              "y": 5789246,
+              "w": 5048402,
+              "h": 210312
+            },
+            "style_fingerprint": "fp_12f3ad2e3379"
+          },
+          {
+            "slot_id": "toc.item_8.body",
+            "role": "toc_item_body",
+            "kind": "text",
+            "bbox": {
+              "x": 6733540,
+              "y": 1475107,
+              "w": 4972507,
+              "h": 181051
+            },
+            "style_fingerprint": "fp_4d0c3c3fbeb5"
+          },
+          {
+            "slot_id": "toc.item_8.number",
+            "role": "toc_item_number",
+            "kind": "text",
+            "bbox": {
+              "x": 6390640,
+              "y": 1250165,
+              "w": 419710,
+              "h": 228600
+            },
+            "style_fingerprint": "fp_cdd48f2f3b66"
+          },
+          {
+            "slot_id": "toc.item_8.title",
+            "role": "toc_item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 6733540,
+              "y": 1250165,
+              "w": 5048402,
+              "h": 210312
+            },
+            "style_fingerprint": "fp_935b8e3f4b02"
+          },
+          {
+            "slot_id": "toc.item_9.body",
+            "role": "toc_item_body",
+            "kind": "text",
+            "bbox": {
+              "x": 6733540,
+              "y": 2231316,
+              "w": 5048402,
+              "h": 181051
+            },
+            "style_fingerprint": "fp_b6c1e0f1a0d5"
+          },
+          {
+            "slot_id": "toc.item_9.number",
+            "role": "toc_item_number",
+            "kind": "text",
+            "bbox": {
+              "x": 6390640,
+              "y": 2006373,
+              "w": 419710,
+              "h": 228600
+            },
+            "style_fingerprint": "fp_cdd48f2f3b66"
+          },
+          {
+            "slot_id": "toc.item_9.title",
+            "role": "toc_item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 6733540,
+              "y": 2006373,
+              "w": 5048402,
+              "h": 210312
+            },
+            "style_fingerprint": "fp_97bf62c63f29"
+          }
+        ]
+      },
+      {
+        "page": 2,
+        "template_class": "content.catalog",
+        "sub_class": "two_column_list_13_with_callout",
+        "slots": [
+          {
+            "slot_id": "catalog.item_1.body",
+            "role": "catalog_item_body",
+            "kind": "text",
+            "bbox": {
+              "x": 923442,
+              "y": 1488366,
+              "w": 5134356,
+              "h": 152705
+            },
+            "style_fingerprint": "fp_f8b903dd5839"
+          },
+          {
+            "slot_id": "catalog.item_1.number",
+            "role": "catalog_item_number",
+            "kind": "text",
+            "bbox": {
+              "x": 580542,
+              "y": 1250165,
+              "w": 419710,
+              "h": 228600
+            },
+            "style_fingerprint": "fp_0a75f9975f0f"
+          },
+          {
+            "slot_id": "catalog.item_1.title",
+            "role": "catalog_item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 913383,
+              "y": 1249538,
+              "w": 5058461,
+              "h": 191110
+            },
+            "style_fingerprint": "fp_0a1a9c0d640f"
+          },
+          {
+            "slot_id": "catalog.item_10.body",
+            "role": "catalog_item_body",
+            "kind": "text",
+            "bbox": {
+              "x": 6733540,
+              "y": 2996139,
+              "w": 5058461,
+              "h": 152705
+            },
+            "style_fingerprint": "fp_09ba30cc4b34"
+          },
+          {
+            "slot_id": "catalog.item_10.number",
+            "role": "catalog_item_number",
+            "kind": "text",
+            "bbox": {
+              "x": 6390640,
+              "y": 2763497,
+              "w": 419710,
+              "h": 228600
+            },
+            "style_fingerprint": "fp_cdd48f2f3b66"
+          },
+          {
+            "slot_id": "catalog.item_10.title",
+            "role": "catalog_item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 6733540,
+              "y": 2763497,
+              "w": 5058461,
+              "h": 191110
+            },
+            "style_fingerprint": "fp_81089b410f57"
+          },
+          {
+            "slot_id": "catalog.item_11.body",
+            "role": "catalog_item_body",
+            "kind": "text",
+            "bbox": {
+              "x": 6733540,
+              "y": 3764870,
+              "w": 5058461,
+              "h": 152705
+            },
+            "style_fingerprint": "fp_e6107c05af29"
+          },
+          {
+            "slot_id": "catalog.item_11.number",
+            "role": "catalog_item_number",
+            "kind": "text",
+            "bbox": {
+              "x": 6390640,
+              "y": 3519705,
+              "w": 419710,
+              "h": 228600
+            },
+            "style_fingerprint": "fp_cdd48f2f3b66"
+          },
+          {
+            "slot_id": "catalog.item_11.title",
+            "role": "catalog_item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 6733540,
+              "y": 3529306,
+              "w": 5058461,
+              "h": 191110
+            },
+            "style_fingerprint": "fp_bf6e35462a04"
+          },
+          {
+            "slot_id": "catalog.item_12.body",
+            "role": "catalog_item_body",
+            "kind": "text",
+            "bbox": {
+              "x": 6733540,
+              "y": 4533580,
+              "w": 5058461,
+              "h": 152705
+            },
+            "style_fingerprint": "fp_fefb0767fef7"
+          },
+          {
+            "slot_id": "catalog.item_12.number",
+            "role": "catalog_item_number",
+            "kind": "text",
+            "bbox": {
+              "x": 6390640,
+              "y": 4275914,
+              "w": 419710,
+              "h": 228600
+            },
+            "style_fingerprint": "fp_cdd48f2f3b66"
+          },
+          {
+            "slot_id": "catalog.item_12.title",
+            "role": "catalog_item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 6733540,
+              "y": 4285515,
+              "w": 5058461,
+              "h": 191110
+            },
+            "style_fingerprint": "fp_ec2a7d39e06c"
+          },
+          {
+            "slot_id": "catalog.item_13.body",
+            "role": "catalog_item_body",
+            "kind": "text",
+            "bbox": {
+              "x": 6733540,
+              "y": 5271443,
+              "w": 5134356,
+              "h": 152705
+            },
+            "style_fingerprint": "fp_a73e035c1239"
+          },
+          {
+            "slot_id": "catalog.item_13.number",
+            "role": "catalog_item_number",
+            "kind": "text",
+            "bbox": {
+              "x": 6390640,
+              "y": 5033037,
+              "w": 419710,
+              "h": 228600
+            },
+            "style_fingerprint": "fp_cdd48f2f3b66"
+          },
+          {
+            "slot_id": "catalog.item_13.title",
+            "role": "catalog_item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 6733540,
+              "y": 5042638,
+              "w": 5058461,
+              "h": 191110
+            },
+            "style_fingerprint": "fp_f657d64c1be1"
+          },
+          {
+            "slot_id": "catalog.item_2.body",
+            "role": "catalog_item_body",
+            "kind": "text",
+            "bbox": {
+              "x": 923442,
+              "y": 2252131,
+              "w": 5134356,
+              "h": 152705
+            },
+            "style_fingerprint": "fp_7cbe76b4ef46"
+          },
+          {
+            "slot_id": "catalog.item_2.number",
+            "role": "catalog_item_number",
+            "kind": "text",
+            "bbox": {
+              "x": 580542,
+              "y": 2006373,
+              "w": 419710,
+              "h": 228600
+            },
+            "style_fingerprint": "fp_0a75f9975f0f"
+          },
+          {
+            "slot_id": "catalog.item_2.title",
+            "role": "catalog_item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 913383,
+              "y": 2005747,
+              "w": 5058461,
+              "h": 191110
+            },
+            "style_fingerprint": "fp_1fc980a6366d"
+          },
+          {
+            "slot_id": "catalog.item_3.body",
+            "role": "catalog_item_body",
+            "kind": "text",
+            "bbox": {
+              "x": 923442,
+              "y": 3017363,
+              "w": 5134356,
+              "h": 152705
+            },
+            "style_fingerprint": "fp_4680ac6364ea"
+          },
+          {
+            "slot_id": "catalog.item_3.number",
+            "role": "catalog_item_number",
+            "kind": "text",
+            "bbox": {
+              "x": 580542,
+              "y": 2763497,
+              "w": 419710,
+              "h": 228600
+            },
+            "style_fingerprint": "fp_0a75f9975f0f"
+          },
+          {
+            "slot_id": "catalog.item_3.title",
+            "role": "catalog_item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 913383,
+              "y": 2762870,
+              "w": 5058461,
+              "h": 191110
+            },
+            "style_fingerprint": "fp_11475cb0cf43"
+          },
+          {
+            "slot_id": "catalog.item_4.body",
+            "role": "catalog_item_body",
+            "kind": "text",
+            "bbox": {
+              "x": 923442,
+              "y": 3775460,
+              "w": 5134356,
+              "h": 152705
+            },
+            "style_fingerprint": "fp_6e3b02ce73c9"
+          },
+          {
+            "slot_id": "catalog.item_4.number",
+            "role": "catalog_item_number",
+            "kind": "text",
+            "bbox": {
+              "x": 580542,
+              "y": 3519705,
+              "w": 419710,
+              "h": 228600
+            },
+            "style_fingerprint": "fp_0a75f9975f0f"
+          },
+          {
+            "slot_id": "catalog.item_4.title",
+            "role": "catalog_item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 913383,
+              "y": 3519079,
+              "w": 5058461,
+              "h": 191110
+            },
+            "style_fingerprint": "fp_65f9a0a0f26d"
+          },
+          {
+            "slot_id": "catalog.item_5.body",
+            "role": "catalog_item_body",
+            "kind": "text",
+            "bbox": {
+              "x": 923442,
+              "y": 4518553,
+              "w": 5134356,
+              "h": 152705
+            },
+            "style_fingerprint": "fp_183d8fc45b7e"
+          },
+          {
+            "slot_id": "catalog.item_5.number",
+            "role": "catalog_item_number",
+            "kind": "text",
+            "bbox": {
+              "x": 580542,
+              "y": 4275914,
+              "w": 419710,
+              "h": 228600
+            },
+            "style_fingerprint": "fp_0a75f9975f0f"
+          },
+          {
+            "slot_id": "catalog.item_5.title",
+            "role": "catalog_item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 913383,
+              "y": 4275288,
+              "w": 5058461,
+              "h": 191110
+            },
+            "style_fingerprint": "fp_d2675929a1f1"
+          },
+          {
+            "slot_id": "catalog.item_6.body",
+            "role": "catalog_item_body",
+            "kind": "text",
+            "bbox": {
+              "x": 923442,
+              "y": 5271140,
+              "w": 5134356,
+              "h": 152705
+            },
+            "style_fingerprint": "fp_41ec0c75512c"
+          },
+          {
+            "slot_id": "catalog.item_6.number",
+            "role": "catalog_item_number",
+            "kind": "text",
+            "bbox": {
+              "x": 580542,
+              "y": 5033037,
+              "w": 419710,
+              "h": 228600
+            },
+            "style_fingerprint": "fp_0a75f9975f0f"
+          },
+          {
+            "slot_id": "catalog.item_6.title",
+            "role": "catalog_item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 913383,
+              "y": 5032410,
+              "w": 5058461,
+              "h": 191110
+            },
+            "style_fingerprint": "fp_d191ea317e4d"
+          },
+          {
+            "slot_id": "catalog.item_7.body",
+            "role": "catalog_item_body",
+            "kind": "text",
+            "bbox": {
+              "x": 923442,
+              "y": 6028361,
+              "w": 5134356,
+              "h": 152705
+            },
+            "style_fingerprint": "fp_8d0a59f0e1a8"
+          },
+          {
+            "slot_id": "catalog.item_7.number",
+            "role": "catalog_item_number",
+            "kind": "text",
+            "bbox": {
+              "x": 580542,
+              "y": 5789246,
+              "w": 419710,
+              "h": 228600
+            },
+            "style_fingerprint": "fp_0a75f9975f0f"
+          },
+          {
+            "slot_id": "catalog.item_7.title",
+            "role": "catalog_item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 913383,
+              "y": 5798847,
+              "w": 5058461,
+              "h": 191110
+            },
+            "style_fingerprint": "fp_4c22840d9cc7"
+          },
+          {
+            "slot_id": "catalog.item_8.body",
+            "role": "catalog_item_body",
+            "kind": "text",
+            "bbox": {
+              "x": 6733540,
+              "y": 1492263,
+              "w": 5058461,
+              "h": 152705
+            },
+            "style_fingerprint": "fp_a9c4f0544f10"
+          },
+          {
+            "slot_id": "catalog.item_8.number",
+            "role": "catalog_item_number",
+            "kind": "text",
+            "bbox": {
+              "x": 6390640,
+              "y": 1250165,
+              "w": 419710,
+              "h": 228600
+            },
+            "style_fingerprint": "fp_cdd48f2f3b66"
+          },
+          {
+            "slot_id": "catalog.item_8.title",
+            "role": "catalog_item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 6733540,
+              "y": 1249138,
+              "w": 5058461,
+              "h": 191110
+            },
+            "style_fingerprint": "fp_3513992240be"
+          },
+          {
+            "slot_id": "catalog.item_9.body",
+            "role": "catalog_item_body",
+            "kind": "text",
+            "bbox": {
+              "x": 6733540,
+              "y": 2252584,
+              "w": 5058461,
+              "h": 152705
+            },
+            "style_fingerprint": "fp_5f9b49688dca"
+          },
+          {
+            "slot_id": "catalog.item_9.number",
+            "role": "catalog_item_number",
+            "kind": "text",
+            "bbox": {
+              "x": 6390640,
+              "y": 2006373,
+              "w": 419710,
+              "h": 228600
+            },
+            "style_fingerprint": "fp_cdd48f2f3b66"
+          },
+          {
+            "slot_id": "catalog.item_9.title",
+            "role": "catalog_item_title",
+            "kind": "text",
+            "bbox": {
+              "x": 6733540,
+              "y": 2005346,
+              "w": 5058461,
+              "h": 191110
+            },
+            "style_fingerprint": "fp_05b6f32a2f25"
+          },
+          {
+            "slot_id": "content.callout.icon",
+            "role": "callout_icon",
+            "kind": "image",
+            "bbox": {
+              "x": 6561633,
+              "y": 5961154,
+              "w": 114300,
+              "h": 114300
+            },
+            "style_fingerprint": "fp_daa48092f761"
+          },
+          {
+            "slot_id": "content.callout.panel",
+            "role": "callout_panel",
+            "kind": "image",
+            "bbox": {
+              "x": 6390640,
+              "y": 5833138,
+              "w": 4219956,
+              "h": 362102
+            },
+            "style_fingerprint": "fp_5bb4ae612f3f"
+          },
+          {
+            "slot_id": "content.callout.text",
+            "role": "callout_text",
+            "kind": "text",
+            "bbox": {
+              "x": 6751828,
+              "y": 5928235,
+              "w": 3858768,
+              "h": 171907
+            },
+            "style_fingerprint": "fp_543c86f16da0"
+          },
+          {
+            "slot_id": "decor.accent_bar.top",
+            "role": "decor",
+            "kind": "text",
+            "bbox": {
+              "x": 0,
+              "y": 0,
+              "w": 12192001,
+              "h": 54865
+            },
+            "style_fingerprint": "fp_9d97ee6dce5f"
+          },
+          {
+            "slot_id": "decor.divider.horizontal_1",
+            "role": "decor",
+            "kind": "text",
+            "bbox": {
+              "x": 305,
+              "y": 1032380,
+              "w": 12191695,
+              "h": 36000
+            },
+            "style_fingerprint": "fp_7a4cd1a04e13"
+          },
+          {
+            "slot_id": "meta.counter",
+            "role": "counter",
+            "kind": "text",
+            "bbox": {
+              "x": 10826442,
+              "y": 740110,
+              "w": 1167389,
+              "h": 200254
+            },
+            "style_fingerprint": "fp_e71e3eb82732"
+          },
+          {
+            "slot_id": "meta.footer.band",
+            "role": "footer_band",
+            "kind": "text",
+            "bbox": {
+              "x": 0,
+              "y": 6476695,
+              "w": 12192609,
+              "h": 381305
+            },
+            "style_fingerprint": "fp_080ad5d2a622"
+          },
+          {
+            "slot_id": "meta.footer.page_deck",
+            "role": "footer_text",
+            "kind": "text",
+            "bbox": {
+              "x": 0,
+              "y": 6476695,
+              "w": 12192610,
+              "h": 381305
+            },
+            "style_fingerprint": "fp_50ab0a9ecf8a"
+          },
+          {
+            "slot_id": "meta.kicker",
+            "role": "kicker",
+            "kind": "text",
+            "bbox": {
+              "x": 476402,
+              "y": 237744,
+              "w": 2501398,
+              "h": 200254
+            },
+            "style_fingerprint": "fp_6d14d5f97dfc"
+          },
+          {
+            "slot_id": "meta.title",
+            "role": "title",
+            "kind": "text",
+            "bbox": {
+              "x": 476402,
+              "y": 495605,
+              "w": 4728215,
+              "h": 457200
+            },
+            "style_fingerprint": "fp_328381e4af39"
+          },
+          {
+            "slot_id": "slide.background",
+            "role": "background",
+            "kind": "shape",
+            "bbox": {
+              "x": 0,
+              "y": 0,
+              "w": 12192000,
+              "h": 6858000
+            },
+            "style_fingerprint": "fp_3c0e7b7130d2"
+          }
+        ]
+      }
+    ]
+  }

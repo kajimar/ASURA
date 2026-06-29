@@ -1,0 +1,39 @@
+{
+  "schema_version": "0.1",
+  "document_id": "E1",
+  "theme_id": "theme_default",
+  "slides": [
+    {
+      "slide_no": null,
+      "component_id": "comp_title_bullets",
+      "message": "[BACKGROUND]",
+      "slots": {
+        "TITLE": "[BACKGROUND]",
+        "BULLETS": [
+          "ASR",
+          "LLM",
+          "TTS",
+          "Windows GPU",
+          "VLM",
+          "RAG",
+          "Apple Silicon",
+          "2026年2月15日 | ChatGPT"
+        ]
+      },
+      "citations": [
+        {
+          "mark": "※1",
+          "page": 1,
+          "chunk_id": "s001_bg000"
+        }
+      ]
+    }
+  ],
+  "toc": [
+    {
+      "title": "[BACKGROUND]",
+      "level": 1,
+      "slide_index": 1
+    }
+  ]
+}
